@@ -1,6 +1,6 @@
 # The Goblin's 5e SRD
 
-Dungeons and Dragons 5th edition SRD content in .tgn format (for import into The Goblin's Notebook)
+Dungeons and Dragons 5th edition SRD content in .tgn format (for import into [The Goblin's Notebook](https://www.the-goblin.net)).
 
 ## License
 
