@@ -1,0 +1,57 @@
+creatures:
+- name: Storm Giant
+  statblock:
+    custom_statblock: |
+      **Armor Class** 16 (scale mail)  
+      **Hit Points** 230 (rollable(dice=20d12 + 100,dicelabel=Hit Points))  
+      **Speed** Walk 50 ft., Swim 50 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=29)|number(name=dex,label=Dexterity,value=14)|number(name=con,label=Constitution,value=20)|number(name=int,label=Intelligence,value=16)|number(name=wis,label=Wisdom,value=18)|number(name=cha,label=Charisma,value=18)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Saving Throws** Str rollable(dice=1d20+14,label=+14,dicelabel=Strength Saving Throw), Con rollable(dice=1d20+10,label=+10,dicelabel=Constitution Saving Throw), Wis rollable(dice=1d20+9,label=+9,dicelabel=Wisdom Saving Throw), Cha rollable(dice=1d20+9,label=+9,dicelabel=Charisma Saving Throw)  
+      **Skills** Arcana rollable(dice=1d20+8,label=+8,dicelabel=Arcana Check), Athletics rollable(dice=1d20+14,label=+14,dicelabel=Athletics Check), History rollable(dice=1d20+8,label=+8,dicelabel=History Check), Perception rollable(dice=1d20+9,label=+9,dicelabel=Perception Check)  
+      **Damage Resistances** cold  
+      **Damage Immunities** lightning, thunder  
+      **Senses** Passive Perception 19  
+      **Languages** Common, Giant  
+      **Challenge** 13 (10,000 XP)  
+      **Proficiency Bonus** +5  
+
+      ---
+
+      ***Amphibious.*** The giant can breathe air and water.
+
+      ***Innate Spellcasting.*** The giant's innate spellcasting ability is Charisma (spell save DC 17). It can innately cast the following spells, requiring no material components:
+
+
+      At will: [detect magic](https://www.dndbeyond.com/spells/detect-magic), [feather fall](https://www.dndbeyond.com/spells/feather-fall), [levitate](https://www.dndbeyond.com/spells/levitate), [light](https://www.dndbeyond.com/spells/light)  
+      3/day each: [control weather](https://www.dndbeyond.com/spells/control-weather), [water breathing](https://www.dndbeyond.com/spells/water-breathing)  
+
+      ## Actions
+
+      ***Multiattack.*** The giant makes two greatsword attacks.
+
+      ***Greatsword.*** *Melee Weapon Attack* rollable(dice=1d20+14,label=+14,dicelabel=To Hit [Greatsword]) to hit, reach 10 ft., one target. *Hit:* rollable(dice=6d6+9,dicelabel=Damage [Greatsword]) slashing damage.
+
+      ***Rock.*** *Ranged Weapon Attack* rollable(dice=1d20+14,label=+14,dicelabel=To Hit [Rock]) to hit, range 60/240 ft., one target. *Hit:* rollable(dice=4d12+9,dicelabel=Damage [Rock]) bludgeoning damage.
+
+      ***Lightning Strike (rollable(dice=1d6,label=Recharge 5-6,dicelabel=Recharge [Lightning Strike])).*** The giant hurls a magical lightning bolt at a point it can see within 500 feet of it. Each creature within 10 feet of that point must make a DC 17 Dexterity saving throw, taking rollable(dice=12d8,dicelabel=Damage [Lightning Strike]) lightning damage on a failed save, or half as much damage on a successful one.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Huge Giant, Chaotic Good*  
+    **Challenge** 13
+  subtype: npc
+  id: srdstormgiant
+  status: 1
+  order: 1
+

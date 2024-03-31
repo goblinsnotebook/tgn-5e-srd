@@ -1,0 +1,45 @@
+creatures:
+- name: Magmin
+  statblock:
+    custom_statblock: |
+      **Armor Class** 14 (natural armor)  
+      **Hit Points** 9 (rollable(dice=2d6 + 2,dicelabel=Hit Points))  
+      **Speed** 30 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=7)|number(name=dex,label=Dexterity,value=15)|number(name=con,label=Constitution,value=12)|number(name=int,label=Intelligence,value=8)|number(name=wis,label=Wisdom,value=11)|number(name=cha,label=Charisma,value=10)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Damage Resistances** bludgeoning, piercing, and slashing from nonmagical attacks  
+      **Damage Immunities** fire  
+      **Senses** darkvision 60 ft., Passive Perception 10  
+      **Languages** Ignan  
+      **Challenge** 1/2 (100 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Death Burst.*** When the magmin dies, it explodes in a burst of fire and magma. Each creature within 10 feet of it must make a DC 11 Dexterity saving throw, taking rollable(dice=2d6,dicelabel=Damage [Death Burst]) fire damage on a failed save, or half as much damage on a successful one. Flammable objects that aren't being worn or carried in that area are ignited.
+
+      ***Ignited Illumination.*** As a bonus action, the magmin can set itself ablaze or extinguish its flames. While ablaze, the magmin sheds bright light in a 10-foot radius and dim light for an additional 10 feet.
+
+      ## Actions
+
+      ***Touch.*** *Melee Weapon Attack* rollable(dice=1d20+4,label=+4,dicelabel=To Hit [Touch]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=2d6,dicelabel=Damage [Touch]) fire damage. If the target is a creature or a flammable object, it ignites. Until a creature takes an action to douse the fire, the target takes rollable(dice=1d6,dicelabel=Damage [Touch]) fire damage at the end of each of its turns.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Small Elemental, Chaotic Neutral*  
+    **Challenge** 1/2
+  subtype: npc
+  id: srdmagmin
+  status: 1
+  order: 1
+

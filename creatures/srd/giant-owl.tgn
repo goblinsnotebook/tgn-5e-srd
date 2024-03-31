@@ -1,0 +1,44 @@
+creatures:
+- name: Giant Owl
+  statblock:
+    custom_statblock: |
+      **Armor Class** 12  
+      **Hit Points** 19 (rollable(dice=3d10 + 3,dicelabel=Hit Points))  
+      **Speed** Walk 5 ft., Fly 60 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=13)|number(name=dex,label=Dexterity,value=15)|number(name=con,label=Constitution,value=12)|number(name=int,label=Intelligence,value=8)|number(name=wis,label=Wisdom,value=13)|number(name=cha,label=Charisma,value=10)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Skills** Perception rollable(dice=1d20+5,label=+5,dicelabel=Perception Check), Stealth rollable(dice=1d20+4,label=+4,dicelabel=Stealth Check)  
+      **Senses** darkvision 120 ft., Passive Perception 15  
+      **Languages** Giant Owl, understands Common, Elvish, and Sylvan but can't speak them  
+      **Challenge** 1/4 (50 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Flyby.*** The owl doesn't provoke opportunity attacks when it flies out of an enemy's reach.
+
+      ***Keen Hearing and Sight.*** The owl has advantage on Wisdom (Perception) checks that rely on hearing or sight.
+
+      ## Actions
+
+      ***Talons.*** *Melee Weapon Attack* rollable(dice=1d20+3,label=+3,dicelabel=To Hit [Talons]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=2d6+1,dicelabel=Damage [Talons]) slashing damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Beast, Neutral*  
+    **Challenge** 1/4
+  subtype: npc
+  id: srdgiantowl
+  status: 1
+  order: 1
+

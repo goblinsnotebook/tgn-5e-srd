@@ -1,0 +1,52 @@
+creatures:
+- name: Lamia
+  statblock:
+    custom_statblock: |
+      **Armor Class** 13 (natural armor)  
+      **Hit Points** 97 (rollable(dice=13d10 + 26,dicelabel=Hit Points))  
+      **Speed** 30 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=16)|number(name=dex,label=Dexterity,value=13)|number(name=con,label=Constitution,value=15)|number(name=int,label=Intelligence,value=14)|number(name=wis,label=Wisdom,value=15)|number(name=cha,label=Charisma,value=16)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Skills** Deception rollable(dice=1d20+7,label=+7,dicelabel=Deception Check), Insight rollable(dice=1d20+4,label=+4,dicelabel=Insight Check), Stealth rollable(dice=1d20+3,label=+3,dicelabel=Stealth Check)  
+      **Senses** darkvision 60 ft., Passive Perception 12  
+      **Languages** Abyssal, Common  
+      **Challenge** 4 (1,100 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Innate Spellcasting.*** The lamia's innate spellcasting ability is Charisma (spell save DC 13). It can innately cast the following spells, requiring no material components.
+
+
+      At will: [disguise self (any humanoid form)](https://www.dndbeyond.com/spells/disguise-self), [major image](https://www.dndbeyond.com/spells/major-image)  
+      3/day each: [charm person](https://www.dndbeyond.com/spells/charm-person), [mirror image](https://www.dndbeyond.com/spells/mirror-image), [scrying](https://www.dndbeyond.com/spells/scrying), [suggestion](https://www.dndbeyond.com/spells/suggestion)  
+
+      ## Actions
+
+      ***Multiattack.*** The lamia makes two attacks: one with its claws and one with its dagger or Intoxicating Touch.
+
+      ***Claws.*** *Melee Weapon Attack* rollable(dice=1d20+5,label=+5,dicelabel=To Hit [Claws]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=2d10+3,dicelabel=Damage [Claws]) slashing damage.
+
+      ***Dagger.*** *Melee Weapon Attack* rollable(dice=1d20+5,label=+5,dicelabel=To Hit [Dagger]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=1d4+3,dicelabel=Damage [Dagger]) piercing damage.
+
+      ***Intoxicating Touch.*** *Melee Spell Attack* rollable(dice=1d20+5,label=+5,dicelabel=To Hit [Intoxicating Touch]) to hit, reach 5 ft., one creature. *Hit:* The target is magically cursed for 1 hour. Until the curse ends, the target has disadvantage on Wisdom saving throws and all ability checks.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Monstrosity, Chaotic Evil*  
+    **Challenge** 4
+  subtype: npc
+  id: srdlamia
+  status: 1
+  order: 1
+

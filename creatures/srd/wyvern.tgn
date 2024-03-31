@@ -1,0 +1,44 @@
+creatures:
+- name: Wyvern
+  statblock:
+    custom_statblock: |
+      **Armor Class** 13 (natural armor)  
+      **Hit Points** 110 (rollable(dice=13d10 + 39,dicelabel=Hit Points))  
+      **Speed** Walk 20 ft., Fly 80 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=19)|number(name=dex,label=Dexterity,value=10)|number(name=con,label=Constitution,value=16)|number(name=int,label=Intelligence,value=5)|number(name=wis,label=Wisdom,value=12)|number(name=cha,label=Charisma,value=6)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Skills** Perception rollable(dice=1d20+4,label=+4,dicelabel=Perception Check)  
+      **Senses** darkvision 60 ft., Passive Perception 14  
+      **Languages** -  
+      **Challenge** 6 (2,300 XP)  
+      **Proficiency Bonus** +3  
+
+      ## Actions
+
+      ***Multiattack.*** The wyvern makes two attacks: one with its bite and one with its stinger. While flying, it can use its claws in place of one other attack.
+
+      ***Bite.*** *Melee Weapon Attack* rollable(dice=1d20+7,label=+7,dicelabel=To Hit [Bite]) to hit, reach 10 ft., one creature. *Hit:* rollable(dice=2d6+4,dicelabel=Damage [Bite]) piercing damage.
+
+      ***Claws.*** *Melee Weapon Attack* rollable(dice=1d20+7,label=+7,dicelabel=To Hit [Claws]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=2d8+4,dicelabel=Damage [Claws]) slashing damage.
+
+      ***Stinger.*** *Melee Weapon Attack* rollable(dice=1d20+7,label=+7,dicelabel=To Hit [Stinger]) to hit, reach 10 ft., one creature. *Hit:* rollable(dice=2d6+4,dicelabel=Damage [Stinger]) piercing damage. The target must make a DC 15 Constitution saving throw, taking rollable(dice=7d6,dicelabel=Damage [Stinger]) poison damage on a failed save, or half as much damage on a successful one.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Dragon, Unaligned*  
+    **Challenge** 6
+  subtype: npc
+  id: srdwyvern
+  status: 1
+  order: 1
+

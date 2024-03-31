@@ -1,0 +1,53 @@
+creatures:
+- name: Spirit Naga
+  statblock:
+    custom_statblock: |
+      **Armor Class** 15 (natural armor)  
+      **Hit Points** 75 (rollable(dice=10d10 + 20,dicelabel=Hit Points))  
+      **Speed** 40 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=18)|number(name=dex,label=Dexterity,value=17)|number(name=con,label=Constitution,value=14)|number(name=int,label=Intelligence,value=16)|number(name=wis,label=Wisdom,value=15)|number(name=cha,label=Charisma,value=16)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Saving Throws** Dex rollable(dice=1d20+6,label=+6,dicelabel=Dexterity Saving Throw), Con rollable(dice=1d20+5,label=+5,dicelabel=Constitution Saving Throw), Wis rollable(dice=1d20+5,label=+5,dicelabel=Wisdom Saving Throw), Cha rollable(dice=1d20+6,label=+6,dicelabel=Charisma Saving Throw)  
+      **Damage Immunities** poison  
+      **Condition Immunities** charmed, poisoned  
+      **Senses** darkvision 60 ft., Passive Perception 12  
+      **Languages** Abyssal, Common  
+      **Challenge** 8 (3,900 XP)  
+      **Proficiency Bonus** +3  
+
+      ---
+
+      ***Rejuvenation.*** If it dies, the naga returns to life in rollable(dice=1d6,dicelabel=Rejuvenation) days and regains all its hit points. Only a ***wish*** spell can prevent this trait from functioning.
+
+      ***Spellcasting.*** The naga is a 10th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 14, rollable(dice=1d20+6,label=+6,dicelabel=To Hit [Spell Attack]) to hit with spell attacks), and it needs only verbal components to cast its spells. It has the following wizard spells prepared:
+
+      Cantrips (at will) [mage hand](https://www.dndbeyond.com/spells/mage-hand), [minor illusion](https://www.dndbeyond.com/spells/minor-illusion), [ray of frost](https://www.dndbeyond.com/spells/ray-of-frost)    
+      1st level (4 slots) [charm person](https://www.dndbeyond.com/spells/charm-person), [detect magic](https://www.dndbeyond.com/spells/detect-magic), [sleep](https://www.dndbeyond.com/spells/sleep)    
+      2nd level (3 slots) [detect thoughts](https://www.dndbeyond.com/spells/detect-thoughts), [hold person](https://www.dndbeyond.com/spells/hold-person)    
+      3rd level (3 slots) [lightning bolt](https://www.dndbeyond.com/spells/lightning-bolt), [water breathing](https://www.dndbeyond.com/spells/water-breathing)    
+      5th level (3 slots) [blight](https://www.dndbeyond.com/spells/blight), [dimension door](https://www.dndbeyond.com/spells/dimension-door)    
+      5th level (2 slots) [dominate person](https://www.dndbeyond.com/spells/dominate-person)    
+
+      ## Actions
+
+      ***Bite.*** *Melee Weapon Attack* rollable(dice=1d20+7,label=+7,dicelabel=To Hit [Bite]) to hit, reach 10 ft., one creature. *Hit:* rollable(dice=1d6+4,dicelabel=Damage [Bite]) piercing damage, and the target must make a DC 13 Constitution saving throw, taking rollable(dice=7d8,dicelabel=Damage [Bite]) poison damage on a failed save, or half as much damage on a successful one.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Monstrosity, Chaotic Evil*  
+    **Challenge** 8
+  subtype: npc
+  id: srdspiritnaga
+  status: 1
+  order: 1
+

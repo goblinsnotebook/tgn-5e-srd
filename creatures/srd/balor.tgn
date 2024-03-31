@@ -1,0 +1,57 @@
+creatures:
+- name: Balor
+  statblock:
+    custom_statblock: |
+      **Armor Class** 19 (natural armor)  
+      **Hit Points** 262 (rollable(dice=21d12 + 126,dicelabel=Hit Points))  
+      **Speed** Walk 40 ft., Fly 80 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=26)|number(name=dex,label=Dexterity,value=15)|number(name=con,label=Constitution,value=22)|number(name=int,label=Intelligence,value=20)|number(name=wis,label=Wisdom,value=16)|number(name=cha,label=Charisma,value=22)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Saving Throws** Str rollable(dice=1d20+14,label=+14,dicelabel=Strength Saving Throw), Con rollable(dice=1d20+12,label=+12,dicelabel=Constitution Saving Throw), Wis rollable(dice=1d20+9,label=+9,dicelabel=Wisdom Saving Throw), Cha rollable(dice=1d20+12,label=+12,dicelabel=Charisma Saving Throw)  
+      **Damage Resistances** cold, lightning; bludgeoning, piercing, and slashing from nonmagical attacks  
+      **Damage Immunities** fire, poison  
+      **Condition Immunities** poisoned  
+      **Senses** truesight 120 ft., Passive Perception 13  
+      **Languages** Abyssal, telepathy 120 ft.  
+      **Challenge** 19 (22,000 XP)  
+      **Proficiency Bonus** +6  
+
+      ---
+
+      ***Death Throes.*** When the balor dies, it explodes, and each creature within 30 feet of it must make a DC 20 Dexterity saving throw, taking rollable(dice=20d6,dicelabel=Damage [Death Throes]) fire damage on a failed save, or half as much damage on a successful one. The explosion ignites flammable objects in that area that aren't being worn or carried, and it destroys the balor's weapons.
+
+      ***Fire Aura.*** At the start of each of the balor's turns, each creature within 5 feet of it takes rollable(dice=3d6,dicelabel=Damage [Fire Aura]) fire damage, and flammable objects in the aura that aren't being worn or carried ignite. A creature that touches the balor or hits it with a melee attack while within 5 feet of it takes rollable(dice=3d6,dicelabel=Damage [Fire Aura]) fire damage.
+
+      ***Magic Resistance.*** The balor has advantage on saving throws against spells and other magical effects.
+
+      ***Magic Weapons.*** The balor's weapon attacks are magical.
+
+      ## Actions
+
+      ***Multiattack.*** The balor makes two attacks: one with its longsword and one with its whip.
+
+      ***Longsword.*** *Melee Weapon Attack* rollable(dice=1d20+14,label=+14,dicelabel=To Hit [Longsword]) to hit, reach 10 ft., one target. *Hit:* rollable(dice=3d8+8,dicelabel=Damage [Longsword]) slashing damage plus rollable(dice=3d8,dicelabel=Damage [Longsword]) lightning damage. If the balor scores a critical hit, it rolls damage dice three times, instead of twice.
+
+      ***Whip.*** *Melee Weapon Attack* rollable(dice=1d20+14,label=+14,dicelabel=To Hit [Whip]) to hit, reach 30 ft., one target. *Hit:* rollable(dice=2d6+8,dicelabel=Damage [Whip]) slashing damage plus rollable(dice=3d6,dicelabel=Damage [Whip]) fire damage, and the target must succeed on a DC 20 Strength saving throw or be pulled up to 25 feet toward the balor.
+
+      ***Teleport.*** The balor magically teleports, along with any equipment it is wearing or carrying, up to 120 feet to an unoccupied space it can see.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Huge Fiend (Demon), Chaotic Evil*  
+    **Challenge** 19
+  subtype: npc
+  id: srdbalor
+  status: 1
+  order: 1
+

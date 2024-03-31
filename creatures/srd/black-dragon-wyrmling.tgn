@@ -1,0 +1,46 @@
+creatures:
+- name: Black Dragon Wyrmling
+  statblock:
+    custom_statblock: |
+      **Armor Class** 17 (natural armor)  
+      **Hit Points** 33 (rollable(dice=6d8 + 6,dicelabel=Hit Points))  
+      **Speed** Walk 30 ft., Fly 60 ft., Swim 30 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=15)|number(name=dex,label=Dexterity,value=14)|number(name=con,label=Constitution,value=13)|number(name=int,label=Intelligence,value=10)|number(name=wis,label=Wisdom,value=11)|number(name=cha,label=Charisma,value=13)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Saving Throws** Dex rollable(dice=1d20+4,label=+4,dicelabel=Dexterity Saving Throw), Con rollable(dice=1d20+3,label=+3,dicelabel=Constitution Saving Throw), Wis rollable(dice=1d20+2,label=+2,dicelabel=Wisdom Saving Throw), Cha rollable(dice=1d20+3,label=+3,dicelabel=Charisma Saving Throw)  
+      **Skills** Perception rollable(dice=1d20+4,label=+4,dicelabel=Perception Check), Stealth rollable(dice=1d20+4,label=+4,dicelabel=Stealth Check)  
+      **Damage Immunities** acid  
+      **Senses** blindsight 10 ft., darkvision 60 ft., Passive Perception 14  
+      **Languages** Draconic  
+      **Challenge** 2 (450 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Amphibious.*** The dragon can breathe air and water.
+
+      ## Actions
+
+      ***Bite.*** *Melee Weapon Attack* rollable(dice=1d20+4,label=+4,dicelabel=To Hit [Bite]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=1d10+2,dicelabel=Damage [Bite]) piercing damage plus rollable(dice=1d4,dicelabel=Damage [Bite]) acid damage.
+
+      ***Acid Breath (rollable(dice=1d6,label=Recharge 5-6,dicelabel=Recharge [Acid Breath])).*** The dragon exhales acid in a 15-foot line that is 5 feet wide. Each creature in that line must make a DC 11 Dexterity saving throw, taking rollable(dice=5d8,dicelabel=Damage [Acid Breath]) acid damage on a failed save, or half as much damage on a successful one.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Dragon, Chaotic Evil*  
+    **Challenge** 2
+  subtype: npc
+  id: srdblackdragonwyrmling
+  status: 1
+  order: 1
+

@@ -1,0 +1,37 @@
+creatures:
+- name: Giant Centipede
+  statblock:
+    custom_statblock: |
+      **Armor Class** 13 (natural armor)  
+      **Hit Points** 4 (rollable(dice=1d6 + 1,dicelabel=Hit Points))  
+      **Speed** Walk 30 ft., Climb 30 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=5)|number(name=dex,label=Dexterity,value=14)|number(name=con,label=Constitution,value=12)|number(name=int,label=Intelligence,value=1)|number(name=wis,label=Wisdom,value=7)|number(name=cha,label=Charisma,value=3)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Senses** blindsight 30 ft., Passive Perception 8  
+      **Languages** -  
+      **Challenge** 1/4 (50 XP)  
+      **Proficiency Bonus** +2  
+
+      ## Actions
+
+      ***Bite.*** *Melee Weapon Attack* rollable(dice=1d20+4,label=+4,dicelabel=To Hit [Bite]) to hit, reach 5 ft., one creature. *Hit:* rollable(dice=1d4+2,dicelabel=Damage [Bite]) piercing damage, and the target must succeed on a DC 11 Constitution saving throw or take rollable(dice=3d6,dicelabel=Damage [Bite]) poison damage. If the poison damage reduces the target to 0 hit points, the target is stable but ***poisoned*** for 1 hour, even after regaining hit points, and is ***paralyzed*** while ***poisoned*** in this way.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Small Beast, Unaligned*  
+    **Challenge** 1/4
+  subtype: npc
+  id: srdgiantcentipede
+  status: 1
+  order: 1
+

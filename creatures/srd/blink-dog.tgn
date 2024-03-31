@@ -1,0 +1,44 @@
+creatures:
+- name: Blink Dog
+  statblock:
+    custom_statblock: |
+      **Armor Class** 13  
+      **Hit Points** 22 (rollable(dice=4d8 + 4,dicelabel=Hit Points))  
+      **Speed** 40 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=12)|number(name=dex,label=Dexterity,value=17)|number(name=con,label=Constitution,value=12)|number(name=int,label=Intelligence,value=10)|number(name=wis,label=Wisdom,value=13)|number(name=cha,label=Charisma,value=11)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Skills** Perception rollable(dice=1d20+3,label=+3,dicelabel=Perception Check), Stealth rollable(dice=1d20+5,label=+5,dicelabel=Stealth Check)  
+      **Senses** Passive Perception 13  
+      **Languages** Blink Dog, understands Sylvan but can't speak it  
+      **Challenge** 1/4 (50 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Keen Hearing and Smell.*** The dog has advantage on Wisdom (Perception) checks that rely on hearing or smell.
+
+      ## Actions
+
+      ***Bite.*** *Melee Weapon Attack* rollable(dice=1d20+3,label=+3,dicelabel=To Hit [Bite]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=1d6+1,dicelabel=Damage [Bite]) piercing damage.
+
+      ***Teleport (rollable(dice=1d6,label=Recharge 4-6,dicelabel=Recharge [Teleport])).*** The dog magically teleports, along with any equipment it is wearing or carrying, up to 40 feet to an unoccupied space it can see. Before or after teleporting, the dog can make one bite attack.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Fey, Lawful Good*  
+    **Challenge** 1/4
+  subtype: npc
+  id: srdblinkdog
+  status: 1
+  order: 1
+

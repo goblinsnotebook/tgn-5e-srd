@@ -1,0 +1,45 @@
+creatures:
+- name: Swarm of Rats
+  statblock:
+    custom_statblock: |
+      **Armor Class** 10  
+      **Hit Points** 24 (rollable(dice=7d8 - 7,dicelabel=Hit Points))  
+      **Speed** 30 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=9)|number(name=dex,label=Dexterity,value=11)|number(name=con,label=Constitution,value=9)|number(name=int,label=Intelligence,value=2)|number(name=wis,label=Wisdom,value=10)|number(name=cha,label=Charisma,value=3)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Damage Resistances** bludgeoning, piercing, slashing  
+      **Condition Immunities** charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned  
+      **Senses** darkvision 30 ft., Passive Perception 10  
+      **Languages** -  
+      **Challenge** 1/4 (50 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Keen Smell.*** The swarm has advantage on Wisdom (Perception) checks that rely on smell.
+
+      ***Swarm.*** The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny rat. The swarm can't regain hit points or gain temporary hit points.
+
+      ## Actions
+
+      ***Bites.*** *Melee Weapon Attack* rollable(dice=1d20+2,label=+2,dicelabel=To Hit [Bites]) to hit, reach 0 ft., one target in the swarm's space. *Hit:* rollable(dice=2d6,dicelabel=Damage [Bites]) piercing damage, or rollable(dice=1d6,dicelabel=Damage [Bites]) piercing damage if the swarm has half of its hit points or fewer.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Beast, Unaligned*  
+    **Challenge** 1/4
+  subtype: npc
+  id: srdswarmofrats
+  status: 1
+  order: 1
+

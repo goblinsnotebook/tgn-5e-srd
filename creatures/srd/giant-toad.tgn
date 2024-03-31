@@ -1,0 +1,47 @@
+creatures:
+- name: Giant Toad
+  statblock:
+    custom_statblock: |
+      **Armor Class** 11  
+      **Hit Points** 39 (rollable(dice=6d10 + 6,dicelabel=Hit Points))  
+      **Speed** Walk 20 ft., Swim 40 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=15)|number(name=dex,label=Dexterity,value=13)|number(name=con,label=Constitution,value=13)|number(name=int,label=Intelligence,value=2)|number(name=wis,label=Wisdom,value=10)|number(name=cha,label=Charisma,value=3)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Senses** darkvision 30 ft., Passive Perception 10  
+      **Languages** -  
+      **Challenge** 1 (200 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Amphibious.*** The toad can breathe air and water.
+
+      ***Standing Leap.*** The toad's long jump is up to 20 feet and its high jump is up to 10 feet, with or without a running start.
+
+      ## Actions
+
+      ***Bite.*** *Melee Weapon Attack* rollable(dice=1d20+4,label=+4,dicelabel=To Hit [Bite]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=1d10+2,dicelabel=Damage [Bite]) piercing damage plus rollable(dice=1d10,dicelabel=Damage [Bite]) poison damage, and the target is ***grappled*** (escape DC 13). Until this grapple ends, the target is ***restrained***, and the toad can't bite another target.
+
+      ***Swallow.*** The toad makes one bite attack against a Medium or smaller target it is grappling. If the attack hits, the target is swallowed, and the grapple ends. The swallowed target is ***blinded*** and ***restrained***, it has total cover against attacks and other effects outside the toad, and it takes rollable(dice=3d6,dicelabel=Damage [Swallow]) acid damage at the start of each of the toad's turns. The toad can have only one target swallowed at a time.
+
+      If the toad dies, a swallowed creature is no longer ***restrained*** by it and can escape from the corpse using 5 feet of movement, exiting ***prone***.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Beast, Unaligned*  
+    **Challenge** 1
+  subtype: npc
+  id: srdgianttoad
+  status: 1
+  order: 1
+

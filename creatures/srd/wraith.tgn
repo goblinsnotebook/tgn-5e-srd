@@ -1,0 +1,48 @@
+creatures:
+- name: Wraith
+  statblock:
+    custom_statblock: |
+      **Armor Class** 13  
+      **Hit Points** 67 (rollable(dice=9d8 + 27,dicelabel=Hit Points))  
+      **Speed** Walk 0 ft., Fly 60 ft. (hover), Canhover True ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=6)|number(name=dex,label=Dexterity,value=16)|number(name=con,label=Constitution,value=16)|number(name=int,label=Intelligence,value=12)|number(name=wis,label=Wisdom,value=14)|number(name=cha,label=Charisma,value=15)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Damage Resistances** acid, cold, fire, lightning, thunder; bludgeoning, piercing, and slashing from nonmagical attacks that aren't silvered  
+      **Damage Immunities** necrotic, poison  
+      **Condition Immunities** charmed, exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained  
+      **Senses** darkvision 60 ft., Passive Perception 12  
+      **Languages** the languages it knew in life  
+      **Challenge** 5 (1,800 XP)  
+      **Proficiency Bonus** +3  
+
+      ---
+
+      ***Incorporeal Movement.*** The wraith can move through other creatures and objects as if they were *difficult terrain*. It takes rollable(dice=1d10,dicelabel=Damage [Incorporeal Movement]) force damage if it ends its turn inside an object.
+
+      ***Sunlight Sensitivity.*** While in sunlight, the wraith has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.
+
+      ## Actions
+
+      ***Life Drain.*** *Melee Weapon Attack* rollable(dice=1d20+6,label=+6,dicelabel=To Hit [Life Drain]) to hit, reach 5 ft., one creature. *Hit:* rollable(dice=4d8+3,dicelabel=Damage [Life Drain]) necrotic damage. The target must succeed on a DC 14 Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.
+
+      ***Create Specter.*** The wraith targets a humanoid within 10 feet of it that has been dead for no longer than 1 minute and died violently. The target's spirit rises as a *specter* in the space of its corpse or in the nearest unoccupied space. The *specter* is under the wraith's control. The wraith can have no more than seven specters under its control at one time.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Undead, Neutral Evil*  
+    **Challenge** 5
+  subtype: npc
+  id: srdwraith
+  status: 1
+  order: 1
+

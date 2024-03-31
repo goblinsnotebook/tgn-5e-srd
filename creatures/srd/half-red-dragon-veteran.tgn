@@ -1,0 +1,47 @@
+creatures:
+- name: Half-Red Dragon Veteran
+  statblock:
+    custom_statblock: |
+      **Armor Class** 18 (plate armor)  
+      **Hit Points** 65 (rollable(dice=10d8 + 20,dicelabel=Hit Points))  
+      **Speed** 30 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=16)|number(name=dex,label=Dexterity,value=13)|number(name=con,label=Constitution,value=14)|number(name=int,label=Intelligence,value=10)|number(name=wis,label=Wisdom,value=11)|number(name=cha,label=Charisma,value=10)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Skills** Athletics rollable(dice=1d20+6,label=+6,dicelabel=Athletics Check), Perception rollable(dice=1d20+3,label=+3,dicelabel=Perception Check)  
+      **Damage Resistances** fire  
+      **Senses** blindsight 10 ft., darkvision 60 ft., Passive Perception 12  
+      **Languages** Common, Draconic  
+      **Challenge** 5 (1,800 XP)  
+      **Proficiency Bonus** +3  
+
+      ## Actions
+
+      ***Multiattack.*** The veteran makes two longsword attacks. If it has a shortsword drawn, it can also make a shortsword attack.
+
+      ***Longsword.*** *Melee Weapon Attack* rollable(dice=1d20+5,label=+5,dicelabel=To Hit [Longsword]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=1d8+3,dicelabel=Damage [Longsword]) slashing damage, or rollable(dice=1d10+3,dicelabel=Damage [Longsword]) slashing damage if used with two hands.
+
+      ***Shortsword.*** *Melee Weapon Attack* rollable(dice=1d20+5,label=+5,dicelabel=To Hit [Shortsword]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=1d6+3,dicelabel=Damage [Shortsword]) piercing damage.
+
+      ***Heavy Crossbow.*** *Ranged Weapon Attack* rollable(dice=1d20+3,label=+3,dicelabel=To Hit [Heavy Crossbow]) to hit, range 100/400 ft., one target. *Hit:* rollable(dice=1d10+1,dicelabel=Damage [Heavy Crossbow]) piercing damage.
+
+      ***Fire Breath (rollable(dice=1d6,label=Recharge 5-6,dicelabel=Recharge [Fire Breath])).*** The veteran exhales fire in a 15-foot cone. Each creature in that area must make a DC 15 Dexterity saving throw, taking rollable(dice=7d6,dicelabel=Damage [Fire Breath]) fire damage on a failed save, or half as much damage on a successful one.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Humanoid (Human)*  
+    **Challenge** 5
+  subtype: npc
+  id: srdhalf-reddragonveteran
+  status: 1
+  order: 1
+

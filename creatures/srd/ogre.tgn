@@ -1,0 +1,39 @@
+creatures:
+- name: Ogre
+  statblock:
+    custom_statblock: |
+      **Armor Class** 11 (hide armor)  
+      **Hit Points** 59 (rollable(dice=7d10 + 21,dicelabel=Hit Points))  
+      **Speed** 40 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=19)|number(name=dex,label=Dexterity,value=8)|number(name=con,label=Constitution,value=16)|number(name=int,label=Intelligence,value=5)|number(name=wis,label=Wisdom,value=7)|number(name=cha,label=Charisma,value=7)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Senses** darkvision 60 ft., Passive Perception 8  
+      **Languages** Common, Giant  
+      **Challenge** 2 (450 XP)  
+      **Proficiency Bonus** +2  
+
+      ## Actions
+
+      ***Greatclub.*** *Melee Weapon Attack* rollable(dice=1d20+6,label=+6,dicelabel=To Hit [Greatclub]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=2d8+4,dicelabel=Damage [Greatclub]) bludgeoning damage.
+
+      ***Javelin.*** *Melee or Ranged Weapon Attack* rollable(dice=1d20+6,label=+6,dicelabel=To Hit [Javelin]) to hit, reach 5 ft. or range 30/120 ft., one target. *Hit:* rollable(dice=2d6+4,dicelabel=Damage [Javelin]) piercing damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Giant, Chaotic Evil*  
+    **Challenge** 2
+  subtype: npc
+  id: srdogre
+  status: 1
+  order: 1
+

@@ -1,0 +1,44 @@
+creatures:
+- name: Blood Hawk
+  statblock:
+    custom_statblock: |
+      **Armor Class** 12  
+      **Hit Points** 7 (rollable(dice=2d6,dicelabel=Hit Points))  
+      **Speed** Walk 10 ft., Fly 60 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=6)|number(name=dex,label=Dexterity,value=14)|number(name=con,label=Constitution,value=10)|number(name=int,label=Intelligence,value=3)|number(name=wis,label=Wisdom,value=14)|number(name=cha,label=Charisma,value=5)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Skills** Perception rollable(dice=1d20+4,label=+4,dicelabel=Perception Check)  
+      **Senses** Passive Perception 14  
+      **Languages** -  
+      **Challenge** 1/8 (25 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Keen Sight.*** The hawk has advantage on Wisdom (Perception) checks that rely on sight.
+
+      ***Pack Tactics.*** The hawk has advantage on an attack roll against a creature if at least one of the hawk's allies is within 5 feet of the creature and the ally isn't ***incapacitated***.
+
+      ## Actions
+
+      ***Beak.*** *Melee Weapon Attack* rollable(dice=1d20+4,label=+4,dicelabel=To Hit [Beak]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=1d4+2,dicelabel=Damage [Beak]) piercing damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Small Beast, Unaligned*  
+    **Challenge** 1/8
+  subtype: npc
+  id: srdbloodhawk
+  status: 1
+  order: 1
+

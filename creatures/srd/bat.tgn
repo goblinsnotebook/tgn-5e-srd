@@ -1,0 +1,43 @@
+creatures:
+- name: Bat
+  statblock:
+    custom_statblock: |
+      **Armor Class** 12  
+      **Hit Points** 1 (rollable(dice=1d4 - 1,dicelabel=Hit Points))  
+      **Speed** Walk 5 ft., Fly 30 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=2)|number(name=dex,label=Dexterity,value=15)|number(name=con,label=Constitution,value=8)|number(name=int,label=Intelligence,value=2)|number(name=wis,label=Wisdom,value=12)|number(name=cha,label=Charisma,value=4)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Senses** blindsight 60 ft., Passive Perception 11  
+      **Languages** -  
+      **Challenge** 0 (10 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Echolocation.*** The bat can't use its blindsight while ***deafened***.
+
+      ***Keen Hearing.*** The bat has advantage on Wisdom (Perception) checks that rely on hearing.
+
+      ## Actions
+
+      ***Bite.*** *Melee Weapon Attack* rollable(dice=1d20+0,label=+0,dicelabel=To Hit [Bite]) to hit, reach 5 ft., one creature. *Hit:* 1 piercing damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Tiny Beast, Unaligned*  
+    **Challenge** 0
+  subtype: npc
+  id: srdbat
+  status: 1
+  order: 1
+

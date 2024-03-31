@@ -1,0 +1,56 @@
+creatures:
+- name: Djinni
+  statblock:
+    custom_statblock: |
+      **Armor Class** 17 (natural armor)  
+      **Hit Points** 161 (rollable(dice=14d10 + 84,dicelabel=Hit Points))  
+      **Speed** Walk 30 ft., Fly 90 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=21)|number(name=dex,label=Dexterity,value=15)|number(name=con,label=Constitution,value=22)|number(name=int,label=Intelligence,value=15)|number(name=wis,label=Wisdom,value=16)|number(name=cha,label=Charisma,value=20)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Saving Throws** Dex rollable(dice=1d20+6,label=+6,dicelabel=Dexterity Saving Throw), Wis rollable(dice=1d20+7,label=+7,dicelabel=Wisdom Saving Throw), Cha rollable(dice=1d20+9,label=+9,dicelabel=Charisma Saving Throw)  
+      **Damage Immunities** lightning, thunder  
+      **Senses** darkvision 120 ft., Passive Perception 13  
+      **Languages** Auran  
+      **Challenge** 11 (7,200 XP)  
+      **Proficiency Bonus** +4  
+
+      ---
+
+      ***Elemental Demise.*** If the djinni dies, its body disintegrates into a warm breeze, leaving behind only equipment the djinni was wearing or carrying.
+
+      ***Innate Spellcasting.*** The djinni's innate spellcasting ability is Charisma (spell save DC 17, rollable(dice=1d20+9,label=+9,dicelabel=To Hit [Spell Attack]) to hit with spell attacks). It can innately cast the following spells, requiring no material components:
+
+
+      At will: [detect evil and good](https://www.dndbeyond.com/spells/detect-evil-and-good), [detect magic](https://www.dndbeyond.com/spells/detect-magic), [thunderwave](https://www.dndbeyond.com/spells/thunderwave)  
+      3/day each: [create food and water (can create wine instead of water)](https://www.dndbeyond.com/spells/create-food-and-water), [tongues](https://www.dndbeyond.com/spells/tongues), [wind walk](https://www.dndbeyond.com/spells/wind-walk)  
+      1/day each: [conjure elemental (*air elemental* only)](https://www.dndbeyond.com/spells/conjure-elemental), [creation](https://www.dndbeyond.com/spells/creation), [gaseous form](https://www.dndbeyond.com/spells/gaseous-form), [invisibility](https://www.dndbeyond.com/spells/invisibility), [major image](https://www.dndbeyond.com/spells/major-image), [plane shift](https://www.dndbeyond.com/spells/plane-shift)  
+
+      ## Actions
+
+      ***Multiattack.*** The djinni makes three scimitar attacks.
+
+      ***Scimitar.*** *Melee Weapon Attack* rollable(dice=1d20+9,label=+9,dicelabel=To Hit [Scimitar]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=2d6+5,dicelabel=Damage [Scimitar]) slashing damage plus rollable(dice=1d6,dicelabel=Damage [Scimitar]) lightning or thunder damage (djinni's choice).
+
+      ***Create Whirlwind.*** A 5-foot-radius, 30-foot-tall cylinder of swirling air magically forms on a point the djinni can see within 120 feet of it. The whirlwind lasts as long as the djinni maintains concentration (as if concentrating on a spell). Any creature but the djinni that enters the whirlwind must succeed on a DC 18 Strength saving throw or be ***restrained*** by it. The djinni can move the whirlwind up to 60 feet as an action, and creatures ***restrained*** by the whirlwind move with it. The whirlwind ends if the djinni loses sight of it.
+
+      A creature can use its action to free a creature ***restrained*** by the whirlwind, including itself, by succeeding on a DC 18 Strength check. If the check succeeds, the creature is no longer ***restrained*** and moves to the nearest space outside the whirlwind.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Elemental, Chaotic Good*  
+    **Challenge** 11
+  subtype: npc
+  id: srddjinni
+  status: 1
+  order: 1
+

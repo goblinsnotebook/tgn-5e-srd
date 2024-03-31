@@ -1,0 +1,48 @@
+creatures:
+- name: Spy
+  statblock:
+    custom_statblock: |
+      **Armor Class** 12  
+      **Hit Points** 27 (rollable(dice=6d8,dicelabel=Hit Points))  
+      **Speed** 30 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=10)|number(name=dex,label=Dexterity,value=15)|number(name=con,label=Constitution,value=10)|number(name=int,label=Intelligence,value=12)|number(name=wis,label=Wisdom,value=14)|number(name=cha,label=Charisma,value=16)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Skills** Deception rollable(dice=1d20+5,label=+5,dicelabel=Deception Check), Insight rollable(dice=1d20+4,label=+4,dicelabel=Insight Check), Investigation rollable(dice=1d20+5,label=+5,dicelabel=Investigation Check), Perception rollable(dice=1d20+6,label=+6,dicelabel=Perception Check), Persuasion rollable(dice=1d20+5,label=+5,dicelabel=Persuasion Check), Sleight of hand rollable(dice=1d20+4,label=+4,dicelabel=Sleight of hand Check), Stealth rollable(dice=1d20+4,label=+4,dicelabel=Stealth Check)  
+      **Senses** Passive Perception 16  
+      **Languages** any two languages  
+      **Challenge** 1 (200 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Cunning Action.*** On each of its turns, the spy can use a bonus action to take the Dash, Disengage, or Hide action.
+
+      ***Sneak Attack (1/Turn).*** The spy deals an extra 7 (rollable(dice=2d6,dicelabel=Sneak Attack)) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the spy that isn't ***incapacitated*** and the spy doesn't have disadvantage on the attack roll.
+
+      ## Actions
+
+      ***Multiattack.*** The spy makes two melee attacks.
+
+      ***Shortsword.*** *Melee Weapon Attack* rollable(dice=1d20+4,label=+4,dicelabel=To Hit [Shortsword]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=1d6+2,dicelabel=Damage [Shortsword]) piercing damage.
+
+      ***Hand Crossbow.*** *Ranged Weapon Attack* rollable(dice=1d20+4,label=+4,dicelabel=To Hit [Hand Crossbow]) to hit, range 30/120 ft., one target. *Hit:* rollable(dice=1d6+2,dicelabel=Damage [Hand Crossbow]) piercing damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Humanoid (Any race)*  
+    **Challenge** 1
+  subtype: npc
+  id: srdspy
+  status: 1
+  order: 1
+

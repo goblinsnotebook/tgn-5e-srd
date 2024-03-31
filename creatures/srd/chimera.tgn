@@ -1,0 +1,46 @@
+creatures:
+- name: Chimera
+  statblock:
+    custom_statblock: |
+      **Armor Class** 14 (natural armor)  
+      **Hit Points** 114 (rollable(dice=12d10 + 48,dicelabel=Hit Points))  
+      **Speed** Walk 30 ft., Fly 60 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=19)|number(name=dex,label=Dexterity,value=11)|number(name=con,label=Constitution,value=19)|number(name=int,label=Intelligence,value=3)|number(name=wis,label=Wisdom,value=14)|number(name=cha,label=Charisma,value=10)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Skills** Perception rollable(dice=1d20+8,label=+8,dicelabel=Perception Check)  
+      **Senses** darkvision 60 ft., Passive Perception 18  
+      **Languages** understands Draconic but can't speak  
+      **Challenge** 6 (2,300 XP)  
+      **Proficiency Bonus** +3  
+
+      ## Actions
+
+      ***Multiattack.*** The chimera makes three attacks: one with its bite, one with its horns, and one with its claws. When its fire breath is available, it can use the breath in place of its bite or horns.
+
+      ***Bite.*** *Melee Weapon Attack* rollable(dice=1d20+7,label=+7,dicelabel=To Hit [Bite]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=2d6+4,dicelabel=Damage [Bite]) piercing damage.
+
+      ***Horns.*** *Melee Weapon Attack* rollable(dice=1d20+7,label=+7,dicelabel=To Hit [Horns]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=1d12+4,dicelabel=Damage [Horns]) bludgeoning damage.
+
+      ***Claws.*** *Melee Weapon Attack* rollable(dice=1d20+7,label=+7,dicelabel=To Hit [Claws]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=2d6+4,dicelabel=Damage [Claws]) slashing damage.
+
+      ***Fire Breath (rollable(dice=1d6,label=Recharge 5-6,dicelabel=Recharge [Fire Breath])).*** The dragon head exhales fire in a 15-foot cone. Each creature in that area must make a DC 15 Dexterity saving throw, taking rollable(dice=7d8,dicelabel=Damage [Fire Breath]) fire damage on a failed save, or half as much damage on a successful one.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Monstrosity, Chaotic Evil*  
+    **Challenge** 6
+  subtype: npc
+  id: srdchimera
+  status: 1
+  order: 1
+

@@ -1,0 +1,43 @@
+creatures:
+- name: Giant Rat
+  statblock:
+    custom_statblock: |
+      **Armor Class** 12  
+      **Hit Points** 7 (rollable(dice=2d6,dicelabel=Hit Points))  
+      **Speed** 30 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=7)|number(name=dex,label=Dexterity,value=15)|number(name=con,label=Constitution,value=11)|number(name=int,label=Intelligence,value=2)|number(name=wis,label=Wisdom,value=10)|number(name=cha,label=Charisma,value=4)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Senses** darkvision 60 ft., Passive Perception 10  
+      **Languages** -  
+      **Challenge** 1/8 (25 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Keen Smell.*** The rat has advantage on Wisdom (Perception) checks that rely on smell.
+
+      ***Pack Tactics.*** The rat has advantage on an attack roll against a creature if at least one of the rat's allies is within 5 feet of the creature and the ally isn't ***incapacitated***.
+
+      ## Actions
+
+      ***Bite.*** *Melee Weapon Attack* rollable(dice=1d20+4,label=+4,dicelabel=To Hit [Bite]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=1d4+2,dicelabel=Damage [Bite]) piercing damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Small Beast, Unaligned*  
+    **Challenge** 1/8
+  subtype: npc
+  id: srdgiantrat
+  status: 1
+  order: 1
+

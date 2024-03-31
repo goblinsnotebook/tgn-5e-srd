@@ -1,0 +1,43 @@
+creatures:
+- name: Triceratops
+  statblock:
+    custom_statblock: |
+      **Armor Class** 13 (natural armor)  
+      **Hit Points** 95 (rollable(dice=10d12 + 30,dicelabel=Hit Points))  
+      **Speed** 50 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=22)|number(name=dex,label=Dexterity,value=9)|number(name=con,label=Constitution,value=17)|number(name=int,label=Intelligence,value=2)|number(name=wis,label=Wisdom,value=11)|number(name=cha,label=Charisma,value=5)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Senses** Passive Perception 10  
+      **Languages** -  
+      **Challenge** 5 (1,800 XP)  
+      **Proficiency Bonus** +3  
+
+      ---
+
+      ***Trampling Charge.*** If the triceratops moves at least 20 feet straight toward a creature and then hits it with a gore attack on the same turn, that target must succeed on a DC 13 Strength saving throw or be knocked ***prone***. If the target is ***prone***, the triceratops can make one stomp attack against it as a bonus action.
+
+      ## Actions
+
+      ***Gore.*** *Melee Weapon Attack* rollable(dice=1d20+9,label=+9,dicelabel=To Hit [Gore]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=4d8+6,dicelabel=Damage [Gore]) piercing damage.
+
+      ***Stomp.*** *Melee Weapon Attack* rollable(dice=1d20+9,label=+9,dicelabel=To Hit [Stomp]) to hit, reach 5 ft., one ***prone*** creature. *Hit:* rollable(dice=3d10+6,dicelabel=Damage [Stomp]) bludgeoning damage
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Huge Beast, Unaligned*  
+    **Challenge** 5
+  subtype: npc
+  id: srdtriceratops
+  status: 1
+  order: 1
+

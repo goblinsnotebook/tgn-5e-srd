@@ -1,0 +1,44 @@
+creatures:
+- name: Giant Elk
+  statblock:
+    custom_statblock: |
+      **Armor Class** 14 (natural armor)  
+      **Hit Points** 42 (rollable(dice=5d12 + 10,dicelabel=Hit Points))  
+      **Speed** 60 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=19)|number(name=dex,label=Dexterity,value=16)|number(name=con,label=Constitution,value=14)|number(name=int,label=Intelligence,value=7)|number(name=wis,label=Wisdom,value=14)|number(name=cha,label=Charisma,value=10)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Skills** Perception rollable(dice=1d20+4,label=+4,dicelabel=Perception Check)  
+      **Senses** Passive Perception 14  
+      **Languages** Giant Elk, understands Common, Elvish, Sylvan but can't speak them  
+      **Challenge** 2 (450 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Charge.*** If the elk moves at least 20 feet straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 7 (rollable(dice=2d6,dicelabel=Charge)) damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be knocked ***prone***.
+
+      ## Actions
+
+      ***Ram.*** *Melee Weapon Attack* rollable(dice=1d20+6,label=+6,dicelabel=To Hit [Ram]) to hit, reach 10 ft., one target. *Hit:* rollable(dice=2d6+4,dicelabel=Damage [Ram]) bludgeoning damage.
+
+      ***Hooves.*** *Melee Weapon Attack* rollable(dice=1d20+6,label=+6,dicelabel=To Hit [Hooves]) to hit, reach 5 ft., one ***prone*** creature. *Hit:* rollable(dice=4d8+4,dicelabel=Damage [Hooves]) bludgeoning damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Huge Beast, Unaligned*  
+    **Challenge** 2
+  subtype: npc
+  id: srdgiantelk
+  status: 1
+  order: 1
+

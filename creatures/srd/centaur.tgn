@@ -1,0 +1,48 @@
+creatures:
+- name: Centaur
+  statblock:
+    custom_statblock: |
+      **Armor Class** 12  
+      **Hit Points** 45 (rollable(dice=6d10 + 12,dicelabel=Hit Points))  
+      **Speed** 50 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=18)|number(name=dex,label=Dexterity,value=14)|number(name=con,label=Constitution,value=14)|number(name=int,label=Intelligence,value=9)|number(name=wis,label=Wisdom,value=13)|number(name=cha,label=Charisma,value=11)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Skills** Athletics rollable(dice=1d20+6,label=+6,dicelabel=Athletics Check), Perception rollable(dice=1d20+3,label=+3,dicelabel=Perception Check), Survival rollable(dice=1d20+3,label=+3,dicelabel=Survival Check)  
+      **Senses** Passive Perception 13  
+      **Languages** Elvish, Sylvan  
+      **Challenge** 2 (450 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Charge.*** If the centaur moves at least 30 feet straight toward a target and then hits it with a pike attack on the same turn, the target takes an extra rollable(dice=3d6,dicelabel=Damage [Charge]) piercing damage.
+
+      ## Actions
+
+      ***Multiattack.*** The centaur makes two attacks: one with its pike and one with its hooves or two with its longbow.
+
+      ***Pike.*** *Melee Weapon Attack* rollable(dice=1d20+6,label=+6,dicelabel=To Hit [Pike]) to hit, reach 10 ft., one target. *Hit:* rollable(dice=1d10+4,dicelabel=Damage [Pike]) piercing damage.
+
+      ***Hooves.*** *Melee Weapon Attack* rollable(dice=1d20+6,label=+6,dicelabel=To Hit [Hooves]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=2d6+4,dicelabel=Damage [Hooves]) bludgeoning damage.
+
+      ***Longbow.*** *Ranged Weapon Attack* rollable(dice=1d20+4,label=+4,dicelabel=To Hit [Longbow]) to hit, range 150/600 ft., one target. *Hit:* rollable(dice=1d8+2,dicelabel=Damage [Longbow]) piercing damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Monstrosity, Neutral Good*  
+    **Challenge** 2
+  subtype: npc
+  id: srdcentaur
+  status: 1
+  order: 1
+

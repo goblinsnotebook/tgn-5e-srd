@@ -1,0 +1,55 @@
+creatures:
+- name: Green Hag
+  statblock:
+    custom_statblock: |
+      **Armor Class** 17 (natural armor)  
+      **Hit Points** 82 (rollable(dice=11d8 + 33,dicelabel=Hit Points))  
+      **Speed** 30 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=18)|number(name=dex,label=Dexterity,value=12)|number(name=con,label=Constitution,value=16)|number(name=int,label=Intelligence,value=13)|number(name=wis,label=Wisdom,value=14)|number(name=cha,label=Charisma,value=14)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Skills** Arcana rollable(dice=1d20+3,label=+3,dicelabel=Arcana Check), Deception rollable(dice=1d20+4,label=+4,dicelabel=Deception Check), Perception rollable(dice=1d20+4,label=+4,dicelabel=Perception Check), Stealth rollable(dice=1d20+3,label=+3,dicelabel=Stealth Check)  
+      **Senses** darkvision 60 ft., Passive Perception 14  
+      **Languages** Common, Draconic, Sylvan  
+      **Challenge** 3 (700 XP) or 5 (1,800 XP) when part of a covern  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Amphibious.*** The hag can breathe air and water.
+
+      ***Mimicry.*** The hag can mimic animal sounds and humanoid voices. A creature that hears the sounds can tell they are imitations with a successful DC 14 Wisdom (Insight) check.
+
+      ***Innate Spellcasting.*** The hag's innate spellcasting ability is Charisma (spell save DC 12). She can innately cast the following spells, requiring no material components:
+
+
+      At will: [dancing lights](https://www.dndbeyond.com/spells/dancing-lights), [minor illusion](https://www.dndbeyond.com/spells/minor-illusion), [vicious mockery](https://www.dndbeyond.com/spells/vicious-mockery)  
+
+      ## Actions
+
+      ***Claws.*** *Melee Weapon Attack* rollable(dice=1d20+6,label=+6,dicelabel=To Hit [Claws]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=2d8+4,dicelabel=Damage [Claws]) slashing damage.
+
+      ***Illusory Appearance.*** The hag covers herself and anything she is wearing or carrying with a magical illusion that makes her look like another creature of her general size and humanoid shape. The illusion ends if the hag takes a bonus action to end it or if she dies.
+
+      The changes wrought by this effect fail to hold up to physical inspection. For example, the hag could appear to have smooth skin, but someone touching her would feel her rough flesh. Otherwise, a creature must take an action to visually inspect the illusion and succeed on a DC 20 Intelligence (Investigation) check to discern that the hag is disguised.
+
+      ***Invisible Passage.*** The hag magically turns ***invisible*** until she attacks or casts a spell, or until her concentration ends (as if concentrating on a spell). While ***invisible***, she leaves no physical evidence of her passage, so she can be tracked only by magic. Any equipment she wears or carries is ***invisible*** with her.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Fey, Neutral Evil*  
+    **Challenge** 3
+  subtype: npc
+  id: srdgreenhag
+  status: 1
+  order: 1
+

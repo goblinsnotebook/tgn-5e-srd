@@ -1,0 +1,43 @@
+creatures:
+- name: Swarm of Poisonous Snakes
+  statblock:
+    custom_statblock: |
+      **Armor Class** 14  
+      **Hit Points** 36 (rollable(dice=8d8,dicelabel=Hit Points))  
+      **Speed** Walk 30 ft., Swim 30 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=8)|number(name=dex,label=Dexterity,value=18)|number(name=con,label=Constitution,value=11)|number(name=int,label=Intelligence,value=1)|number(name=wis,label=Wisdom,value=10)|number(name=cha,label=Charisma,value=3)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Damage Resistances** bludgeoning, piercing, slashing  
+      **Condition Immunities** charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned  
+      **Senses** blindsight 10 ft., Passive Perception 10  
+      **Languages** -  
+      **Challenge** 2 (450 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Swarm.*** The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny snake. The swarm can't regain hit points or gain temporary hit points.
+
+      ## Actions
+
+      ***Bites.*** *Melee Weapon Attack* rollable(dice=1d20+6,label=+6,dicelabel=To Hit [Bites]) to hit, reach 0 ft., one creature in the swarm's space. *Hit:* rollable(dice=2d6,dicelabel=Damage [Bites]) piercing damage, or rollable(dice=1d6,dicelabel=Damage [Bites]) piercing damage if the swarm has half of its hit points or fewer. The target must make a DC 10 Constitution saving throw, taking rollable(dice=4d6,dicelabel=Damage [Bites]) poison damage on a failed save, or half as much damage on a successful one.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Beast, Unaligned*  
+    **Challenge** 2
+  subtype: npc
+  id: srdswarmofpoisonoussnakes
+  status: 1
+  order: 1
+

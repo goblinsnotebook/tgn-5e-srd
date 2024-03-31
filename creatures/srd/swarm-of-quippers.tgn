@@ -1,0 +1,47 @@
+creatures:
+- name: Swarm of Quippers
+  statblock:
+    custom_statblock: |
+      **Armor Class** 13  
+      **Hit Points** 28 (rollable(dice=8d8 - 8,dicelabel=Hit Points))  
+      **Speed** Walk 0 ft., Swim 40 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=13)|number(name=dex,label=Dexterity,value=16)|number(name=con,label=Constitution,value=9)|number(name=int,label=Intelligence,value=1)|number(name=wis,label=Wisdom,value=7)|number(name=cha,label=Charisma,value=2)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Damage Resistances** bludgeoning, piercing, slashing  
+      **Condition Immunities** charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned  
+      **Senses** darkvision 60 ft., Passive Perception 8  
+      **Languages** -  
+      **Challenge** 1 (200 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Blood Frenzy.*** The swarm has advantage on melee attack rolls against any creature that doesn't have all its hit points.
+
+      ***Swarm.*** The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny quipper. The swarm can't regain hit points or gain temporary hit points.
+
+      ***Water Breathing.*** The swarm can breathe only underwater.
+
+      ## Actions
+
+      ***Bites.*** *Melee Weapon Attack* rollable(dice=1d20+5,label=+5,dicelabel=To Hit [Bites]) to hit, reach 0 ft., one creature in the swarm's space. *Hit:* rollable(dice=4d6,dicelabel=Damage [Bites]) piercing damage, or rollable(dice=2d6,dicelabel=Damage [Bites]) piercing damage if the swarm has half of its hit points or fewer.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Beast, Unaligned*  
+    **Challenge** 1
+  subtype: npc
+  id: srdswarmofquippers
+  status: 1
+  order: 1
+

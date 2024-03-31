@@ -1,0 +1,50 @@
+creatures:
+- name: Salamander
+  statblock:
+    custom_statblock: |
+      **Armor Class** 15 (natural armor)  
+      **Hit Points** 90 (rollable(dice=12d10 + 24,dicelabel=Hit Points))  
+      **Speed** 30 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=18)|number(name=dex,label=Dexterity,value=14)|number(name=con,label=Constitution,value=15)|number(name=int,label=Intelligence,value=11)|number(name=wis,label=Wisdom,value=10)|number(name=cha,label=Charisma,value=12)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Damage Vulnerabilities** cold  
+      **Damage Resistances** bludgeoning, piercing, and slashing from nonmagical attacks  
+      **Damage Immunities** fire  
+      **Senses** darkvision 60 ft., Passive Perception 10  
+      **Languages** Ignan  
+      **Challenge** 5 (1,800 XP)  
+      **Proficiency Bonus** +3  
+
+      ---
+
+      ***Heated Body.*** A creature that touches the salamander or hits it with a melee attack while within 5 feet of it takes rollable(dice=2d6,dicelabel=Damage [Heated Body]) fire damage.
+
+      ***Heated Weapons.*** Any metal melee weapon the salamander wields deals an extra rollable(dice=1d6,dicelabel=Damage [Heated Weapons]) fire damage on a hit (included in the attack).
+
+      ## Actions
+
+      ***Multiattack.*** The salamander makes two attacks: one with its spear and one with its tail.
+
+      ***Spear.*** *Melee or Ranged Weapon Attack* rollable(dice=1d20+7,label=+7,dicelabel=To Hit [Spear]) to hit, reach 5 ft. or range 20/60 ft., one target. *Hit:* rollable(dice=2d6+4,dicelabel=Damage [Spear]) piercing damage, or rollable(dice=2d8+4,dicelabel=Damage [Spear]) piercing damage if used with two hands to make a melee attack, plus rollable(dice=1d6,dicelabel=Damage [Spear]) fire damage.
+
+      ***Tail.*** *Melee Weapon Attack* rollable(dice=1d20+7,label=+7,dicelabel=To Hit [Tail]) to hit, reach 10 ft., one target. *Hit:* rollable(dice=2d6+4,dicelabel=Damage [Tail]) bludgeoning damage plus rollable(dice=2d6,dicelabel=Damage [Tail]) fire damage, and the target is ***grappled*** (escape DC 14). Until this grapple ends, the target is ***restrained***, the salamander can automatically hit the target with its tail, and the salamander can't make tail attacks against other targets.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Elemental, Neutral Evil*  
+    **Challenge** 5
+  subtype: npc
+  id: srdsalamander
+  status: 1
+  order: 1
+

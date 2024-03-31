@@ -1,0 +1,75 @@
+creatures:
+- name: Androsphinx
+  statblock:
+    custom_statblock: |
+      **Armor Class** 17 (natural armor)  
+      **Hit Points** 199 (rollable(dice=19d10 + 95,dicelabel=Hit Points))  
+      **Speed** Walk 40 ft., Fly 60 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=22)|number(name=dex,label=Dexterity,value=10)|number(name=con,label=Constitution,value=20)|number(name=int,label=Intelligence,value=16)|number(name=wis,label=Wisdom,value=18)|number(name=cha,label=Charisma,value=23)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Saving Throws** Dex rollable(dice=1d20+6,label=+6,dicelabel=Dexterity Saving Throw), Con rollable(dice=1d20+11,label=+11,dicelabel=Constitution Saving Throw), Int rollable(dice=1d20+9,label=+9,dicelabel=Intelligence Saving Throw), Wis rollable(dice=1d20+10,label=+10,dicelabel=Wisdom Saving Throw)  
+      **Skills** Arcana rollable(dice=1d20+9,label=+9,dicelabel=Arcana Check), Perception rollable(dice=1d20+10,label=+10,dicelabel=Perception Check), Religion rollable(dice=1d20+15,label=+15,dicelabel=Religion Check)  
+      **Damage Immunities** psychic; bludgeoning, piercing, and slashing from nonmagical attacks  
+      **Condition Immunities** charmed, frightened  
+      **Senses** truesight 120 ft., Passive Perception 20  
+      **Languages** Common, Sphinx  
+      **Challenge** 17 (18,000 XP)  
+      **Proficiency Bonus** +6  
+
+      ---
+
+      ***Inscrutable.*** The sphinx is immune to any effect that would sense its emotions or read its thoughts, as well as any divination spell that it refuses. Wisdom (Insight) checks made to ascertain the sphinx's intentions or sincerity have disadvantage.
+
+      ***Magic Weapons.*** The sphinx's weapon attacks are magical.
+
+      ***Spellcasting.*** The sphinx is a 12th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 18, rollable(dice=1d20+10,label=+10,dicelabel=To Hit [Spell Attack]) to hit with spell attacks). It requires no material components to cast its spells. The sphinx has the following cleric spells prepared:
+
+      Cantrips (at will) [sacred flame](https://www.dndbeyond.com/spells/sacred-flame), [spare the dying](https://www.dndbeyond.com/spells/spare-the-dying), [thaumaturgy](https://www.dndbeyond.com/spells/thaumaturgy)    
+      1st level (4 slots) [command](https://www.dndbeyond.com/spells/command), [detect evil and good](https://www.dndbeyond.com/spells/detect-evil-and-good), [detect magic](https://www.dndbeyond.com/spells/detect-magic)    
+      2nd level (3 slots) [lesser restoration](https://www.dndbeyond.com/spells/lesser-restoration), [zone of truth](https://www.dndbeyond.com/spells/zone-of-truth)    
+      3rd level (3 slots) [dispel magic](https://www.dndbeyond.com/spells/dispel-magic), [tongues](https://www.dndbeyond.com/spells/tongues)    
+      5th level (3 slots) [banishment](https://www.dndbeyond.com/spells/banishment), [freedom of movement](https://www.dndbeyond.com/spells/freedom-of-movement)    
+      5th level (2 slots) [flame strike](https://www.dndbeyond.com/spells/flame-strike), [greater restoration](https://www.dndbeyond.com/spells/greater-restoration)    
+      6th level (1 slot) [heroes' feast](https://www.dndbeyond.com/spells/heroes'-feast)    
+
+      ## Actions
+
+      ***Multiattack.*** The sphinx makes two claw attacks.
+
+      ***Claw.*** *Melee Weapon Attack* rollable(dice=1d20+12,label=+12,dicelabel=To Hit [Claw]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=2d10+6,dicelabel=Damage [Claw]) slashing damage.
+
+      ***Roar (3/Day).*** The sphinx emits a magical roar. Each time it roars before finishing a long rest, the roar is louder and the effect is different, as detailed below. Each creature within 500 feet of the sphinx and able to hear the roar must make a saving throw.
+
+      > ***First Roar.*** Each creature that fails a DC 18 Wisdom saving throw is ***frightened*** for 1 minute. A ***frightened*** creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+      >
+      > ***Second Roar.*** Each creature that fails a DC 18 Wisdom saving throw is ***deafened*** and ***frightened*** for 1 minute. A ***frightened*** creature is ***paralyzed*** and can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+      >
+      > ***Third Roar.*** Each creature makes a DC 18 Constitution saving throw. On a failed save, a creature takes rollable(dice=8d10,dicelabel=Damage [Third Roar]) thunder damage and is knocked ***prone***. On a successful save, the creature takes half as much damage and isn't knocked ***prone***.
+
+      ## Legendary Actions
+
+      ***Claw Attack.*** The sphinx makes one claw attack.
+
+      ***Teleport (Costs 2 Actions).*** The sphinx magically teleports, along with any equipment it is wearing or carrying, up to 120 feet to an unoccupied space it can see.
+
+      ***Cast a Spell (Costs 3 Actions).*** The sphinx casts a spell from its list of prepared spells, using a spell slot as normal.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Monstrosity, Lawful Neutral*  
+    **Challenge** 17
+  subtype: npc
+  id: srdandrosphinx
+  status: 1
+  order: 1
+

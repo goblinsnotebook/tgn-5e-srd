@@ -1,0 +1,51 @@
+creatures:
+- name: Xorn
+  statblock:
+    custom_statblock: |
+      **Armor Class** 19 (natural armor)  
+      **Hit Points** 73 (rollable(dice=7d8 + 42,dicelabel=Hit Points))  
+      **Speed** Walk 20 ft., Burrow 20 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=17)|number(name=dex,label=Dexterity,value=10)|number(name=con,label=Constitution,value=22)|number(name=int,label=Intelligence,value=11)|number(name=wis,label=Wisdom,value=10)|number(name=cha,label=Charisma,value=11)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Skills** Perception rollable(dice=1d20+6,label=+6,dicelabel=Perception Check), Stealth rollable(dice=1d20+3,label=+3,dicelabel=Stealth Check)  
+      **Damage Resistances** piercing, and slashing from nonmagical attacks that aren't adamantine  
+      **Senses** darkvision 60 ft., tremorsense 60 ft., Passive Perception 16  
+      **Languages** Terran  
+      **Challenge** 5 (1,800 XP)  
+      **Proficiency Bonus** +3  
+
+      ---
+
+      ***Earth Glide.*** The xorn can burrow through nonmagical, unworked earth and stone. While doing so, the xorn doesn't disturb the material it moves through.
+
+      ***Stone Camouflage.*** The xorn has advantage on Dexterity (Stealth) checks made to hide in rocky terrain.
+
+      ***Treasure Sense.*** The xorn can pinpoint, by scent, the location of precious metals and stones, such as coins and gems, within 60 feet of it.
+
+      ## Actions
+
+      ***Multiattack.*** The xorn makes three claw attacks and one bite attack.
+
+      ***Bite.*** *Melee Weapon Attack* rollable(dice=1d20+6,label=+6,dicelabel=To Hit [Bite]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=3d6+3,dicelabel=Damage [Bite]) piercing damage.
+
+      ***Claw.*** *Melee Weapon Attack* rollable(dice=1d20+6,label=+6,dicelabel=To Hit [Claw]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=1d6+3,dicelabel=Damage [Claw]) slashing damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Elemental, Neutral*  
+    **Challenge** 5
+  subtype: npc
+  id: srdxorn
+  status: 1
+  order: 1
+

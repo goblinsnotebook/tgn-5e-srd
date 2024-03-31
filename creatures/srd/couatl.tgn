@@ -1,0 +1,59 @@
+creatures:
+- name: Couatl
+  statblock:
+    custom_statblock: |
+      **Armor Class** 19 (natural armor)  
+      **Hit Points** 97 (rollable(dice=13d8 + 39,dicelabel=Hit Points))  
+      **Speed** Walk 30 ft., Fly 90 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=16)|number(name=dex,label=Dexterity,value=20)|number(name=con,label=Constitution,value=17)|number(name=int,label=Intelligence,value=18)|number(name=wis,label=Wisdom,value=20)|number(name=cha,label=Charisma,value=18)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Saving Throws** Con rollable(dice=1d20+5,label=+5,dicelabel=Constitution Saving Throw), Wis rollable(dice=1d20+7,label=+7,dicelabel=Wisdom Saving Throw), Cha rollable(dice=1d20+6,label=+6,dicelabel=Charisma Saving Throw)  
+      **Damage Resistances** radiant  
+      **Damage Immunities** psychic; bludgeoning, piercing, and slashing from nonmagical attacks  
+      **Senses** truesight 120 ft., Passive Perception 15  
+      **Languages** all, telepathy 120 ft.  
+      **Challenge** 4 (1,100 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Magic Weapons.*** The couatl's weapon attacks are magical.
+
+      ***Shielded Mind.*** The couatl is immune to scrying and to any effect that would sense its emotions, read its thoughts, or detect its location.
+
+      ***Innate Spellcasting.*** The couatl's spellcasting ability is Charisma (spell save DC 14). It can innately cast the following spells, requiring only verbal components:
+
+
+      At will: [detect evil and good](https://www.dndbeyond.com/spells/detect-evil-and-good), [detect magic](https://www.dndbeyond.com/spells/detect-magic), [detect thoughts](https://www.dndbeyond.com/spells/detect-thoughts)  
+      3/day each: [bless](https://www.dndbeyond.com/spells/bless), [create food and water](https://www.dndbeyond.com/spells/create-food-and-water), [cure wounds](https://www.dndbeyond.com/spells/cure-wounds), [lesser restoration](https://www.dndbeyond.com/spells/lesser-restoration), [protection from poison](https://www.dndbeyond.com/spells/protection-from-poison), [sanctuary](https://www.dndbeyond.com/spells/sanctuary), [shield](https://www.dndbeyond.com/spells/shield)  
+      1/day each: [dream](https://www.dndbeyond.com/spells/dream), [greater restoration](https://www.dndbeyond.com/spells/greater-restoration), [scrying](https://www.dndbeyond.com/spells/scrying)  
+
+      ## Actions
+
+      ***Bite.*** *Melee Weapon Attack* rollable(dice=1d20+8,label=+8,dicelabel=To Hit [Bite]) to hit, reach 5 ft., one creature. *Hit:* rollable(dice=1d6+5,dicelabel=Damage [Bite]) piercing damage, and the target must succeed on a DC 13 Constitution saving throw or be ***poisoned*** for 24 hours. Until this poison ends, the target is ***unconscious***. Another creature can use an action to shake the target awake.
+
+      ***Constrict.*** *Melee Weapon Attack* rollable(dice=1d20+6,label=+6,dicelabel=To Hit [Constrict]) to hit, reach 10 ft., one Medium or smaller creature. *Hit:* rollable(dice=2d6+3,dicelabel=Damage [Constrict]) bludgeoning damage, and the target is ***grappled*** (escape DC 15). Until this grapple ends, the target is ***restrained***, and the couatl can't constrict another target.
+
+      ***Change Shape.*** The couatl magically polymorphs into a humanoid or beast that has a challenge rating equal to or less than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the couatl's choice).
+
+      In a new form, the couatl retains its game statistics and ability to speak, but its AC, movement modes, Strength, Dexterity, and other actions are replaced by those of the new form, and it gains any statistics and capabilities (except class features, legendary actions, and lair actions) that the new form has but that it lacks. If the new form has a bite attack, the couatl can use its bite in that form.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Celestial, Lawful Good*  
+    **Challenge** 4
+  subtype: npc
+  id: srdcouatl
+  status: 1
+  order: 1
+

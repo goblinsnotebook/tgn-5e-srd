@@ -1,0 +1,50 @@
+creatures:
+- name: Cult Fanatic
+  statblock:
+    custom_statblock: |
+      **Armor Class** 13 (leather armor)  
+      **Hit Points** 33 (rollable(dice=6d8 + 6,dicelabel=Hit Points))  
+      **Speed** 30 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=11)|number(name=dex,label=Dexterity,value=14)|number(name=con,label=Constitution,value=12)|number(name=int,label=Intelligence,value=10)|number(name=wis,label=Wisdom,value=13)|number(name=cha,label=Charisma,value=14)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Skills** Deception rollable(dice=1d20+4,label=+4,dicelabel=Deception Check), Persuasion rollable(dice=1d20+4,label=+4,dicelabel=Persuasion Check), Religion rollable(dice=1d20+2,label=+2,dicelabel=Religion Check)  
+      **Senses** Passive Perception 11  
+      **Languages** any one language (usually Common)  
+      **Challenge** 2 (450 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Dark Devotion.*** The fanatic has advantage on saving throws against being ***charmed*** or ***frightened***.
+
+      ***Spellcasting.*** The fanatic is a 4th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 11, rollable(dice=1d20+3,label=+3,dicelabel=To Hit [Spell Attack]) to hit with spell attacks). The fanatic has the following cleric spells prepared:
+
+      Cantrips (at will) [light](https://www.dndbeyond.com/spells/light), [sacred flame](https://www.dndbeyond.com/spells/sacred-flame), [thaumaturgy](https://www.dndbeyond.com/spells/thaumaturgy)    
+      1st level (4 slots) [command](https://www.dndbeyond.com/spells/command), [inflict wounds](https://www.dndbeyond.com/spells/inflict-wounds), [shield of faith](https://www.dndbeyond.com/spells/shield-of-faith)    
+      2nd level (3 slots) [hold person](https://www.dndbeyond.com/spells/hold-person), [spiritual weapon](https://www.dndbeyond.com/spells/spiritual-weapon)    
+
+      ## Actions
+
+      ***Multiattack.*** The fanatic makes two melee attacks.
+
+      ***Dagger.*** *Melee or Ranged Weapon Attack* rollable(dice=1d20+4,label=+4,dicelabel=To Hit [Dagger]) to hit, reach 5 ft. or range 20/60 ft., one creature. *Hit:* rollable(dice=1d4+2,dicelabel=Damage [Dagger]) piercing damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Humanoid (Any race), Lawful  Chaotic  Evil*  
+    **Challenge** 2
+  subtype: npc
+  id: srdcultfanatic
+  status: 1
+  order: 1
+

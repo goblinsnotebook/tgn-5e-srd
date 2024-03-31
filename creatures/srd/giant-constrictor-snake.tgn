@@ -1,0 +1,40 @@
+creatures:
+- name: Giant Constrictor Snake
+  statblock:
+    custom_statblock: |
+      **Armor Class** 12  
+      **Hit Points** 60 (rollable(dice=8d12 + 8,dicelabel=Hit Points))  
+      **Speed** Walk 30 ft., Swim 30 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=19)|number(name=dex,label=Dexterity,value=14)|number(name=con,label=Constitution,value=12)|number(name=int,label=Intelligence,value=1)|number(name=wis,label=Wisdom,value=10)|number(name=cha,label=Charisma,value=3)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Skills** Perception rollable(dice=1d20+2,label=+2,dicelabel=Perception Check)  
+      **Senses** blindsight 10 ft., Passive Perception 12  
+      **Languages** -  
+      **Challenge** 2 (450 XP)  
+      **Proficiency Bonus** +2  
+
+      ## Actions
+
+      ***Bite.*** *Melee Weapon Attack* rollable(dice=1d20+6,label=+6,dicelabel=To Hit [Bite]) to hit, reach 10 ft., one creature. *Hit:* rollable(dice=2d6+4,dicelabel=Damage [Bite]) piercing damage.
+
+      ***Constrict.*** *Melee Weapon Attack* rollable(dice=1d20+6,label=+6,dicelabel=To Hit [Constrict]) to hit, reach 5 ft., one creature. *Hit:* rollable(dice=2d8+4,dicelabel=Damage [Constrict]) bludgeoning damage, and the target is ***grappled*** (escape DC 16). Until this grapple ends, the creature is ***restrained***, and the snake can't constrict another target.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Huge Beast, Unaligned*  
+    **Challenge** 2
+  subtype: npc
+  id: srdgiantconstrictorsnake
+  status: 1
+  order: 1
+

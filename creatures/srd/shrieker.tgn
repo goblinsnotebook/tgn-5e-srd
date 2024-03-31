@@ -1,0 +1,38 @@
+creatures:
+- name: Shrieker
+  statblock:
+    custom_statblock: |
+      **Armor Class** 5  
+      **Hit Points** 13 (rollable(dice=3d8,dicelabel=Hit Points))  
+      **Speed** 0 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=1)|number(name=dex,label=Dexterity,value=1)|number(name=con,label=Constitution,value=10)|number(name=int,label=Intelligence,value=1)|number(name=wis,label=Wisdom,value=3)|number(name=cha,label=Charisma,value=1)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Condition Immunities** blinded, deafened, frightened  
+      **Senses** blindsight 30 ft. (blind beyond this radius), Passive Perception 6  
+      **Languages** -  
+      **Challenge** 0 (10 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***False Appearance.*** While the shrieker remains motionless, it is indistinguishable from an ordinary fungus.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Plant, Unaligned*  
+    **Challenge** 0
+  subtype: npc
+  id: srdshrieker
+  status: 1
+  order: 1
+

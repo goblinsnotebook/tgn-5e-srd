@@ -1,0 +1,45 @@
+creatures:
+- name: Gnoll
+  statblock:
+    custom_statblock: |
+      **Armor Class** 15 (hide armor, shield)  
+      **Hit Points** 22 (rollable(dice=5d8,dicelabel=Hit Points))  
+      **Speed** 30 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=14)|number(name=dex,label=Dexterity,value=12)|number(name=con,label=Constitution,value=11)|number(name=int,label=Intelligence,value=6)|number(name=wis,label=Wisdom,value=10)|number(name=cha,label=Charisma,value=7)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Senses** darkvision 60 ft., Passive Perception 10  
+      **Languages** Gnoll  
+      **Challenge** 1/2 (100 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Rampage.*** When the gnoll reduces a creature to 0 hit points with a melee attack on its turn, the gnoll can take a bonus action to move up to half its speed and make a bite attack.
+
+      ## Actions
+
+      ***Bite.*** *Melee Weapon Attack* rollable(dice=1d20+4,label=+4,dicelabel=To Hit [Bite]) to hit, reach 5 ft., one creature. *Hit:* rollable(dice=1d4+2,dicelabel=Damage [Bite]) piercing damage.
+
+      ***Spear.*** *Melee or Ranged Weapon Attack* rollable(dice=1d20+4,label=+4,dicelabel=To Hit [Spear]) to hit, reach 5 ft. or range 20/60 ft., one target. *Hit:* rollable(dice=1d6+2,dicelabel=Damage [Spear]) piercing damage, or rollable(dice=1d8+2,dicelabel=Damage [Spear]) piercing damage if used with two hands to make a melee attack.
+
+      ***Longbow.*** *Ranged Weapon Attack* rollable(dice=1d20+3,label=+3,dicelabel=To Hit [Longbow]) to hit, range 150/600 ft., one target. *Hit:* rollable(dice=1d8+1,dicelabel=Damage [Longbow]) piercing damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Humanoid (Gnoll), Chaotic Evil*  
+    **Challenge** 1/2
+  subtype: npc
+  id: srdgnoll
+  status: 1
+  order: 1
+

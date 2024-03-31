@@ -1,0 +1,46 @@
+creatures:
+- name: Flying Sword
+  statblock:
+    custom_statblock: |
+      **Armor Class** 17 (natural armor)  
+      **Hit Points** 17 (rollable(dice=5d6,dicelabel=Hit Points))  
+      **Speed** Walk 0 ft., Fly 50 ft. (hover), Canhover True ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=12)|number(name=dex,label=Dexterity,value=15)|number(name=con,label=Constitution,value=11)|number(name=int,label=Intelligence,value=1)|number(name=wis,label=Wisdom,value=5)|number(name=cha,label=Charisma,value=1)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Saving Throws** Dex rollable(dice=1d20+4,label=+4,dicelabel=Dexterity Saving Throw)  
+      **Damage Immunities** poison, psychic  
+      **Condition Immunities** blinded, charmed, deafened, frightened, paralyzed, petrified, poisoned  
+      **Senses** blindsight 60 ft. (blind beyond this radius), Passive Perception 7  
+      **Languages** -  
+      **Challenge** 1/4 (50 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Antimagic Susceptibility.*** The sword is ***incapacitated*** while in the area of an ***antimagic field***. If targeted by ***dispel magic***, the sword must succeed on a Constitution saving throw against the caster's spell save DC or fall ***unconscious*** for 1 minute.
+
+      ***False Appearance.*** While the sword remains motionless and isn't flying, it is indistinguishable from a normal sword.
+
+      ## Actions
+
+      ***Longsword.*** *Melee Weapon Attack* rollable(dice=1d20+3,label=+3,dicelabel=To Hit [Longsword]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=1d8+1,dicelabel=Damage [Longsword]) slashing damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Small Construct, Unaligned*  
+    **Challenge** 1/4
+  subtype: npc
+  id: srdflyingsword
+  status: 1
+  order: 1
+

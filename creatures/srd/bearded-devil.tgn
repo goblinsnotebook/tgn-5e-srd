@@ -1,0 +1,53 @@
+creatures:
+- name: Bearded Devil
+  statblock:
+    custom_statblock: |
+      **Armor Class** 13 (natural armor)  
+      **Hit Points** 52 (rollable(dice=8d8 + 16,dicelabel=Hit Points))  
+      **Speed** 30 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=16)|number(name=dex,label=Dexterity,value=15)|number(name=con,label=Constitution,value=15)|number(name=int,label=Intelligence,value=9)|number(name=wis,label=Wisdom,value=11)|number(name=cha,label=Charisma,value=11)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Saving Throws** Str rollable(dice=1d20+5,label=+5,dicelabel=Strength Saving Throw), Con rollable(dice=1d20+4,label=+4,dicelabel=Constitution Saving Throw), Wis rollable(dice=1d20+2,label=+2,dicelabel=Wisdom Saving Throw)  
+      **Damage Resistances** cold; bludgeoning, piercing, and slashing from nonmagical attacks that aren't silvered  
+      **Damage Immunities** fire, poison  
+      **Condition Immunities** poisoned  
+      **Senses** darkvision 120 ft., Passive Perception 10  
+      **Languages** Infernal, telepathy 120 ft.  
+      **Challenge** 3 (700 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Devil's Sight.*** Magical darkness doesn't impede the devil's darkvision.
+
+      ***Magic Resistance.*** The devil has advantage on saving throws against spells and other magical effects.
+
+      ***Steadfast.*** The devil can't be ***frightened*** while it can see an allied creature within 30 feet of it.
+
+      ## Actions
+
+      ***Multiattack.*** The devil makes two attacks: one with its beard and one with its glaive.
+
+      ***Beard.*** *Melee Weapon Attack* rollable(dice=1d20+5,label=+5,dicelabel=To Hit [Beard]) to hit, reach 5 ft., one creature. *Hit:* rollable(dice=1d8+2,dicelabel=Damage [Beard]) piercing damage, and the target must succeed on a DC 12 Constitution saving throw or be ***poisoned*** for 1 minute. While ***poisoned*** in this way, the target can't regain hit points. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+
+      ***Glaive.*** *Melee Weapon Attack* rollable(dice=1d20+5,label=+5,dicelabel=To Hit [Glaive]) to hit, reach 10 ft., one target. *Hit:* rollable(dice=1d10+3,dicelabel=Damage [Glaive]) slashing damage. If the target is a creature other than an undead or a construct, it must succeed on a DC 12 Constitution saving throw or lose 5 (rollable(dice=1d10,dicelabel=Glaive)) hit points at the start of each of its turns due to an infernal wound. Each time the devil hits the wounded target with this attack, the damage dealt by the wound increases by 5 (rollable(dice=1d10,dicelabel=Glaive)). Any creature can take an action to stanch the wound with a successful DC 12 Wisdom (Medicine) check. The wound also closes if the target receives magical healing.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Fiend (Devil), Lawful Evil*  
+    **Challenge** 3
+  subtype: npc
+  id: srdbeardeddevil
+  status: 1
+  order: 1
+

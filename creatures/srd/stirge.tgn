@@ -1,0 +1,39 @@
+creatures:
+- name: Stirge
+  statblock:
+    custom_statblock: |
+      **Armor Class** 14 (natural armor)  
+      **Hit Points** 2 (rollable(dice=1d4,dicelabel=Hit Points))  
+      **Speed** Walk 10 ft., Fly 40 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=4)|number(name=dex,label=Dexterity,value=16)|number(name=con,label=Constitution,value=11)|number(name=int,label=Intelligence,value=2)|number(name=wis,label=Wisdom,value=8)|number(name=cha,label=Charisma,value=6)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Senses** darkvision 60 ft., Passive Perception 9  
+      **Languages** -  
+      **Challenge** 1/8 (25 XP)  
+      **Proficiency Bonus** +2  
+
+      ## Actions
+
+      ***Blood Drain.*** *Melee Weapon Attack* rollable(dice=1d20+5,label=+5,dicelabel=To Hit [Blood Drain]) to hit, reach 5 ft., one creature. *Hit:* rollable(dice=1d4+3,dicelabel=Damage [Blood Drain]) piercing damage, and the stirge attaches to the target. While attached, the stirge doesn't attack. Instead, at the start of each of the stirge's turns, the target loses 5 (rollable(dice=1d4 + 3,dicelabel=Blood Drain)) hit points due to blood loss.
+
+      The stirge can detach itself by spending 5 feet of its movement. It does so after it drains 10 hit points of blood from the target or the target dies. A creature, including the target, can use its action to detach the stirge.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Tiny Beast, Unaligned*  
+    **Challenge** 1/8
+  subtype: npc
+  id: srdstirge
+  status: 1
+  order: 1
+

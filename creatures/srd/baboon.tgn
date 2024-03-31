@@ -1,0 +1,41 @@
+creatures:
+- name: Baboon
+  statblock:
+    custom_statblock: |
+      **Armor Class** 12  
+      **Hit Points** 3 (rollable(dice=1d6,dicelabel=Hit Points))  
+      **Speed** Walk 30 ft., Climb 30 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=8)|number(name=dex,label=Dexterity,value=14)|number(name=con,label=Constitution,value=11)|number(name=int,label=Intelligence,value=4)|number(name=wis,label=Wisdom,value=12)|number(name=cha,label=Charisma,value=6)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Senses** Passive Perception 11  
+      **Languages** -  
+      **Challenge** 0 (10 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Pack Tactics.*** The baboon has advantage on an attack roll against a creature if at least one of the baboon's allies is within 5 feet of the creature and the ally isn't ***incapacitated***.
+
+      ## Actions
+
+      ***Bite.*** *Melee Weapon Attack* rollable(dice=1d20+1,label=+1,dicelabel=To Hit [Bite]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=1d4-1,dicelabel=Damage [Bite]) piercing damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Small Beast, Unaligned*  
+    **Challenge** 0
+  subtype: npc
+  id: srdbaboon
+  status: 1
+  order: 1
+

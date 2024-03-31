@@ -1,0 +1,41 @@
+creatures:
+- name: Ghoul
+  statblock:
+    custom_statblock: |
+      **Armor Class** 12  
+      **Hit Points** 22 (rollable(dice=5d8,dicelabel=Hit Points))  
+      **Speed** 30 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=13)|number(name=dex,label=Dexterity,value=15)|number(name=con,label=Constitution,value=10)|number(name=int,label=Intelligence,value=7)|number(name=wis,label=Wisdom,value=10)|number(name=cha,label=Charisma,value=6)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Damage Immunities** poison  
+      **Condition Immunities** charmed, exhaustion, poisoned  
+      **Senses** darkvision 60 ft., Passive Perception 10  
+      **Languages** Common  
+      **Challenge** 1 (200 XP)  
+      **Proficiency Bonus** +2  
+
+      ## Actions
+
+      ***Bite.*** *Melee Weapon Attack* rollable(dice=1d20+2,label=+2,dicelabel=To Hit [Bite]) to hit, reach 5 ft., one creature. *Hit:* rollable(dice=2d6+2,dicelabel=Damage [Bite]) piercing damage.
+
+      ***Claws.*** *Melee Weapon Attack* rollable(dice=1d20+4,label=+4,dicelabel=To Hit [Claws]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=2d4+2,dicelabel=Damage [Claws]) slashing damage. If the target is a creature other than an elf or undead, it must succeed on a DC 10 Constitution saving throw or be ***paralyzed*** for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Undead, Chaotic Evil*  
+    **Challenge** 1
+  subtype: npc
+  id: srdghoul
+  status: 1
+  order: 1
+

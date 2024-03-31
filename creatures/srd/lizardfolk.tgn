@@ -1,0 +1,50 @@
+creatures:
+- name: Lizardfolk
+  statblock:
+    custom_statblock: |
+      **Armor Class** 15 (natural armor, shield)  
+      **Hit Points** 22 (rollable(dice=4d8 + 4,dicelabel=Hit Points))  
+      **Speed** Walk 30 ft., Swim 30 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=15)|number(name=dex,label=Dexterity,value=10)|number(name=con,label=Constitution,value=13)|number(name=int,label=Intelligence,value=7)|number(name=wis,label=Wisdom,value=12)|number(name=cha,label=Charisma,value=7)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Skills** Perception rollable(dice=1d20+3,label=+3,dicelabel=Perception Check), Stealth rollable(dice=1d20+4,label=+4,dicelabel=Stealth Check), Survival rollable(dice=1d20+5,label=+5,dicelabel=Survival Check)  
+      **Senses** Passive Perception 13  
+      **Languages** Draconic  
+      **Challenge** 1/2 (100 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Hold Breath.*** The lizardfolk can hold its breath for 15 minutes.
+
+      ## Actions
+
+      ***Multiattack.*** The lizardfolk makes two melee attacks, each one with a different weapon.
+
+      ***Bite.*** *Melee Weapon Attack* rollable(dice=1d20+4,label=+4,dicelabel=To Hit [Bite]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=1d6+2,dicelabel=Damage [Bite]) piercing damage.
+
+      ***Heavy Club.*** *Melee Weapon Attack* rollable(dice=1d20+4,label=+4,dicelabel=To Hit [Heavy Club]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=1d6+2,dicelabel=Damage [Heavy Club]) bludgeoning damage.
+
+      ***Javelin.*** *Melee or Ranged Weapon Attack* rollable(dice=1d20+4,label=+4,dicelabel=To Hit [Javelin]) to hit, reach 5 ft. or range 30/120 ft., one target. *Hit:* rollable(dice=1d6+2,dicelabel=Damage [Javelin]) piercing damage.
+
+      ***Spiked Shield.*** *Melee Weapon Attack* rollable(dice=1d20+4,label=+4,dicelabel=To Hit [Spiked Shield]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=1d6+2,dicelabel=Damage [Spiked Shield]) piercing damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Humanoid (Lizardfolk), Neutral*  
+    **Challenge** 1/2
+  subtype: npc
+  id: srdlizardfolk
+  status: 1
+  order: 1
+

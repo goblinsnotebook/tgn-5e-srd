@@ -1,0 +1,44 @@
+creatures:
+- name: Vulture
+  statblock:
+    custom_statblock: |
+      **Armor Class** 10  
+      **Hit Points** 5 (rollable(dice=1d8 + 1,dicelabel=Hit Points))  
+      **Speed** Walk 10 ft., Fly 50 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=7)|number(name=dex,label=Dexterity,value=10)|number(name=con,label=Constitution,value=13)|number(name=int,label=Intelligence,value=2)|number(name=wis,label=Wisdom,value=12)|number(name=cha,label=Charisma,value=4)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Skills** Perception rollable(dice=1d20+3,label=+3,dicelabel=Perception Check)  
+      **Senses** Passive Perception 13  
+      **Languages** -  
+      **Challenge** 0 (10 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Keen Sight and Smell.*** The vulture has advantage on Wisdom (Perception) checks that rely on sight or smell.
+
+      ***Pack Tactics.*** The vulture has advantage on an attack roll against a creature if at least one of the vulture's allies is within 5 feet of the creature and the ally isn't ***incapacitated***.
+
+      ## Actions
+
+      ***Beak.*** *Melee Weapon Attack* rollable(dice=1d20+2,label=+2,dicelabel=To Hit [Beak]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=1d4,dicelabel=Damage [Beak]) piercing damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Beast, Unaligned*  
+    **Challenge** 0
+  subtype: npc
+  id: srdvulture
+  status: 1
+  order: 1
+

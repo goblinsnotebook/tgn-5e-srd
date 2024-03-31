@@ -1,0 +1,46 @@
+creatures:
+- name: Hippogriff
+  statblock:
+    custom_statblock: |
+      **Armor Class** 11  
+      **Hit Points** 19 (rollable(dice=3d10 + 3,dicelabel=Hit Points))  
+      **Speed** Walk 40 ft., Fly 60 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=17)|number(name=dex,label=Dexterity,value=13)|number(name=con,label=Constitution,value=13)|number(name=int,label=Intelligence,value=2)|number(name=wis,label=Wisdom,value=12)|number(name=cha,label=Charisma,value=8)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Skills** Perception rollable(dice=1d20+5,label=+5,dicelabel=Perception Check)  
+      **Senses** Passive Perception 15  
+      **Languages** -  
+      **Challenge** 1 (200 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Keen Sight.*** The hippogriff has advantage on Wisdom (Perception) checks that rely on sight.
+
+      ## Actions
+
+      ***Multiattack.*** The hippogriff makes two attacks: one with its beak and one with its claws.
+
+      ***Beak.*** *Melee Weapon Attack* rollable(dice=1d20+5,label=+5,dicelabel=To Hit [Beak]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=1d10+3,dicelabel=Damage [Beak]) piercing damage.
+
+      ***Claws.*** *Melee Weapon Attack* rollable(dice=1d20+5,label=+5,dicelabel=To Hit [Claws]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=2d6+3,dicelabel=Damage [Claws]) slashing damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Monstrosity, Unaligned*  
+    **Challenge** 1
+  subtype: npc
+  id: srdhippogriff
+  status: 1
+  order: 1
+

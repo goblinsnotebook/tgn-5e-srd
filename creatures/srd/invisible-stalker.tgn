@@ -1,0 +1,49 @@
+creatures:
+- name: Invisible Stalker
+  statblock:
+    custom_statblock: |
+      **Armor Class** 14  
+      **Hit Points** 104 (rollable(dice=16d8 + 32,dicelabel=Hit Points))  
+      **Speed** Walk 50 ft., Fly 50 ft. (hover), Canhover True ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=16)|number(name=dex,label=Dexterity,value=19)|number(name=con,label=Constitution,value=14)|number(name=int,label=Intelligence,value=10)|number(name=wis,label=Wisdom,value=15)|number(name=cha,label=Charisma,value=11)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Skills** Perception rollable(dice=1d20+8,label=+8,dicelabel=Perception Check), Stealth rollable(dice=1d20+10,label=+10,dicelabel=Stealth Check)  
+      **Damage Resistances** bludgeoning, piercing, and slashing from nonmagical attacks  
+      **Damage Immunities** poison  
+      **Condition Immunities** exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained, unconscious  
+      **Senses** darkvision 60 ft., Passive Perception 18  
+      **Languages** Auran, understands Common but doesn't speak it  
+      **Challenge** 6 (2,300 XP)  
+      **Proficiency Bonus** +3  
+
+      ---
+
+      ***Invisibility.*** The stalker is ***invisible***.
+
+      ***Faultless Tracker.*** The stalker is given a quarry by its summoner. The stalker knows the direction and distance to its quarry as long as the two of them are on the same plane of existence. The stalker also knows the location of its summoner.
+
+      ## Actions
+
+      ***Multiattack.*** The stalker makes two slam attacks.
+
+      ***Slam.*** *Melee Weapon Attack* rollable(dice=1d20+6,label=+6,dicelabel=To Hit [Slam]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=2d6+3,dicelabel=Damage [Slam]) bludgeoning damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Elemental, Neutral*  
+    **Challenge** 6
+  subtype: npc
+  id: srdinvisiblestalker
+  status: 1
+  order: 1
+

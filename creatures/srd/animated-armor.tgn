@@ -1,0 +1,47 @@
+creatures:
+- name: Animated Armor
+  statblock:
+    custom_statblock: |
+      **Armor Class** 18 (natural armor)  
+      **Hit Points** 33 (rollable(dice=6d8 + 6,dicelabel=Hit Points))  
+      **Speed** 25 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=14)|number(name=dex,label=Dexterity,value=11)|number(name=con,label=Constitution,value=13)|number(name=int,label=Intelligence,value=1)|number(name=wis,label=Wisdom,value=3)|number(name=cha,label=Charisma,value=1)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Damage Immunities** poison, psychic  
+      **Condition Immunities** blinded, charmed, deafened, exhaustion, frightened, paralyzed, petrified, poisoned  
+      **Senses** blindsight 60 ft. (blind beyond this radius), Passive Perception 6  
+      **Languages** -  
+      **Challenge** 1 (200 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Antimagic Susceptibility.*** The armor is ***incapacitated*** while in the area of an ***antimagic field***. If targeted by ***dispel magic***, the armor must succeed on a Constitution saving throw against the caster's spell save DC or fall ***unconscious*** for 1 minute.
+
+      ***False Appearance.*** While the armor remains motionless, it is indistinguishable from a normal suit of armor.
+
+      ## Actions
+
+      ***Multiattack.*** The armor makes two melee attacks.
+
+      ***Slam.*** *Melee Weapon Attack* rollable(dice=1d20+4,label=+4,dicelabel=To Hit [Slam]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=1d6+2,dicelabel=Damage [Slam]) bludgeoning damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Construct, Unaligned*  
+    **Challenge** 1
+  subtype: npc
+  id: srdanimatedarmor
+  status: 1
+  order: 1
+

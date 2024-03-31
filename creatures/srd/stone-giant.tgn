@@ -1,0 +1,47 @@
+creatures:
+- name: Stone Giant
+  statblock:
+    custom_statblock: |
+      **Armor Class** 17 (natural armor)  
+      **Hit Points** 126 (rollable(dice=11d12 + 55,dicelabel=Hit Points))  
+      **Speed** 40 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=23)|number(name=dex,label=Dexterity,value=15)|number(name=con,label=Constitution,value=20)|number(name=int,label=Intelligence,value=10)|number(name=wis,label=Wisdom,value=12)|number(name=cha,label=Charisma,value=9)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Saving Throws** Dex rollable(dice=1d20+5,label=+5,dicelabel=Dexterity Saving Throw), Con rollable(dice=1d20+8,label=+8,dicelabel=Constitution Saving Throw), Wis rollable(dice=1d20+4,label=+4,dicelabel=Wisdom Saving Throw)  
+      **Skills** Athletics rollable(dice=1d20+12,label=+12,dicelabel=Athletics Check), Perception rollable(dice=1d20+4,label=+4,dicelabel=Perception Check)  
+      **Senses** darkvision 60 ft., Passive Perception 14  
+      **Languages** Giant  
+      **Challenge** 7 (2,900 XP)  
+      **Proficiency Bonus** +3  
+
+      ---
+
+      ***Stone Camouflage.*** The giant has advantage on Dexterity (Stealth) checks made to hide in rocky terrain.
+
+      ## Actions
+
+      ***Multiattack.*** The giant makes two greatclub attacks.
+
+      ***Greatclub.*** *Melee Weapon Attack* rollable(dice=1d20+9,label=+9,dicelabel=To Hit [Greatclub]) to hit, reach 15 ft., one target. *Hit:* rollable(dice=3d8+6,dicelabel=Damage [Greatclub]) bludgeoning damage.
+
+      ***Rock.*** *Ranged Weapon Attack* rollable(dice=1d20+9,label=+9,dicelabel=To Hit [Rock]) to hit, range 60/240 ft., one target. *Hit:* rollable(dice=4d10+6,dicelabel=Damage [Rock]) bludgeoning damage. If the target is a creature, it must succeed on a DC 17 Strength saving throw or be knocked ***prone***.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Huge Giant, Neutral*  
+    **Challenge** 7
+  subtype: npc
+  id: srdstonegiant
+  status: 1
+  order: 1
+

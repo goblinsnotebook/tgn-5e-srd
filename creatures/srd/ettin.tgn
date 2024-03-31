@@ -1,0 +1,48 @@
+creatures:
+- name: Ettin
+  statblock:
+    custom_statblock: |
+      **Armor Class** 12 (natural armor)  
+      **Hit Points** 85 (rollable(dice=10d10 + 30,dicelabel=Hit Points))  
+      **Speed** 40 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=21)|number(name=dex,label=Dexterity,value=8)|number(name=con,label=Constitution,value=17)|number(name=int,label=Intelligence,value=6)|number(name=wis,label=Wisdom,value=10)|number(name=cha,label=Charisma,value=8)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Skills** Perception rollable(dice=1d20+4,label=+4,dicelabel=Perception Check)  
+      **Senses** darkvision 60 ft., Passive Perception 14  
+      **Languages** Giant, Orc  
+      **Challenge** 4 (1,100 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Two Heads.*** The ettin has advantage on Wisdom (Perception) checks and on saving throws against being ***blinded***, ***charmed***, ***deafened***, ***frightened***, ***stunned***, and knocked ***unconscious***.
+
+      ***Wakeful.*** When one of the ettin's heads is asleep, its other head is awake.
+
+      ## Actions
+
+      ***Multiattack.*** The ettin makes two attacks: one with its battleaxe and one with its morningstar.
+
+      ***Battleaxe.*** *Melee Weapon Attack* rollable(dice=1d20+7,label=+7,dicelabel=To Hit [Battleaxe]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=2d8+5,dicelabel=Damage [Battleaxe]) slashing damage.
+
+      ***Morningstar.*** *Melee Weapon Attack* rollable(dice=1d20+7,label=+7,dicelabel=To Hit [Morningstar]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=2d8+5,dicelabel=Damage [Morningstar]) piercing damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Giant, Chaotic Evil*  
+    **Challenge** 4
+  subtype: npc
+  id: srdettin
+  status: 1
+  order: 1
+

@@ -1,0 +1,42 @@
+creatures:
+- name: Worg
+  statblock:
+    custom_statblock: |
+      **Armor Class** 13 (natural armor)  
+      **Hit Points** 26 (rollable(dice=4d10 + 4,dicelabel=Hit Points))  
+      **Speed** 50 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=16)|number(name=dex,label=Dexterity,value=13)|number(name=con,label=Constitution,value=13)|number(name=int,label=Intelligence,value=7)|number(name=wis,label=Wisdom,value=11)|number(name=cha,label=Charisma,value=8)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Skills** Perception rollable(dice=1d20+4,label=+4,dicelabel=Perception Check)  
+      **Senses** darkvision 60 ft., Passive Perception 14  
+      **Languages** Goblin, Worg  
+      **Challenge** 1/2 (100 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Keen Hearing and Smell.*** The worg has advantage on Wisdom (Perception) checks that rely on hearing or smell.
+
+      ## Actions
+
+      ***Bite.*** *Melee Weapon Attack* rollable(dice=1d20+5,label=+5,dicelabel=To Hit [Bite]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=2d6+3,dicelabel=Damage [Bite]) piercing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked ***prone***.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Monstrosity, Neutral Evil*  
+    **Challenge** 1/2
+  subtype: npc
+  id: srdworg
+  status: 1
+  order: 1
+

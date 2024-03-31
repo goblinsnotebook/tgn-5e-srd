@@ -1,0 +1,60 @@
+creatures:
+- name: Drider
+  statblock:
+    custom_statblock: |
+      **Armor Class** 19 (natural armor)  
+      **Hit Points** 123 (rollable(dice=13d10 + 52,dicelabel=Hit Points))  
+      **Speed** Walk 30 ft., Climb 30 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=16)|number(name=dex,label=Dexterity,value=16)|number(name=con,label=Constitution,value=18)|number(name=int,label=Intelligence,value=13)|number(name=wis,label=Wisdom,value=14)|number(name=cha,label=Charisma,value=12)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Skills** Perception rollable(dice=1d20+5,label=+5,dicelabel=Perception Check), Stealth rollable(dice=1d20+9,label=+9,dicelabel=Stealth Check)  
+      **Senses** darkvision 120 ft., Passive Perception 15  
+      **Languages** Elvish, Undercommon  
+      **Challenge** 6 (2,300 XP)  
+      **Proficiency Bonus** +3  
+
+      ---
+
+      ***Fey Ancestry.*** The drider has advantage on saving throws against being ***charmed***, and magic can't put the drider to sleep.
+
+      ***Spider Climb.*** The drider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.
+
+      ***Sunlight Sensitivity.*** While in sunlight, the drider has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.
+
+      ***Web Walker.*** The drider ignores movement restrictions caused by webbing.
+
+      ***Innate Spellcasting.*** The drider's innate spellcasting ability is Wisdom (spell save DC 13). The drider can innately cast the following spells, requiring no material components:
+
+
+      At will: [dancing lights](https://www.dndbeyond.com/spells/dancing-lights)  
+      1/day each: [darkness](https://www.dndbeyond.com/spells/darkness), [faerie fire](https://www.dndbeyond.com/spells/faerie-fire)  
+
+      ## Actions
+
+      ***Multiattack.*** The drider makes three attacks, either with its longsword or its longbow. It can replace one of those attacks with a bite attack.
+
+      ***Bite.*** *Melee Weapon Attack* rollable(dice=1d20+6,label=+6,dicelabel=To Hit [Bite]) to hit, reach 5 ft., one creature. *Hit:* rollable(dice=1d4,dicelabel=Damage [Bite]) piercing damage plus rollable(dice=2d8,dicelabel=Damage [Bite]) poison damage.
+
+      ***Longsword.*** *Melee Weapon Attack* rollable(dice=1d20+6,label=+6,dicelabel=To Hit [Longsword]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=1d8+3,dicelabel=Damage [Longsword]) slashing damage, or rollable(dice=1d10+3,dicelabel=Damage [Longsword]) slashing damage if used with two hands.
+
+      ***Longbow.*** *Ranged Weapon Attack* rollable(dice=1d20+6,label=+6,dicelabel=To Hit [Longbow]) to hit, range 150/600 ft., one target. *Hit:* rollable(dice=1d8+3,dicelabel=Damage [Longbow]) piercing damage plus rollable(dice=1d8,dicelabel=Damage [Longbow]) poison damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Monstrosity, Chaotic Evil*  
+    **Challenge** 6
+  subtype: npc
+  id: srddrider
+  status: 1
+  order: 1
+

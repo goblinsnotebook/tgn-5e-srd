@@ -1,0 +1,43 @@
+creatures:
+- name: Elk
+  statblock:
+    custom_statblock: |
+      **Armor Class** 10  
+      **Hit Points** 13 (rollable(dice=2d10 + 2,dicelabel=Hit Points))  
+      **Speed** 50 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=16)|number(name=dex,label=Dexterity,value=10)|number(name=con,label=Constitution,value=12)|number(name=int,label=Intelligence,value=2)|number(name=wis,label=Wisdom,value=10)|number(name=cha,label=Charisma,value=6)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Senses** Passive Perception 10  
+      **Languages** -  
+      **Challenge** 1/4 (50 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Charge.*** If the elk moves at least 20 feet straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 7 (rollable(dice=2d6,dicelabel=Charge)) damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked ***prone***.
+
+      ## Actions
+
+      ***Ram.*** *Melee Weapon Attack* rollable(dice=1d20+5,label=+5,dicelabel=To Hit [Ram]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=1d6+3,dicelabel=Damage [Ram]) bludgeoning damage.
+
+      ***Hooves.*** *Melee Weapon Attack* rollable(dice=1d20+5,label=+5,dicelabel=To Hit [Hooves]) to hit, reach 5 ft., one ***prone*** creature. *Hit:* rollable(dice=2d4+3,dicelabel=Damage [Hooves]) bludgeoning damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Beast, Unaligned*  
+    **Challenge** 1/4
+  subtype: npc
+  id: srdelk
+  status: 1
+  order: 1
+

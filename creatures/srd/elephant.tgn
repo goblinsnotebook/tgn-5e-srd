@@ -1,0 +1,43 @@
+creatures:
+- name: Elephant
+  statblock:
+    custom_statblock: |
+      **Armor Class** 12 (natural armor)  
+      **Hit Points** 76 (rollable(dice=8d12 + 24,dicelabel=Hit Points))  
+      **Speed** 40 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=22)|number(name=dex,label=Dexterity,value=9)|number(name=con,label=Constitution,value=17)|number(name=int,label=Intelligence,value=3)|number(name=wis,label=Wisdom,value=11)|number(name=cha,label=Charisma,value=6)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Senses** Passive Perception 10  
+      **Languages** -  
+      **Challenge** 4 (1,100 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Trampling Charge.*** If the elephant moves at least 20 feet straight toward a creature and then hits it with a gore attack on the same turn, that target must succeed on a DC 12 Strength saving throw or be knocked ***prone***. If the target is ***prone***, the elephant can make one stomp attack against it as a bonus action.
+
+      ## Actions
+
+      ***Gore.*** *Melee Weapon Attack* rollable(dice=1d20+8,label=+8,dicelabel=To Hit [Gore]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=3d8+6,dicelabel=Damage [Gore]) piercing damage.
+
+      ***Stomp.*** *Melee Weapon Attack* rollable(dice=1d20+8,label=+8,dicelabel=To Hit [Stomp]) to hit, reach 5 ft., one ***prone*** creature. *Hit:* rollable(dice=3d10+6,dicelabel=Damage [Stomp]) bludgeoning damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Huge Beast, Unaligned*  
+    **Challenge** 4
+  subtype: npc
+  id: srdelephant
+  status: 1
+  order: 1
+

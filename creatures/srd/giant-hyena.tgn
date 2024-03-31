@@ -1,0 +1,42 @@
+creatures:
+- name: Giant Hyena
+  statblock:
+    custom_statblock: |
+      **Armor Class** 12  
+      **Hit Points** 45 (rollable(dice=6d10 + 12,dicelabel=Hit Points))  
+      **Speed** 50 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=16)|number(name=dex,label=Dexterity,value=14)|number(name=con,label=Constitution,value=14)|number(name=int,label=Intelligence,value=2)|number(name=wis,label=Wisdom,value=12)|number(name=cha,label=Charisma,value=7)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Skills** Perception rollable(dice=1d20+3,label=+3,dicelabel=Perception Check)  
+      **Senses** Passive Perception 13  
+      **Languages** -  
+      **Challenge** 1 (200 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Rampage.*** When the hyena reduces a creature to 0 hit points with a melee attack on its turn, the hyena can take a bonus action to move up to half its speed and make a bite attack.
+
+      ## Actions
+
+      ***Bite.*** *Melee Weapon Attack* rollable(dice=1d20+5,label=+5,dicelabel=To Hit [Bite]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=2d6+3,dicelabel=Damage [Bite]) piercing damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Beast, Unaligned*  
+    **Challenge** 1
+  subtype: npc
+  id: srdgianthyena
+  status: 1
+  order: 1
+

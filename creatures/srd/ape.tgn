@@ -1,0 +1,42 @@
+creatures:
+- name: Ape
+  statblock:
+    custom_statblock: |
+      **Armor Class** 12  
+      **Hit Points** 19 (rollable(dice=3d8 + 6,dicelabel=Hit Points))  
+      **Speed** Walk 30 ft., Climb 30 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=16)|number(name=dex,label=Dexterity,value=14)|number(name=con,label=Constitution,value=14)|number(name=int,label=Intelligence,value=6)|number(name=wis,label=Wisdom,value=12)|number(name=cha,label=Charisma,value=7)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Skills** Athletics rollable(dice=1d20+5,label=+5,dicelabel=Athletics Check), Perception rollable(dice=1d20+3,label=+3,dicelabel=Perception Check)  
+      **Senses** Passive Perception 13  
+      **Languages** -  
+      **Challenge** 1/2 (100 XP)  
+      **Proficiency Bonus** +2  
+
+      ## Actions
+
+      ***Multiattack.*** The ape makes two fist attacks.
+
+      ***Fist.*** *Melee Weapon Attack* rollable(dice=1d20+5,label=+5,dicelabel=To Hit [Fist]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=1d6+3,dicelabel=Damage [Fist]) bludgeoning damage.
+
+      ***Rock.*** *Ranged Weapon Attack* rollable(dice=1d20+5,label=+5,dicelabel=To Hit [Rock]) to hit, range 25/50 ft., one target. *Hit:* rollable(dice=1d6+3,dicelabel=Damage [Rock]) bludgeoning damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Beast, Unaligned*  
+    **Challenge** 1/2
+  subtype: npc
+  id: srdape
+  status: 1
+  order: 1
+

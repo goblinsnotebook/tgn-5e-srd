@@ -1,0 +1,73 @@
+creatures:
+- name: Solar
+  statblock:
+    custom_statblock: |
+      **Armor Class** 21 (natural armor)  
+      **Hit Points** 243 (rollable(dice=18d10 + 144,dicelabel=Hit Points))  
+      **Speed** Walk 50 ft., Fly 150 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=26)|number(name=dex,label=Dexterity,value=22)|number(name=con,label=Constitution,value=26)|number(name=int,label=Intelligence,value=25)|number(name=wis,label=Wisdom,value=25)|number(name=cha,label=Charisma,value=30)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Saving Throws** Int rollable(dice=1d20+14,label=+14,dicelabel=Intelligence Saving Throw), Wis rollable(dice=1d20+14,label=+14,dicelabel=Wisdom Saving Throw), Cha rollable(dice=1d20+17,label=+17,dicelabel=Charisma Saving Throw)  
+      **Skills** Perception rollable(dice=1d20+14,label=+14,dicelabel=Perception Check)  
+      **Damage Resistances** radiant; bludgeoning, piercing, and slashing from nonmagical attacks  
+      **Damage Immunities** necrotic, poison  
+      **Condition Immunities** charmed, exhaustion, frightened, poisoned  
+      **Senses** truesight 120 ft., Passive Perception 24  
+      **Languages** all, telepathy 120 ft.  
+      **Challenge** 21 (33,000 XP)  
+      **Proficiency Bonus** +7  
+
+      ---
+
+      ***Angelic Weapons.*** The solar's weapon attacks are magical. When the solar hits with any weapon, the weapon deals an extra rollable(dice=6d8,dicelabel=Angelic Weapons) radiant damage (included in the attack).
+
+      ***Divine Awareness.*** The solar knows if it hears a lie.
+
+      ***Magic Resistance.*** The solar has advantage on saving throws against spells and other magical effects.
+
+      ***Innate Spellcasting.*** The solar's spellcasting ability is Charisma (spell save DC 25). It can innately cast the following spells, requiring no material components:
+
+
+      At will: [detect evil and good](https://www.dndbeyond.com/spells/detect-evil-and-good), [invisibility (self only)](https://www.dndbeyond.com/spells/invisibility)  
+      3/day each: [blade barrier](https://www.dndbeyond.com/spells/blade-barrier), [dispel evil and good](https://www.dndbeyond.com/spells/dispel-evil-and-good), [resurrection](https://www.dndbeyond.com/spells/resurrection)  
+      1/day each: [commune](https://www.dndbeyond.com/spells/commune), [control weather](https://www.dndbeyond.com/spells/control-weather)  
+
+      ## Actions
+
+      ***Multiattack.*** The solar makes two greatsword attacks.
+
+      ***Greatsword.*** *Melee Weapon Attack* rollable(dice=1d20+15,label=+15,dicelabel=To Hit [Greatsword]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=4d6+8,dicelabel=Damage [Greatsword]) slashing damage plus rollable(dice=6d8,dicelabel=Damage [Greatsword]) radiant damage.
+
+      ***Slaying Longbow.*** *Ranged Weapon Attack* rollable(dice=1d20+13,label=+13,dicelabel=To Hit [Slaying Longbow]) to hit, range 150/600 ft., one target. *Hit:* rollable(dice=2d8+6,dicelabel=Damage [Slaying Longbow]) piercing damage plus rollable(dice=6d8,dicelabel=Damage [Slaying Longbow]) radiant damage. If the target is a creature that has 100 hit points or fewer, it must succeed on a DC 15 Constitution saving throw or die.
+
+      ***Flying Sword.*** The solar releases its greatsword to hover magically in an unoccupied space within 5 feet of it. If the solar can see the sword, the solar can mentally command it as a bonus action to fly up to 50 feet and either make one attack against a target or return to the solar's hands. If the hovering sword is targeted by any effect, the solar is considered to be holding it. The hovering sword falls if the solar dies.
+
+      ***Healing Touch (4/Day).*** The solar touches another creature. The target magically regains 40 (rollable(dice=8d8 + 4,dicelabel=Healing Touch)) hit points and is freed from any curse, disease, poison, blindness, or deafness.
+
+      ## Legendary Actions
+
+      ***Teleport.*** The solar magically teleports, along with any equipment it is wearing or carrying, up to 120 feet to an unoccupied space it can see.
+
+      ***Searing Burst (Costs 2 Actions).*** The solar emits magical, divine energy. Each creature of its choice in a 10-foot radius must make a DC 23 Dexterity saving throw, taking rollable(dice=4d6,dicelabel=Damage [Searing Burst]) fire damage plus rollable(dice=4d6,dicelabel=Damage [Searing Burst]) radiant damage on a failed save, or half as much damage on a successful one.
+
+      ***Blinding Gaze (Costs 3 Actions).*** The solar targets one creature it can see within 30 feet of it. If the target can see it, the target must succeed on a DC 15 Constitution saving throw or be ***blinded*** until magic such as the ***lesser restoration*** spell removes the blindness.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Celestial, Lawful Good*  
+    **Challenge** 21
+  subtype: npc
+  id: srdsolar
+  status: 1
+  order: 1
+

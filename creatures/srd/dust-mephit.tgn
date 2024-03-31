@@ -1,0 +1,52 @@
+creatures:
+- name: Dust Mephit
+  statblock:
+    custom_statblock: |
+      **Armor Class** 12  
+      **Hit Points** 17 (rollable(dice=5d6,dicelabel=Hit Points))  
+      **Speed** Walk 30 ft., Fly 30 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=5)|number(name=dex,label=Dexterity,value=14)|number(name=con,label=Constitution,value=10)|number(name=int,label=Intelligence,value=9)|number(name=wis,label=Wisdom,value=11)|number(name=cha,label=Charisma,value=10)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Skills** Perception rollable(dice=1d20+2,label=+2,dicelabel=Perception Check), Stealth rollable(dice=1d20+4,label=+4,dicelabel=Stealth Check)  
+      **Damage Vulnerabilities** fire  
+      **Damage Immunities** poison  
+      **Condition Immunities** poisoned  
+      **Senses** darkvision 60 ft., Passive Perception 12  
+      **Languages** Auran, Terran  
+      **Challenge** 1/2 (100 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Death Burst.*** When the mephit dies, it explodes in a burst of dust. Each creature within 5 feet of it must then succeed on a DC 10 Constitution saving throw or be ***blinded*** for 1 minute. A ***blinded*** creature can repeat the saving throw on each of its turns, ending the effect on itself on a success.
+
+      ***Innate Spellcasting (1/Day).*** The mephit can innately cast ***sleep***, requiring no material components. Its innate spellcasting ability is Charisma.
+
+
+      At will: [sleep](https://www.dndbeyond.com/spells/sleep)  
+
+      ## Actions
+
+      ***Claws.*** *Melee Weapon Attack* rollable(dice=1d20+4,label=+4,dicelabel=To Hit [Claws]) to hit, reach 5 ft., one creature. *Hit:* rollable(dice=1d4+2,dicelabel=Damage [Claws]) slashing damage.
+
+      ***Blinding Breath (rollable(dice=1d6,label=Recharge 6,dicelabel=Recharge [Blinding Breath])).*** The mephit exhales a 15-foot cone of blinding dust. Each creature in that area must succeed on a DC 10 Dexterity saving throw or be ***blinded*** for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Small Elemental, Neutral Evil*  
+    **Challenge** 1/2
+  subtype: npc
+  id: srddustmephit
+  status: 1
+  order: 1
+

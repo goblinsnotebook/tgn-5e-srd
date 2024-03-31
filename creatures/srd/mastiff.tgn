@@ -1,0 +1,42 @@
+creatures:
+- name: Mastiff
+  statblock:
+    custom_statblock: |
+      **Armor Class** 12  
+      **Hit Points** 5 (rollable(dice=1d8 + 1,dicelabel=Hit Points))  
+      **Speed** 40 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=13)|number(name=dex,label=Dexterity,value=14)|number(name=con,label=Constitution,value=12)|number(name=int,label=Intelligence,value=3)|number(name=wis,label=Wisdom,value=12)|number(name=cha,label=Charisma,value=7)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Skills** Perception rollable(dice=1d20+3,label=+3,dicelabel=Perception Check)  
+      **Senses** Passive Perception 13  
+      **Languages** -  
+      **Challenge** 1/8 (25 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Keen Hearing and Smell.*** The mastiff has advantage on Wisdom (Perception) checks that rely on hearing or smell.
+
+      ## Actions
+
+      ***Bite.*** *Melee Weapon Attack* rollable(dice=1d20+3,label=+3,dicelabel=To Hit [Bite]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=1d6+1,dicelabel=Damage [Bite]) piercing damage. If the target is a creature, it must succeed on a DC 11 Strength saving throw or be knocked ***prone***.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Beast, Unaligned*  
+    **Challenge** 1/8
+  subtype: npc
+  id: srdmastiff
+  status: 1
+  order: 1
+

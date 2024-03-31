@@ -1,0 +1,51 @@
+creatures:
+- name: Wererat
+  statblock:
+    custom_statblock: |
+      **Armor Class** 12  
+      **Hit Points** 33 (rollable(dice=6d8 + 6,dicelabel=Hit Points))  
+      **Speed** 30 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=10)|number(name=dex,label=Dexterity,value=15)|number(name=con,label=Constitution,value=12)|number(name=int,label=Intelligence,value=11)|number(name=wis,label=Wisdom,value=10)|number(name=cha,label=Charisma,value=8)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Skills** Perception rollable(dice=1d20+2,label=+2,dicelabel=Perception Check), Stealth rollable(dice=1d20+4,label=+4,dicelabel=Stealth Check)  
+      **Damage Immunities** bludgeoning, piercing, and slashing from nonmagical attacks that aren't silvered  
+      **Senses** darkvision 60 ft. (rat form only), Passive Perception 12  
+      **Languages** Common (can't speak in rat form)  
+      **Challenge** 2 (450 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Shapechanger.*** The wererat can use its action to polymorph into a rat-humanoid hybrid or into a giant rat, or back into its true form, which is humanoid. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.
+
+      ***Keen Smell.*** The wererat has advantage on Wisdom (Perception) checks that rely on smell.
+
+      ## Actions
+
+      ***Multiattack (Humanoid or Hybrid Form Only).*** The wererat makes two attacks, only one of which can be a bite.
+
+      ***Bite (Rat or Hybrid Form Only).*** *Melee Weapon Attack* rollable(dice=1d20+4,label=+4,dicelabel=To Hit [Bite]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=1d4+2,dicelabel=Damage [Bite]) piercing damage. If the target is a humanoid, it must succeed on a DC 11 Constitution saving throw or be cursed with wererat lycanthropy.
+
+      ***Shortsword (Humanoid or Hybrid Form Only).*** *Melee Weapon Attack* rollable(dice=1d20+4,label=+4,dicelabel=To Hit [Shortsword]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=1d6+2,dicelabel=Damage [Shortsword]) piercing damage.
+
+      ***Hand Crossbow (Humanoid or Hybrid Form Only).*** *Ranged Weapon Attack* rollable(dice=1d20+4,label=+4,dicelabel=To Hit [Hand Crossbow]) to hit, range 30/120 ft., one target. *Hit:* rollable(dice=1d6+2,dicelabel=Damage [Hand Crossbow]) piercing damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Humanoid (Human, Shapechanger), Lawful Evil*  
+    **Challenge** 2
+  subtype: npc
+  id: srdwererat
+  status: 1
+  order: 1
+

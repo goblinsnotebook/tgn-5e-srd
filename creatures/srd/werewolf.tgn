@@ -1,0 +1,51 @@
+creatures:
+- name: Werewolf
+  statblock:
+    custom_statblock: |
+      **Armor Class** 11 12 (natural armor)  
+      **Hit Points** 58 (rollable(dice=9d8 + 18,dicelabel=Hit Points))  
+      **Speed** 30 ft. (40 ft. in wolf form)  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=15)|number(name=dex,label=Dexterity,value=13)|number(name=con,label=Constitution,value=14)|number(name=int,label=Intelligence,value=10)|number(name=wis,label=Wisdom,value=11)|number(name=cha,label=Charisma,value=10)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Skills** Perception rollable(dice=1d20+4,label=+4,dicelabel=Perception Check), Stealth rollable(dice=1d20+3,label=+3,dicelabel=Stealth Check)  
+      **Damage Immunities** bludgeoning, piercing, and slashing from nonmagical attacks that aren't silvered  
+      **Senses** Passive Perception 14  
+      **Languages** Common (can't speak in wolf form)  
+      **Challenge** 3 (700 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Shapechanger.*** The werewolf can use its action to polymorph into a wolf-humanoid hybrid or into a wolf, or back into its true form, which is humanoid. Its statistics, other than its AC, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.
+
+      ***Keen Hearing and Smell.*** The werewolf has advantage on Wisdom (Perception) checks that rely on hearing or smell.
+
+      ## Actions
+
+      ***Multiattack (Humanoid or Hybrid Form Only).*** The werewolf makes two attacks: two with its spear (humanoid form) or one with its bite and one with its claws (hybrid form).
+
+      ***Bite (Wolf or Hybrid Form Only).*** *Melee Weapon Attack* rollable(dice=1d20+4,label=+4,dicelabel=To Hit [Bite]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=1d8+2,dicelabel=Damage [Bite]) piercing damage. If the target is a humanoid, it must succeed on a DC 12 Constitution saving throw or be cursed with werewolf lycanthropy.
+
+      ***Claws (Hybrid Form Only).*** *Melee Weapon Attack* rollable(dice=1d20+4,label=+4,dicelabel=To Hit [Claws]) to hit, reach 5 ft., one creature. *Hit:* rollable(dice=2d4+2,dicelabel=Damage [Claws]) slashing damage.
+
+      ***Spear (Humanoid Form Only).*** *Melee or Ranged Weapon Attack* rollable(dice=1d20+4,label=+4,dicelabel=To Hit [Spear]) to hit, reach 5 ft. or range 20/60 ft., one creature. *Hit:* rollable(dice=1d6+2,dicelabel=Damage [Spear]) piercing damage, or rollable(dice=1d8+2,dicelabel=Damage [Spear]) piercing damage if used with two hands to make a melee attack.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Humanoid (Human, Shapechanger), Chaotic Evil*  
+    **Challenge** 3
+  subtype: npc
+  id: srdwerewolf
+  status: 1
+  order: 1
+

@@ -1,0 +1,52 @@
+creatures:
+- name: Deep Gnome (Svirfneblin)
+  statblock:
+    custom_statblock: |
+      **Armor Class** 15 (chain shirt)  
+      **Hit Points** 16 (rollable(dice=3d6 + 6,dicelabel=Hit Points))  
+      **Speed** 20 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=15)|number(name=dex,label=Dexterity,value=14)|number(name=con,label=Constitution,value=14)|number(name=int,label=Intelligence,value=12)|number(name=wis,label=Wisdom,value=10)|number(name=cha,label=Charisma,value=9)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Skills** Investigation rollable(dice=1d20+3,label=+3,dicelabel=Investigation Check), Perception rollable(dice=1d20+2,label=+2,dicelabel=Perception Check), Stealth rollable(dice=1d20+4,label=+4,dicelabel=Stealth Check)  
+      **Senses** darkvision 120 ft., Passive Perception 12  
+      **Languages** Gnomish, Terran, Undercommon  
+      **Challenge** 1/2 (100 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Stone Camouflage.*** The gnome has advantage on Dexterity (Stealth) checks made to hide in rocky terrain.
+
+      ***Gnome Cunning.*** The gnome has advantage on Intelligence, Wisdom, and Charisma saving throws against magic.
+
+      ***Innate Spellcasting.*** The gnome's innate spellcasting ability is Intelligence (spell save DC 11). It can innately cast the following spells, requiring no material components:
+
+
+      At will: [nondetection (self only)](https://www.dndbeyond.com/spells/nondetection)  
+      1/day each: [blindness/deafness](https://www.dndbeyond.com/spells/blindness/deafness), [blur](https://www.dndbeyond.com/spells/blur), [disguise self](https://www.dndbeyond.com/spells/disguise-self)  
+
+      ## Actions
+
+      ***War Pick.*** *Melee Weapon Attack* rollable(dice=1d20+4,label=+4,dicelabel=To Hit [War Pick]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=1d8+2,dicelabel=Damage [War Pick]) piercing damage.
+
+      ***Poisoned Dart.*** *Ranged Weapon Attack* rollable(dice=1d20+4,label=+4,dicelabel=To Hit [Poisoned Dart]) to hit, range 30/120 ft., one creature. *Hit:* rollable(dice=1d4+2,dicelabel=Damage [Poisoned Dart]) piercing damage, and the target must succeed on a DC 12 Constitution saving throw or be ***poisoned*** for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Small Humanoid (Gnome), Neutral Good*  
+    **Challenge** 1/2
+  subtype: npc
+  id: srddeepgnome(svirfneblin)
+  status: 1
+  order: 1
+

@@ -1,0 +1,37 @@
+creatures:
+- name: Cockatrice
+  statblock:
+    custom_statblock: |
+      **Armor Class** 11  
+      **Hit Points** 27 (rollable(dice=6d6 + 6,dicelabel=Hit Points))  
+      **Speed** Walk 20 ft., Fly 40 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=6)|number(name=dex,label=Dexterity,value=12)|number(name=con,label=Constitution,value=12)|number(name=int,label=Intelligence,value=2)|number(name=wis,label=Wisdom,value=13)|number(name=cha,label=Charisma,value=5)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Senses** darkvision 60 ft., Passive Perception 11  
+      **Languages** -  
+      **Challenge** 1/2 (100 XP)  
+      **Proficiency Bonus** +2  
+
+      ## Actions
+
+      ***Bite.*** *Melee Weapon Attack* rollable(dice=1d20+3,label=+3,dicelabel=To Hit [Bite]) to hit, reach 5 ft., one creature. *Hit:* rollable(dice=1d4+1,dicelabel=Damage [Bite]) piercing damage, and the target must succeed on a DC 11 Constitution saving throw against being magically ***petrified***. On a failed save, the creature begins to turn to stone and is ***restrained***. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is ***petrified*** for 24 hours.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Small Monstrosity, Unaligned*  
+    **Challenge** 1/2
+  subtype: npc
+  id: srdcockatrice
+  status: 1
+  order: 1
+

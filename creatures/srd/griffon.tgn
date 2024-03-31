@@ -1,0 +1,46 @@
+creatures:
+- name: Griffon
+  statblock:
+    custom_statblock: |
+      **Armor Class** 12  
+      **Hit Points** 59 (rollable(dice=7d10 + 21,dicelabel=Hit Points))  
+      **Speed** Walk 30 ft., Fly 80 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=18)|number(name=dex,label=Dexterity,value=15)|number(name=con,label=Constitution,value=16)|number(name=int,label=Intelligence,value=2)|number(name=wis,label=Wisdom,value=13)|number(name=cha,label=Charisma,value=8)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Skills** Perception rollable(dice=1d20+5,label=+5,dicelabel=Perception Check)  
+      **Senses** darkvision 60 ft., Passive Perception 15  
+      **Languages** -  
+      **Challenge** 2 (450 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Keen Sight.*** The griffon has advantage on Wisdom (Perception) checks that rely on sight.
+
+      ## Actions
+
+      ***Multiattack.*** The griffon makes two attacks: one with its beak and one with its claws.
+
+      ***Beak.*** *Melee Weapon Attack* rollable(dice=1d20+6,label=+6,dicelabel=To Hit [Beak]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=1d8+4,dicelabel=Damage [Beak]) piercing damage.
+
+      ***Claws.*** *Melee Weapon Attack* rollable(dice=1d20+6,label=+6,dicelabel=To Hit [Claws]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=2d6+4,dicelabel=Damage [Claws]) slashing damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Monstrosity, Unaligned*  
+    **Challenge** 2
+  subtype: npc
+  id: srdgriffon
+  status: 1
+  order: 1
+

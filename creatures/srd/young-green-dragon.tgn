@@ -1,0 +1,51 @@
+creatures:
+- name: Young Green Dragon
+  statblock:
+    custom_statblock: |
+      **Armor Class** 18 (natural armor)  
+      **Hit Points** 136 (rollable(dice=16d10 + 48,dicelabel=Hit Points))  
+      **Speed** Walk 40 ft., Fly 80 ft., Swim 40 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=19)|number(name=dex,label=Dexterity,value=12)|number(name=con,label=Constitution,value=17)|number(name=int,label=Intelligence,value=16)|number(name=wis,label=Wisdom,value=13)|number(name=cha,label=Charisma,value=15)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Saving Throws** Dex rollable(dice=1d20+4,label=+4,dicelabel=Dexterity Saving Throw), Con rollable(dice=1d20+6,label=+6,dicelabel=Constitution Saving Throw), Wis rollable(dice=1d20+4,label=+4,dicelabel=Wisdom Saving Throw), Cha rollable(dice=1d20+5,label=+5,dicelabel=Charisma Saving Throw)  
+      **Skills** Deception rollable(dice=1d20+5,label=+5,dicelabel=Deception Check), Perception rollable(dice=1d20+7,label=+7,dicelabel=Perception Check), Stealth rollable(dice=1d20+4,label=+4,dicelabel=Stealth Check)  
+      **Damage Immunities** poison  
+      **Condition Immunities** poisoned  
+      **Senses** blindsight 30 ft., darkvision 120 ft., Passive Perception 17  
+      **Languages** Common, Draconic  
+      **Challenge** 8 (3,900 XP)  
+      **Proficiency Bonus** +3  
+
+      ---
+
+      ***Amphibious.*** The dragon can breathe air and water.
+
+      ## Actions
+
+      ***Multiattack.*** The dragon makes three attacks: one with its bite and two with its claws.
+
+      ***Bite.*** *Melee Weapon Attack* rollable(dice=1d20+7,label=+7,dicelabel=To Hit [Bite]) to hit, reach 10 ft., one target. *Hit:* rollable(dice=2d10+4,dicelabel=Damage [Bite]) piercing damage plus rollable(dice=2d6,dicelabel=Damage [Bite]) poison damage.
+
+      ***Claw.*** *Melee Weapon Attack* rollable(dice=1d20+7,label=+7,dicelabel=To Hit [Claw]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=2d6+4,dicelabel=Damage [Claw]) slashing damage.
+
+      ***Poison Breath (rollable(dice=1d6,label=Recharge 5-6,dicelabel=Recharge [Poison Breath])).*** The dragon exhales poisonous gas in a 30-foot cone. Each creature in that area must make a DC 14 Constitution saving throw, taking rollable(dice=12d6,dicelabel=Damage [Poison Breath]) poison damage on a failed save, or half as much damage on a successful one.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Dragon, Lawful Evil*  
+    **Challenge** 8
+  subtype: npc
+  id: srdyounggreendragon
+  status: 1
+  order: 1
+

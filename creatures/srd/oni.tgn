@@ -1,0 +1,57 @@
+creatures:
+- name: Oni
+  statblock:
+    custom_statblock: |
+      **Armor Class** 16 (chain mail)  
+      **Hit Points** 110 (rollable(dice=13d10 + 39,dicelabel=Hit Points))  
+      **Speed** Walk 30 ft., Fly 30 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=19)|number(name=dex,label=Dexterity,value=11)|number(name=con,label=Constitution,value=16)|number(name=int,label=Intelligence,value=14)|number(name=wis,label=Wisdom,value=12)|number(name=cha,label=Charisma,value=15)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Saving Throws** Dex rollable(dice=1d20+3,label=+3,dicelabel=Dexterity Saving Throw), Con rollable(dice=1d20+6,label=+6,dicelabel=Constitution Saving Throw), Wis rollable(dice=1d20+4,label=+4,dicelabel=Wisdom Saving Throw), Cha rollable(dice=1d20+5,label=+5,dicelabel=Charisma Saving Throw)  
+      **Skills** Arcana rollable(dice=1d20+5,label=+5,dicelabel=Arcana Check), Deception rollable(dice=1d20+8,label=+8,dicelabel=Deception Check), Perception rollable(dice=1d20+4,label=+4,dicelabel=Perception Check)  
+      **Senses** darkvision 60 ft., Passive Perception 14  
+      **Languages** Common, Giant  
+      **Challenge** 7 (2,900 XP)  
+      **Proficiency Bonus** +3  
+
+      ---
+
+      ***Magic Weapons.*** The oni's weapon attacks are magical.
+
+      ***Regeneration.*** The oni regains 10 hit points at the start of its turn if it has at least 1 hit point.
+
+      ***Innate Spellcasting.*** The oni's innate spellcasting ability is Charisma (spell save DC 13). The oni can innately cast the following spells, requiring no material components:
+
+
+      At will: [darkness](https://www.dndbeyond.com/spells/darkness), [invisibility](https://www.dndbeyond.com/spells/invisibility)  
+      1/day each: [charm person](https://www.dndbeyond.com/spells/charm-person), [cone of cold](https://www.dndbeyond.com/spells/cone-of-cold), [gaseous form](https://www.dndbeyond.com/spells/gaseous-form), [sleep](https://www.dndbeyond.com/spells/sleep)  
+
+      ## Actions
+
+      ***Multiattack.*** The oni makes two attacks, either with its claws or its glaive.
+
+      ***Claw (Oni Form Only).*** *Melee Weapon Attack* rollable(dice=1d20+7,label=+7,dicelabel=To Hit [Claw]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=1d8+4,dicelabel=Damage [Claw]) slashing damage.
+
+      ***Glaive.*** *Melee Weapon Attack* rollable(dice=1d20+7,label=+7,dicelabel=To Hit [Glaive]) to hit, reach 10 ft., one target. *Hit:* rollable(dice=2d10+4,dicelabel=Damage [Glaive]) slashing damage, or rollable(dice=1d10+4,dicelabel=Damage [Glaive]) slashing damage in Small or Medium form.
+
+      ***Change Shape.*** The oni magically polymorphs into a Small or Medium humanoid, into a Large giant, or back into its true form. Other than its size, its statistics are the same in each form. The only equipment that is transformed is its glaive, which shrinks so that it can be wielded in humanoid form. If the oni dies, it reverts to its true form, and its glaive reverts to its normal size.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Giant, Lawful Evil*  
+    **Challenge** 7
+  subtype: npc
+  id: srdoni
+  status: 1
+  order: 1
+

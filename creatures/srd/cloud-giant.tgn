@@ -1,0 +1,54 @@
+creatures:
+- name: Cloud Giant
+  statblock:
+    custom_statblock: |
+      **Armor Class** 14 (natural armor)  
+      **Hit Points** 200 (rollable(dice=16d12 + 96,dicelabel=Hit Points))  
+      **Speed** 40 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=27)|number(name=dex,label=Dexterity,value=10)|number(name=con,label=Constitution,value=22)|number(name=int,label=Intelligence,value=12)|number(name=wis,label=Wisdom,value=16)|number(name=cha,label=Charisma,value=16)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Saving Throws** Con rollable(dice=1d20+10,label=+10,dicelabel=Constitution Saving Throw), Wis rollable(dice=1d20+7,label=+7,dicelabel=Wisdom Saving Throw), Cha rollable(dice=1d20+7,label=+7,dicelabel=Charisma Saving Throw)  
+      **Skills** Insight rollable(dice=1d20+7,label=+7,dicelabel=Insight Check), Perception rollable(dice=1d20+7,label=+7,dicelabel=Perception Check)  
+      **Senses** Passive Perception 17  
+      **Languages** Common, Giant  
+      **Challenge** 9 (5,000 XP)  
+      **Proficiency Bonus** +4  
+
+      ---
+
+      ***Keen Smell.*** The giant has advantage on Wisdom (Perception) checks that rely on smell.
+
+      ***Innate Spellcasting.*** The giant's innate spellcasting ability is Charisma. It can innately cast the following spells, requiring no material components:
+
+
+      At will: [detect magic](https://www.dndbeyond.com/spells/detect-magic), [fog cloud](https://www.dndbeyond.com/spells/fog-cloud), [light](https://www.dndbeyond.com/spells/light)  
+      3/day each: [feather fall](https://www.dndbeyond.com/spells/feather-fall), [fly](https://www.dndbeyond.com/spells/fly), [misty step](https://www.dndbeyond.com/spells/misty-step), [telekinesis](https://www.dndbeyond.com/spells/telekinesis)  
+      1/day each: [control weather](https://www.dndbeyond.com/spells/control-weather), [gaseous form](https://www.dndbeyond.com/spells/gaseous-form)  
+
+      ## Actions
+
+      ***Multiattack.*** The giant makes two morningstar attacks.
+
+      ***Morningstar.*** *Melee Weapon Attack* rollable(dice=1d20+12,label=+12,dicelabel=To Hit [Morningstar]) to hit, reach 10 ft., one target. *Hit:* rollable(dice=3d8+8,dicelabel=Damage [Morningstar]) piercing damage.
+
+      ***Rock.*** *Ranged Weapon Attack* rollable(dice=1d20+12,label=+12,dicelabel=To Hit [Rock]) to hit, range 60/240 ft., one target. *Hit:* rollable(dice=4d10+8,dicelabel=Damage [Rock]) bludgeoning damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Huge Giant*  
+    **Challenge** 9
+  subtype: npc
+  id: srdcloudgiant
+  status: 1
+  order: 1
+

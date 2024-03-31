@@ -1,0 +1,48 @@
+creatures:
+- name: Octopus
+  statblock:
+    custom_statblock: |
+      **Armor Class** 12  
+      **Hit Points** 3 (rollable(dice=1d6,dicelabel=Hit Points))  
+      **Speed** Walk 5 ft., Swim 30 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=4)|number(name=dex,label=Dexterity,value=15)|number(name=con,label=Constitution,value=11)|number(name=int,label=Intelligence,value=3)|number(name=wis,label=Wisdom,value=10)|number(name=cha,label=Charisma,value=4)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Skills** Perception rollable(dice=1d20+2,label=+2,dicelabel=Perception Check), Stealth rollable(dice=1d20+4,label=+4,dicelabel=Stealth Check)  
+      **Senses** darkvision 30 ft., Passive Perception 12  
+      **Languages** -  
+      **Challenge** 0 (10 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Hold Breath.*** While out of water, the octopus can hold its breath for 30 minutes.
+
+      ***Underwater Camouflage.*** The octopus has advantage on Dexterity (Stealth) checks made while underwater.
+
+      ***Water Breathing.*** The octopus can breathe only underwater.
+
+      ## Actions
+
+      ***Tentacles.*** *Melee Weapon Attack* rollable(dice=1d20+4,label=+4,dicelabel=To Hit [Tentacles]) to hit, reach 5 ft., one target. *Hit:* 1 bludgeoning damage, and the target is ***grappled*** (escape DC 10). Until this grapple ends, the octopus can't use its tentacles on another target.
+
+      ***Ink Cloud (Recharges after a Short or Long Rest).*** A 5-foot-radius cloud of ink extends all around the octopus if it is underwater. The area is heavily obscured for 1 minute, although a significant current can disperse the ink. After releasing the ink, the octopus can use the Dash action as a bonus action.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Small Beast, Unaligned*  
+    **Challenge** 0
+  subtype: npc
+  id: srdoctopus
+  status: 1
+  order: 1
+

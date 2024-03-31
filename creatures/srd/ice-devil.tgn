@@ -1,0 +1,59 @@
+creatures:
+- name: Ice Devil
+  statblock:
+    custom_statblock: |
+      **Armor Class** 18 (natural armor)  
+      **Hit Points** 180 (rollable(dice=19d10 + 76,dicelabel=Hit Points))  
+      **Speed** 40 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=21)|number(name=dex,label=Dexterity,value=14)|number(name=con,label=Constitution,value=18)|number(name=int,label=Intelligence,value=18)|number(name=wis,label=Wisdom,value=15)|number(name=cha,label=Charisma,value=18)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Saving Throws** Dex rollable(dice=1d20+7,label=+7,dicelabel=Dexterity Saving Throw), Con rollable(dice=1d20+9,label=+9,dicelabel=Constitution Saving Throw), Wis rollable(dice=1d20+7,label=+7,dicelabel=Wisdom Saving Throw), Cha rollable(dice=1d20+9,label=+9,dicelabel=Charisma Saving Throw)  
+      **Damage Resistances** bludgeoning, piercing, and slashing from nonmagical attacks that aren't silvered  
+      **Damage Immunities** fire, poison, cold  
+      **Condition Immunities** poisoned  
+      **Senses** blindsight 60 ft., darkvision 120 ft., Passive Perception 12  
+      **Languages** Infernal, telepathy 120 ft.  
+      **Challenge** 14 (11,500 XP)  
+      **Proficiency Bonus** +5  
+
+      ---
+
+      ***Devil's Sight.*** Magical darkness doesn't impede the devil's darkvision.
+
+      ***Magic Resistance.*** The devil has advantage on saving throws against spells and other magical effects.
+
+      ## Actions
+
+      ***Multiattack.*** The devil makes three attacks: one with its bite, one with its claws, and one with its tail.
+
+      ***Bite.*** *Melee Weapon Attack* rollable(dice=1d20+10,label=+10,dicelabel=To Hit [Bite]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=2d6+5,dicelabel=Damage [Bite]) piercing damage plus rollable(dice=3d6,dicelabel=Damage [Bite]) cold damage.
+
+      ***Claws.*** *Melee Weapon Attack* rollable(dice=1d20+10,label=+10,dicelabel=To Hit [Claws]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=2d4+5,dicelabel=Damage [Claws]) slashing damage plus rollable(dice=3d6,dicelabel=Damage [Claws]) cold damage.
+
+      ***Tail.*** *Melee Weapon Attack* rollable(dice=1d20+10,label=+10,dicelabel=To Hit [Tail]) to hit, reach 10 ft., one target. *Hit:* rollable(dice=2d6+5,dicelabel=Damage [Tail]) bludgeoning damage plus rollable(dice=3d6,dicelabel=Damage [Tail]) cold damage.
+
+      ***Wall of Ice (rollable(dice=1d6,label=Recharge 6,dicelabel=Recharge [Wall of Ice])).*** The devil magically forms an opaque wall of ice on a solid surface it can see within 60 feet of it. The wall is 1 foot thick and up to 30 feet long and 10 feet high, or it's a hemispherical dome up to 20 feet in diameter.
+
+      When the wall appears, each creature in its space is pushed out of it by the shortest route. The creature chooses which side of the wall to end up on, unless the creature is ***incapacitated***. The creature then makes a DC 17 Dexterity saving throw, taking rollable(dice=10d6,dicelabel=Damage [Wall of Ice]) cold damage on a failed save, or half as much damage on a successful one.
+
+      The wall lasts for 1 minute or until the devil is ***incapacitated*** or dies. The wall can be damaged and breached; each 10-foot section has AC 5, 30 hit points, vulnerability to fire damage, and immunity to acid, cold, necrotic, poison, and psychic damage. If a section is destroyed, it leaves behind a sheet of frigid air in the space the wall occupied. Whenever a creature finishes moving through the frigid air on a turn, willingly or otherwise, the creature must make a DC 17 Constitution saving throw, taking rollable(dice=5d6,dicelabel=Damage [Wall of Ice]) cold damage on a failed save, or half as much damage on a successful one. The frigid air dissipates when the rest of the wall vanishes.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Fiend (Devil), Lawful Evil*  
+    **Challenge** 14
+  subtype: npc
+  id: srdicedevil
+  status: 1
+  order: 1
+

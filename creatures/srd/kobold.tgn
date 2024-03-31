@@ -1,0 +1,45 @@
+creatures:
+- name: Kobold
+  statblock:
+    custom_statblock: |
+      **Armor Class** 12  
+      **Hit Points** 5 (rollable(dice=2d6 - 2,dicelabel=Hit Points))  
+      **Speed** 30 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=7)|number(name=dex,label=Dexterity,value=15)|number(name=con,label=Constitution,value=9)|number(name=int,label=Intelligence,value=8)|number(name=wis,label=Wisdom,value=7)|number(name=cha,label=Charisma,value=8)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Senses** darkvision 60 ft., Passive Perception 8  
+      **Languages** Common, Draconic  
+      **Challenge** 1/8 (25 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Sunlight Sensitivity.*** While in sunlight, the kobold has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.
+
+      ***Pack Tactics.*** The kobold has advantage on an attack roll against a creature if at least one of the kobold's allies is within 5 feet of the creature and the ally isn't ***incapacitated***.
+
+      ## Actions
+
+      ***Dagger.*** *Melee Weapon Attack* rollable(dice=1d20+4,label=+4,dicelabel=To Hit [Dagger]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=1d4+2,dicelabel=Damage [Dagger]) piercing damage.
+
+      ***Sling.*** *Ranged Weapon Attack* rollable(dice=1d20+4,label=+4,dicelabel=To Hit [Sling]) to hit, range 30/120 ft., one target. *Hit:* rollable(dice=1d4+2,dicelabel=Damage [Sling]) bludgeoning damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Small Humanoid (Kobold), Lawful Evil*  
+    **Challenge** 1/8
+  subtype: npc
+  id: srdkobold
+  status: 1
+  order: 1
+

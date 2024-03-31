@@ -1,0 +1,44 @@
+creatures:
+- name: Fire Giant
+  statblock:
+    custom_statblock: |
+      **Armor Class** 18 (plate armor)  
+      **Hit Points** 162 (rollable(dice=13d12 + 78,dicelabel=Hit Points))  
+      **Speed** 30 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=25)|number(name=dex,label=Dexterity,value=9)|number(name=con,label=Constitution,value=23)|number(name=int,label=Intelligence,value=10)|number(name=wis,label=Wisdom,value=14)|number(name=cha,label=Charisma,value=13)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Saving Throws** Dex rollable(dice=1d20+3,label=+3,dicelabel=Dexterity Saving Throw), Con rollable(dice=1d20+10,label=+10,dicelabel=Constitution Saving Throw), Cha rollable(dice=1d20+5,label=+5,dicelabel=Charisma Saving Throw)  
+      **Skills** Athletics rollable(dice=1d20+11,label=+11,dicelabel=Athletics Check), Perception rollable(dice=1d20+6,label=+6,dicelabel=Perception Check)  
+      **Damage Immunities** fire  
+      **Senses** Passive Perception 16  
+      **Languages** Giant  
+      **Challenge** 9 (5,000 XP)  
+      **Proficiency Bonus** +4  
+
+      ## Actions
+
+      ***Multiattack.*** The giant makes two greatsword attacks.
+
+      ***Greatsword.*** *Melee Weapon Attack* rollable(dice=1d20+11,label=+11,dicelabel=To Hit [Greatsword]) to hit, reach 10 ft., one target. *Hit:* rollable(dice=6d6+7,dicelabel=Damage [Greatsword]) slashing damage.
+
+      ***Rock.*** *Ranged Weapon Attack* rollable(dice=1d20+11,label=+11,dicelabel=To Hit [Rock]) to hit, range 60/240 ft., one target. *Hit:* rollable(dice=4d10+7,dicelabel=Damage [Rock]) bludgeoning damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Huge Giant, Lawful Evil*  
+    **Challenge** 9
+  subtype: npc
+  id: srdfiregiant
+  status: 1
+  order: 1
+

@@ -1,0 +1,54 @@
+creatures:
+- name: Efreeti
+  statblock:
+    custom_statblock: |
+      **Armor Class** 17 (natural armor)  
+      **Hit Points** 200 (rollable(dice=16d10 + 112,dicelabel=Hit Points))  
+      **Speed** Walk 40 ft., Fly 60 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=22)|number(name=dex,label=Dexterity,value=12)|number(name=con,label=Constitution,value=24)|number(name=int,label=Intelligence,value=16)|number(name=wis,label=Wisdom,value=15)|number(name=cha,label=Charisma,value=16)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Saving Throws** Int rollable(dice=1d20+7,label=+7,dicelabel=Intelligence Saving Throw), Wis rollable(dice=1d20+6,label=+6,dicelabel=Wisdom Saving Throw), Cha rollable(dice=1d20+7,label=+7,dicelabel=Charisma Saving Throw)  
+      **Damage Immunities** fire  
+      **Senses** darkvision 120 ft., Passive Perception 12  
+      **Languages** Ignan  
+      **Challenge** 11 (7,200 XP)  
+      **Proficiency Bonus** +4  
+
+      ---
+
+      ***Elemental Demise.*** If the efreeti dies, its body disintegrates in a flash of fire and puff of smoke, leaving behind only equipment the efreeti was wearing or carrying.
+
+      ***Innate Spellcasting.*** The efreeti's innate spellcasting ability is Charisma (spell save DC 15, rollable(dice=1d20+7,label=+7,dicelabel=To Hit [Spell Attack]) to hit with spell attacks). It can innately cast the following spells, requiring no material components:
+
+
+      At will: [detect magic](https://www.dndbeyond.com/spells/detect-magic)  
+      3/day each: [enlarge/reduce](https://www.dndbeyond.com/spells/enlarge/reduce), [tongues](https://www.dndbeyond.com/spells/tongues)  
+      1/day each: [conjure elemental (*fire elemental* only)](https://www.dndbeyond.com/spells/conjure-elemental), [gaseous form](https://www.dndbeyond.com/spells/gaseous-form), [invisibility](https://www.dndbeyond.com/spells/invisibility), [major image](https://www.dndbeyond.com/spells/major-image), [plane shift](https://www.dndbeyond.com/spells/plane-shift), [wall of fire](https://www.dndbeyond.com/spells/wall-of-fire)  
+
+      ## Actions
+
+      ***Multiattack.*** The efreeti makes two scimitar attacks or uses its Hurl Flame twice.
+
+      ***Scimitar.*** *Melee Weapon Attack* rollable(dice=1d20+10,label=+10,dicelabel=To Hit [Scimitar]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=2d6+6,dicelabel=Damage [Scimitar]) slashing damage plus rollable(dice=2d6,dicelabel=Damage [Scimitar]) fire damage.
+
+      ***Hurl Flame.*** *Ranged Spell Attack* rollable(dice=1d20+7,label=+7,dicelabel=To Hit [Hurl Flame]) to hit, range 120 ft., one target. *Hit:* rollable(dice=5d6,dicelabel=Damage [Hurl Flame]) fire damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Elemental, Lawful Evil*  
+    **Challenge** 11
+  subtype: npc
+  id: srdefreeti
+  status: 1
+  order: 1
+

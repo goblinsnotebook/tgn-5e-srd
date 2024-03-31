@@ -1,0 +1,44 @@
+creatures:
+- name: Goblin
+  statblock:
+    custom_statblock: |
+      **Armor Class** 15 (leather armor, shield)  
+      **Hit Points** 7 (rollable(dice=2d6,dicelabel=Hit Points))  
+      **Speed** 30 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=8)|number(name=dex,label=Dexterity,value=14)|number(name=con,label=Constitution,value=10)|number(name=int,label=Intelligence,value=10)|number(name=wis,label=Wisdom,value=8)|number(name=cha,label=Charisma,value=8)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Skills** Stealth rollable(dice=1d20+6,label=+6,dicelabel=Stealth Check)  
+      **Senses** darkvision 60 ft., Passive Perception 9  
+      **Languages** Common, Goblin  
+      **Challenge** 1/4 (50 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Nimble Escape.*** The goblin can take the Disengage or Hide action as a bonus action on each of its turns.
+
+      ## Actions
+
+      ***Scimitar.*** *Melee Weapon Attack* rollable(dice=1d20+4,label=+4,dicelabel=To Hit [Scimitar]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=1d6+2,dicelabel=Damage [Scimitar]) slashing damage.
+
+      ***Shortbow.*** *Ranged Weapon Attack* rollable(dice=1d20+4,label=+4,dicelabel=To Hit [Shortbow]) to hit, range 80/320 ft., one target. *Hit:* rollable(dice=1d6+2,dicelabel=Damage [Shortbow]) piercing damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Small Humanoid (Goblinoid), Neutral Evil*  
+    **Challenge** 1/4
+  subtype: npc
+  id: srdgoblin
+  status: 1
+  order: 1
+

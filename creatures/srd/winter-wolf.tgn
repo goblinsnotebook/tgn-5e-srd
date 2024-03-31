@@ -1,0 +1,49 @@
+creatures:
+- name: Winter Wolf
+  statblock:
+    custom_statblock: |
+      **Armor Class** 13 (natural armor)  
+      **Hit Points** 75 (rollable(dice=10d10 + 20,dicelabel=Hit Points))  
+      **Speed** 50 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=18)|number(name=dex,label=Dexterity,value=13)|number(name=con,label=Constitution,value=14)|number(name=int,label=Intelligence,value=7)|number(name=wis,label=Wisdom,value=12)|number(name=cha,label=Charisma,value=8)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Skills** Perception rollable(dice=1d20+5,label=+5,dicelabel=Perception Check), Stealth rollable(dice=1d20+3,label=+3,dicelabel=Stealth Check)  
+      **Damage Immunities** cold  
+      **Senses** Passive Perception 15  
+      **Languages** Common, Giant, Winter Wolf  
+      **Challenge** 3 (700 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Keen Hearing and Smell.*** The wolf has advantage on Wisdom (Perception) checks that rely on hearing or smell.
+
+      ***Pack Tactics.*** The wolf has advantage on an attack roll against a creature if at least one of the wolf's allies is within 5 feet of the creature and the ally isn't ***incapacitated***.
+
+      ***Snow Camouflage.*** The wolf has advantage on Dexterity (Stealth) checks made to hide in snowy terrain.
+
+      ## Actions
+
+      ***Bite.*** *Melee Weapon Attack* rollable(dice=1d20+6,label=+6,dicelabel=To Hit [Bite]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=2d6+4,dicelabel=Damage [Bite]) piercing damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be knocked ***prone***.
+
+      ***Cold Breath (rollable(dice=1d6,label=Recharge 5-6,dicelabel=Recharge [Cold Breath])).*** The wolf exhales a blast of freezing wind in a 15-foot cone. Each creature in that area must make a DC 12 Dexterity saving throw, taking rollable(dice=4d8,dicelabel=Damage [Cold Breath]) cold damage on a failed save, or half as much damage on a successful one.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Monstrosity, Neutral Evil*  
+    **Challenge** 3
+  subtype: npc
+  id: srdwinterwolf
+  status: 1
+  order: 1
+

@@ -1,0 +1,46 @@
+creatures:
+- name: Giant Frog
+  statblock:
+    custom_statblock: |
+      **Armor Class** 11  
+      **Hit Points** 18 (rollable(dice=4d8,dicelabel=Hit Points))  
+      **Speed** Walk 30 ft., Swim 30 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=12)|number(name=dex,label=Dexterity,value=13)|number(name=con,label=Constitution,value=11)|number(name=int,label=Intelligence,value=2)|number(name=wis,label=Wisdom,value=10)|number(name=cha,label=Charisma,value=3)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Skills** Perception rollable(dice=1d20+2,label=+2,dicelabel=Perception Check), Stealth rollable(dice=1d20+3,label=+3,dicelabel=Stealth Check)  
+      **Senses** darkvision 30 ft., Passive Perception 12  
+      **Languages** -  
+      **Challenge** 1/4 (50 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Amphibious.*** The frog can breathe air and water.
+
+      ***Standing Leap.*** The frog's long jump is up to 20 feet and its high jump is up to 10 feet, with or without a running start.
+
+      ## Actions
+
+      ***Bite.*** *Melee Weapon Attack* rollable(dice=1d20+3,label=+3,dicelabel=To Hit [Bite]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=1d6+1,dicelabel=Damage [Bite]) piercing damage, and the target is ***grappled*** (escape DC 11). Until this grapple ends, the target is ***restrained***, and the frog can't bite another target.
+
+      ***Swallow.*** The frog makes one bite attack against a Small or smaller target it is grappling. If the attack hits, the target is swallowed, and the grapple ends. The swallowed target is ***blinded*** and ***restrained***, it has total cover against attacks and other effects outside the frog, and it takes rollable(dice=2d4,dicelabel=Damage [Swallow]) acid damage at the start of each of the frog's turns. The frog can have only one target swallowed at a time. If the frog dies, a swallowed creature is no longer ***restrained*** by it and can escape from the corpse using 5 feet of movement, exiting ***prone***.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Beast, Unaligned*  
+    **Challenge** 1/4
+  subtype: npc
+  id: srdgiantfrog
+  status: 1
+  order: 1
+

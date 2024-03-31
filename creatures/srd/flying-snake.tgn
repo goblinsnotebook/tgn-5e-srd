@@ -1,0 +1,41 @@
+creatures:
+- name: Flying Snake
+  statblock:
+    custom_statblock: |
+      **Armor Class** 14  
+      **Hit Points** 5 (rollable(dice=2d4,dicelabel=Hit Points))  
+      **Speed** Walk 30 ft., Fly 60 ft., Swim 30 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=4)|number(name=dex,label=Dexterity,value=18)|number(name=con,label=Constitution,value=11)|number(name=int,label=Intelligence,value=2)|number(name=wis,label=Wisdom,value=12)|number(name=cha,label=Charisma,value=5)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Senses** blindsight 10 ft., Passive Perception 11  
+      **Languages** -  
+      **Challenge** 1/8 (25 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Flyby.*** The snake doesn't provoke opportunity attacks when it flies out of an enemy's reach.
+
+      ## Actions
+
+      ***Bite.*** *Melee Weapon Attack* rollable(dice=1d20+6,label=+6,dicelabel=To Hit [Bite]) to hit, reach 5 ft., one target. *Hit:* 1 piercing damage plus rollable(dice=3d4,dicelabel=Damage [Bite]) poison damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Tiny Beast, Unaligned*  
+    **Challenge** 1/8
+  subtype: npc
+  id: srdflyingsnake
+  status: 1
+  order: 1
+

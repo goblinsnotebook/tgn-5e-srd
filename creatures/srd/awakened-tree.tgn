@@ -1,0 +1,43 @@
+creatures:
+- name: Awakened Tree
+  statblock:
+    custom_statblock: |
+      **Armor Class** 13 (natural armor)  
+      **Hit Points** 59 (rollable(dice=7d12 + 14,dicelabel=Hit Points))  
+      **Speed** 20 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=19)|number(name=dex,label=Dexterity,value=6)|number(name=con,label=Constitution,value=15)|number(name=int,label=Intelligence,value=10)|number(name=wis,label=Wisdom,value=10)|number(name=cha,label=Charisma,value=7)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Damage Vulnerabilities** fire  
+      **Damage Resistances** bludgeoning, piercing  
+      **Senses** Passive Perception 10  
+      **Languages** one language known by its creator  
+      **Challenge** 2 (450 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***False Appearance.*** While the tree remains motionless, it is indistinguishable from a normal tree.
+
+      ## Actions
+
+      ***Slam.*** *Melee Weapon Attack* rollable(dice=1d20+6,label=+6,dicelabel=To Hit [Slam]) to hit, reach 10 ft., one target. *Hit:* rollable(dice=3d6+4,dicelabel=Damage [Slam]) bludgeoning damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Huge Plant, Unaligned*  
+    **Challenge** 2
+  subtype: npc
+  id: srdawakenedtree
+  status: 1
+  order: 1
+

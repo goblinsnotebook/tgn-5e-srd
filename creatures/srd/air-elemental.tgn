@@ -1,0 +1,50 @@
+creatures:
+- name: Air Elemental
+  statblock:
+    custom_statblock: |
+      **Armor Class** 15  
+      **Hit Points** 90 (rollable(dice=12d10 + 24,dicelabel=Hit Points))  
+      **Speed** Fly 90 ft. (hover), Canhover True ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=14)|number(name=dex,label=Dexterity,value=20)|number(name=con,label=Constitution,value=14)|number(name=int,label=Intelligence,value=6)|number(name=wis,label=Wisdom,value=10)|number(name=cha,label=Charisma,value=6)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Damage Resistances** lightning, thunder; bludgeoning, piercing, and slashing from nonmagical attacks  
+      **Damage Immunities** poison  
+      **Condition Immunities** exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained, unconscious  
+      **Senses** darkvision 60 ft., Passive Perception 10  
+      **Languages** Auran  
+      **Challenge** 5 (1,800 XP)  
+      **Proficiency Bonus** +3  
+
+      ---
+
+      ***Air Form.*** The elemental can enter a hostile creature's space and stop there. It can move through a space as narrow as 1 inch wide without squeezing.
+
+      ## Actions
+
+      ***Multiattack.*** The elemental makes two slam attacks.
+
+      ***Slam.*** *Melee Weapon Attack* rollable(dice=1d20+8,label=+8,dicelabel=To Hit [Slam]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=2d8+5,dicelabel=Damage [Slam]) bludgeoning damage.
+
+      ***Whirlwind (rollable(dice=1d6,label=Recharge 4-6,dicelabel=Recharge [Whirlwind])).*** Each creature in the elemental's space must make a DC 13 Strength saving throw. On a failure, a target takes rollable(dice=3d8+2,dicelabel=Damage [Whirlwind]) bludgeoning damage and is flung up 20 feet away from the elemental in a random direction and knocked ***prone***. If a thrown target strikes an object, such as a wall or floor, the target takes rollable(dice=1d6,dicelabel=Damage [Whirlwind]) bludgeoning damage for every 10 feet it was thrown. If the target is thrown at another creature, that creature must succeed on a DC 13 Dexterity saving throw or take the same damage and be knocked ***prone***.
+
+      If the saving throw is successful, the target takes half the bludgeoning damage and isn't flung away or knocked ***prone***.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Elemental, Neutral*  
+    **Challenge** 5
+  subtype: npc
+  id: srdairelemental
+  status: 1
+  order: 1
+

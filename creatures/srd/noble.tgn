@@ -1,0 +1,38 @@
+creatures:
+- name: Noble
+  statblock:
+    custom_statblock: |
+      **Armor Class** 15 (breastplate)  
+      **Hit Points** 9 (rollable(dice=2d8,dicelabel=Hit Points))  
+      **Speed** 30 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=11)|number(name=dex,label=Dexterity,value=12)|number(name=con,label=Constitution,value=11)|number(name=int,label=Intelligence,value=12)|number(name=wis,label=Wisdom,value=14)|number(name=cha,label=Charisma,value=16)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Skills** Deception rollable(dice=1d20+5,label=+5,dicelabel=Deception Check), Insight rollable(dice=1d20+4,label=+4,dicelabel=Insight Check), Persuasion rollable(dice=1d20+5,label=+5,dicelabel=Persuasion Check)  
+      **Senses** Passive Perception 12  
+      **Languages** any two languages  
+      **Challenge** 1/8 (25 XP)  
+      **Proficiency Bonus** +2  
+
+      ## Actions
+
+      ***Rapier.*** *Melee Weapon Attack* rollable(dice=1d20+3,label=+3,dicelabel=To Hit [Rapier]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=1d8+1,dicelabel=Damage [Rapier]) piercing damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Humanoid (Any race)*  
+    **Challenge** 1/8
+  subtype: npc
+  id: srdnoble
+  status: 1
+  order: 1
+

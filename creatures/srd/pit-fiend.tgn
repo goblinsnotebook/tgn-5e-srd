@@ -1,0 +1,63 @@
+creatures:
+- name: Pit Fiend
+  statblock:
+    custom_statblock: |
+      **Armor Class** 19 (natural armor)  
+      **Hit Points** 300 (rollable(dice=24d10 + 168,dicelabel=Hit Points))  
+      **Speed** Walk 30 ft., Fly 60 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=26)|number(name=dex,label=Dexterity,value=14)|number(name=con,label=Constitution,value=24)|number(name=int,label=Intelligence,value=22)|number(name=wis,label=Wisdom,value=18)|number(name=cha,label=Charisma,value=24)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Saving Throws** Dex rollable(dice=1d20+8,label=+8,dicelabel=Dexterity Saving Throw), Con rollable(dice=1d20+13,label=+13,dicelabel=Constitution Saving Throw), Wis rollable(dice=1d20+10,label=+10,dicelabel=Wisdom Saving Throw)  
+      **Damage Resistances** cold; bludgeoning, piercing, and slashing from nonmagical attacks that aren't silvered  
+      **Damage Immunities** fire, poison  
+      **Condition Immunities** poisoned  
+      **Senses** truesight 120 ft., Passive Perception 14  
+      **Languages** Infernal, telepathy 120 ft.  
+      **Challenge** 20 (25,000 XP)  
+      **Proficiency Bonus** +6  
+
+      ---
+
+      ***Fear Aura.*** Any creature hostile to the pit fiend that starts its turn within 20 feet of the pit fiend must make a DC 21 Wisdom saving throw, unless the pit fiend is ***incapacitated***. On a failed save, the creature is ***frightened*** until the start of its next turn. If a creature's saving throw is successful, the creature is immune to the pit fiend's Fear Aura for the next 24 hours.
+
+      ***Magic Resistance.*** The pit fiend has advantage on saving throws against spells and other magical effects.
+
+      ***Magic Weapons.*** The pit fiend's weapon attacks are magical.
+
+      ***Innate Spellcasting.*** The pit fiend's spellcasting ability is Charisma (spell save DC 21). The pit fiend can innately cast the following spells, requiring no material components:
+
+
+      At will: [detect magic](https://www.dndbeyond.com/spells/detect-magic), [fireball](https://www.dndbeyond.com/spells/fireball)  
+      3/day each: [hold monster](https://www.dndbeyond.com/spells/hold-monster), [wall of fire](https://www.dndbeyond.com/spells/wall-of-fire)  
+
+      ## Actions
+
+      ***Multiattack.*** The pit fiend makes four attacks: one with its bite, one with its claw, one with its mace, and one with its tail.
+
+      ***Bite.*** *Melee Weapon Attack* rollable(dice=1d20+14,label=+14,dicelabel=To Hit [Bite]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=4d6+8,dicelabel=Damage [Bite]) piercing damage. The target must succeed on a DC 21 Constitution saving throw or become ***poisoned***. While ***poisoned*** in this way, the target can't regain hit points, and it takes rollable(dice=6d6,dicelabel=Damage [Bite]) poison damage at the start of each of its turns. The ***poisoned*** target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+
+      ***Claw.*** *Melee Weapon Attack* rollable(dice=1d20+14,label=+14,dicelabel=To Hit [Claw]) to hit, reach 10 ft., one target. *Hit:* rollable(dice=2d8+8,dicelabel=Damage [Claw]) slashing damage.
+
+      ***Mace.*** *Melee Weapon Attack* rollable(dice=1d20+14,label=+14,dicelabel=To Hit [Mace]) to hit, reach 10 ft., one target. *Hit:* rollable(dice=2d6+8,dicelabel=Damage [Mace]) bludgeoning damage plus rollable(dice=6d6,dicelabel=Damage [Mace]) fire damage.
+
+      ***Tail.*** *Melee Weapon Attack* rollable(dice=1d20+14,label=+14,dicelabel=To Hit [Tail]) to hit, reach 10 ft., one target. *Hit:* rollable(dice=3d10+8,dicelabel=Damage [Tail]) bludgeoning damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Fiend (Devil), Lawful Evil*  
+    **Challenge** 20
+  subtype: npc
+  id: srdpitfiend
+  status: 1
+  order: 1
+

@@ -1,0 +1,61 @@
+creatures:
+- name: Deva
+  statblock:
+    custom_statblock: |
+      **Armor Class** 17 (natural armor)  
+      **Hit Points** 136 (rollable(dice=16d8 + 64,dicelabel=Hit Points))  
+      **Speed** Walk 30 ft., Fly 90 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=18)|number(name=dex,label=Dexterity,value=18)|number(name=con,label=Constitution,value=18)|number(name=int,label=Intelligence,value=17)|number(name=wis,label=Wisdom,value=20)|number(name=cha,label=Charisma,value=20)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Saving Throws** Wis rollable(dice=1d20+9,label=+9,dicelabel=Wisdom Saving Throw), Cha rollable(dice=1d20+9,label=+9,dicelabel=Charisma Saving Throw)  
+      **Skills** Insight rollable(dice=1d20+9,label=+9,dicelabel=Insight Check), Perception rollable(dice=1d20+9,label=+9,dicelabel=Perception Check)  
+      **Damage Resistances** radiant; bludgeoning, piercing, and slashing from nonmagical attacks  
+      **Condition Immunities** charmed, exhaustion, frightened  
+      **Senses** darkvision 120 ft., Passive Perception 19  
+      **Languages** all, telepathy 120 ft.  
+      **Challenge** 10 (5,900 XP)  
+      **Proficiency Bonus** +4  
+
+      ---
+
+      ***Angelic Weapons.*** The deva's weapon attacks are magical. When the deva hits with any weapon, the weapon deals an extra rollable(dice=4d8,dicelabel=Angelic Weapons) radiant damage (included in the attack).
+
+      ***Magic Resistance.*** The deva has advantage on saving throws against spells and other magical effects.
+
+      ***Innate Spellcasting.*** The deva's spellcasting ability is Charisma (spell save DC 17). The deva can innately cast the following spells, requiring only verbal components:
+
+
+      At will: [detect evil and good](https://www.dndbeyond.com/spells/detect-evil-and-good)  
+      1/day each: [commune](https://www.dndbeyond.com/spells/commune), [raise dead](https://www.dndbeyond.com/spells/raise-dead)  
+
+      ## Actions
+
+      ***Multiattack.*** The deva makes two melee attacks.
+
+      ***Mace.*** *Melee Weapon Attack* rollable(dice=1d20+8,label=+8,dicelabel=To Hit [Mace]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=1d6+4,dicelabel=Damage [Mace]) bludgeoning damage plus rollable(dice=4d8,dicelabel=Damage [Mace]) radiant damage.
+
+      ***Healing Touch (3/Day).*** The deva touches another creature. The target magically regains 20 (rollable(dice=4d8 + 2,dicelabel=Healing Touch)) hit points and is freed from any curse, disease, poison, blindness, or deafness.
+
+      ***Change Shape.*** The deva magically polymorphs into a humanoid or beast that has a challenge rating equal to or less than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the deva's choice).
+
+      In a new form, the deva retains its game statistics and ability to speak, but its AC, movement modes, Strength, Dexterity, and special senses are replaced by those of the new form, and it gains any statistics and capabilities (except class features, legendary actions, and lair actions) that the new form has but that it lacks.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Celestial, Lawful Good*  
+    **Challenge** 10
+  subtype: npc
+  id: srddeva
+  status: 1
+  order: 1
+

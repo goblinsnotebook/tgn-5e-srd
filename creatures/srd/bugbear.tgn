@@ -1,0 +1,46 @@
+creatures:
+- name: Bugbear
+  statblock:
+    custom_statblock: |
+      **Armor Class** 16 (hide armor, shield)  
+      **Hit Points** 27 (rollable(dice=5d8 + 5,dicelabel=Hit Points))  
+      **Speed** 30 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=15)|number(name=dex,label=Dexterity,value=14)|number(name=con,label=Constitution,value=13)|number(name=int,label=Intelligence,value=8)|number(name=wis,label=Wisdom,value=11)|number(name=cha,label=Charisma,value=9)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Skills** Stealth rollable(dice=1d20+6,label=+6,dicelabel=Stealth Check), Survival rollable(dice=1d20+2,label=+2,dicelabel=Survival Check)  
+      **Senses** darkvision 60 ft., Passive Perception 10  
+      **Languages** Common, Goblin  
+      **Challenge** 1 (200 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Brute.*** A melee weapon deals one extra die of its damage when the bugbear hits with it (included in the attack).
+
+      ***Surprise Attack.*** If the bugbear surprises a creature and hits it with an attack during the first round of combat, the target takes an extra 7 (rollable(dice=2d6,dicelabel=Surprise Attack)) damage from the attack.
+
+      ## Actions
+
+      ***Morningstar.*** *Melee Weapon Attack* rollable(dice=1d20+4,label=+4,dicelabel=To Hit [Morningstar]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=2d8+2,dicelabel=Damage [Morningstar]) piercing damage.
+
+      ***Javelin.*** *Melee or Ranged Weapon Attack* rollable(dice=1d20+4,label=+4,dicelabel=To Hit [Javelin]) to hit, reach 5 ft. or range 30/120 ft., one target. *Hit:* rollable(dice=2d6+2,dicelabel=Damage [Javelin]) piercing damage in melee or rollable(dice=1d6+2,dicelabel=Damage [Javelin]) piercing damage at range.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Humanoid (Goblinoid), Chaotic Evil*  
+    **Challenge** 1
+  subtype: npc
+  id: srdbugbear
+  status: 1
+  order: 1
+

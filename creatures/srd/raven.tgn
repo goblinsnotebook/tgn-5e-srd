@@ -1,0 +1,42 @@
+creatures:
+- name: Raven
+  statblock:
+    custom_statblock: |
+      **Armor Class** 12  
+      **Hit Points** 1 (rollable(dice=1d4 - 1,dicelabel=Hit Points))  
+      **Speed** Walk 10 ft., Fly 50 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=2)|number(name=dex,label=Dexterity,value=14)|number(name=con,label=Constitution,value=8)|number(name=int,label=Intelligence,value=2)|number(name=wis,label=Wisdom,value=12)|number(name=cha,label=Charisma,value=6)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Skills** Perception rollable(dice=1d20+3,label=+3,dicelabel=Perception Check)  
+      **Senses** Passive Perception 13  
+      **Languages** -  
+      **Challenge** 0 (10 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Mimicry.*** The raven can mimic simple sounds it has heard, such as a person whispering, a baby crying, or an animal chittering. A creature that hears the sounds can tell they are imitations with a successful DC 10 Wisdom (Insight) check.
+
+      ## Actions
+
+      ***Beak.*** *Melee Weapon Attack* rollable(dice=1d20+4,label=+4,dicelabel=To Hit [Beak]) to hit, reach 5 ft., one target. *Hit:* 1 piercing damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Tiny Beast, Unaligned*  
+    **Challenge** 0
+  subtype: npc
+  id: srdraven
+  status: 1
+  order: 1
+

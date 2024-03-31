@@ -1,0 +1,66 @@
+creatures:
+- name: Gynosphinx
+  statblock:
+    custom_statblock: |
+      **Armor Class** 17 (natural armor)  
+      **Hit Points** 136 (rollable(dice=16d10 + 48,dicelabel=Hit Points))  
+      **Speed** Walk 40 ft., Fly 60 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=18)|number(name=dex,label=Dexterity,value=15)|number(name=con,label=Constitution,value=16)|number(name=int,label=Intelligence,value=18)|number(name=wis,label=Wisdom,value=18)|number(name=cha,label=Charisma,value=18)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Skills** Arcana rollable(dice=1d20+12,label=+12,dicelabel=Arcana Check), History rollable(dice=1d20+12,label=+12,dicelabel=History Check), Perception rollable(dice=1d20+8,label=+8,dicelabel=Perception Check), Religion rollable(dice=1d20+8,label=+8,dicelabel=Religion Check)  
+      **Damage Resistances** bludgeoning, piercing, and slashing from nonmagical attacks  
+      **Damage Immunities** psychic  
+      **Condition Immunities** charmed, frightened  
+      **Senses** truesight 120 ft., Passive Perception 18  
+      **Languages** Common, Sphinx  
+      **Challenge** 11 (7,200 XP)  
+      **Proficiency Bonus** +4  
+
+      ---
+
+      ***Inscrutable.*** The sphinx is immune to any effect that would sense its emotions or read its thoughts, as well as any divination spell that it refuses. Wisdom (Insight) checks made to ascertain the sphinx's intentions or sincerity have disadvantage.
+
+      ***Magic Weapons.*** The sphinx's weapon attacks are magical.
+
+      ***Spellcasting.*** The sphinx is a 9th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 16, rollable(dice=1d20+8,label=+8,dicelabel=To Hit [Spell Attack]) to hit with spell attacks). It requires no material components to cast its spells. The sphinx has the following wizard spells prepared:
+
+      Cantrips (at will) [mage hand](https://www.dndbeyond.com/spells/mage-hand), [minor illusion](https://www.dndbeyond.com/spells/minor-illusion), [prestidigitation](https://www.dndbeyond.com/spells/prestidigitation)    
+      1st level (4 slots) [detect magic](https://www.dndbeyond.com/spells/detect-magic), [identify](https://www.dndbeyond.com/spells/identify), [shield](https://www.dndbeyond.com/spells/shield)    
+      2nd level (3 slots) [darkness](https://www.dndbeyond.com/spells/darkness), [locate object](https://www.dndbeyond.com/spells/locate-object), [suggestion](https://www.dndbeyond.com/spells/suggestion)    
+      3rd level (3 slots) [dispel magic](https://www.dndbeyond.com/spells/dispel-magic), [remove curse](https://www.dndbeyond.com/spells/remove-curse), [tongues](https://www.dndbeyond.com/spells/tongues)    
+      5th level (3 slots) [banishment](https://www.dndbeyond.com/spells/banishment), [greater invisibility](https://www.dndbeyond.com/spells/greater-invisibility)    
+      5th level (1 slot) [legend lore](https://www.dndbeyond.com/spells/legend-lore)    
+
+      ## Actions
+
+      ***Multiattack.*** The sphinx makes two claw attacks.
+
+      ***Claw.*** *Melee Weapon Attack* rollable(dice=1d20+8,label=+8,dicelabel=To Hit [Claw]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=2d8+4,dicelabel=Damage [Claw]) slashing damage.
+
+      ## Legendary Actions
+
+      ***Claw Attack.*** The sphinx makes one claw attack.
+
+      ***Teleport (Costs 2 Actions).*** The sphinx magically teleports, along with any equipment it is wearing or carrying, up to 120 feet to an unoccupied space it can see.
+
+      ***Cast a Spell (Costs 3 Actions).*** The sphinx casts a spell from its list of prepared spells, using a spell slot as normal.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Monstrosity, Lawful Neutral*  
+    **Challenge** 11
+  subtype: npc
+  id: srdgynosphinx
+  status: 1
+  order: 1
+

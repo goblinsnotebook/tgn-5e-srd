@@ -1,0 +1,46 @@
+creatures:
+- name: Ochre Jelly
+  statblock:
+    custom_statblock: |
+      **Armor Class** 8  
+      **Hit Points** 45 (rollable(dice=6d10 + 12,dicelabel=Hit Points))  
+      **Speed** Walk 10 ft., Climb 10 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=15)|number(name=dex,label=Dexterity,value=6)|number(name=con,label=Constitution,value=14)|number(name=int,label=Intelligence,value=2)|number(name=wis,label=Wisdom,value=6)|number(name=cha,label=Charisma,value=1)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Damage Resistances** acid  
+      **Damage Immunities** lightning, slashing  
+      **Condition Immunities** blinded, charmed, deafened, exhaustion, frightened, prone  
+      **Senses** blindsight 60 ft. (blind beyond this radius), Passive Perception 8  
+      **Languages** -  
+      **Challenge** 2 (450 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Amorphous.*** The jelly can move through a space as narrow as 1 inch wide without squeezing.
+
+      ***Spider Climb.*** The jelly can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.
+
+      ## Actions
+
+      ***Pseudopod.*** *Melee Weapon Attack* rollable(dice=1d20+4,label=+4,dicelabel=To Hit [Pseudopod]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=2d6+2,dicelabel=Damage [Pseudopod]) bludgeoning damage plus rollable(dice=1d6,dicelabel=Damage [Pseudopod]) acid damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Ooze, Unaligned*  
+    **Challenge** 2
+  subtype: npc
+  id: srdochrejelly
+  status: 1
+  order: 1
+

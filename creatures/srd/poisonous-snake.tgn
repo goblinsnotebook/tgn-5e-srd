@@ -1,0 +1,37 @@
+creatures:
+- name: Poisonous Snake
+  statblock:
+    custom_statblock: |
+      **Armor Class** 13  
+      **Hit Points** 2 (rollable(dice=1d4,dicelabel=Hit Points))  
+      **Speed** Walk 30 ft., Swim 30 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=2)|number(name=dex,label=Dexterity,value=16)|number(name=con,label=Constitution,value=11)|number(name=int,label=Intelligence,value=1)|number(name=wis,label=Wisdom,value=10)|number(name=cha,label=Charisma,value=3)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Senses** blindsight 10 ft., Passive Perception 10  
+      **Languages** -  
+      **Challenge** 1/8 (25 XP)  
+      **Proficiency Bonus** +2  
+
+      ## Actions
+
+      ***Bite.*** *Melee Weapon Attack* rollable(dice=1d20+5,label=+5,dicelabel=To Hit [Bite]) to hit, reach 5 ft., one target. *Hit:* 1 piercing damage, and the target must make a DC 10 Constitution saving throw, taking rollable(dice=2d4,dicelabel=Damage [Bite]) poison damage on a failed save, or half as much damage on a successful one.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Tiny Beast, Unaligned*  
+    **Challenge** 1/8
+  subtype: npc
+  id: srdpoisonoussnake
+  status: 1
+  order: 1
+

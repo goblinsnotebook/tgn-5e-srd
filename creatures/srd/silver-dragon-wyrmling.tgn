@@ -1,0 +1,46 @@
+creatures:
+- name: Silver Dragon Wyrmling
+  statblock:
+    custom_statblock: |
+      **Armor Class** 17 (natural armor)  
+      **Hit Points** 45 (rollable(dice=6d8 + 18,dicelabel=Hit Points))  
+      **Speed** Walk 30 ft., Fly 60 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=19)|number(name=dex,label=Dexterity,value=10)|number(name=con,label=Constitution,value=17)|number(name=int,label=Intelligence,value=12)|number(name=wis,label=Wisdom,value=11)|number(name=cha,label=Charisma,value=15)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Saving Throws** Dex rollable(dice=1d20+2,label=+2,dicelabel=Dexterity Saving Throw), Con rollable(dice=1d20+5,label=+5,dicelabel=Constitution Saving Throw), Wis rollable(dice=1d20+2,label=+2,dicelabel=Wisdom Saving Throw), Cha rollable(dice=1d20+4,label=+4,dicelabel=Charisma Saving Throw)  
+      **Skills** Perception rollable(dice=1d20+4,label=+4,dicelabel=Perception Check), Stealth rollable(dice=1d20+2,label=+2,dicelabel=Stealth Check)  
+      **Damage Immunities** cold  
+      **Senses** blindsight 10 ft., darkvision 60 ft., Passive Perception 14  
+      **Languages** Draconic  
+      **Challenge** 2 (450 XP)  
+      **Proficiency Bonus** +2  
+
+      ## Actions
+
+      ***Bite.*** *Melee Weapon Attack* rollable(dice=1d20+6,label=+6,dicelabel=To Hit [Bite]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=1d10+4,dicelabel=Damage [Bite]) piercing damage.
+
+      ***Breath Weapons (rollable(dice=1d6,label=Recharge 5-6,dicelabel=Recharge [Breath Weapons])).*** The dragon uses one of the following breath weapons.
+
+      > ***Cold Breath.*** The dragon exhales an icy blast in a 15-foot cone. Each creature in that area must make a DC 13 Constitution saving throw, taking rollable(dice=4d8,dicelabel=Damage [Cold Breath]) cold damage on a failed save, or half as much damage on a successful one.
+      >
+      > ***Paralyzing Breath.*** The dragon exhales paralyzing gas in a 15-foot cone. Each creature in that area must succeed on a DC 13 Constitution saving throw or be ***paralyzed*** for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Dragon, Lawful Good*  
+    **Challenge** 2
+  subtype: npc
+  id: srdsilverdragonwyrmling
+  status: 1
+  order: 1
+

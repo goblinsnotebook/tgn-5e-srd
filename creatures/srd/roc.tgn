@@ -1,0 +1,47 @@
+creatures:
+- name: Roc
+  statblock:
+    custom_statblock: |
+      **Armor Class** 15 (natural armor)  
+      **Hit Points** 248 (rollable(dice=16d20 + 80,dicelabel=Hit Points))  
+      **Speed** Walk 20 ft., Fly 120 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=28)|number(name=dex,label=Dexterity,value=10)|number(name=con,label=Constitution,value=20)|number(name=int,label=Intelligence,value=3)|number(name=wis,label=Wisdom,value=10)|number(name=cha,label=Charisma,value=9)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Saving Throws** Dex rollable(dice=1d20+4,label=+4,dicelabel=Dexterity Saving Throw), Con rollable(dice=1d20+9,label=+9,dicelabel=Constitution Saving Throw), Wis rollable(dice=1d20+4,label=+4,dicelabel=Wisdom Saving Throw), Cha rollable(dice=1d20+3,label=+3,dicelabel=Charisma Saving Throw)  
+      **Skills** Perception rollable(dice=1d20+4,label=+4,dicelabel=Perception Check)  
+      **Senses** Passive Perception 14  
+      **Languages** -  
+      **Challenge** 11 (7,200 XP)  
+      **Proficiency Bonus** +4  
+
+      ---
+
+      ***Keen Sight.*** The roc has advantage on Wisdom (Perception) checks that rely on sight.
+
+      ## Actions
+
+      ***Multiattack.*** The roc makes two attacks: one with its beak and one with its talons.
+
+      ***Beak.*** *Melee Weapon Attack* rollable(dice=1d20+13,label=+13,dicelabel=To Hit [Beak]) to hit, reach 10 ft., one target. *Hit:* rollable(dice=4d8+9,dicelabel=Damage [Beak]) piercing damage.
+
+      ***Talons.*** *Melee Weapon Attack* rollable(dice=1d20+13,label=+13,dicelabel=To Hit [Talons]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=4d6+9,dicelabel=Damage [Talons]) slashing damage, and the target is ***grappled*** (escape DC 19). Until this grapple ends, the target is ***restrained***, and the roc can't use its talons on another target.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Gargantuan Monstrosity, Unaligned*  
+    **Challenge** 11
+  subtype: npc
+  id: srdroc
+  status: 1
+  order: 1
+

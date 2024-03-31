@@ -1,0 +1,52 @@
+creatures:
+- name: Shadow
+  statblock:
+    custom_statblock: |
+      **Armor Class** 12  
+      **Hit Points** 16 (rollable(dice=3d8 + 3,dicelabel=Hit Points))  
+      **Speed** 40 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=6)|number(name=dex,label=Dexterity,value=14)|number(name=con,label=Constitution,value=13)|number(name=int,label=Intelligence,value=6)|number(name=wis,label=Wisdom,value=10)|number(name=cha,label=Charisma,value=8)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Skills** Stealth rollable(dice=1d20+4,label=+4,dicelabel=Stealth Check)  
+      **Damage Vulnerabilities** radiant  
+      **Damage Resistances** acid, cold, fire, lightning, thunder; bludgeoning, piercing, and slashing from nonmagical attacks  
+      **Damage Immunities** necrotic, poison  
+      **Condition Immunities** exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained  
+      **Senses** darkvision 60 ft., Passive Perception 10  
+      **Languages** -  
+      **Challenge** 1/2 (100 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Amorphous.*** The shadow can move through a space as narrow as 1 inch wide without squeezing.
+
+      ***Shadow Stealth.*** While in dim light or darkness, the shadow can take the Hide action as a bonus action. Its stealth bonus is also improved to +6.
+
+      ***Sunlight Weakness.*** While in sunlight, the shadow has disadvantage on attack rolls, ability checks, and saving throws.
+
+      ## Actions
+
+      ***Strength Drain.*** *Melee Weapon Attack* rollable(dice=1d20+4,label=+4,dicelabel=To Hit [Strength Drain]) to hit, reach 5 ft., one creature. *Hit:* rollable(dice=2d6+2,dicelabel=Damage [Strength Drain]) necrotic damage, and the target's Strength score is reduced by rollable(dice=1d4,dicelabel=Strength Drain). The target dies if this reduces its Strength to 0. Otherwise, the reduction lasts until the target finishes a short or long rest.
+
+      If a non-evil humanoid dies from this attack, a new shadow rises from the corpse rollable(dice=1d4,dicelabel=Strength Drain) hours later.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Undead, Chaotic Evil*  
+    **Challenge** 1/2
+  subtype: npc
+  id: srdshadow
+  status: 1
+  order: 1
+

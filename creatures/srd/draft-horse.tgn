@@ -1,0 +1,37 @@
+creatures:
+- name: Draft Horse
+  statblock:
+    custom_statblock: |
+      **Armor Class** 10  
+      **Hit Points** 19 (rollable(dice=3d10 + 3,dicelabel=Hit Points))  
+      **Speed** 40 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=18)|number(name=dex,label=Dexterity,value=10)|number(name=con,label=Constitution,value=12)|number(name=int,label=Intelligence,value=2)|number(name=wis,label=Wisdom,value=11)|number(name=cha,label=Charisma,value=7)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Senses** Passive Perception 10  
+      **Languages** -  
+      **Challenge** 1/4 (50 XP)  
+      **Proficiency Bonus** +2  
+
+      ## Actions
+
+      ***Hooves.*** *Melee Weapon Attack* rollable(dice=1d20+6,label=+6,dicelabel=To Hit [Hooves]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=2d4+4,dicelabel=Damage [Hooves]) bludgeoning damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Beast, Unaligned*  
+    **Challenge** 1/4
+  subtype: npc
+  id: srddrafthorse
+  status: 1
+  order: 1
+

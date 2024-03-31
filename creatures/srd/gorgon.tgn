@@ -1,0 +1,47 @@
+creatures:
+- name: Gorgon
+  statblock:
+    custom_statblock: |
+      **Armor Class** 19 (natural armor)  
+      **Hit Points** 114 (rollable(dice=12d10 + 48,dicelabel=Hit Points))  
+      **Speed** 40 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=20)|number(name=dex,label=Dexterity,value=11)|number(name=con,label=Constitution,value=18)|number(name=int,label=Intelligence,value=2)|number(name=wis,label=Wisdom,value=12)|number(name=cha,label=Charisma,value=7)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Skills** Perception rollable(dice=1d20+4,label=+4,dicelabel=Perception Check)  
+      **Condition Immunities** petrified  
+      **Senses** darkvision 60 ft., Passive Perception 14  
+      **Languages** -  
+      **Challenge** 5 (1,800 XP)  
+      **Proficiency Bonus** +3  
+
+      ---
+
+      ***Trampling Charge.*** If the gorgon moves at least 20 feet straight toward a creature and then hits it with a gore attack on the same turn, that target must succeed on a DC 16 Strength saving throw or be knocked ***prone***. If the target is ***prone***, the gorgon can make one attack with its hooves against it as a bonus action.
+
+      ## Actions
+
+      ***Gore.*** *Melee Weapon Attack* rollable(dice=1d20+8,label=+8,dicelabel=To Hit [Gore]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=2d12+5,dicelabel=Damage [Gore]) piercing damage.
+
+      ***Hooves.*** *Melee Weapon Attack* rollable(dice=1d20+8,label=+8,dicelabel=To Hit [Hooves]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=2d10+5,dicelabel=Damage [Hooves]) bludgeoning damage.
+
+      ***Petrifying Breath (rollable(dice=1d6,label=Recharge 5-6,dicelabel=Recharge [Petrifying Breath])).*** The gorgon exhales petrifying gas in a 30-foot cone. Each creature in that area must succeed on a DC 13 Constitution saving throw. On a failed save, a target begins to turn to stone and is ***restrained***. The ***restrained*** target must repeat the saving throw at the end of its next turn. On a success, the effect ends on the target. On a failure, the target is ***petrified*** until freed by the  ***greater restoration*** spell or other magic.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Monstrosity, Unaligned*  
+    **Challenge** 5
+  subtype: npc
+  id: srdgorgon
+  status: 1
+  order: 1
+

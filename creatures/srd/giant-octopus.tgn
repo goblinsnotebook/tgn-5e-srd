@@ -1,0 +1,48 @@
+creatures:
+- name: Giant Octopus
+  statblock:
+    custom_statblock: |
+      **Armor Class** 11  
+      **Hit Points** 52 (rollable(dice=8d10 + 8,dicelabel=Hit Points))  
+      **Speed** Walk 10 ft., Swim 60 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=17)|number(name=dex,label=Dexterity,value=13)|number(name=con,label=Constitution,value=13)|number(name=int,label=Intelligence,value=4)|number(name=wis,label=Wisdom,value=10)|number(name=cha,label=Charisma,value=4)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Skills** Perception rollable(dice=1d20+4,label=+4,dicelabel=Perception Check), Stealth rollable(dice=1d20+5,label=+5,dicelabel=Stealth Check)  
+      **Senses** darkvision 60 ft., Passive Perception 14  
+      **Languages** -  
+      **Challenge** 1 (200 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Hold Breath.*** While out of water, the octopus can hold its breath for 1 hour.
+
+      ***Underwater Camouflage.*** The octopus has advantage on Dexterity (Stealth) checks made while underwater.
+
+      ***Water Breathing.*** The octopus can breathe only underwater.
+
+      ## Actions
+
+      ***Tentacles.*** *Melee Weapon Attack* rollable(dice=1d20+5,label=+5,dicelabel=To Hit [Tentacles]) to hit, reach 15 ft., one target. *Hit:* rollable(dice=2d6+3,dicelabel=Damage [Tentacles]) bludgeoning damage. If the target is a creature, it is ***grappled*** (escape DC 16). Until this grapple ends, the target is ***restrained***, and the octopus can't use its tentacles on another target.
+
+      ***Ink Cloud (Recharges after a Short or Long Rest).*** A 20-foot-radius cloud of ink extends all around the octopus if it is underwater. The area is heavily obscured for 1 minute, although a significant current can disperse the ink. After releasing the ink, the octopus can use the Dash action as a bonus action.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Beast, Unaligned*  
+    **Challenge** 1
+  subtype: npc
+  id: srdgiantoctopus
+  status: 1
+  order: 1
+

@@ -1,0 +1,56 @@
+creatures:
+- name: Barbed Devil
+  statblock:
+    custom_statblock: |
+      **Armor Class** 15 (natural armor)  
+      **Hit Points** 110 (rollable(dice=13d8 + 52,dicelabel=Hit Points))  
+      **Speed** 30 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=16)|number(name=dex,label=Dexterity,value=17)|number(name=con,label=Constitution,value=18)|number(name=int,label=Intelligence,value=12)|number(name=wis,label=Wisdom,value=14)|number(name=cha,label=Charisma,value=14)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Saving Throws** Str rollable(dice=1d20+6,label=+6,dicelabel=Strength Saving Throw), Con rollable(dice=1d20+7,label=+7,dicelabel=Constitution Saving Throw), Wis rollable(dice=1d20+5,label=+5,dicelabel=Wisdom Saving Throw), Cha rollable(dice=1d20+5,label=+5,dicelabel=Charisma Saving Throw)  
+      **Skills** Deception rollable(dice=1d20+5,label=+5,dicelabel=Deception Check), Insight rollable(dice=1d20+5,label=+5,dicelabel=Insight Check), Perception rollable(dice=1d20+8,label=+8,dicelabel=Perception Check)  
+      **Damage Resistances** cold; bludgeoning, piercing, and slashing from nonmagical attacks that aren't silvered  
+      **Damage Immunities** fire, poison  
+      **Condition Immunities** poisoned  
+      **Senses** darkvision 120 ft., Passive Perception 18  
+      **Languages** Infernal, telepathy 120 ft.  
+      **Challenge** 5 (1,800 XP)  
+      **Proficiency Bonus** +3  
+
+      ---
+
+      ***Barbed Hide.*** At the start of each of its turns, the barbed devil deals rollable(dice=1d10,dicelabel=Damage [Barbed Hide]) piercing damage to any creature grappling it.
+
+      ***Devil's Sight.*** Magical darkness doesn't impede the devil's darkvision.
+
+      ***Magic Resistance.*** The devil has advantage on saving throws against spells and other magical effects.
+
+      ## Actions
+
+      ***Multiattack.*** The devil makes three melee attacks: one with its tail and two with its claws. Alternatively, it can use Hurl Flame twice.
+
+      ***Claw.*** *Melee Weapon Attack* rollable(dice=1d20+6,label=+6,dicelabel=To Hit [Claw]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=1d6+3,dicelabel=Damage [Claw]) piercing damage.
+
+      ***Tail.*** *Melee Weapon Attack* rollable(dice=1d20+6,label=+6,dicelabel=To Hit [Tail]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=2d6+3,dicelabel=Damage [Tail]) piercing damage.
+
+      ***Hurl Flame.*** *Ranged Spell Attack* rollable(dice=1d20+5,label=+5,dicelabel=To Hit [Hurl Flame]) to hit, range 150 ft., one target. *Hit:* rollable(dice=3d6,dicelabel=Damage [Hurl Flame]) fire damage. If the target is a flammable object that isn't being worn or carried, it also catches fire.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Fiend (Devil), Lawful Evil*  
+    **Challenge** 5
+  subtype: npc
+  id: srdbarbeddevil
+  status: 1
+  order: 1
+

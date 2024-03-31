@@ -1,0 +1,46 @@
+creatures:
+- name: Thug
+  statblock:
+    custom_statblock: |
+      **Armor Class** 11 (leather armor)  
+      **Hit Points** 32 (rollable(dice=5d8 + 10,dicelabel=Hit Points))  
+      **Speed** 30 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=15)|number(name=dex,label=Dexterity,value=11)|number(name=con,label=Constitution,value=14)|number(name=int,label=Intelligence,value=10)|number(name=wis,label=Wisdom,value=10)|number(name=cha,label=Charisma,value=11)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Skills** Intimidation rollable(dice=1d20+2,label=+2,dicelabel=Intimidation Check)  
+      **Senses** Passive Perception 10  
+      **Languages** any one language (usually Common)  
+      **Challenge** 1/2 (100 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Pack Tactics.*** The thug has advantage on an attack roll against a creature if at least one of the thug's allies is within 5 feet of the creature and the ally isn't ***incapacitated***.
+
+      ## Actions
+
+      ***Multiattack.*** The thug makes two melee attacks.
+
+      ***Mace.*** *Melee Weapon Attack* rollable(dice=1d20+4,label=+4,dicelabel=To Hit [Mace]) to hit, reach 5 ft., one creature. *Hit:* rollable(dice=1d6+2,dicelabel=Damage [Mace]) bludgeoning damage.
+
+      ***Heavy Crossbow.*** *Ranged Weapon Attack* rollable(dice=1d20+2,label=+2,dicelabel=To Hit [Heavy Crossbow]) to hit, range 100/400 ft., one target. *Hit:* rollable(dice=1d10,dicelabel=Damage [Heavy Crossbow]) piercing damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Humanoid (Any race), Lawful  Chaotic  Evil*  
+    **Challenge** 1/2
+  subtype: npc
+  id: srdthug
+  status: 1
+  order: 1
+

@@ -1,0 +1,46 @@
+creatures:
+- name: Satyr
+  statblock:
+    custom_statblock: |
+      **Armor Class** 14 (leather armor)  
+      **Hit Points** 31 (rollable(dice=7d8,dicelabel=Hit Points))  
+      **Speed** 40 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=12)|number(name=dex,label=Dexterity,value=16)|number(name=con,label=Constitution,value=11)|number(name=int,label=Intelligence,value=12)|number(name=wis,label=Wisdom,value=10)|number(name=cha,label=Charisma,value=14)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Skills** Perception rollable(dice=1d20+2,label=+2,dicelabel=Perception Check), Performance rollable(dice=1d20+6,label=+6,dicelabel=Performance Check), Stealth rollable(dice=1d20+5,label=+5,dicelabel=Stealth Check)  
+      **Senses** Passive Perception 12  
+      **Languages** Common, Elvish, Sylvan  
+      **Challenge** 1/2 (100 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Magic Resistance.*** The satyr has advantage on saving throws against spells and other magical effects.
+
+      ## Actions
+
+      ***Ram.*** *Melee Weapon Attack* rollable(dice=1d20+3,label=+3,dicelabel=To Hit [Ram]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=2d4+1,dicelabel=Damage [Ram]) bludgeoning damage.
+
+      ***Shortsword.*** *Melee Weapon Attack* rollable(dice=1d20+5,label=+5,dicelabel=To Hit [Shortsword]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=1d6+3,dicelabel=Damage [Shortsword]) piercing damage.
+
+      ***Shortbow.*** *Ranged Weapon Attack* rollable(dice=1d20+5,label=+5,dicelabel=To Hit [Shortbow]) to hit, range 80/320 ft., one target. *Hit:* rollable(dice=1d6+3,dicelabel=Damage [Shortbow]) piercing damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Fey, Chaotic Neutral*  
+    **Challenge** 1/2
+  subtype: npc
+  id: srdsatyr
+  status: 1
+  order: 1
+

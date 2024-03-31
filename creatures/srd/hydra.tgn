@@ -1,0 +1,54 @@
+creatures:
+- name: Hydra
+  statblock:
+    custom_statblock: |
+      **Armor Class** 15 (natural armor)  
+      **Hit Points** 172 (rollable(dice=15d12 + 75,dicelabel=Hit Points))  
+      **Speed** Walk 30 ft., Swim 30 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=20)|number(name=dex,label=Dexterity,value=12)|number(name=con,label=Constitution,value=20)|number(name=int,label=Intelligence,value=2)|number(name=wis,label=Wisdom,value=10)|number(name=cha,label=Charisma,value=7)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Skills** Perception rollable(dice=1d20+6,label=+6,dicelabel=Perception Check)  
+      **Senses** darkvision 60 ft., Passive Perception 16  
+      **Languages** -  
+      **Challenge** 8 (3,900 XP)  
+      **Proficiency Bonus** +3  
+
+      ---
+
+      ***Hold Breath.*** The hydra can hold its breath for 1 hour.
+
+      ***Multiple Heads.*** The hydra has five heads. While it has more than one head, the hydra has advantage on saving throws against being ***blinded***, ***charmed***, ***deafened***, ***frightened***, ***stunned***, and knocked ***unconscious***.
+
+      Whenever the hydra takes 25 or more damage in a single turn, one of its heads dies. If all its heads die, the hydra dies.
+
+      At the end of its turn, it grows two heads for each of its heads that died since its last turn, unless it has taken fire damage since its last turn. The hydra regains 10 hit points for each head regrown in this way.
+
+      ***Reactive Heads.*** For each head the hydra has beyond one, it gets an extra reaction that can be used only for opportunity attacks.
+
+      ***Wakeful.*** While the hydra sleeps, at least one of its heads is awake.
+
+      ## Actions
+
+      ***Multiattack.*** The hydra makes as many bite attacks as it has heads.
+
+      ***Bite.*** *Melee Weapon Attack* rollable(dice=1d20+8,label=+8,dicelabel=To Hit [Bite]) to hit, reach 10 ft., one target. *Hit:* rollable(dice=1d10+5,dicelabel=Damage [Bite]) piercing damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Huge Monstrosity, Unaligned*  
+    **Challenge** 8
+  subtype: npc
+  id: srdhydra
+  status: 1
+  order: 1
+

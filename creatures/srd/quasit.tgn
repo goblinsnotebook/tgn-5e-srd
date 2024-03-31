@@ -1,0 +1,51 @@
+creatures:
+- name: Quasit
+  statblock:
+    custom_statblock: |
+      **Armor Class** 13  
+      **Hit Points** 7 (rollable(dice=3d4,dicelabel=Hit Points))  
+      **Speed** 40 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=5)|number(name=dex,label=Dexterity,value=17)|number(name=con,label=Constitution,value=10)|number(name=int,label=Intelligence,value=7)|number(name=wis,label=Wisdom,value=10)|number(name=cha,label=Charisma,value=10)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Skills** Stealth rollable(dice=1d20+5,label=+5,dicelabel=Stealth Check)  
+      **Damage Resistances** cold, fire, lightning; bludgeoning, piercing, and slashing from nonmagical attacks  
+      **Damage Immunities** poison  
+      **Condition Immunities** poisoned  
+      **Senses** darkvision 120 ft., Passive Perception 10  
+      **Languages** Abyssal, Common  
+      **Challenge** 1 (200 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Shapechanger.*** The quasit can use its action to polymorph into a beast form that resembles a bat (speed 10 feet fly 40 ft.), a centipede (40 ft., climb 40 ft.), or a toad (40 ft., swim 40 ft.), or back into its true form. Its statistics are the same in each form, except for the speed changes noted. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.
+
+      ***Magic Resistance.*** The quasit has advantage on saving throws against spells and other magical effects.
+
+      ## Actions
+
+      ***Claw (Bite in Beast Form).*** *Melee Weapon Attack* rollable(dice=1d20+4,label=+4,dicelabel=To Hit [Claw]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=1d4+3,dicelabel=Damage [Claw]) piercing damage, and the target must succeed on a DC 10 Constitution saving throw or take rollable(dice=2d4,dicelabel=Damage [Claw]) poison damage and become ***poisoned*** for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+
+      ***Scare (1/Day).*** One creature of the quasit's choice within 20 feet of it must succeed on a DC 10 Wisdom saving throw or be ***frightened*** for 1 minute. The target can repeat the saving throw at the end of each of its turns, with disadvantage if the quasit is within line of sight, ending the effect on itself on a success.
+
+      ***Invisibility.*** The quasit magically turns ***invisible*** until it attacks or uses Scare, or until its concentration ends (as if concentrating on a spell). Any equipment the quasit wears or carries is ***invisible*** with it.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Tiny Fiend (Demon), Chaotic Evil*  
+    **Challenge** 1
+  subtype: npc
+  id: srdquasit
+  status: 1
+  order: 1
+

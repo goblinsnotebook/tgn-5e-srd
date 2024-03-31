@@ -1,0 +1,51 @@
+creatures:
+- name: Treant
+  statblock:
+    custom_statblock: |
+      **Armor Class** 16 (natural armor)  
+      **Hit Points** 138 (rollable(dice=12d12 + 60,dicelabel=Hit Points))  
+      **Speed** 30 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=23)|number(name=dex,label=Dexterity,value=8)|number(name=con,label=Constitution,value=21)|number(name=int,label=Intelligence,value=12)|number(name=wis,label=Wisdom,value=16)|number(name=cha,label=Charisma,value=12)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Damage Vulnerabilities** fire  
+      **Damage Resistances** bludgeoning, piercing  
+      **Senses** Passive Perception 13  
+      **Languages** Common, Druidic, Elvish, Sylvan  
+      **Challenge** 9 (5,000 XP)  
+      **Proficiency Bonus** +4  
+
+      ---
+
+      ***False Appearance.*** While the treant remains motionless, it is indistinguishable from a normal tree.
+
+      ***Siege Monster.*** The treant deals double damage to objects and structures.
+
+      ## Actions
+
+      ***Multiattack.*** The treant makes two slam attacks.
+
+      ***Slam.*** *Melee Weapon Attack* rollable(dice=1d20+10,label=+10,dicelabel=To Hit [Slam]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=3d6+6,dicelabel=Damage [Slam]) bludgeoning damage.
+
+      ***Rock.*** *Ranged Weapon Attack* rollable(dice=1d20+10,label=+10,dicelabel=To Hit [Rock]) to hit, range 60/180 ft., one target. *Hit:* rollable(dice=4d10+6,dicelabel=Damage [Rock]) bludgeoning damage.
+
+      ***Animate Trees (1/Day).*** The treant magically animates one or two trees it can see within 60 feet of it. These trees have the same statistics as a *treant*, except they have Intelligence and Charisma scores of 1, they can't speak, and they have only the Slam action option. An animated tree acts as an ally of the treant. The tree remains animate for 1 day or until it dies; until the treant dies or is more than 120 feet from the tree; or until the treant takes a bonus action to turn it back into an inanimate tree. The tree then takes root if possible.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Huge Plant, Chaotic Good*  
+    **Challenge** 9
+  subtype: npc
+  id: srdtreant
+  status: 1
+  order: 1
+

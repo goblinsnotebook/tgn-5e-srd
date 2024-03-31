@@ -1,0 +1,45 @@
+creatures:
+- name: Giant Badger
+  statblock:
+    custom_statblock: |
+      **Armor Class** 10  
+      **Hit Points** 13 (rollable(dice=2d8 + 4,dicelabel=Hit Points))  
+      **Speed** Walk 30 ft., Burrow 10 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=13)|number(name=dex,label=Dexterity,value=10)|number(name=con,label=Constitution,value=15)|number(name=int,label=Intelligence,value=2)|number(name=wis,label=Wisdom,value=12)|number(name=cha,label=Charisma,value=5)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Senses** darkvision 30 ft., Passive Perception 11  
+      **Languages** -  
+      **Challenge** 1/4 (50 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Keen Smell.*** The badger has advantage on Wisdom (Perception) checks that rely on smell.
+
+      ## Actions
+
+      ***Multiattack.*** The badger makes two attacks: one with its bite and one with its claws.
+
+      ***Bite.*** *Melee Weapon Attack* rollable(dice=1d20+3,label=+3,dicelabel=To Hit [Bite]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=1d6+1,dicelabel=Damage [Bite]) piercing damage.
+
+      ***Claws.*** *Melee Weapon Attack* rollable(dice=1d20+3,label=+3,dicelabel=To Hit [Claws]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=2d4+1,dicelabel=Damage [Claws]) slashing damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Beast, Unaligned*  
+    **Challenge** 1/4
+  subtype: npc
+  id: srdgiantbadger
+  status: 1
+  order: 1
+

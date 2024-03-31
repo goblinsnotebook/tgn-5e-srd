@@ -1,0 +1,48 @@
+creatures:
+- name: Giant Spider
+  statblock:
+    custom_statblock: |
+      **Armor Class** 14 (natural armor)  
+      **Hit Points** 26 (rollable(dice=4d10 + 4,dicelabel=Hit Points))  
+      **Speed** Walk 30 ft., Climb 30 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=14)|number(name=dex,label=Dexterity,value=16)|number(name=con,label=Constitution,value=12)|number(name=int,label=Intelligence,value=2)|number(name=wis,label=Wisdom,value=11)|number(name=cha,label=Charisma,value=4)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Skills** Stealth rollable(dice=1d20+7,label=+7,dicelabel=Stealth Check)  
+      **Senses** blindsight 10 ft., darkvision 60 ft., Passive Perception 10  
+      **Languages** -  
+      **Challenge** 1 (200 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Spider Climb.*** The spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.
+
+      ***Web Sense.*** While in contact with a web, the spider knows the exact location of any other creature in contact with the same web.
+
+      ***Web Walker.*** The spider ignores movement restrictions caused by webbing.
+
+      ## Actions
+
+      ***Bite.*** *Melee Weapon Attack* rollable(dice=1d20+5,label=+5,dicelabel=To Hit [Bite]) to hit, reach 5 ft., one creature. *Hit:* rollable(dice=1d8+3,dicelabel=Damage [Bite]) piercing damage, and the target must make a DC 11 Constitution saving throw, taking rollable(dice=2d8,dicelabel=Damage [Bite]) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but ***poisoned*** for 1 hour, even after regaining hit points, and is ***paralyzed*** while ***poisoned*** in this way.
+
+      ***Web (rollable(dice=1d6,label=Recharge 5-6,dicelabel=Recharge [Web])).*** *Ranged Weapon Attack* rollable(dice=1d20+5,label=+5,dicelabel=To Hit [Web]) to hit, range 30/60 ft., one creature. *Hit:* The target is ***restrained*** by webbing. As an action, the ***restrained*** target can make a DC 12 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 5; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage).
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Beast, Unaligned*  
+    **Challenge** 1
+  subtype: npc
+  id: srdgiantspider
+  status: 1
+  order: 1
+

@@ -1,0 +1,46 @@
+creatures:
+- name: Copper Dragon Wyrmling
+  statblock:
+    custom_statblock: |
+      **Armor Class** 16 (natural armor)  
+      **Hit Points** 22 (rollable(dice=4d8 + 4,dicelabel=Hit Points))  
+      **Speed** Walk 30 ft., Climb 30 ft., Fly 60 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=15)|number(name=dex,label=Dexterity,value=12)|number(name=con,label=Constitution,value=13)|number(name=int,label=Intelligence,value=14)|number(name=wis,label=Wisdom,value=11)|number(name=cha,label=Charisma,value=13)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Saving Throws** Dex rollable(dice=1d20+3,label=+3,dicelabel=Dexterity Saving Throw), Con rollable(dice=1d20+3,label=+3,dicelabel=Constitution Saving Throw), Wis rollable(dice=1d20+2,label=+2,dicelabel=Wisdom Saving Throw), Cha rollable(dice=1d20+3,label=+3,dicelabel=Charisma Saving Throw)  
+      **Skills** Perception rollable(dice=1d20+4,label=+4,dicelabel=Perception Check), Stealth rollable(dice=1d20+3,label=+3,dicelabel=Stealth Check)  
+      **Damage Immunities** acid  
+      **Senses** blindsight 10 ft., darkvision 60 ft., Passive Perception 14  
+      **Languages** Draconic  
+      **Challenge** 1 (200 XP)  
+      **Proficiency Bonus** +2  
+
+      ## Actions
+
+      ***Bite.*** *Melee Weapon Attack* rollable(dice=1d20+4,label=+4,dicelabel=To Hit [Bite]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=1d10+2,dicelabel=Damage [Bite]) piercing damage.
+
+      ***Breath Weapons (rollable(dice=1d6,label=Recharge 5-6,dicelabel=Recharge [Breath Weapons])).*** The dragon uses one of the following breath weapons.
+
+      > ***Acid Breath.*** The dragon exhales acid in a 20-foot line that is 5 feet wide. Each creature in that line must make a DC 11 Dexterity saving throw, taking rollable(dice=4d8,dicelabel=Damage [Acid Breath]) acid damage on a failed save, or half as much damage on a successful one.
+      >
+      > ***Slowing Breath.*** The dragon exhales gas in a 15-foot cone. Each creature in that area must succeed on a DC 11 Constitution saving throw. On a failed save, the creature can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the creature can use either an action or a bonus action on its turn, but not both. These effects last for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself with a successful save.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Dragon, Chaotic Good*  
+    **Challenge** 1
+  subtype: npc
+  id: srdcopperdragonwyrmling
+  status: 1
+  order: 1
+

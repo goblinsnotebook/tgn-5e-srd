@@ -1,0 +1,39 @@
+creatures:
+- name: Constrictor Snake
+  statblock:
+    custom_statblock: |
+      **Armor Class** 12  
+      **Hit Points** 13 (rollable(dice=2d10 + 2,dicelabel=Hit Points))  
+      **Speed** Walk 30 ft., Swim 30 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=15)|number(name=dex,label=Dexterity,value=14)|number(name=con,label=Constitution,value=12)|number(name=int,label=Intelligence,value=1)|number(name=wis,label=Wisdom,value=10)|number(name=cha,label=Charisma,value=3)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Senses** blindsight 10 ft., Passive Perception 10  
+      **Languages** -  
+      **Challenge** 1/4 (50 XP)  
+      **Proficiency Bonus** +2  
+
+      ## Actions
+
+      ***Bite.*** *Melee Weapon Attack* rollable(dice=1d20+4,label=+4,dicelabel=To Hit [Bite]) to hit, reach 5 ft., one creature. *Hit:* rollable(dice=1d6+2,dicelabel=Damage [Bite]) piercing damage.
+
+      ***Constrict.*** *Melee Weapon Attack* rollable(dice=1d20+4,label=+4,dicelabel=To Hit [Constrict]) to hit, reach 5 ft., one creature. *Hit:* rollable(dice=1d8+2,dicelabel=Damage [Constrict]) bludgeoning damage, and the target is ***grappled*** (escape DC 14). Until this grapple ends, the creature is ***restrained***, and the snake can't constrict another target.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Beast, Unaligned*  
+    **Challenge** 1/4
+  subtype: npc
+  id: srdconstrictorsnake
+  status: 1
+  order: 1
+

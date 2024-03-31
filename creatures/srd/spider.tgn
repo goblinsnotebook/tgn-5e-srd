@@ -1,0 +1,46 @@
+creatures:
+- name: Spider
+  statblock:
+    custom_statblock: |
+      **Armor Class** 12  
+      **Hit Points** 1 (rollable(dice=1d4 - 1,dicelabel=Hit Points))  
+      **Speed** Walk 20 ft., Climb 20 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=2)|number(name=dex,label=Dexterity,value=14)|number(name=con,label=Constitution,value=8)|number(name=int,label=Intelligence,value=1)|number(name=wis,label=Wisdom,value=10)|number(name=cha,label=Charisma,value=2)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Skills** Stealth rollable(dice=1d20+4,label=+4,dicelabel=Stealth Check)  
+      **Senses** darkvision 30 ft., Passive Perception 10  
+      **Languages** -  
+      **Challenge** 0 (10 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Spider Climb.*** The spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.
+
+      ***Web Sense.*** While in contact with a web, the spider knows the exact location of any other creature in contact with the same web.
+
+      ***Web Walker.*** The spider ignores movement restrictions caused by webbing.
+
+      ## Actions
+
+      ***Bite.*** *Melee Weapon Attack* rollable(dice=1d20+4,label=+4,dicelabel=To Hit [Bite]) to hit, reach 5 ft., one creature. *Hit:* 1 piercing damage, and the target must succeed on a DC 9 Constitution saving throw or take rollable(dice=1d4,dicelabel=Damage [Bite]) poison damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Tiny Beast, Unaligned*  
+    **Challenge** 0
+  subtype: npc
+  id: srdspider
+  status: 1
+  order: 1
+

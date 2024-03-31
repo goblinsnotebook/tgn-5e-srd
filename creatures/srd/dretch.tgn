@@ -1,0 +1,46 @@
+creatures:
+- name: Dretch
+  statblock:
+    custom_statblock: |
+      **Armor Class** 11 (natural armor)  
+      **Hit Points** 18 (rollable(dice=4d6 + 4,dicelabel=Hit Points))  
+      **Speed** 20 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=11)|number(name=dex,label=Dexterity,value=11)|number(name=con,label=Constitution,value=12)|number(name=int,label=Intelligence,value=5)|number(name=wis,label=Wisdom,value=8)|number(name=cha,label=Charisma,value=3)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Damage Resistances** cold, fire, lightning  
+      **Damage Immunities** poison  
+      **Condition Immunities** poisoned  
+      **Senses** darkvision 60 ft., Passive Perception 9  
+      **Languages** Abyssal, telepathy 60 ft. (works only with creatures that understand Abyssal)  
+      **Challenge** 1/4 (50 XP)  
+      **Proficiency Bonus** +2  
+
+      ## Actions
+
+      ***Multiattack.*** The dretch makes two attacks: one with its bite and one with its claws.
+
+      ***Bite.*** *Melee Weapon Attack* rollable(dice=1d20+2,label=+2,dicelabel=To Hit [Bite]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=1d6,dicelabel=Damage [Bite]) piercing damage.
+
+      ***Claws.*** *Melee Weapon Attack* rollable(dice=1d20+2,label=+2,dicelabel=To Hit [Claws]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=2d4,dicelabel=Damage [Claws]) slashing damage.
+
+      ***Fetid Cloud (1/Day).*** A 10-foot radius of disgusting green gas extends out from the dretch. The gas spreads around corners, and its area is lightly obscured. It lasts for 1 minute or until a strong wind disperses it. Any creature that starts its turn in that area must succeed on a DC 11 Constitution saving throw or be ***poisoned*** until the start of its next turn. While ***poisoned*** in this way, the target can take either an action or a bonus action on its turn, not both, and can't take reactions.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Small Fiend (Demon), Chaotic Evil*  
+    **Challenge** 1/4
+  subtype: npc
+  id: srddretch
+  status: 1
+  order: 1
+

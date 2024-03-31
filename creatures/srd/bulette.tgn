@@ -1,0 +1,44 @@
+creatures:
+- name: Bulette
+  statblock:
+    custom_statblock: |
+      **Armor Class** 17 (natural armor)  
+      **Hit Points** 94 (rollable(dice=9d10 + 45,dicelabel=Hit Points))  
+      **Speed** Walk 40 ft., Burrow 40 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=19)|number(name=dex,label=Dexterity,value=11)|number(name=con,label=Constitution,value=21)|number(name=int,label=Intelligence,value=2)|number(name=wis,label=Wisdom,value=10)|number(name=cha,label=Charisma,value=5)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Skills** Perception rollable(dice=1d20+6,label=+6,dicelabel=Perception Check)  
+      **Senses** darkvision 60 ft., tremorsense 60 ft., Passive Perception 16  
+      **Languages** -  
+      **Challenge** 5 (1,800 XP)  
+      **Proficiency Bonus** +3  
+
+      ---
+
+      ***Standing Leap.*** The bulette's long jump is up to 30 feet and its high jump is up to 15 feet, with or without a running start.
+
+      ## Actions
+
+      ***Bite.*** *Melee Weapon Attack* rollable(dice=1d20+7,label=+7,dicelabel=To Hit [Bite]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=4d12+4,dicelabel=Damage [Bite]) piercing damage.
+
+      ***Deadly Leap.*** If the bulette jumps at least 15 feet as part of its movement, it can then use this action to land on its feet in a space that contains one or more other creatures. Each of those creatures must succeed on a DC 16 Strength or Dexterity saving throw (target's choice) or be knocked ***prone*** and take rollable(dice=3d6+4,dicelabel=Damage [Deadly Leap]) bludgeoning damage plus rollable(dice=3d6+4,dicelabel=Damage [Deadly Leap]) slashing damage. On a successful save, the creature takes only half the damage, isn't knocked ***prone***, and is pushed 5 feet out of the bulette's space into an unoccupied space of the creature's choice. If no unoccupied space is within range, the creature instead falls ***prone*** in the bulette's space.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Monstrosity, Unaligned*  
+    **Challenge** 5
+  subtype: npc
+  id: srdbulette
+  status: 1
+  order: 1
+

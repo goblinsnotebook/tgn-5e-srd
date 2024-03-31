@@ -1,0 +1,46 @@
+creatures:
+- name: Panther
+  statblock:
+    custom_statblock: |
+      **Armor Class** 12  
+      **Hit Points** 13 (rollable(dice=3d8,dicelabel=Hit Points))  
+      **Speed** Walk 50 ft., Climb 40 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=14)|number(name=dex,label=Dexterity,value=15)|number(name=con,label=Constitution,value=10)|number(name=int,label=Intelligence,value=3)|number(name=wis,label=Wisdom,value=14)|number(name=cha,label=Charisma,value=7)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Skills** Perception rollable(dice=1d20+4,label=+4,dicelabel=Perception Check), Stealth rollable(dice=1d20+6,label=+6,dicelabel=Stealth Check)  
+      **Senses** Passive Perception 14  
+      **Languages** -  
+      **Challenge** 1/4 (50 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Keen Smell.*** The panther has advantage on Wisdom (Perception) checks that rely on smell.
+
+      ***Pounce.*** If the panther moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 12 Strength saving throw or be knocked ***prone***. If the target is ***prone***, the panther can make one bite attack against it as a bonus action.
+
+      ## Actions
+
+      ***Bite.*** *Melee Weapon Attack* rollable(dice=1d20+4,label=+4,dicelabel=To Hit [Bite]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=1d6+2,dicelabel=Damage [Bite]) piercing damage.
+
+      ***Claw.*** *Melee Weapon Attack* rollable(dice=1d20+4,label=+4,dicelabel=To Hit [Claw]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=1d4+2,dicelabel=Damage [Claw]) slashing damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Beast, Unaligned*  
+    **Challenge** 1/4
+  subtype: npc
+  id: srdpanther
+  status: 1
+  order: 1
+

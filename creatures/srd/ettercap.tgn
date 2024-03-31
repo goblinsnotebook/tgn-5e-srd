@@ -1,0 +1,52 @@
+creatures:
+- name: Ettercap
+  statblock:
+    custom_statblock: |
+      **Armor Class** 13 (natural armor)  
+      **Hit Points** 44 (rollable(dice=8d8 + 8,dicelabel=Hit Points))  
+      **Speed** Walk 30 ft., Climb 30 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=14)|number(name=dex,label=Dexterity,value=15)|number(name=con,label=Constitution,value=13)|number(name=int,label=Intelligence,value=7)|number(name=wis,label=Wisdom,value=12)|number(name=cha,label=Charisma,value=8)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Skills** Perception rollable(dice=1d20+3,label=+3,dicelabel=Perception Check), Stealth rollable(dice=1d20+4,label=+4,dicelabel=Stealth Check), Survival rollable(dice=1d20+3,label=+3,dicelabel=Survival Check)  
+      **Senses** darkvision 60 ft., Passive Perception 13  
+      **Languages** -  
+      **Challenge** 2 (450 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Spider Climb.*** The ettercap can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.
+
+      ***Web Sense.*** While in contact with a web, the ettercap knows the exact location of any other creature in contact with the same web.
+
+      ***Web Walker.*** The ettercap ignores movement restrictions caused by webbing.
+
+      ## Actions
+
+      ***Multiattack.*** The ettercap makes two attacks: one with its bite and one with its claws.
+
+      ***Bite.*** *Melee Weapon Attack* rollable(dice=1d20+4,label=+4,dicelabel=To Hit [Bite]) to hit, reach 5 ft., one creature. *Hit:* rollable(dice=1d8+2,dicelabel=Damage [Bite]) piercing damage plus rollable(dice=1d8,dicelabel=Damage [Bite]) poison damage. The target must succeed on a DC 11 Constitution saving throw or be ***poisoned*** for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+
+      ***Claws.*** *Melee Weapon Attack* rollable(dice=1d20+4,label=+4,dicelabel=To Hit [Claws]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=2d4+2,dicelabel=Damage [Claws]) slashing damage.
+
+      ***Web (rollable(dice=1d6,label=Recharge 5-6,dicelabel=Recharge [Web])).*** *Ranged Weapon Attack* rollable(dice=1d20+4,label=+4,dicelabel=To Hit [Web]) to hit, range 30/60 ft., one Large or smaller creature. *Hit:* The creature is ***restrained*** by webbing. As an action, the ***restrained*** creature can make a DC 11 Strength check, escaping from the webbing on a success. The effect ends if the webbing is destroyed. The webbing has AC 10, 5 hit points, is vulnerable to fire damage and immune to bludgeoning, poison and psychic damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Monstrosity, Neutral Evil*  
+    **Challenge** 2
+  subtype: npc
+  id: srdettercap
+  status: 1
+  order: 1
+

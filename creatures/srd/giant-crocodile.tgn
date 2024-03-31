@@ -1,0 +1,46 @@
+creatures:
+- name: Giant Crocodile
+  statblock:
+    custom_statblock: |
+      **Armor Class** 14 (natural armor)  
+      **Hit Points** 85 (rollable(dice=9d12 + 27,dicelabel=Hit Points))  
+      **Speed** Walk 30 ft., Swim 50 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=21)|number(name=dex,label=Dexterity,value=9)|number(name=con,label=Constitution,value=17)|number(name=int,label=Intelligence,value=2)|number(name=wis,label=Wisdom,value=10)|number(name=cha,label=Charisma,value=7)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Skills** Stealth rollable(dice=1d20+5,label=+5,dicelabel=Stealth Check)  
+      **Senses** Passive Perception 10  
+      **Languages** -  
+      **Challenge** 5 (1,800 XP)  
+      **Proficiency Bonus** +3  
+
+      ---
+
+      ***Hold Breath.*** The crocodile can hold its breath for 30 minutes.
+
+      ## Actions
+
+      ***Multiattack.*** The crocodile makes two attacks: one with its bite and one with its tail.
+
+      ***Bite.*** *Melee Weapon Attack* rollable(dice=1d20+8,label=+8,dicelabel=To Hit [Bite]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=3d10+5,dicelabel=Damage [Bite]) piercing damage, and the target is ***grappled*** (escape DC 16). Until this grapple ends, the target is ***restrained***, and the crocodile can't bite another target.
+
+      ***Tail.*** *Melee Weapon Attack* rollable(dice=1d20+8,label=+8,dicelabel=To Hit [Tail]) to hit, reach 10 ft., one target not ***grappled*** by the crocodile. *Hit:* rollable(dice=2d8+5,dicelabel=Damage [Tail]) bludgeoning damage. If the target is a creature, it must succeed on a DC 16 Strength saving throw or be knocked ***prone***.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Huge Beast, Unaligned*  
+    **Challenge** 5
+  subtype: npc
+  id: srdgiantcrocodile
+  status: 1
+  order: 1
+

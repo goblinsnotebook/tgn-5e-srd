@@ -1,0 +1,53 @@
+creatures:
+- name: Rakshasa
+  statblock:
+    custom_statblock: |
+      **Armor Class** 16 (natural armor)  
+      **Hit Points** 110 (rollable(dice=13d8 + 52,dicelabel=Hit Points))  
+      **Speed** 40 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=14)|number(name=dex,label=Dexterity,value=17)|number(name=con,label=Constitution,value=18)|number(name=int,label=Intelligence,value=13)|number(name=wis,label=Wisdom,value=16)|number(name=cha,label=Charisma,value=20)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Skills** Deception rollable(dice=1d20+10,label=+10,dicelabel=Deception Check), Insight rollable(dice=1d20+8,label=+8,dicelabel=Insight Check)  
+      **Damage Vulnerabilities** piercing from magic weapons wielded by good creatures  
+      **Damage Immunities** bludgeoning, piercing, and slashing from nonmagical attacks  
+      **Senses** darkvision 60 ft., Passive Perception 13  
+      **Languages** Common, Infernal  
+      **Challenge** 13 (10,000 XP)  
+      **Proficiency Bonus** +5  
+
+      ---
+
+      ***Limited Magic Immunity.*** The rakshasa can't be affected or detected by spells of 6th level or lower unless it wishes to be. It has advantage on saving throws against all other spells and magical effects.
+
+      ***Innate Spellcasting.*** The rakshasa's innate spellcasting ability is Charisma (spell save DC 18, rollable(dice=1d20+10,label=+10,dicelabel=To Hit [Spell Attack]) to hit with spell attacks). The rakshasa can innately cast the following spells, requiring no material components:
+
+
+      At will: [detect thoughts](https://www.dndbeyond.com/spells/detect-thoughts), [disguise self](https://www.dndbeyond.com/spells/disguise-self), [mage hand](https://www.dndbeyond.com/spells/mage-hand), [minor illusion](https://www.dndbeyond.com/spells/minor-illusion)  
+      3/day each: [charm person](https://www.dndbeyond.com/spells/charm-person), [detect magic](https://www.dndbeyond.com/spells/detect-magic), [invisibility](https://www.dndbeyond.com/spells/invisibility), [major image](https://www.dndbeyond.com/spells/major-image), [suggestion](https://www.dndbeyond.com/spells/suggestion)  
+      1/day each: [dominate person](https://www.dndbeyond.com/spells/dominate-person), [fly](https://www.dndbeyond.com/spells/fly), [plane shift](https://www.dndbeyond.com/spells/plane-shift), [true seeing](https://www.dndbeyond.com/spells/true-seeing)  
+
+      ## Actions
+
+      ***Multiattack.*** The rakshasa makes two claw attacks.
+
+      ***Claw.*** *Melee Weapon Attack* rollable(dice=1d20+7,label=+7,dicelabel=To Hit [Claw]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=2d6+2,dicelabel=Damage [Claw]) slashing damage, and the target is cursed if it is a creature. The magical curse takes effect whenever the target takes a short or long rest, filling the target's thoughts with horrible images and dreams. The cursed target gains no benefit from finishing a short or long rest. The curse lasts until it is lifted by a ***remove curse*** spell or similar magic.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Fiend, Lawful Evil*  
+    **Challenge** 13
+  subtype: npc
+  id: srdrakshasa
+  status: 1
+  order: 1
+

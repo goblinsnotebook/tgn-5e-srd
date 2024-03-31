@@ -1,0 +1,48 @@
+creatures:
+- name: Troll
+  statblock:
+    custom_statblock: |
+      **Armor Class** 15 (natural armor)  
+      **Hit Points** 84 (rollable(dice=8d10 + 40,dicelabel=Hit Points))  
+      **Speed** 30 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=18)|number(name=dex,label=Dexterity,value=13)|number(name=con,label=Constitution,value=20)|number(name=int,label=Intelligence,value=7)|number(name=wis,label=Wisdom,value=9)|number(name=cha,label=Charisma,value=7)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Skills** Perception rollable(dice=1d20+2,label=+2,dicelabel=Perception Check)  
+      **Senses** darkvision 60 ft., Passive Perception 12  
+      **Languages** Giant  
+      **Challenge** 5 (1,800 XP)  
+      **Proficiency Bonus** +3  
+
+      ---
+
+      ***Keen Smell.*** The troll has advantage on Wisdom (Perception) checks that rely on smell.
+
+      ***Regeneration.*** The troll regains 10 hit points at the start of its turn. If the troll takes acid or fire damage, this trait doesn't function at the start of the troll's next turn. The troll dies only if it starts its turn with 0 hit points and doesn't regenerate.
+
+      ## Actions
+
+      ***Multiattack.*** The troll makes three attacks: one with its bite and two with its claws.
+
+      ***Bite.*** *Melee Weapon Attack* rollable(dice=1d20+7,label=+7,dicelabel=To Hit [Bite]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=1d6+4,dicelabel=Damage [Bite]) piercing damage.
+
+      ***Claw.*** *Melee Weapon Attack* rollable(dice=1d20+7,label=+7,dicelabel=To Hit [Claw]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=2d6+4,dicelabel=Damage [Claw]) slashing damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Giant, Chaotic Evil*  
+    **Challenge** 5
+  subtype: npc
+  id: srdtroll
+  status: 1
+  order: 1
+

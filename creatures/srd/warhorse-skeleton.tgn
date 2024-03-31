@@ -1,0 +1,40 @@
+creatures:
+- name: Warhorse Skeleton
+  statblock:
+    custom_statblock: |
+      **Armor Class** 13 (barding scraps)  
+      **Hit Points** 22 (rollable(dice=3d10 + 6,dicelabel=Hit Points))  
+      **Speed** 60 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=18)|number(name=dex,label=Dexterity,value=12)|number(name=con,label=Constitution,value=15)|number(name=int,label=Intelligence,value=2)|number(name=wis,label=Wisdom,value=8)|number(name=cha,label=Charisma,value=5)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Damage Vulnerabilities** bludgeoning  
+      **Damage Immunities** poison  
+      **Condition Immunities** exhaustion, poisoned  
+      **Senses** darkvision 60 ft., Passive Perception 9  
+      **Languages** -  
+      **Challenge** 1/2 (100 XP)  
+      **Proficiency Bonus** +2  
+
+      ## Actions
+
+      ***Hooves.*** *Melee Weapon Attack* rollable(dice=1d20+6,label=+6,dicelabel=To Hit [Hooves]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=2d6+4,dicelabel=Damage [Hooves]) bludgeoning damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Undead, Lawful Evil*  
+    **Challenge** 1/2
+  subtype: npc
+  id: srdwarhorseskeleton
+  status: 1
+  order: 1
+

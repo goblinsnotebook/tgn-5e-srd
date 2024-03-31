@@ -1,0 +1,47 @@
+creatures:
+- name: Hell Hound
+  statblock:
+    custom_statblock: |
+      **Armor Class** 15 (natural armor)  
+      **Hit Points** 45 (rollable(dice=7d8 + 14,dicelabel=Hit Points))  
+      **Speed** 50 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=17)|number(name=dex,label=Dexterity,value=12)|number(name=con,label=Constitution,value=14)|number(name=int,label=Intelligence,value=6)|number(name=wis,label=Wisdom,value=13)|number(name=cha,label=Charisma,value=6)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Skills** Perception rollable(dice=1d20+5,label=+5,dicelabel=Perception Check)  
+      **Damage Immunities** fire  
+      **Senses** darkvision 60 ft., Passive Perception 15  
+      **Languages** understands Infernal but can't speak it  
+      **Challenge** 3 (700 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Keen Hearing and Smell.*** The hound has advantage on Wisdom (Perception) checks that rely on hearing or smell.
+
+      ***Pack Tactics.*** The hound has advantage on an attack roll against a creature if at least one of the hound's allies is within 5 feet of the creature and the ally isn't ***incapacitated***.
+
+      ## Actions
+
+      ***Bite.*** *Melee Weapon Attack* rollable(dice=1d20+5,label=+5,dicelabel=To Hit [Bite]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=1d8+3,dicelabel=Damage [Bite]) piercing damage plus rollable(dice=2d6,dicelabel=Damage [Bite]) fire damage.
+
+      ***Fire Breath (rollable(dice=1d6,label=Recharge 5-6,dicelabel=Recharge [Fire Breath])).*** The hound exhales fire in a 15-foot cone. Each creature in that area must make a DC 12 Dexterity saving throw, taking rollable(dice=6d6,dicelabel=Damage [Fire Breath]) fire damage on a failed save, or half as much damage on a successful one.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Fiend, Lawful Evil*  
+    **Challenge** 3
+  subtype: npc
+  id: srdhellhound
+  status: 1
+  order: 1
+

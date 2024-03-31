@@ -1,0 +1,52 @@
+creatures:
+- name: Drow
+  statblock:
+    custom_statblock: |
+      **Armor Class** 15 (chain shirt)  
+      **Hit Points** 13 (rollable(dice=3d8,dicelabel=Hit Points))  
+      **Speed** 30 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=10)|number(name=dex,label=Dexterity,value=14)|number(name=con,label=Constitution,value=10)|number(name=int,label=Intelligence,value=11)|number(name=wis,label=Wisdom,value=11)|number(name=cha,label=Charisma,value=12)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Skills** Perception rollable(dice=1d20+2,label=+2,dicelabel=Perception Check), Stealth rollable(dice=1d20+4,label=+4,dicelabel=Stealth Check)  
+      **Senses** darkvision 120 ft., Passive Perception 12  
+      **Languages** Elvish, Undercommon  
+      **Challenge** 1/4 (50 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Fey Ancestry.*** The drow has advantage on saving throws against being ***charmed***, and magic can't put the drow to sleep.
+
+      ***Sunlight Sensitivity.*** While in sunlight, the drow has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.
+
+      ***Innate Spellcasting.*** The drow's spellcasting ability is Charisma (spell save DC 11). It can innately cast the following spells, requiring no material components:
+
+
+      At will: [dancing lights](https://www.dndbeyond.com/spells/dancing-lights)  
+      1/day each: [darkness](https://www.dndbeyond.com/spells/darkness), [faerie fire](https://www.dndbeyond.com/spells/faerie-fire)  
+
+      ## Actions
+
+      ***Shortsword.*** *Melee Weapon Attack* rollable(dice=1d20+4,label=+4,dicelabel=To Hit [Shortsword]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=1d6+2,dicelabel=Damage [Shortsword]) piercing damage.
+
+      ***Hand Crossbow.*** *Ranged Weapon Attack* rollable(dice=1d20+4,label=+4,dicelabel=To Hit [Hand Crossbow]) to hit, range 30/120 ft., one target. *Hit:* rollable(dice=1d6+2,dicelabel=Damage [Hand Crossbow]) piercing damage, and the target must succeed on a DC 13 Constitution saving throw or be ***poisoned*** for 1 hour. If the saving throw fails by 5 or more, the target is also ***unconscious*** while ***poisoned*** in this way. The target wakes up if it takes damage or if another creature takes an action to shake it awake.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Humanoid (Elf), Neutral Evil*  
+    **Challenge** 1/4
+  subtype: npc
+  id: srddrow
+  status: 1
+  order: 1
+

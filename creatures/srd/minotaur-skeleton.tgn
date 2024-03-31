@@ -1,0 +1,46 @@
+creatures:
+- name: Minotaur Skeleton
+  statblock:
+    custom_statblock: |
+      **Armor Class** 12 (natural armor)  
+      **Hit Points** 67 (rollable(dice=9d10 + 18,dicelabel=Hit Points))  
+      **Speed** 40 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=18)|number(name=dex,label=Dexterity,value=11)|number(name=con,label=Constitution,value=15)|number(name=int,label=Intelligence,value=6)|number(name=wis,label=Wisdom,value=8)|number(name=cha,label=Charisma,value=5)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Damage Vulnerabilities** bludgeoning  
+      **Damage Immunities** poison  
+      **Condition Immunities** exhaustion, poisoned  
+      **Senses** darkvision 60 ft., Passive Perception 9  
+      **Languages** understands Abyssal but can't speak  
+      **Challenge** 2 (450 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Charge.*** If the skeleton moves at least 10 feet straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra rollable(dice=2d8,dicelabel=Damage [Charge]) piercing damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be pushed up to 10 feet away and knocked ***prone***.
+
+      ## Actions
+
+      ***Greataxe.*** *Melee Weapon Attack* rollable(dice=1d20+6,label=+6,dicelabel=To Hit [Greataxe]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=2d12+4,dicelabel=Damage [Greataxe]) slashing damage.
+
+      ***Gore.*** *Melee Weapon Attack* rollable(dice=1d20+6,label=+6,dicelabel=To Hit [Gore]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=2d8+4,dicelabel=Damage [Gore]) piercing damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Undead, Lawful Evil*  
+    **Challenge** 2
+  subtype: npc
+  id: srdminotaurskeleton
+  status: 1
+  order: 1
+

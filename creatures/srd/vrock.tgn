@@ -1,0 +1,53 @@
+creatures:
+- name: Vrock
+  statblock:
+    custom_statblock: |
+      **Armor Class** 15 (natural armor)  
+      **Hit Points** 104 (rollable(dice=11d10 + 44,dicelabel=Hit Points))  
+      **Speed** Walk 40 ft., Fly 60 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=17)|number(name=dex,label=Dexterity,value=15)|number(name=con,label=Constitution,value=18)|number(name=int,label=Intelligence,value=8)|number(name=wis,label=Wisdom,value=13)|number(name=cha,label=Charisma,value=8)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Saving Throws** Dex rollable(dice=1d20+5,label=+5,dicelabel=Dexterity Saving Throw), Wis rollable(dice=1d20+4,label=+4,dicelabel=Wisdom Saving Throw), Cha rollable(dice=1d20+2,label=+2,dicelabel=Charisma Saving Throw)  
+      **Damage Resistances** cold, fire, lightning; bludgeoning, piercing, and slashing from nonmagical attacks  
+      **Damage Immunities** poison  
+      **Condition Immunities** poisoned  
+      **Senses** darkvision 120 ft., Passive Perception 11  
+      **Languages** Abyssal, telepathy 120 ft.  
+      **Challenge** 6 (2,300 XP)  
+      **Proficiency Bonus** +3  
+
+      ---
+
+      ***Magic Resistance.*** The vrock has advantage on saving throws against spells and other magical effects.
+
+      ## Actions
+
+      ***Multiattack.*** The vrock makes two attacks: one with its beak and one with its talons.
+
+      ***Beak.*** *Melee Weapon Attack* rollable(dice=1d20+6,label=+6,dicelabel=To Hit [Beak]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=2d6+3,dicelabel=Damage [Beak]) piercing damage.
+
+      ***Talons.*** *Melee Weapon Attack* rollable(dice=1d20+6,label=+6,dicelabel=To Hit [Talons]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=2d10+3,dicelabel=Damage [Talons]) slashing damage.
+
+      ***Spores (rollable(dice=1d6,label=Recharge 6,dicelabel=Recharge [Spores])).*** A 15-foot-radius cloud of toxic spores extends out from the vrock. The spores spread around corners. Each creature in that area must succeed on a DC 14 Constitution saving throw or become ***poisoned***. While ***poisoned*** in this way, a target takes rollable(dice=1d10,dicelabel=Damage [Spores]) poison damage at the start of each of its turns. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. Emptying a vial of holy water on the target also ends the effect on it.
+
+      ***Stunning Screech (1/Day).*** The vrock emits a horrific screech. Each creature within 20 feet of it that can hear it and that isn't a demon must succeed on a DC 14 Constitution saving throw or be ***stunned*** until the end of the vrock's next turn.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Fiend (Demon), Chaotic Evil*  
+    **Challenge** 6
+  subtype: npc
+  id: srdvrock
+  status: 1
+  order: 1
+

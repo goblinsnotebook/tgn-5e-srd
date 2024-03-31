@@ -1,0 +1,39 @@
+creatures:
+- name: Ankheg
+  statblock:
+    custom_statblock: |
+      **Armor Class** 14 11 (natural armor, )  
+      **Hit Points** 39 (rollable(dice=6d10 + 6,dicelabel=Hit Points))  
+      **Speed** Walk 30 ft., Burrow 10 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=17)|number(name=dex,label=Dexterity,value=11)|number(name=con,label=Constitution,value=13)|number(name=int,label=Intelligence,value=1)|number(name=wis,label=Wisdom,value=13)|number(name=cha,label=Charisma,value=6)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Senses** darkvision 60 ft., tremorsense 60 ft., Passive Perception 11  
+      **Languages** -  
+      **Challenge** 2 (450 XP)  
+      **Proficiency Bonus** +2  
+
+      ## Actions
+
+      ***Bite.*** *Melee Weapon Attack* rollable(dice=1d20+5,label=+5,dicelabel=To Hit [Bite]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=2d6+3,dicelabel=Damage [Bite]) slashing damage plus rollable(dice=1d6,dicelabel=Damage [Bite]) acid damage. If the target is a Large or smaller creature, it is ***grappled*** (escape DC 13). Until this grapple ends, the ankheg can bite only the ***grappled*** creature and has advantage on attack rolls to do so.
+
+      ***Acid Spray (rollable(dice=1d6,label=Recharge 6,dicelabel=Recharge [Acid Spray])).*** The ankheg spits acid in a line that is 30 feet long and 5 feet wide, provided that it has no creature ***grappled***. Each creature in that line must make a DC 13 Dexterity saving throw, taking rollable(dice=3d6,dicelabel=Damage [Acid Spray]) acid damage on a failed save, or half as much damage on a successful one.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Monstrosity, Unaligned*  
+    **Challenge** 2
+  subtype: npc
+  id: srdankheg
+  status: 1
+  order: 1
+

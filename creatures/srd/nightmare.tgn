@@ -1,0 +1,46 @@
+creatures:
+- name: Nightmare
+  statblock:
+    custom_statblock: |
+      **Armor Class** 13 (natural armor)  
+      **Hit Points** 68 (rollable(dice=8d10 + 24,dicelabel=Hit Points))  
+      **Speed** Walk 60 ft., Fly 90 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=18)|number(name=dex,label=Dexterity,value=15)|number(name=con,label=Constitution,value=16)|number(name=int,label=Intelligence,value=10)|number(name=wis,label=Wisdom,value=13)|number(name=cha,label=Charisma,value=15)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Damage Immunities** fire  
+      **Senses** Passive Perception 11  
+      **Languages** understands Abyssal, Common, and Infernal but can't speak   
+      **Challenge** 3 (700 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Confer Fire Resistance.*** The nightmare can grant resistance to fire damage to anyone riding it.
+
+      ***Illumination.*** The nightmare sheds bright light in a 10-foot radius and dim light for an additional 10 feet.
+
+      ## Actions
+
+      ***Hooves.*** *Melee Weapon Attack* rollable(dice=1d20+6,label=+6,dicelabel=To Hit [Hooves]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=2d8+4,dicelabel=Damage [Hooves]) bludgeoning damage plus rollable(dice=2d6,dicelabel=Damage [Hooves]) fire damage.
+
+      ***Ethereal Stride.*** The nightmare and up to three willing creatures within 5 feet of it magically enter the Ethereal Plane from the Material Plane, or vice versa.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Fiend, Neutral Evil*  
+    **Challenge** 3
+  subtype: npc
+  id: srdnightmare
+  status: 1
+  order: 1
+

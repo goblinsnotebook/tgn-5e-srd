@@ -1,0 +1,48 @@
+creatures:
+- name: Minotaur
+  statblock:
+    custom_statblock: |
+      **Armor Class** 14 (natural armor)  
+      **Hit Points** 76 (rollable(dice=9d10 + 27,dicelabel=Hit Points))  
+      **Speed** 40 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=18)|number(name=dex,label=Dexterity,value=11)|number(name=con,label=Constitution,value=16)|number(name=int,label=Intelligence,value=6)|number(name=wis,label=Wisdom,value=16)|number(name=cha,label=Charisma,value=9)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Skills** Perception rollable(dice=1d20+7,label=+7,dicelabel=Perception Check)  
+      **Senses** darkvision 60 ft., Passive Perception 17  
+      **Languages** Abyssal  
+      **Challenge** 3 (700 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Charge.*** If the minotaur moves at least 10 feet straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra rollable(dice=2d8,dicelabel=Damage [Charge]) piercing damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be pushed up to 10 feet away and knocked ***prone***.
+
+      ***Labyrinthine Recall.*** The minotaur can perfectly recall any path it has traveled.
+
+      ***Reckless.*** At the start of its turn, the minotaur can gain advantage on all melee weapon attack rolls it makes during that turn, but attack rolls against it have advantage until the start of its next turn.
+
+      ## Actions
+
+      ***Greataxe.*** *Melee Weapon Attack* rollable(dice=1d20+6,label=+6,dicelabel=To Hit [Greataxe]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=2d12+4,dicelabel=Damage [Greataxe]) slashing damage.
+
+      ***Gore.*** *Melee Weapon Attack* rollable(dice=1d20+6,label=+6,dicelabel=To Hit [Gore]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=2d8+4,dicelabel=Damage [Gore]) piercing damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Monstrosity, Chaotic Evil*  
+    **Challenge** 3
+  subtype: npc
+  id: srdminotaur
+  status: 1
+  order: 1
+

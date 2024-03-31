@@ -1,0 +1,48 @@
+creatures:
+- name: Azer
+  statblock:
+    custom_statblock: |
+      **Armor Class** 17 (natural armor, shield)  
+      **Hit Points** 39 (rollable(dice=6d8 + 12,dicelabel=Hit Points))  
+      **Speed** 30 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=17)|number(name=dex,label=Dexterity,value=12)|number(name=con,label=Constitution,value=15)|number(name=int,label=Intelligence,value=12)|number(name=wis,label=Wisdom,value=13)|number(name=cha,label=Charisma,value=10)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Saving Throws** Con rollable(dice=1d20+4,label=+4,dicelabel=Constitution Saving Throw)  
+      **Damage Immunities** fire, poison  
+      **Condition Immunities** poisoned  
+      **Senses** Passive Perception 11  
+      **Languages** Ignan  
+      **Challenge** 2 (450 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Heated Body.*** A creature that touches the azer or hits it with a melee attack while within 5 feet of it takes rollable(dice=1d10,dicelabel=Damage [Heated Body]) fire damage.
+
+      ***Heated Weapons.*** When the azer hits with a metal melee weapon, it deals an extra rollable(dice=1d6,dicelabel=Damage [Heated Weapons]) fire damage (included in the attack).
+
+      ***Illumination.*** The azer sheds bright light in a 10-foot radius and dim light for an additional 10 feet.
+
+      ## Actions
+
+      ***Warhammer.*** *Melee Weapon Attack* rollable(dice=1d20+5,label=+5,dicelabel=To Hit [Warhammer]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=1d8+3,dicelabel=Damage [Warhammer]) bludgeoning damage, or rollable(dice=1d10+3,dicelabel=Damage [Warhammer]) bludgeoning damage if used with two hands to make a melee attack, plus rollable(dice=1d6,dicelabel=Damage [Warhammer]) fire damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Elemental, Lawful Neutral*  
+    **Challenge** 2
+  subtype: npc
+  id: srdazer
+  status: 1
+  order: 1
+

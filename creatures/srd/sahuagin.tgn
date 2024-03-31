@@ -1,0 +1,52 @@
+creatures:
+- name: Sahuagin
+  statblock:
+    custom_statblock: |
+      **Armor Class** 12 (natural armor)  
+      **Hit Points** 22 (rollable(dice=4d8 + 4,dicelabel=Hit Points))  
+      **Speed** Walk 30 ft., Swim 40 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=13)|number(name=dex,label=Dexterity,value=11)|number(name=con,label=Constitution,value=12)|number(name=int,label=Intelligence,value=12)|number(name=wis,label=Wisdom,value=13)|number(name=cha,label=Charisma,value=9)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Skills** Perception rollable(dice=1d20+5,label=+5,dicelabel=Perception Check)  
+      **Senses** darkvision 120 ft., Passive Perception 15  
+      **Languages** Sahuagin  
+      **Challenge** 1/2 (100 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Blood Frenzy.*** The sahuagin has advantage on melee attack rolls against any creature that doesn't have all its hit points.
+
+      ***Limited Amphibiousness.*** The sahuagin can breathe air and water, but it needs to be submerged at least once every 4 hours to avoid suffocating.
+
+      ***Shark Telepathy.*** The sahuagin can magically command any shark within 120 feet of it, using a limited telepathy.
+
+      ## Actions
+
+      ***Multiattack.*** The sahuagin makes two melee attacks: one with its bite and one with its claws or spear.
+
+      ***Bite.*** *Melee Weapon Attack* rollable(dice=1d20+3,label=+3,dicelabel=To Hit [Bite]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=1d4+1,dicelabel=Damage [Bite]) piercing damage.
+
+      ***Claws.*** *Melee Weapon Attack* rollable(dice=1d20+3,label=+3,dicelabel=To Hit [Claws]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=1d4+1,dicelabel=Damage [Claws]) slashing damage.
+
+      ***Spear.*** *Melee or Ranged Weapon Attack* rollable(dice=1d20+3,label=+3,dicelabel=To Hit [Spear]) to hit, reach 5 ft. or range 20/60 ft., one target. *Hit:* rollable(dice=1d6+1,dicelabel=Damage [Spear]) piercing damage, or rollable(dice=1d8+1,dicelabel=Damage [Spear]) piercing damage if used with two hands to make a melee attack.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Humanoid (Sahuagin), Lawful Evil*  
+    **Challenge** 1/2
+  subtype: npc
+  id: srdsahuagin
+  status: 1
+  order: 1
+

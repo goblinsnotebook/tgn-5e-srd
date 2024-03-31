@@ -1,0 +1,51 @@
+creatures:
+- name: Werebear
+  statblock:
+    custom_statblock: |
+      **Armor Class** 10 11 (natural armor)  
+      **Hit Points** 135 (rollable(dice=18d8 + 54,dicelabel=Hit Points))  
+      **Speed** 30 ft. (40 ft., climb 30 ft. in bear or hybrid form)  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=19)|number(name=dex,label=Dexterity,value=10)|number(name=con,label=Constitution,value=17)|number(name=int,label=Intelligence,value=11)|number(name=wis,label=Wisdom,value=12)|number(name=cha,label=Charisma,value=12)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Skills** Perception rollable(dice=1d20+7,label=+7,dicelabel=Perception Check)  
+      **Damage Immunities** bludgeoning, piercing, and slashing from nonmagical attacks that aren't silvered  
+      **Senses** Passive Perception 17  
+      **Languages** Common (can't speak in bear form)  
+      **Challenge** 5 (1,800 XP)  
+      **Proficiency Bonus** +3  
+
+      ---
+
+      ***Shapechanger.*** The werebear can use its action to polymorph into a Large bear-humanoid hybrid or into a Large bear, or back into its true form, which is humanoid. Its statistics, other than its size and AC, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.
+
+      ***Keen Smell.*** The werebear has advantage on Wisdom (Perception) checks that rely on smell.
+
+      ## Actions
+
+      ***Multiattack.*** In bear form, the werebear makes two claw attacks. In humanoid form, it makes two greataxe attacks. In hybrid form, it can attack like a bear or a humanoid.
+
+      ***Bite (Bear or Hybrid Form Only).*** *Melee Weapon Attack* rollable(dice=1d20+7,label=+7,dicelabel=To Hit [Bite]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=2d10+4,dicelabel=Damage [Bite]) piercing damage. If the target is a humanoid, it must succeed on a DC 14 Constitution saving throw or be cursed with werebear lycanthropy.
+
+      ***Claw (Bear or Hybrid Form Only).*** *Melee Weapon Attack* rollable(dice=1d20+7,label=+7,dicelabel=To Hit [Claw]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=2d8+4,dicelabel=Damage [Claw]) slashing damage.
+
+      ***Greataxe (Humanoid or Hybrid Form Only).*** *Melee Weapon Attack* rollable(dice=1d20+7,label=+7,dicelabel=To Hit [Greataxe]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=1d12+4,dicelabel=Damage [Greataxe]) slashing damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Humanoid (Human, Shapechanger), Neutral Good*  
+    **Challenge** 5
+  subtype: npc
+  id: srdwerebear
+  status: 1
+  order: 1
+

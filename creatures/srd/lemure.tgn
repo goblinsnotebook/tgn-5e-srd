@@ -1,0 +1,46 @@
+creatures:
+- name: Lemure
+  statblock:
+    custom_statblock: |
+      **Armor Class** 7  
+      **Hit Points** 13 (rollable(dice=3d8,dicelabel=Hit Points))  
+      **Speed** 15 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=10)|number(name=dex,label=Dexterity,value=5)|number(name=con,label=Constitution,value=11)|number(name=int,label=Intelligence,value=1)|number(name=wis,label=Wisdom,value=11)|number(name=cha,label=Charisma,value=3)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Damage Resistances** cold  
+      **Damage Immunities** fire, poison  
+      **Condition Immunities** charmed, frightened, poisoned  
+      **Senses** darkvision 120 ft., Passive Perception 10  
+      **Languages** understands Infernal but can't speak  
+      **Challenge** 0 (10 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Devil's Sight.*** Magical darkness doesn't impede the lemure's darkvision.
+
+      ***Hellish Rejuvenation.*** A lemure that dies in the Nine Hells comes back to life with all its hit points in rollable(dice=1d10,dicelabel=Hellish Rejuvenation) days unless it is killed by a good-aligned creature with a ***bless*** spell cast on that creature or its remains are sprinkled with holy water.
+
+      ## Actions
+
+      ***Fist.*** *Melee Weapon Attack* rollable(dice=1d20+3,label=+3,dicelabel=To Hit [Fist]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=1d4,dicelabel=Damage [Fist]) bludgeoning damage
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Fiend (Devil), Lawful Evil*  
+    **Challenge** 0
+  subtype: npc
+  id: srdlemure
+  status: 1
+  order: 1
+

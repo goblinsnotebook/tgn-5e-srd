@@ -1,0 +1,52 @@
+creatures:
+- name: Medusa
+  statblock:
+    custom_statblock: |
+      **Armor Class** 15 (natural armor)  
+      **Hit Points** 127 (rollable(dice=17d8 + 51,dicelabel=Hit Points))  
+      **Speed** 30 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=10)|number(name=dex,label=Dexterity,value=15)|number(name=con,label=Constitution,value=16)|number(name=int,label=Intelligence,value=12)|number(name=wis,label=Wisdom,value=13)|number(name=cha,label=Charisma,value=15)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Skills** Deception rollable(dice=1d20+5,label=+5,dicelabel=Deception Check), Insight rollable(dice=1d20+4,label=+4,dicelabel=Insight Check), Perception rollable(dice=1d20+4,label=+4,dicelabel=Perception Check), Stealth rollable(dice=1d20+5,label=+5,dicelabel=Stealth Check)  
+      **Senses** darkvision 60 ft., Passive Perception 14  
+      **Languages** Common  
+      **Challenge** 6 (2,300 XP)  
+      **Proficiency Bonus** +3  
+
+      ---
+
+      ***Petrifying Gaze.*** When a creature that can see the medusa's eyes starts its turn within 30 feet of the medusa, the medusa can force it to make a DC 14 Constitution saving throw if the medusa isn't ***incapacitated*** and can see the creature. If the saving throw fails by 5 or more, the creature is instantly ***petrified***. Otherwise, a creature that fails the save begins to turn to stone and is ***restrained***. The ***restrained*** creature must repeat the saving throw at the end of its next turn, becoming ***petrified*** on a failure or ending the effect on a success. The petrification lasts until the creature is freed by the  ***greater restoration*** spell or other magic.
+
+      Unless *surprised*, a creature can avert its eyes to avoid the saving throw at the start of its turn. If the creature does so, it can't see the medusa until the start of its next turn, when it can avert its eyes again. If the creature looks at the medusa in the meantime, it must immediately make the save.
+
+      If the medusa sees itself reflected on a polished surface within 30 feet of it and in an area of bright light, the medusa is, due to its curse, affected by its own gaze.
+
+      ## Actions
+
+      ***Multiattack.*** The medusa makes either three melee attacks—one with its snake hair and two with its shortsword—or two ranged attacks with its longbow.
+
+      ***Snake Hair.*** *Melee Weapon Attack* rollable(dice=1d20+5,label=+5,dicelabel=To Hit [Snake Hair]) to hit, reach 5 ft., one creature. *Hit:* rollable(dice=1d4+2,dicelabel=Damage [Snake Hair]) piercing damage plus rollable(dice=4d6,dicelabel=Damage [Snake Hair]) poison damage.
+
+      ***Shortsword.*** *Melee Weapon Attack* rollable(dice=1d20+5,label=+5,dicelabel=To Hit [Shortsword]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=1d6+2,dicelabel=Damage [Shortsword]) piercing damage.
+
+      ***Longbow.*** *Ranged Weapon Attack* rollable(dice=1d20+5,label=+5,dicelabel=To Hit [Longbow]) to hit, range 150/600 ft., one target. *Hit:* rollable(dice=1d8+2,dicelabel=Damage [Longbow]) piercing damage plus rollable(dice=2d6,dicelabel=Damage [Longbow]) poison damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Monstrosity, Lawful Evil*  
+    **Challenge** 6
+  subtype: npc
+  id: srdmedusa
+  status: 1
+  order: 1
+

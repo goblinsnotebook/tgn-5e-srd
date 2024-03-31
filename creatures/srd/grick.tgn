@@ -1,0 +1,46 @@
+creatures:
+- name: Grick
+  statblock:
+    custom_statblock: |
+      **Armor Class** 14 (natural armor)  
+      **Hit Points** 27 (rollable(dice=6d8,dicelabel=Hit Points))  
+      **Speed** Walk 30 ft., Climb 30 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=14)|number(name=dex,label=Dexterity,value=14)|number(name=con,label=Constitution,value=11)|number(name=int,label=Intelligence,value=3)|number(name=wis,label=Wisdom,value=14)|number(name=cha,label=Charisma,value=5)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Damage Resistances** bludgeoning, piercing, and slashing from nonmagical attacks  
+      **Senses** darkvision 60 ft., Passive Perception 12  
+      **Languages** -  
+      **Challenge** 2 (450 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Stone Camouflage.*** The grick has advantage on Dexterity (Stealth) checks made to hide in rocky terrain.
+
+      ## Actions
+
+      ***Multiattack.*** The grick makes one attack with its tentacles. If that attack hits, the grick can make one beak attack against the same target.
+
+      ***Tentacles.*** *Melee Weapon Attack* rollable(dice=1d20+4,label=+4,dicelabel=To Hit [Tentacles]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=2d6+2,dicelabel=Damage [Tentacles]) slashing damage.
+
+      ***Beak.*** *Melee Weapon Attack* rollable(dice=1d20+4,label=+4,dicelabel=To Hit [Beak]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=1d6+2,dicelabel=Damage [Beak]) piercing damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Monstrosity, Neutral*  
+    **Challenge** 2
+  subtype: npc
+  id: srdgrick
+  status: 1
+  order: 1
+

@@ -1,0 +1,40 @@
+creatures:
+- name: Frog
+  statblock:
+    custom_statblock: |
+      **Armor Class** 11  
+      **Hit Points** 1 (rollable(dice=1d4 - 1,dicelabel=Hit Points))  
+      **Speed** Walk 20 ft., Swim 20 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=1)|number(name=dex,label=Dexterity,value=13)|number(name=con,label=Constitution,value=8)|number(name=int,label=Intelligence,value=1)|number(name=wis,label=Wisdom,value=8)|number(name=cha,label=Charisma,value=3)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Skills** Perception rollable(dice=1d20+1,label=+1,dicelabel=Perception Check), Stealth rollable(dice=1d20+3,label=+3,dicelabel=Stealth Check)  
+      **Senses** darkvision 30 ft., Passive Perception 11  
+      **Languages** -  
+      **Challenge** 0 (0 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Amphibious.*** The frog can breathe air and water.
+
+      ***Standing Leap.*** The frog's long jump is up to 10 feet and its high jump is up to 5 feet, with or without a running start.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Tiny Beast, Unaligned*  
+    **Challenge** 0
+  subtype: npc
+  id: srdfrog
+  status: 1
+  order: 1
+

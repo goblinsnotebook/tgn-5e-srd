@@ -1,0 +1,56 @@
+creatures:
+- name: Guardian Naga
+  statblock:
+    custom_statblock: |
+      **Armor Class** 18 (natural armor)  
+      **Hit Points** 127 (rollable(dice=15d10 + 45,dicelabel=Hit Points))  
+      **Speed** 40 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=19)|number(name=dex,label=Dexterity,value=18)|number(name=con,label=Constitution,value=16)|number(name=int,label=Intelligence,value=16)|number(name=wis,label=Wisdom,value=19)|number(name=cha,label=Charisma,value=18)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Saving Throws** Dex rollable(dice=1d20+8,label=+8,dicelabel=Dexterity Saving Throw), Con rollable(dice=1d20+7,label=+7,dicelabel=Constitution Saving Throw), Int rollable(dice=1d20+7,label=+7,dicelabel=Intelligence Saving Throw), Wis rollable(dice=1d20+8,label=+8,dicelabel=Wisdom Saving Throw), Cha rollable(dice=1d20+8,label=+8,dicelabel=Charisma Saving Throw)  
+      **Damage Immunities** poison  
+      **Condition Immunities** charmed, poisoned  
+      **Senses** darkvision 60 ft., Passive Perception 14  
+      **Languages** Celestial, Common  
+      **Challenge** 10 (5,900 XP)  
+      **Proficiency Bonus** +4  
+
+      ---
+
+      ***Rejuvenation.*** If it dies, the naga returns to life in rollable(dice=1d6,dicelabel=Rejuvenation) days and regains all its hit points. Only a ***wish*** spell can prevent this trait from functioning.
+
+      ***Spellcasting.*** The naga is an 11th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 16, rollable(dice=1d20+8,label=+8,dicelabel=To Hit [Spell Attack]) to hit with spell attacks), and it needs only verbal components to cast its spells. It has the following cleric spells prepared:
+
+      Cantrips (at will) [mending](https://www.dndbeyond.com/spells/mending), [sacred flame](https://www.dndbeyond.com/spells/sacred-flame), [thaumaturgy](https://www.dndbeyond.com/spells/thaumaturgy)    
+      1st level (4 slots) [command](https://www.dndbeyond.com/spells/command), [cure wounds](https://www.dndbeyond.com/spells/cure-wounds), [shield of faith](https://www.dndbeyond.com/spells/shield-of-faith)    
+      2nd level (3 slots) [calm emotions](https://www.dndbeyond.com/spells/calm-emotions), [hold person](https://www.dndbeyond.com/spells/hold-person)    
+      3rd level (3 slots) [bestow curse](https://www.dndbeyond.com/spells/bestow-curse), [clairvoyance](https://www.dndbeyond.com/spells/clairvoyance)    
+      5th level (3 slots) [banishment](https://www.dndbeyond.com/spells/banishment), [freedom of movement](https://www.dndbeyond.com/spells/freedom-of-movement)    
+      5th level (2 slots) [flame strike](https://www.dndbeyond.com/spells/flame-strike), [geas](https://www.dndbeyond.com/spells/geas)    
+      6th level (1 slot) [true seeing](https://www.dndbeyond.com/spells/true-seeing)    
+
+      ## Actions
+
+      ***Bite.*** *Melee Weapon Attack* rollable(dice=1d20+8,label=+8,dicelabel=To Hit [Bite]) to hit, reach 10 ft., one creature. *Hit:* rollable(dice=1d8+4,dicelabel=Damage [Bite]) piercing damage, and the target must make a DC 15 Constitution saving throw, taking rollable(dice=10d8,dicelabel=Damage [Bite]) poison damage on a failed save, or half as much damage on a successful one.
+
+      ***Spit Poison.*** *Ranged Weapon Attack* rollable(dice=1d20+8,label=+8,dicelabel=To Hit [Spit Poison]) to hit, range 15/30 ft., one creature. *Hit:* The target must make a DC 15 Constitution saving throw, taking rollable(dice=10d8,dicelabel=Damage [Spit Poison]) poison damage on a failed save, or half as much damage on a successful one.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Monstrosity, Lawful Good*  
+    **Challenge** 10
+  subtype: npc
+  id: srdguardiannaga
+  status: 1
+  order: 1
+

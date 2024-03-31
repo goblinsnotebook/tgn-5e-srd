@@ -1,0 +1,43 @@
+creatures:
+- name: Homunculus
+  statblock:
+    custom_statblock: |
+      **Armor Class** 13 (natural armor)  
+      **Hit Points** 5 (rollable(dice=2d4,dicelabel=Hit Points))  
+      **Speed** Walk 20 ft., Fly 40 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=4)|number(name=dex,label=Dexterity,value=15)|number(name=con,label=Constitution,value=11)|number(name=int,label=Intelligence,value=10)|number(name=wis,label=Wisdom,value=10)|number(name=cha,label=Charisma,value=7)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Damage Immunities** poison  
+      **Condition Immunities** charmed, poisoned  
+      **Senses** darkvision 60 ft., Passive Perception 10  
+      **Languages** understands the languages of its creator but can't speak  
+      **Challenge** 0 (10 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Telepathic Bond.*** While the homunculus is on the same plane of existence as its master, it can magically convey what it senses to its master, and the two can communicate telepathically.
+
+      ## Actions
+
+      ***Bite.*** *Melee Weapon Attack* rollable(dice=1d20+4,label=+4,dicelabel=To Hit [Bite]) to hit, reach 5 ft., one creature. *Hit:* 1 piercing damage, and the target must succeed on a DC 10 Constitution saving throw or be ***poisoned*** for 1 minute. If the saving throw fails by 5 or more, the target is instead ***poisoned*** for 5 (rollable(dice=1d10,dicelabel=Bite)) minutes and ***unconscious*** while ***poisoned*** in this way.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Tiny Construct, Neutral*  
+    **Challenge** 0
+  subtype: npc
+  id: srdhomunculus
+  status: 1
+  order: 1
+

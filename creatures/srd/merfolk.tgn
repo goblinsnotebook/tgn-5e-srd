@@ -1,0 +1,42 @@
+creatures:
+- name: Merfolk
+  statblock:
+    custom_statblock: |
+      **Armor Class** 11  
+      **Hit Points** 11 (rollable(dice=2d8 + 2,dicelabel=Hit Points))  
+      **Speed** Walk 10 ft., Swim 40 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=10)|number(name=dex,label=Dexterity,value=13)|number(name=con,label=Constitution,value=12)|number(name=int,label=Intelligence,value=11)|number(name=wis,label=Wisdom,value=11)|number(name=cha,label=Charisma,value=12)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Skills** Perception rollable(dice=1d20+2,label=+2,dicelabel=Perception Check)  
+      **Senses** Passive Perception 12  
+      **Languages** Aquan, Common  
+      **Challenge** 1/8 (25 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Amphibious.*** The merfolk can breathe air and water.
+
+      ## Actions
+
+      ***Spear.*** *Melee or Ranged Weapon Attack* rollable(dice=1d20+2,label=+2,dicelabel=To Hit [Spear]) to hit, reach 5 ft. or range 20/60 ft., one target. *Hit:* rollable(dice=1d6,dicelabel=Damage [Spear]) piercing damage, or rollable(dice=1d8,dicelabel=Damage [Spear]) piercing damage if used with two hands to make a melee attack.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Humanoid (Merfolk), Neutral*  
+    **Challenge** 1/8
+  subtype: npc
+  id: srdmerfolk
+  status: 1
+  order: 1
+

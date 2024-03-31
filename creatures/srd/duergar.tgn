@@ -1,0 +1,50 @@
+creatures:
+- name: Duergar
+  statblock:
+    custom_statblock: |
+      **Armor Class** 16 (scale mail, shield)  
+      **Hit Points** 26 (rollable(dice=4d8 + 4,dicelabel=Hit Points))  
+      **Speed** 25 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=14)|number(name=dex,label=Dexterity,value=11)|number(name=con,label=Constitution,value=14)|number(name=int,label=Intelligence,value=11)|number(name=wis,label=Wisdom,value=10)|number(name=cha,label=Charisma,value=9)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Damage Resistances** poison  
+      **Senses** darkvision 120 ft., Passive Perception 10  
+      **Languages** Dwarvish, Undercommon  
+      **Challenge** 1 (200 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Duergar Resilience.*** The duergar has advantage on saving throws against poison, spells, and illusions, as well as to resist being ***charmed*** or ***paralyzed***.
+
+      ***Sunlight Sensitivity.*** While in sunlight, the duergar has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.
+
+      ## Actions
+
+      ***Enlarge (Recharges after a Short or Long Rest).*** For 1 minute, the duergar magically increases in size, along with anything it is wearing or carrying. While enlarged, the duergar is Large, doubles its damage dice on Strength-based weapon attacks (included in the attacks), and makes Strength checks and Strength saving throws with advantage. If the duergar lacks the room to become Large, it attains the maximum size possible in the space available.
+
+      ***War Pick.*** *Melee Weapon Attack* rollable(dice=1d20+4,label=+4,dicelabel=To Hit [War Pick]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=1d8+2,dicelabel=Damage [War Pick]) piercing damage, or rollable(dice=2d8+2,dicelabel=Damage [War Pick]) piercing damage while enlarged.
+
+      ***Javelin.*** *Melee or Ranged Weapon Attack* rollable(dice=1d20+4,label=+4,dicelabel=To Hit [Javelin]) to hit, reach 5 ft. or range 30/120 ft., one target. *Hit:* rollable(dice=1d6+2,dicelabel=Damage [Javelin]) piercing damage, or rollable(dice=2d6+2,dicelabel=Damage [Javelin]) piercing damage while enlarged.
+
+      ***Invisibility (Recharges after a Short or Long Rest).*** The duergar magically turns ***invisible*** until it attacks, casts a spell, or uses its Enlarge, or until its concentration is broken, up to 1 hour (as if concentrating on a spell). Any equipment the duergar wears or carries is ***invisible*** with it.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Humanoid (Dwarf), Lawful Evil*  
+    **Challenge** 1
+  subtype: npc
+  id: srdduergar
+  status: 1
+  order: 1
+

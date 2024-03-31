@@ -1,0 +1,44 @@
+creatures:
+- name: Death Dog
+  statblock:
+    custom_statblock: |
+      **Armor Class** 12  
+      **Hit Points** 39 (rollable(dice=6d8 + 12,dicelabel=Hit Points))  
+      **Speed** 40 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=15)|number(name=dex,label=Dexterity,value=14)|number(name=con,label=Constitution,value=14)|number(name=int,label=Intelligence,value=3)|number(name=wis,label=Wisdom,value=13)|number(name=cha,label=Charisma,value=6)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Skills** Perception rollable(dice=1d20+5,label=+5,dicelabel=Perception Check), Stealth rollable(dice=1d20+4,label=+4,dicelabel=Stealth Check)  
+      **Senses** darkvision 120 ft., Passive Perception 15  
+      **Languages** -  
+      **Challenge** 1 (200 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Two-Headed.*** The dog has advantage on Wisdom (Perception) checks and on saving throws against being ***blinded***, ***charmed***, ***deafened***, ***frightened***, ***stunned***, or knocked ***unconscious***.
+
+      ## Actions
+
+      ***Multiattack.*** The dog makes two bite attacks.
+
+      ***Bite.*** *Melee Weapon Attack* rollable(dice=1d20+4,label=+4,dicelabel=To Hit [Bite]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=1d6+2,dicelabel=Damage [Bite]) piercing damage. If the target is a creature, it must succeed on a DC 12 Constitution saving throw against disease or become ***poisoned*** until the disease is cured. Every 24 hours that elapse, the creature must repeat the saving throw, reducing its hit point maximum by 5 (rollable(dice=1d10,dicelabel=Bite)) on a failure. This reduction lasts until the disease is cured. The creature dies if the disease reduces its hit point maximum to 0.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Monstrosity, Neutral Evil*  
+    **Challenge** 1
+  subtype: npc
+  id: srddeathdog
+  status: 1
+  order: 1
+

@@ -1,0 +1,46 @@
+creatures:
+- name: Druid
+  statblock:
+    custom_statblock: |
+      **Armor Class** 16  
+      **Hit Points** 27 (rollable(dice=5d8 + 5,dicelabel=Hit Points))  
+      **Speed** 30 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=10)|number(name=dex,label=Dexterity,value=12)|number(name=con,label=Constitution,value=13)|number(name=int,label=Intelligence,value=12)|number(name=wis,label=Wisdom,value=15)|number(name=cha,label=Charisma,value=11)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Skills** Medicine rollable(dice=1d20+4,label=+4,dicelabel=Medicine Check), Nature rollable(dice=1d20+3,label=+3,dicelabel=Nature Check), Perception rollable(dice=1d20+4,label=+4,dicelabel=Perception Check)  
+      **Senses** Passive Perception 14  
+      **Languages** Druidic plus any two languages  
+      **Challenge** 2 (450 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Spellcasting.*** The druid is a 4th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 12, rollable(dice=1d20+4,label=+4,dicelabel=To Hit [Spell Attack]) to hit with spell attacks). It has the following druid spells prepared:
+
+      Cantrips (at will) [druidcraft](https://www.dndbeyond.com/spells/druidcraft), [produce flame](https://www.dndbeyond.com/spells/produce-flame), [shillelagh](https://www.dndbeyond.com/spells/shillelagh)    
+      1st level (4 slots) [entangle](https://www.dndbeyond.com/spells/entangle), [longstrider](https://www.dndbeyond.com/spells/longstrider), [speak with animals](https://www.dndbeyond.com/spells/speak-with-animals), [thunderwave](https://www.dndbeyond.com/spells/thunderwave)    
+      2nd level (3 slots) [animal messenger](https://www.dndbeyond.com/spells/animal-messenger), [barkskin](https://www.dndbeyond.com/spells/barkskin)    
+
+      ## Actions
+
+      ***Quarterstaff.*** *Melee Weapon Attack* rollable(dice=1d20+2,label=+2,dicelabel=To Hit [Quarterstaff]) to hit (rollable(dice=1d20+4,label=+4,dicelabel=To Hit [Quarterstaff]) to hit with shillelagh), reach 5 ft., one target. *Hit:* rollable(dice=1d6,dicelabel=Damage [Quarterstaff]) bludgeoning damage, rollable(dice=1d8,dicelabel=Damage [Quarterstaff]) bludgeoning damage if wielded with two hands, or rollable(dice=1d8+2,dicelabel=Damage [Quarterstaff]) bludgeoning damage with ***shillelagh***.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Humanoid (Any race)*  
+    **Challenge** 2
+  subtype: npc
+  id: srddruid
+  status: 1
+  order: 1
+

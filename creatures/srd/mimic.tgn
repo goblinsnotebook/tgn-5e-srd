@@ -1,0 +1,52 @@
+creatures:
+- name: Mimic
+  statblock:
+    custom_statblock: |
+      **Armor Class** 12 (natural armor)  
+      **Hit Points** 58 (rollable(dice=9d8 + 18,dicelabel=Hit Points))  
+      **Speed** 15 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=17)|number(name=dex,label=Dexterity,value=12)|number(name=con,label=Constitution,value=15)|number(name=int,label=Intelligence,value=5)|number(name=wis,label=Wisdom,value=13)|number(name=cha,label=Charisma,value=8)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Skills** Stealth rollable(dice=1d20+5,label=+5,dicelabel=Stealth Check)  
+      **Damage Immunities** acid  
+      **Condition Immunities** prone  
+      **Senses** darkvision 60 ft., Passive Perception 11  
+      **Languages** -  
+      **Challenge** 2 (450 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Shapechanger.*** The mimic can use its action to polymorph into an object or back into its true, amorphous form. Its statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.
+
+      ***Adhesive (Object Form Only).*** The mimic adheres to anything that touches it. A Huge or smaller creature adhered to the mimic is also ***grappled*** by it (escape DC 13). Ability checks made to escape this grapple have disadvantage.
+
+      ***False Appearance (Object Form Only).*** While the mimic remains motionless, it is indistinguishable from an ordinary object.
+
+      ***Grappler.*** The mimic has advantage on attack rolls against any creature ***grappled*** by it.
+
+      ## Actions
+
+      ***Pseudopod.*** *Melee Weapon Attack* rollable(dice=1d20+5,label=+5,dicelabel=To Hit [Pseudopod]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=1d8+3,dicelabel=Damage [Pseudopod]) bludgeoning damage. If the mimic is in object form, the target is subjected to its Adhesive trait.
+
+      ***Bite.*** *Melee Weapon Attack* rollable(dice=1d20+5,label=+5,dicelabel=To Hit [Bite]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=1d8+3,dicelabel=Damage [Bite]) piercing damage plus rollable(dice=1d8,dicelabel=Damage [Bite]) acid damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Monstrosity (Shapechanger), Neutral*  
+    **Challenge** 2
+  subtype: npc
+  id: srdmimic
+  status: 1
+  order: 1
+

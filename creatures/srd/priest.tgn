@@ -1,0 +1,49 @@
+creatures:
+- name: Priest
+  statblock:
+    custom_statblock: |
+      **Armor Class** 13 (chain shirt)  
+      **Hit Points** 27 (rollable(dice=5d8 + 5,dicelabel=Hit Points))  
+      **Speed** 30 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=10)|number(name=dex,label=Dexterity,value=10)|number(name=con,label=Constitution,value=12)|number(name=int,label=Intelligence,value=13)|number(name=wis,label=Wisdom,value=16)|number(name=cha,label=Charisma,value=13)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Skills** Medicine rollable(dice=1d20+7,label=+7,dicelabel=Medicine Check), Persuasion rollable(dice=1d20+3,label=+3,dicelabel=Persuasion Check), Religion rollable(dice=1d20+5,label=+5,dicelabel=Religion Check)  
+      **Senses** Passive Perception 13  
+      **Languages** any two languages  
+      **Challenge** 2 (450 XP)  
+      **Proficiency Bonus** +2  
+
+      ---
+
+      ***Divine Eminence.*** As a bonus action, the priest can expend a spell slot to cause its melee weapon attacks to magically deal an extra rollable(dice=3d6,dicelabel=Damage [Divine Eminence]) radiant damage to a target on a hit. This benefit lasts until the end of the turn. If the priest expends a spell slot of 2nd level or higher, the extra damage increases by rollable(dice=1d6,dicelabel=Divine Eminence) for each level above 1st.
+
+      ***Spellcasting.*** The priest is a 5th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 13, rollable(dice=1d20+5,label=+5,dicelabel=To Hit [Spell Attack]) to hit with spell attacks). The priest has the following cleric spells prepared:
+
+      Cantrips (at will) [light](https://www.dndbeyond.com/spells/light), [sacred flame](https://www.dndbeyond.com/spells/sacred-flame), [thaumaturgy](https://www.dndbeyond.com/spells/thaumaturgy)    
+      1st level (4 slots) [cure wounds](https://www.dndbeyond.com/spells/cure-wounds), [guiding bolt](https://www.dndbeyond.com/spells/guiding-bolt), [sanctuary](https://www.dndbeyond.com/spells/sanctuary)    
+      2nd level (3 slots) [lesser restoration](https://www.dndbeyond.com/spells/lesser-restoration), [spiritual weapon](https://www.dndbeyond.com/spells/spiritual-weapon)    
+      3rd level (2 slots) [dispel magic](https://www.dndbeyond.com/spells/dispel-magic), [spirit guardians](https://www.dndbeyond.com/spells/spirit-guardians)    
+
+      ## Actions
+
+      ***Mace.*** *Melee Weapon Attack* rollable(dice=1d20+2,label=+2,dicelabel=To Hit [Mace]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=1d6,dicelabel=Damage [Mace]) bludgeoning damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Humanoid (Any race)*  
+    **Challenge** 2
+  subtype: npc
+  id: srdpriest
+  status: 1
+  order: 1
+

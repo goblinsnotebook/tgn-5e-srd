@@ -1,0 +1,50 @@
+creatures:
+- name: Young Silver Dragon
+  statblock:
+    custom_statblock: |
+      **Armor Class** 18 (natural armor)  
+      **Hit Points** 168 (rollable(dice=16d10 + 80,dicelabel=Hit Points))  
+      **Speed** Walk 40 ft., Fly 80 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=23)|number(name=dex,label=Dexterity,value=10)|number(name=con,label=Constitution,value=21)|number(name=int,label=Intelligence,value=14)|number(name=wis,label=Wisdom,value=11)|number(name=cha,label=Charisma,value=19)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Saving Throws** Dex rollable(dice=1d20+4,label=+4,dicelabel=Dexterity Saving Throw), Con rollable(dice=1d20+9,label=+9,dicelabel=Constitution Saving Throw), Wis rollable(dice=1d20+4,label=+4,dicelabel=Wisdom Saving Throw), Cha rollable(dice=1d20+8,label=+8,dicelabel=Charisma Saving Throw)  
+      **Skills** Arcana rollable(dice=1d20+6,label=+6,dicelabel=Arcana Check), History rollable(dice=1d20+6,label=+6,dicelabel=History Check), Perception rollable(dice=1d20+8,label=+8,dicelabel=Perception Check), Stealth rollable(dice=1d20+4,label=+4,dicelabel=Stealth Check)  
+      **Damage Immunities** cold  
+      **Senses** blindsight 30 ft., darkvision 120 ft., Passive Perception 18  
+      **Languages** Common, Draconic  
+      **Challenge** 9 (5,000 XP)  
+      **Proficiency Bonus** +4  
+
+      ## Actions
+
+      ***Multiattack.*** The dragon makes three attacks: one with its bite and two with its claws.
+
+      ***Bite.*** *Melee Weapon Attack* rollable(dice=1d20+10,label=+10,dicelabel=To Hit [Bite]) to hit, reach 10 ft., one target. *Hit:* rollable(dice=2d10+6,dicelabel=Damage [Bite]) piercing damage.
+
+      ***Claw.*** *Melee Weapon Attack* rollable(dice=1d20+10,label=+10,dicelabel=To Hit [Claw]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=2d6+6,dicelabel=Damage [Claw]) slashing damage.
+
+      ***Breath Weapons (rollable(dice=1d6,label=Recharge 5-6,dicelabel=Recharge [Breath Weapons])).*** The dragon uses one of the following breath weapons.
+
+      > ***Cold Breath.*** The dragon exhales an icy blast in a 30-foot cone. Each creature in that area must make a DC 17 Constitution saving throw, taking rollable(dice=12d8,dicelabel=Damage [Cold Breath]) cold damage on a failed save, or half as much damage on a successful one.
+      >
+      > ***Paralyzing Breath.*** The dragon exhales paralyzing gas in a 30-foot cone. Each creature in that area must succeed on a DC 17 Constitution saving throw or be ***paralyzed*** for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Dragon, Lawful Good*  
+    **Challenge** 9
+  subtype: npc
+  id: srdyoungsilverdragon
+  status: 1
+  order: 1
+

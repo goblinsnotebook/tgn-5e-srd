@@ -1,0 +1,42 @@
+creatures:
+- name: Blue Dragon Wyrmling
+  statblock:
+    custom_statblock: |
+      **Armor Class** 17 (natural armor)  
+      **Hit Points** 52 (rollable(dice=8d8 + 16,dicelabel=Hit Points))  
+      **Speed** Walk 30 ft., Burrow 15 ft., Fly 60 ft.  
+
+      ---
+
+      |str|dex|con|int|wis|cha|
+      |:---:|:---:|:---:|:---:|:---:|:---:|
+      |number(name=str,label=Strength,value=17)|number(name=dex,label=Dexterity,value=10)|number(name=con,label=Constitution,value=15)|number(name=int,label=Intelligence,value=12)|number(name=wis,label=Wisdom,value=11)|number(name=cha,label=Charisma,value=15)|
+      |(mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check))|(mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check))|(mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check))|(mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check))|(mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check))|(mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check))|
+
+      ---
+
+      **Saving Throws** Dex rollable(dice=1d20+2,label=+2,dicelabel=Dexterity Saving Throw), Con rollable(dice=1d20+4,label=+4,dicelabel=Constitution Saving Throw), Wis rollable(dice=1d20+2,label=+2,dicelabel=Wisdom Saving Throw), Cha rollable(dice=1d20+4,label=+4,dicelabel=Charisma Saving Throw)  
+      **Skills** Perception rollable(dice=1d20+4,label=+4,dicelabel=Perception Check), Stealth rollable(dice=1d20+2,label=+2,dicelabel=Stealth Check)  
+      **Damage Immunities** lightning  
+      **Senses** blindsight 10 ft., darkvision 60 ft., Passive Perception 14  
+      **Languages** Draconic  
+      **Challenge** 3 (700 XP)  
+      **Proficiency Bonus** +2  
+
+      ## Actions
+
+      ***Bite.*** *Melee Weapon Attack* rollable(dice=1d20+5,label=+5,dicelabel=To Hit [Bite]) to hit, reach 5 ft., one target. *Hit:* rollable(dice=1d10+3,dicelabel=Damage [Bite]) piercing damage plus rollable(dice=1d6,dicelabel=Damage [Bite]) lightning damage.
+
+      ***Lightning Breath (rollable(dice=1d6,label=Recharge 5-6,dicelabel=Recharge [Lightning Breath])).*** The dragon exhales lightning in a 30-foot line that is 5 feet wide. Each creature in that line must make a DC 12 Dexterity saving throw, taking rollable(dice=4d10,dicelabel=Damage [Lightning Breath]) lightning damage on a failed save, or half as much damage on a successful one.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Dragon, Lawful Evil*  
+    **Challenge** 3
+  subtype: npc
+  id: srdbluedragonwyrmling
+  status: 1
+  order: 1
+
