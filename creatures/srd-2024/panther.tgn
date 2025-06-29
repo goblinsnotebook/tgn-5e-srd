@@ -17,7 +17,7 @@ creatures:
 
       ---
 
-      **Skills** Perception rollable(dice=1d20+4,label=+4,dicelabel=Perception Check), Stealth rollable(dice=1d20+6,label=+6,dicelabel=Stealth Check)  
+      **Skills** Perception rollable(dice=1d20+4,label=+4,dicelabel=Perception Check), Stealth rollable(dice=1d20+7,label=+7,dicelabel=Stealth Check)  
       **Senses** darkvision 60 ft., Passive Perception 14  
       **Languages** -  
       **Challenge** 1/4 (50 XP)  
