@@ -1,0 +1,43 @@
+creatures:
+- name: Warrior Infantry
+  statblock:
+    custom_statblock: |
+      **Armor Class** 13  
+      **Hit Points** 9 (rollable(dice=2d8,dicelabel=Hit Points))  
+      **Speed** 30 ft.  
+      **Initiative:** rollable(dice=1d20+0,label=+0,dicelabel=Initiative) (10)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=13)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+1,label=+1,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=8)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20-1,label=-1,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=11)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+0,label=+0,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=11)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+0,label=+0,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=11)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+0,label=+0,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=8)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20-1,label=-1,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Gear** chain shirt, spear  
+      **Senses** Passive Perception 10  
+      **Languages** Common  
+      **Challenge** 1/8 (25 XP)  
+      **Proficiency Bonus** +2  
+
+      ## Traits
+
+      ***Pack Tactics.*** The warrior has ***Advantage*** on an attack roll against a creature if at least one of the warrior's allies is within 5 feet of the creature and the ally doesn't have the ***Incapacitated*** condition.
+
+      ## Actions
+
+      ***Spear.*** *Melee or Ranged Attack Roll* rollable(dice=1d20+3,label=+3,dicelabel=To Hit [Spear]), reach 5 ft. or range 20/60 ft. *Hit:* rollable(dice=1d6+1,dicelabel=Damage [Spear]) Piercing damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Small Medium Humanoid, Neutral*  
+    **Challenge** 1/8
+  subtype: npc
+  id: srd2024warriorinfantry
+  status: 1
+

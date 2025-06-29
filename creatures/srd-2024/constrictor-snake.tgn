@@ -1,0 +1,41 @@
+creatures:
+- name: Constrictor Snake
+  statblock:
+    custom_statblock: |
+      **Armor Class** 13  
+      **Hit Points** 13 (rollable(dice=2d10 + 2,dicelabel=Hit Points))  
+      **Speed** Walk 30 ft., Swim 30 ft.  
+      **Initiative:** rollable(dice=1d20+2,label=+2,dicelabel=Initiative) (12)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=15)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+2,label=+2,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=1)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20-5,label=-5,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=14)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+2,label=+2,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=10)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+0,label=+0,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=12)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+1,label=+1,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=3)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20-4,label=-4,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Skills** Perception rollable(dice=1d20+2,label=+2,dicelabel=Perception Check), Stealth rollable(dice=1d20+4,label=+4,dicelabel=Stealth Check)  
+      **Senses** blindsight 10 ft., Passive Perception 12  
+      **Languages** -  
+      **Challenge** 1/4 (50 XP)  
+      **Proficiency Bonus** +2  
+
+      ## Actions
+
+      ***Bite.*** *Melee Attack Roll* rollable(dice=1d20+4,label=+4,dicelabel=To Hit [Bite]), reach 5 ft. *Hit:* rollable(dice=1d8+2,dicelabel=Damage [Bite]) Piercing damage.
+
+      ***Constrict.*** *Strength Saving Throw:* DC 12, one Medium or smaller creature the snake can see within 5 feet. *Failure:* rollable(dice=3d4,dicelabel=Damage [Constrict]) Bludgeoning damage, and the target has the ***Grappled*** condition (escape DC 12).
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Beast, Unaligned*  
+    **Challenge** 1/4
+  subtype: npc
+  id: srd2024constrictorsnake
+  status: 1
+

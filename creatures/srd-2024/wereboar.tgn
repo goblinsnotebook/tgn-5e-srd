@@ -1,0 +1,50 @@
+creatures:
+- name: Wereboar
+  statblock:
+    custom_statblock: |
+      **Armor Class** 15  
+      **Hit Points** 97 (rollable(dice=15d8 + 30,dicelabel=Hit Points))  
+      **Speed** Walk 30 ft., Walk 40 ft. (boar form only)  
+      **Initiative:** rollable(dice=1d20+2,label=+2,dicelabel=Initiative) (12)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=17)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+3,label=+3,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=10)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20+0,label=+0,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=10)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+0,label=+0,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=11)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+0,label=+0,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=15)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+2,label=+2,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=8)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20-1,label=-1,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Skills** Perception rollable(dice=1d20+2,label=+2,dicelabel=Perception Check)  
+      **Gear** 6x javelin  
+      **Senses** Passive Perception 12  
+      **Languages** Common (can't speak in boar form)  
+      **Challenge** 4 (1,100 XP)  
+      **Proficiency Bonus** +2  
+
+      ## Actions
+
+      ***Multiattack.*** The wereboar makes two attacks, using Javelin or Tusk in any combination. It can replace one attack with a Gore attack.
+
+      ***Gore (Boar or Hybrid Form Only).*** *Melee Attack Roll* rollable(dice=1d20+5,label=+5,dicelabel=To Hit [Gore]), reach 5 ft. *Hit:* rollable(dice=2d8+3,dicelabel=Damage [Gore]) Piercing damage. If the target is a Humanoid, it is subjected to the following effect. *Constitution Saving Throw:* DC 12. *Failure:* The target is cursed. If the cursed target drops to 0 ***Hit Points***, it instead becomes a Wereboar under the DM's control and has 10 ***Hit Points***. *Success:* The target is immune to this wereboar's curse for 24 hours.
+
+      ***Javelin (Humanoid or Hybrid Form Only).*** *Melee or Ranged Attack Roll* rollable(dice=1d20+5,label=+5,dicelabel=To Hit [Javelin]), reach 5 ft. or range 30/120 ft. *Hit:* rollable(dice=3d6+3,dicelabel=Damage [Javelin]) Piercing damage.
+
+      ***Tusk (Boar or Hybrid Form Only).*** *Melee Attack Roll* rollable(dice=1d20+5,label=+5,dicelabel=To Hit [Tusk]), reach 5 ft. *Hit:* rollable(dice=2d6+3,dicelabel=Damage [Tusk]) Piercing damage. If the target is a Medium or smaller creature and the wereboar moved 20+ feet straight toward it immediately before the hit, the target takes an extra rollable(dice=2d6,dicelabel=Damage [Tusk]) Piercing damage and has the ***Prone*** condition.
+
+      ## Bonus Actions
+
+      ***Shape-Shift.*** The wereboar shape-shifts into a Medium boar-humanoid hybrid or a Small boar, or it returns to its true humanoid form. Its game statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Small Medium Monstrosity (Lycanthrope), Neutral Evil*  
+    **Challenge** 4
+  subtype: npc
+  id: srd2024wereboar
+  status: 1
+

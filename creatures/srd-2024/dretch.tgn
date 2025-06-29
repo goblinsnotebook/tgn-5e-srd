@@ -1,0 +1,43 @@
+creatures:
+- name: Dretch
+  statblock:
+    custom_statblock: |
+      **Armor Class** 11  
+      **Hit Points** 18 (rollable(dice=4d6 + 4,dicelabel=Hit Points))  
+      **Speed** 20 ft.  
+      **Initiative:** rollable(dice=1d20+0,label=+0,dicelabel=Initiative) (10)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=12)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+1,label=+1,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=5)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20-3,label=-3,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=11)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+0,label=+0,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=8)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20-1,label=-1,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=12)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+1,label=+1,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=3)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20-4,label=-4,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Damage Resistances** cold, fire, lightning  
+      **Damage Immunities** poison  
+      **Condition Immunities** poisoned  
+      **Senses** darkvision 60 ft., Passive Perception 9  
+      **Languages** Abyssal; telepathy 60 ft. (works only with creatures that understand Abyssal)  
+      **Challenge** 1/4 (50 XP)  
+      **Proficiency Bonus** +2  
+
+      ## Actions
+
+      ***Rend.*** *Melee Attack Roll* rollable(dice=1d20+3,label=+3,dicelabel=To Hit [Rend]), reach 5 ft. *Hit:* rollable(dice=1d6+1,dicelabel=Damage [Rend]) Slashing damage.
+
+      ***Fetid Cloud (1/Day).*** *Constitution Saving Throw:* DC 11, each creature in a 10-foot ***Emanation*** originating from the dretch. *Failure:* The target has the ***Poisoned*** condition until the end of its next turn. While ***Poisoned***, the creature can take either an action or a ***Bonus Action*** on its turn, not both, and it can't take Reactions.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Small Fiend (Demon), Chaotic Evil*  
+    **Challenge** 1/4
+  subtype: npc
+  id: srd2024dretch
+  status: 1
+

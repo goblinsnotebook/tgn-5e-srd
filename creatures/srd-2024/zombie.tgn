@@ -1,0 +1,44 @@
+creatures:
+- name: Zombie
+  statblock:
+    custom_statblock: |
+      **Armor Class** 8  
+      **Hit Points** 15 (rollable(dice=2d8 + 6,dicelabel=Hit Points))  
+      **Speed** 20 ft.  
+      **Initiative:** rollable(dice=1d20-2,label=-2,dicelabel=Initiative) (8)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=13)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+1,label=+1,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=3)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20-4,label=-4,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=6)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20-2,label=-2,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=6)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+0,label=+0,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=16)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+3,label=+3,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=5)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20-3,label=-3,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Damage Immunities** poison  
+      **Condition Immunities** exhaustion, poisoned  
+      **Senses** darkvision 60 ft., Passive Perception 8  
+      **Languages** understands Common plus one other language but can't speak  
+      **Challenge** 1/4 (50 XP)  
+      **Proficiency Bonus** +2  
+
+      ## Traits
+
+      ***Undead Fortitude.*** If damage reduces the zombie to 0 ***Hit Points***, it makes a Constitution saving throw (DC 5 plus the damage taken) unless the damage is Radiant or from a ***Critical Hit***. On a successful save, the zombie drops to 1 ***Hit Point*** instead.
+
+      ## Actions
+
+      ***Slam.*** *Melee Attack Roll* rollable(dice=1d20+3,label=+3,dicelabel=To Hit [Slam]), reach 5 ft. *Hit:* rollable(dice=1d8+1,dicelabel=Damage [Slam]) Bludgeoning damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Undead, Neutral Evil*  
+    **Challenge** 1/4
+  subtype: npc
+  id: srd2024zombie
+  status: 1
+

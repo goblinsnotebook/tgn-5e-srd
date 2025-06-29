@@ -1,0 +1,39 @@
+creatures:
+- name: Shrieker Fungus
+  statblock:
+    custom_statblock: |
+      **Armor Class** 5  
+      **Hit Points** 13 (rollable(dice=3d8,dicelabel=Hit Points))  
+      **Speed** 5 ft.  
+      **Initiative:** rollable(dice=1d20-5,label=-5,dicelabel=Initiative) (5)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=1)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20-5,label=-5,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=1)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20-5,label=-5,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=1)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20-5,label=-5,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=3)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20-4,label=-4,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=10)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+0,label=+0,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=1)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20-5,label=-5,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Condition Immunities** blinded, charmed, deafened, frightened  
+      **Senses** blindsight 30 ft., Passive Perception 6  
+      **Languages** -  
+      **Challenge** 0 (0 XP)  
+      **Proficiency Bonus** +2  
+
+      ## Reactions
+
+      ***Shriek.*** *Trigger:* A creature or a source of ***Bright Light*** moves within 30 feet of the shrieker. *Response:* The shrieker emits a shriek audible within 300 feet of itself for 1 minute or until the shrieker dies.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Plant, Unaligned*  
+    **Challenge** 0
+  subtype: npc
+  id: srd2024shriekerfungus
+  status: 1
+

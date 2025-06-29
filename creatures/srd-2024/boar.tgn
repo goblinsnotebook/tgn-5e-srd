@@ -1,0 +1,42 @@
+creatures:
+- name: Boar
+  statblock:
+    custom_statblock: |
+      **Armor Class** 11  
+      **Hit Points** 13 (rollable(dice=2d8 + 4,dicelabel=Hit Points))  
+      **Speed** 40 ft.  
+      **Initiative:** rollable(dice=1d20+0,label=+0,dicelabel=Initiative) (10)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=13)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+1,label=+1,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=2)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20-4,label=-4,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=11)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+0,label=+0,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=9)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20-1,label=-1,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=14)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+2,label=+2,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=5)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20-3,label=-3,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Senses** Passive Perception 9  
+      **Languages** -  
+      **Challenge** 1/4 (50 XP)  
+      **Proficiency Bonus** +2  
+
+      ## Traits
+
+      ***Bloodied Fury.*** While ***Bloodied***, the boar has ***Advantage*** on attack rolls.
+
+      ## Actions
+
+      ***Gore.*** *Melee Attack Roll* rollable(dice=1d20+3,label=+3,dicelabel=To Hit [Gore]), reach 5 ft. *Hit:* rollable(dice=1d6+1,dicelabel=Damage [Gore]) Piercing damage. If the target is a Medium or smaller creature and the boar moved 20+ feet straight toward it immediately before the hit, the target takes an extra rollable(dice=1d6,dicelabel=Damage [Gore]) Piercing damage and has the ***Prone*** condition.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Beast, Unaligned*  
+    **Challenge** 1/4
+  subtype: npc
+  id: srd2024boar
+  status: 1
+

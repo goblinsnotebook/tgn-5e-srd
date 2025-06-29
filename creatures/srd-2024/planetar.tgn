@@ -1,0 +1,62 @@
+creatures:
+- name: Planetar
+  statblock:
+    custom_statblock: |
+      **Armor Class** 19  
+      **Hit Points** 262 (rollable(dice=21d10 + 147,dicelabel=Hit Points))  
+      **Speed** Walk 40 ft., Fly 120 ft. (hover)  
+      **Initiative:** rollable(dice=1d20+10,label=+10,dicelabel=Initiative) (20)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=24)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+12,label=+12,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=19)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20+4,label=+4,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=20)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+5,label=+5,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=22)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+11,label=+11,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=24)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+12,label=+12,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=25)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20+12,label=+12,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Skills** Perception rollable(dice=1d20+11,label=+11,dicelabel=Perception Check)  
+      **Damage Resistances** radiant  
+      **Condition Immunities** charmed, exhaustion, frightened  
+      **Senses** truesight 120 ft., Passive Perception 21  
+      **Languages** all; telepathy 120 ft.  
+      **Challenge** 16 (15,000 XP)  
+      **Proficiency Bonus** +5  
+
+      ## Traits
+
+      ***Divine Awareness.*** The planetar knows if it hears a lie.
+
+      ***Exalted Restoration.*** If the planetar dies outside Mount Celestia, its body disappears, and it gains a new body instantly, reviving with all its ***Hit Points*** somewhere in Mount Celestia.
+
+      ***Magic Resistance.*** The planetar has ***Advantage*** on saving throws against spells and other magical effects.
+
+      ## Actions
+
+      ***Multiattack.*** The planetar makes three Radiant Sword attacks or uses Holy Burst twice.
+
+      ***Radiant Sword.*** *Melee Attack Roll* rollable(dice=1d20+12,label=+12,dicelabel=To Hit [Radiant Sword]), reach 10 ft. *Hit:* rollable(dice=2d6+7,dicelabel=Damage [Radiant Sword]) Slashing damage plus rollable(dice=4d8,dicelabel=Damage [Radiant Sword]) Radiant damage.
+
+      ***Holy Burst.*** *Dexterity Saving Throw:* DC 20, each enemy in a 20-foot-radius ***Sphere*** centered on a point the planetar can see within 120 feet. *Failure:* rollable(dice=7d6,dicelabel=Damage [Holy Burst]) Radiant damage. *Success:* Half damage.
+
+      ***Spellcasting.*** The planetar casts one of the following spells, requiring no Material components and using Charisma as spellcasting ability (spell save DC 20):
+
+      At will: [Detect Evil and Good](https://www.dndbeyond.com/spells/2619090-detect-evil-and-good)  
+      1/day each: [Commune](https://www.dndbeyond.com/spells/2618987-commune), [Control Weather](https://www.dndbeyond.com/spells/2619054-control-weather), [Dispel Evil and Good](https://www.dndbeyond.com/spells/2619096-dispel-evil-and-good), [Raise Dead](https://www.dndbeyond.com/spells/2618922-raise-dead)  
+
+      ***Divine Aid (2/Day).*** The planetar casts [Cure Wounds](https://www.dndbeyond.com/spells/2619079-cure-wounds), [Invisibility](https://www.dndbeyond.com/spells/2619116-invisibility), [Lesser Restoration](https://www.dndbeyond.com/spells/2619016-lesser-restoration), or [Remove Curse](https://www.dndbeyond.com/spells/2618943-remove-curse), using the same spellcasting ability as Spellcasting.
+
+      2/day: [Cure Wounds](https://www.dndbeyond.com/spells/2619079-cure-wounds), [Invisibility](https://www.dndbeyond.com/spells/2619116-invisibility), [Lesser Restoration](https://www.dndbeyond.com/spells/2619016-lesser-restoration), [Remove Curse](https://www.dndbeyond.com/spells/2618943-remove-curse)  
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Celestial (Angel), Lawful Good*  
+    **Challenge** 16
+  subtype: npc
+  id: srd2024planetar
+  status: 1
+

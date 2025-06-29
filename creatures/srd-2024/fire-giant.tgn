@@ -1,0 +1,44 @@
+creatures:
+- name: Fire Giant
+  statblock:
+    custom_statblock: |
+      **Armor Class** 18  
+      **Hit Points** 162 (rollable(dice=13d12 + 78,dicelabel=Hit Points))  
+      **Speed** 30 ft.  
+      **Initiative:** rollable(dice=1d20+3,label=+3,dicelabel=Initiative) (13)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=25)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+7,label=+7,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=10)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20+0,label=+0,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=9)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+3,label=+3,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=14)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+2,label=+2,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=23)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+10,label=+10,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=13)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20+5,label=+5,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Skills** Athletics rollable(dice=1d20+11,label=+11,dicelabel=Athletics Check), Perception rollable(dice=1d20+6,label=+6,dicelabel=Perception Check)  
+      **Damage Immunities** fire  
+      **Senses** Passive Perception 16  
+      **Languages** Giant  
+      **Challenge** 9 (5,000 XP)  
+      **Proficiency Bonus** +4  
+
+      ## Actions
+
+      ***Multiattack.*** The giant makes two attacks, using Flame Sword or Hammer Throw in any combination.
+
+      ***Flame Sword.*** *Melee Attack Roll* rollable(dice=1d20+11,label=+11,dicelabel=To Hit [Flame Sword]), reach 10 ft. *Hit:* rollable(dice=4d6+7,dicelabel=Damage [Flame Sword]) Slashing damage plus rollable(dice=3d6,dicelabel=Damage [Flame Sword]) Fire damage.
+
+      ***Hammer Throw.*** *Ranged Attack Roll* rollable(dice=1d20+11,label=+11,dicelabel=To Hit [Hammer Throw]), range 60/240 ft. *Hit:* rollable(dice=3d10+7,dicelabel=Damage [Hammer Throw]) Bludgeoning damage plus rollable(dice=1d8,dicelabel=Damage [Hammer Throw]) Fire damage, and the target is pushed up to 15 feet straight away from the giant and has ***Disadvantage*** on the next attack roll it makes before the end of its next turn.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Huge Giant, Lawful Evil*  
+    **Challenge** 9
+  subtype: npc
+  id: srd2024firegiant
+  status: 1
+

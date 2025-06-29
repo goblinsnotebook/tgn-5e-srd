@@ -1,0 +1,38 @@
+creatures:
+- name: Scorpion
+  statblock:
+    custom_statblock: |
+      **Armor Class** 11  
+      **Hit Points** 1 (rollable(dice=1d4 - 1,dicelabel=Hit Points))  
+      **Speed** 10 ft.  
+      **Initiative:** rollable(dice=1d20+0,label=+0,dicelabel=Initiative) (10)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=2)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20-4,label=-4,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=1)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20-5,label=-5,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=11)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+0,label=+0,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=8)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20-1,label=-1,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=8)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20-1,label=-1,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=2)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20-4,label=-4,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Senses** blindsight 10 ft., Passive Perception 9  
+      **Languages** -  
+      **Challenge** 0 (10 XP)  
+      **Proficiency Bonus** +2  
+
+      ## Actions
+
+      ***Sting.*** *Melee Attack Roll* rollable(dice=1d20+2,label=+2,dicelabel=To Hit [Sting]), reach 5 ft. *Hit:* 1 Piercing damage plus rollable(dice=1d6,dicelabel=Damage [Sting]) Poison damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Tiny Beast, Unaligned*  
+    **Challenge** 0
+  subtype: npc
+  id: srd2024scorpion
+  status: 1
+

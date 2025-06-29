@@ -1,0 +1,50 @@
+creatures:
+- name: Treant
+  statblock:
+    custom_statblock: |
+      **Armor Class** 16  
+      **Hit Points** 138 (rollable(dice=12d12 + 60,dicelabel=Hit Points))  
+      **Speed** 30 ft.  
+      **Initiative:** rollable(dice=1d20+3,label=+3,dicelabel=Initiative) (13)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=23)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+6,label=+6,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=12)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20+1,label=+1,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=8)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20-1,label=-1,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=16)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+3,label=+3,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=21)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+5,label=+5,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=12)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20+1,label=+1,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Damage Vulnerabilities** fire  
+      **Damage Resistances** bludgeoning, piercing  
+      **Senses** Passive Perception 13  
+      **Languages** Common, Druidic, Elvish, Sylvan  
+      **Challenge** 9 (5,000 XP)  
+      **Proficiency Bonus** +4  
+
+      ## Traits
+
+      ***Siege Monster.*** The treant deals double damage to objects and structures.
+
+      ## Actions
+
+      ***Multiattack.*** The treant makes two Slam attacks.
+
+      ***Slam.*** *Melee Attack Roll* rollable(dice=1d20+10,label=+10,dicelabel=To Hit [Slam]), reach 5 ft. *Hit:* rollable(dice=3d6+6,dicelabel=Damage [Slam]) Bludgeoning damage.
+
+      ***Hail of Bark.*** *Ranged Attack Roll* rollable(dice=1d20+10,label=+10,dicelabel=To Hit [Hail of Bark]), range 180 ft. *Hit:* rollable(dice=4d10+6,dicelabel=Damage [Hail of Bark]) Piercing damage.
+
+      ***Animate Trees (1/Day).*** The treant magically animates up to two trees it can see within 60 feet of itself. Each tree uses the Treant stat block, except it has Intelligence and Charisma scores of 1, it can't speak, and it lacks this action. The tree takes its turn immediately after the treant on the same ***Initiative*** count, and it obeys the treant. A tree remains animate for 1 day or until it dies, the treant dies, or it is more than 120 feet from the treant. The tree then takes root if possible.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Huge Plant, Chaotic Good*  
+    **Challenge** 9
+  subtype: npc
+  id: srd2024treant
+  status: 1
+

@@ -1,0 +1,44 @@
+creatures:
+- name: Otyugh
+  statblock:
+    custom_statblock: |
+      **Armor Class** 14  
+      **Hit Points** 104 (rollable(dice=11d10 + 44,dicelabel=Hit Points))  
+      **Speed** 30 ft.  
+      **Initiative:** rollable(dice=1d20+0,label=+0,dicelabel=Initiative) (10)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=16)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+3,label=+3,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=6)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20-2,label=-2,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=11)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+0,label=+0,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=13)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+1,label=+1,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=19)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+7,label=+7,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=6)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20-2,label=-2,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Senses** darkvision 120 ft., Passive Perception 11  
+      **Languages** Otyugh; telepathy 120 ft. (doesn't allow the receiving creature to respond telepathically)  
+      **Challenge** 5 (1,800 XP)  
+      **Proficiency Bonus** +3  
+
+      ## Actions
+
+      ***Multiattack.*** The otyugh makes one Bite attack and two Tentacle attacks.
+
+      ***Bite.*** *Melee Attack Roll* rollable(dice=1d20+6,label=+6,dicelabel=To Hit [Bite]), reach 5 ft. *Hit:* rollable(dice=2d8+3,dicelabel=Damage [Bite]) Piercing damage, and the target has the ***Poisoned*** condition. Whenever the ***Poisoned*** target finishes a ***Long Rest***, it is subjected to the following effect. *Constitution Saving Throw:* DC 15. *Failure:* The target's ***Hit Point*** maximum decreases by 5 (rollable(dice=1d10,dicelabel=Bite)) and doesn't return to normal until the ***Poisoned*** condition ends on the target. *Success:* The ***Poisoned*** condition ends.
+
+      ***Tentacle.*** *Melee Attack Roll* rollable(dice=1d20+6,label=+6,dicelabel=To Hit [Tentacle]), reach 10 ft. *Hit:* rollable(dice=2d8+3,dicelabel=Damage [Tentacle]) Piercing damage. If the target is a Medium or smaller creature, it has the ***Grappled*** condition (escape DC 13) from one of two tentacles.
+
+      ***Tentacle Slam.*** *Constitution Saving Throw:* DC 14, each creature ***Grappled*** by the otyugh. *Failure:* rollable(dice=3d8+3,dicelabel=Damage [Tentacle Slam]) Bludgeoning damage, and the target has the ***Stunned*** condition until the start of the otyugh's next turn. *Success:* Half damage only.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Aberration, Neutral*  
+    **Challenge** 5
+  subtype: npc
+  id: srd2024otyugh
+  status: 1
+

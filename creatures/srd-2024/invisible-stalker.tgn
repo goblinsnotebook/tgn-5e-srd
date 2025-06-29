@@ -1,0 +1,52 @@
+creatures:
+- name: Invisible Stalker
+  statblock:
+    custom_statblock: |
+      **Armor Class** 14  
+      **Hit Points** 97 (rollable(dice=13d10 + 26,dicelabel=Hit Points))  
+      **Speed** Walk 50 ft., Fly 50 ft. (hover)  
+      **Initiative:** rollable(dice=1d20+7,label=+7,dicelabel=Initiative) (17)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=16)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+3,label=+3,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=10)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20+0,label=+0,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=19)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+4,label=+4,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=15)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+2,label=+2,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=14)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+2,label=+2,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=11)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20+0,label=+0,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Skills** Perception rollable(dice=1d20+8,label=+8,dicelabel=Perception Check), Stealth rollable(dice=1d20+10,label=+10,dicelabel=Stealth Check)  
+      **Damage Resistances** bludgeoning, piercing, slashing  
+      **Damage Immunities** poison  
+      **Condition Immunities** exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained, unconscious  
+      **Senses** darkvision 60 ft., Passive Perception 18  
+      **Languages** Common, Primordial (Auran)  
+      **Challenge** 6 (2,300 XP)  
+      **Proficiency Bonus** +3  
+
+      ## Traits
+
+      ***Air Form.*** The stalker can enter an enemy's space and stop there. It can move through a space as narrow as 1 inch without expending extra movement to do so.
+
+      ***Invisibility.*** The stalker has the ***Invisible*** condition.
+
+      ## Actions
+
+      ***Multiattack.*** The stalker makes three Wind Swipe attacks. It can replace one attack with a use of Vortex.
+
+      ***Wind Swipe.*** *Melee Attack Roll* rollable(dice=1d20+7,label=+7,dicelabel=To Hit [Wind Swipe]), reach 5 ft. *Hit:* rollable(dice=2d6+4,dicelabel=Damage [Wind Swipe]) Force damage.
+
+      ***Vortex.*** *Constitution Saving Throw:* DC 14, one Large or smaller creature in the stalker's space. *Failure:* rollable(dice=1d8+3,dicelabel=Damage [Vortex]) Thunder damage, and the target has the ***Grappled*** condition (escape DC 13). Until the grapple ends, the target can't cast spells with a Verbal component and takes rollable(dice=2d6,dicelabel=Damage [Vortex]) Thunder damage at the start of each of the stalker's turns.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Elemental, Neutral*  
+    **Challenge** 6
+  subtype: npc
+  id: srd2024invisiblestalker
+  status: 1
+

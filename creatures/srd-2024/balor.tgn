@@ -1,0 +1,60 @@
+creatures:
+- name: Balor
+  statblock:
+    custom_statblock: |
+      **Armor Class** 19  
+      **Hit Points** 287 (rollable(dice=23d12 + 138,dicelabel=Hit Points))  
+      **Speed** Walk 40 ft., Fly 80 ft.  
+      **Initiative:** rollable(dice=1d20+14,label=+14,dicelabel=Initiative) (24)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=26)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+8,label=+8,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=20)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20+5,label=+5,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=15)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+2,label=+2,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=16)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+9,label=+9,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=22)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+12,label=+12,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=22)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20+6,label=+6,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Skills** Perception rollable(dice=1d20+9,label=+9,dicelabel=Perception Check)  
+      **Damage Resistances** cold, lightning  
+      **Damage Immunities** fire, poison  
+      **Condition Immunities** charmed, frightened, poisoned  
+      **Senses** truesight 120 ft., Passive Perception 19  
+      **Languages** Abyssal; telepathy 120 ft.  
+      **Challenge** 19 (22,000 XP)  
+      **Proficiency Bonus** +6  
+
+      ## Traits
+
+      ***Death Throes.*** The balor explodes when it dies. *Dexterity Saving Throw:* DC 20, each creature in a 30-foot ***Emanation*** originating from the balor. *Failure:* rollable(dice=9d6,dicelabel=Damage [Death Throes]) Fire damage plus rollable(dice=9d6,dicelabel=Damage [Death Throes]) Force damage. *Success:* Half damage. *Failure or Success:* If the balor dies outside the Abyss, it gains a new body instantly, reviving with all its ***Hit Points*** somewhere in the Abyss.
+
+      ***Fire Aura.*** At the end of each of the balor's turns, each creature in a 5-foot ***Emanation*** originating from the balor takes rollable(dice=3d8,dicelabel=Damage [Fire Aura]) Fire damage.
+
+      ***Legendary Resistance (3/Day).*** If the balor fails a saving throw, it can choose to succeed instead.
+
+      ***Magic Resistance.*** The balor has ***Advantage*** on saving throws against spells and other magical effects.
+
+      ## Actions
+
+      ***Multiattack.*** The balor makes one Flame Whip attack and one Lightning Blade attack.
+
+      ***Flame Whip.*** *Melee Attack Roll* rollable(dice=1d20+14,label=+14,dicelabel=To Hit [Flame Whip]), reach 30 ft. *Hit:* rollable(dice=3d6+8,dicelabel=Damage [Flame Whip]) Force damage plus rollable(dice=5d6,dicelabel=Damage [Flame Whip]) Fire damage. If the target is a Huge or smaller creature, the balor pulls the target up to 25 feet straight toward itself, and the target has the ***Prone*** condition.
+
+      ***Lightning Blade.*** *Melee Attack Roll* rollable(dice=1d20+14,label=+14,dicelabel=To Hit [Lightning Blade]), reach 10 ft. *Hit:* rollable(dice=3d8+8,dicelabel=Damage [Lightning Blade]) Force damage plus rollable(dice=4d10,dicelabel=Damage [Lightning Blade]) Lightning damage, and the target can't take Reactions until the start of the balor's next turn.
+
+      ## Bonus Actions
+
+      ***Teleport.*** The balor teleports itself or a willing demon within 10 feet of itself up to 60 feet to an unoccupied space the balor can see.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Huge Fiend (Demon), Chaotic Evil*  
+    **Challenge** 19
+  subtype: npc
+  id: srd2024balor
+  status: 1
+

@@ -1,0 +1,47 @@
+creatures:
+- name: Giant Crocodile
+  statblock:
+    custom_statblock: |
+      **Armor Class** 14  
+      **Hit Points** 85 (rollable(dice=9d12 + 27,dicelabel=Hit Points))  
+      **Speed** Walk 30 ft., Swim 50 ft.  
+      **Initiative:** rollable(dice=1d20-1,label=-1,dicelabel=Initiative) (9)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=21)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+5,label=+5,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=2)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20-4,label=-4,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=9)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20-1,label=-1,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=10)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+0,label=+0,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=17)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+3,label=+3,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=7)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20-2,label=-2,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Skills** Stealth rollable(dice=1d20+5,label=+5,dicelabel=Stealth Check)  
+      **Senses** Passive Perception 10  
+      **Languages** -  
+      **Challenge** 5 (1,800 XP)  
+      **Proficiency Bonus** +3  
+
+      ## Traits
+
+      ***Hold Breath.*** The crocodile can hold its breath for 1 hour.
+
+      ## Actions
+
+      ***Multiattack.*** The crocodile makes one Bite attack and one Tail attack.
+
+      ***Bite.*** *Melee Attack Roll* rollable(dice=1d20+8,label=+8,dicelabel=To Hit [Bite]), reach 5 ft. *Hit:* rollable(dice=3d10+5,dicelabel=Damage [Bite]) Piercing damage. If the target is a Large or smaller creature, it has the ***Grappled*** condition (escape DC 15). While ***Grappled***, the target has the ***Restrained*** condition and can't be targeted by the crocodile's Tail.
+
+      ***Tail.*** *Melee Attack Roll* rollable(dice=1d20+8,label=+8,dicelabel=To Hit [Tail]), reach 10 ft. *Hit:* rollable(dice=3d8+5,dicelabel=Damage [Tail]) Bludgeoning damage. If the target is a Large or smaller creature, it has the ***Prone*** condition.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Huge Beast, Unaligned*  
+    **Challenge** 5
+  subtype: npc
+  id: srd2024giantcrocodile
+  status: 1
+

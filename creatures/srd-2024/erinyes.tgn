@@ -1,0 +1,58 @@
+creatures:
+- name: Erinyes
+  statblock:
+    custom_statblock: |
+      **Armor Class** 18  
+      **Hit Points** 178 (rollable(dice=21d8 + 84,dicelabel=Hit Points))  
+      **Speed** Walk 30 ft., Fly 60 ft.  
+      **Initiative:** rollable(dice=1d20+7,label=+7,dicelabel=Initiative) (17)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=18)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+4,label=+4,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=14)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20+2,label=+2,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=16)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+7,label=+7,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=14)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+2,label=+2,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=18)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+8,label=+8,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=18)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20+8,label=+8,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Skills** Perception rollable(dice=1d20+6,label=+6,dicelabel=Perception Check), Persuasion rollable(dice=1d20+8,label=+8,dicelabel=Persuasion Check)  
+      **Damage Resistances** cold  
+      **Damage Immunities** fire, poison  
+      **Condition Immunities** poisoned  
+      **Senses** truesight 120 ft., Passive Perception 16  
+      **Languages** Infernal; telepathy 120 ft.  
+      **Challenge** 12 (8,400 XP)  
+      **Proficiency Bonus** +4  
+
+      ## Traits
+
+      ***Diabolical Restoration.*** If the erinyes dies outside the Nine Hells, its body disappears in sulfurous smoke, and it gains a new body instantly, reviving with all its ***Hit Points*** somewhere in the Nine Hells.
+
+      ***Magic Resistance.*** The erinyes has ***Advantage*** on saving throws against spells and other magical effects.
+
+      ***Magic Rope.*** The erinyes has a magic rope. While bearing it, the erinyes can use the Entangling Rope action. The rope has AC 20, HP 90, and ***Immunity*** to Poison and Psychic damage. The rope turns to dust if reduced to 0 ***Hit Points***, if it is 5+ feet away from the erinyes for 1 hour or more, or if the erinyes dies. If the rope is damaged or destroyed, the erinyes can fully restore it when finishing a ***Short*** or ***Long Rest***.
+
+      ## Actions
+
+      ***Multiattack.*** The erinyes makes three Withering Sword attacks and can use Entangling Rope.
+
+      ***Withering Sword.*** *Melee Attack Roll* rollable(dice=1d20+8,label=+8,dicelabel=To Hit [Withering Sword]), reach 5 ft. *Hit:* rollable(dice=2d8+4,dicelabel=Damage [Withering Sword]) Slashing damage plus rollable(dice=2d10,dicelabel=Damage [Withering Sword]) Necrotic damage.
+
+      ***Entangling Rope (Requires Magic Rope).*** *Strength Saving Throw:* DC 16, one creature the erinyes can see within 120 feet. *Failure:* rollable(dice=4d6,dicelabel=Damage [Entangling Rope]) Force damage, and the target has the ***Restrained*** condition until the rope is destroyed, the erinyes uses a ***Bonus Action*** to release the target, or the erinyes uses Entangling Rope again.
+
+      ## Reactions
+
+      ***Parry.*** *Trigger:* The erinyes is hit by a melee attack roll while holding a weapon. *Response:* The erinyes adds 4 to its AC against that attack, possibly causing it to miss.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Fiend (Devil), Lawful Evil*  
+    **Challenge** 12
+  subtype: npc
+  id: srd2024erinyes
+  status: 1
+

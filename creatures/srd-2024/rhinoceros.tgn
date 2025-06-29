@@ -1,0 +1,38 @@
+creatures:
+- name: Rhinoceros
+  statblock:
+    custom_statblock: |
+      **Armor Class** 13  
+      **Hit Points** 45 (rollable(dice=6d10 + 12,dicelabel=Hit Points))  
+      **Speed** 40 ft.  
+      **Initiative:** rollable(dice=1d20-1,label=-1,dicelabel=Initiative) (9)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=21)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+5,label=+5,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=2)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20-4,label=-4,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=8)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20-1,label=-1,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=12)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+1,label=+1,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=15)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+2,label=+2,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=6)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20-2,label=-2,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Senses** Passive Perception 11  
+      **Languages** -  
+      **Challenge** 2 (450 XP)  
+      **Proficiency Bonus** +2  
+
+      ## Actions
+
+      ***Gore.*** *Melee Attack Roll* rollable(dice=1d20+7,label=+7,dicelabel=To Hit [Gore]), reach 5 ft. *Hit:* rollable(dice=2d8+5,dicelabel=Damage [Gore]) Piercing damage. If target is a Large or smaller creature and the rhinoceros moved 20+ feet straight toward it immediately before the hit, the target takes an extra rollable(dice=2d8,dicelabel=Damage [Gore]) Piercing damage and has the ***Prone*** condition.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Beast, Unaligned*  
+    **Challenge** 2
+  subtype: npc
+  id: srd2024rhinoceros
+  status: 1
+

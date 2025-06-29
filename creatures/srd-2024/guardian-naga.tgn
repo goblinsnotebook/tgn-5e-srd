@@ -1,0 +1,54 @@
+creatures:
+- name: Guardian Naga
+  statblock:
+    custom_statblock: |
+      **Armor Class** 18  
+      **Hit Points** 136 (rollable(dice=16d10 + 48,dicelabel=Hit Points))  
+      **Speed** Walk 40 ft., Climb 40 ft., Swim 40 ft.  
+      **Initiative:** rollable(dice=1d20+4,label=+4,dicelabel=Initiative) (14)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=19)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+4,label=+4,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=16)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20+7,label=+7,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=18)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+8,label=+8,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=19)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+8,label=+8,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=16)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+7,label=+7,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=18)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20+8,label=+8,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Skills** Arcana rollable(dice=1d20+11,label=+11,dicelabel=Arcana Check), History rollable(dice=1d20+11,label=+11,dicelabel=History Check), Religion rollable(dice=1d20+11,label=+11,dicelabel=Religion Check)  
+      **Damage Immunities** poison  
+      **Condition Immunities** charmed, paralyzed, poisoned, restrained  
+      **Senses** darkvision 60 ft., Passive Perception 14  
+      **Languages** Celestial, Common  
+      **Challenge** 10 (5,900 XP)  
+      **Proficiency Bonus** +4  
+
+      ## Traits
+
+      ***Celestial Restoration.*** If the naga dies, it returns to life in rollable(dice=1d6,dicelabel=Celestial Restoration) days and regains all its ***Hit Points*** unless [Dispel Evil and Good](https://www.dndbeyond.com/spells/2619096-dispel-evil-and-good) is cast on its remains.
+
+      ## Actions
+
+      ***Multiattack.*** The naga makes two Bite attacks. It can replace any attack with a use of Poisonous Spittle.
+
+      ***Bite.*** *Melee Attack Roll* rollable(dice=1d20+8,label=+8,dicelabel=To Hit [Bite]), reach 10 ft. *Hit:* rollable(dice=2d12+4,dicelabel=Damage [Bite]) Piercing damage plus rollable(dice=4d10,dicelabel=Damage [Bite]) Poison damage.
+
+      ***Poisonous Spittle.*** *Constitution Saving Throw:* DC 16, one creature the naga can see within 60 feet. *Failure:* rollable(dice=7d8,dicelabel=Damage [Poisonous Spittle]) Poison damage, and the target has the ***Blinded*** condition until the start of the naga's next turn. *Success:* Half damage only.
+
+      ***Spellcasting.*** The naga casts one of the following spells, requiring no Somatic or Material components and using Wisdom as the spellcasting ability (spell save DC 16):
+
+      At will: [Thaumaturgy](https://www.dndbeyond.com/spells/2619174-thaumaturgy)  
+      1/day each: [Clairvoyance](https://www.dndbeyond.com/spells/2618972-clairvoyance), [Cure Wounds](https://www.dndbeyond.com/spells/2619079-cure-wounds) (level 6 version), [Flame Strike](https://www.dndbeyond.com/spells/2618920-flame-strike) (level 6 version), [Geas](https://www.dndbeyond.com/spells/2618940-geas), [True Seeing](https://www.dndbeyond.com/spells/2619201-true-seeing)  
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Celestial, Lawful Good*  
+    **Challenge** 10
+  subtype: npc
+  id: srd2024guardiannaga
+  status: 1
+

@@ -1,0 +1,46 @@
+creatures:
+- name: Giant Seahorse
+  statblock:
+    custom_statblock: |
+      **Armor Class** 14  
+      **Hit Points** 16 (rollable(dice=3d10,dicelabel=Hit Points))  
+      **Speed** Walk 5 ft., Swim 40 ft.  
+      **Initiative:** rollable(dice=1d20+1,label=+1,dicelabel=Initiative) (11)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=15)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+2,label=+2,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=2)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20-4,label=-4,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=12)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+1,label=+1,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=12)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+1,label=+1,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=11)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+0,label=+0,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=5)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20-3,label=-3,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Senses** Passive Perception 11  
+      **Languages** -  
+      **Challenge** 1/2 (100 XP)  
+      **Proficiency Bonus** +2  
+
+      ## Traits
+
+      ***Water Breathing.*** The seahorse can breathe only underwater.
+
+      ## Actions
+
+      ***Ram.*** *Melee Attack Roll* rollable(dice=1d20+4,label=+4,dicelabel=To Hit [Ram]), reach 5 ft. *Hit:* rollable(dice=2d6+2,dicelabel=Damage [Ram]) Bludgeoning damage, or rollable(dice=2d8+2,dicelabel=Damage [Ram]) Bludgeoning damage if the seahorse moved 20+ feet straight toward the target immediately before the hit.
+
+      ## Bonus Actions
+
+      ***Bubble Dash.*** While underwater, the seahorse moves up to half its ***Swim Speed*** without provoking ***Opportunity Attacks***.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Beast, Unaligned*  
+    **Challenge** 1/2
+  subtype: npc
+  id: srd2024giantseahorse
+  status: 1
+

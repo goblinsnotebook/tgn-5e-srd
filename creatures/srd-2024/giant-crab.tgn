@@ -1,0 +1,43 @@
+creatures:
+- name: Giant Crab
+  statblock:
+    custom_statblock: |
+      **Armor Class** 15  
+      **Hit Points** 13 (rollable(dice=3d8,dicelabel=Hit Points))  
+      **Speed** Walk 30 ft., Swim 30 ft.  
+      **Initiative:** rollable(dice=1d20+1,label=+1,dicelabel=Initiative) (11)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=13)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+1,label=+1,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=1)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20-5,label=-5,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=13)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+1,label=+1,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=9)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20-1,label=-1,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=11)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+0,label=+0,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=3)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20-4,label=-4,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Skills** Stealth rollable(dice=1d20+3,label=+3,dicelabel=Stealth Check)  
+      **Senses** blindsight 30 ft., Passive Perception 9  
+      **Languages** -  
+      **Challenge** 1/8 (25 XP)  
+      **Proficiency Bonus** +2  
+
+      ## Traits
+
+      ***Amphibious.*** The crab can breathe air and water.
+
+      ## Actions
+
+      ***Claw.*** *Melee Attack Roll* rollable(dice=1d20+3,label=+3,dicelabel=To Hit [Claw]), reach 5 ft. *Hit:* rollable(dice=1d6+1,dicelabel=Damage [Claw]) Bludgeoning damage. If the target is a Medium or smaller creature, it has the ***Grappled*** condition (escape DC 11) from one of two claws.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Beast, Unaligned*  
+    **Challenge** 1/8
+  subtype: npc
+  id: srd2024giantcrab
+  status: 1
+

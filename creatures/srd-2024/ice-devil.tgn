@@ -1,0 +1,53 @@
+creatures:
+- name: Ice Devil
+  statblock:
+    custom_statblock: |
+      **Armor Class** 18  
+      **Hit Points** 228 (rollable(dice=24d10 + 96,dicelabel=Hit Points))  
+      **Speed** 40 ft.  
+      **Initiative:** rollable(dice=1d20+7,label=+7,dicelabel=Initiative) (17)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=21)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+5,label=+5,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=18)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20+4,label=+4,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=14)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+7,label=+7,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=15)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+7,label=+7,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=18)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+9,label=+9,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=18)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20+9,label=+9,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Skills** Insight rollable(dice=1d20+7,label=+7,dicelabel=Insight Check), Perception rollable(dice=1d20+7,label=+7,dicelabel=Perception Check), Persuasion rollable(dice=1d20+9,label=+9,dicelabel=Persuasion Check)  
+      **Damage Immunities** cold, fire, poison  
+      **Condition Immunities** poisoned  
+      **Senses** blindsight 120 ft., Passive Perception 17  
+      **Languages** Infernal; telepathy 120 ft.  
+      **Challenge** 14 (11,500 XP)  
+      **Proficiency Bonus** +5  
+
+      ## Traits
+
+      ***Diabolical Restoration.*** If the devil dies outside the Nine Hells, its body disappears in sulfurous smoke, and it gains a new body instantly, reviving with all its ***Hit Points*** somewhere in the Nine Hells.
+
+      ***Magic Resistance.*** The devil has ***Advantage*** on saving throws against spells and other magical effects.
+
+      ## Actions
+
+      ***Multiattack.*** The devil makes three Ice Spear attacks. It can replace one attack with a Tail attack.
+
+      ***Ice Spear.*** *Melee or Ranged Attack Roll* rollable(dice=1d20+10,label=+10,dicelabel=To Hit [Ice Spear]), reach 5 ft. or range 30/120 ft. *Hit:* rollable(dice=2d8+5,dicelabel=Damage [Ice Spear]) Piercing damage plus rollable(dice=3d6,dicelabel=Damage [Ice Spear]) Cold damage. Until the end of its next turn, the target can't take a ***Bonus Action*** or ***Reaction***, its ***Speed*** decreases by 10 feet, and it can move or take one action on its turn, not both. *Hit or Miss:* The spear magically returns to the devil's hand immediately after a ranged attack.
+
+      ***Tail.*** *Melee Attack Roll* rollable(dice=1d20+10,label=+10,dicelabel=To Hit [Tail]), reach 10 ft. *Hit:* rollable(dice=3d6+5,dicelabel=Damage [Tail]) Bludgeoning damage plus rollable(dice=4d8,dicelabel=Damage [Tail]) Cold damage.
+
+      ***Ice Wall (rollable(dice=1d6,label=Recharge 6,dicelabel=Recharge [Ice Wall])).*** The devil casts [Wall of Ice](https://www.dndbeyond.com/spells/2619195-wall-of-ice) (level 8 version), requiring no spell components and using Intelligence as the spellcasting ability (spell save DC 17).
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Fiend (Devil), Lawful Evil*  
+    **Challenge** 14
+  subtype: npc
+  id: srd2024icedevil
+  status: 1
+

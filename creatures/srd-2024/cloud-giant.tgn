@@ -1,0 +1,52 @@
+creatures:
+- name: Cloud Giant
+  statblock:
+    custom_statblock: |
+      **Armor Class** 14  
+      **Hit Points** 200 (rollable(dice=16d12 + 96,dicelabel=Hit Points))  
+      **Speed** Walk 40 ft., Fly 20 ft. (hover)  
+      **Initiative:** rollable(dice=1d20+4,label=+4,dicelabel=Initiative) (14)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=27)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+8,label=+8,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=12)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20+1,label=+1,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=10)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+0,label=+0,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=16)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+7,label=+7,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=22)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+10,label=+10,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=16)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20+3,label=+3,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Skills** Insight rollable(dice=1d20+7,label=+7,dicelabel=Insight Check), Perception rollable(dice=1d20+11,label=+11,dicelabel=Perception Check)  
+      **Senses** Passive Perception 21  
+      **Languages** Common, Giant  
+      **Challenge** 9 (5,000 XP)  
+      **Proficiency Bonus** +4  
+
+      ## Actions
+
+      ***Multiattack.*** The giant makes two attacks, using Thunderous Mace or Thundercloud in any combination. It can replace one attack with a use of Spellcasting to cast [Fog Cloud](https://www.dndbeyond.com/spells/2618910-fog-cloud).
+
+      ***Thunderous Mace.*** *Melee Attack Roll* rollable(dice=1d20+12,label=+12,dicelabel=To Hit [Thunderous Mace]), reach 10 ft. *Hit:* rollable(dice=3d8+8,dicelabel=Damage [Thunderous Mace]) Bludgeoning damage plus rollable(dice=2d6,dicelabel=Damage [Thunderous Mace]) Thunder damage.
+
+      ***Thundercloud.*** *Ranged Attack Roll* rollable(dice=1d20+12,label=+12,dicelabel=To Hit [Thundercloud]), range 240 ft. *Hit:* rollable(dice=3d6+8,dicelabel=Damage [Thundercloud]) Thunder damage, and the target has the ***Incapacitated*** condition until the end of its next turn.
+
+      ***Spellcasting.*** The giant casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 15):
+
+      At will: [Detect Magic](https://www.dndbeyond.com/spells/2619097-detect-magic), [Fog Cloud](https://www.dndbeyond.com/spells/2618910-fog-cloud), [Light](https://www.dndbeyond.com/spells/2618996-light)  
+      1/day each: [Control Weather](https://www.dndbeyond.com/spells/2619054-control-weather), [Gaseous Form](https://www.dndbeyond.com/spells/2618927-gaseous-form), [Telekinesis](https://www.dndbeyond.com/spells/2619157-telekinesis)  
+
+      ***Misty Step.*** The giant casts the [Misty Step](https://www.dndbeyond.com/spells/2619133-misty-step) spell, using the same spellcasting ability as Spellcasting.
+
+      At will: [Misty Step](https://www.dndbeyond.com/spells/2619133-misty-step)  
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Huge Giant, Neutral*  
+    **Challenge** 9
+  subtype: npc
+  id: srd2024cloudgiant
+  status: 1
+

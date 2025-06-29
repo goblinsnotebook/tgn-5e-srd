@@ -1,0 +1,54 @@
+creatures:
+- name: Sea Hag
+  statblock:
+    custom_statblock: |
+      **Armor Class** 14  
+      **Hit Points** 52 (rollable(dice=7d8 + 21,dicelabel=Hit Points))  
+      **Speed** Walk 30 ft., Swim 40 ft.  
+      **Initiative:** rollable(dice=1d20+1,label=+1,dicelabel=Initiative) (11)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=16)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+3,label=+3,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=12)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20+1,label=+1,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=13)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+1,label=+1,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=12)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+1,label=+1,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=16)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+3,label=+3,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=13)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20+1,label=+1,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Senses** darkvision 60 ft., Passive Perception 11  
+      **Languages** Common, Giant, Primordial (Aquan)  
+      **Challenge** 2 (450 XP)  
+      **Proficiency Bonus** +2  
+
+      ## Traits
+
+      
+
+      ***Coven Magic.*** While within 30 feet of at least two hag allies, the hag can cast one of the following spells, requiring no Material components, using the spell's normal casting time, and using Intelligence as the spellcasting ability (spell save DC 11): [Augury](https://www.dndbeyond.com/spells/2618882-augury), [Find Familiar](https://www.dndbeyond.com/spells/2618877-find-familiar), [Identify](https://www.dndbeyond.com/spells/2619180-identify), [Locate Object](https://www.dndbeyond.com/spells/2619002-locate-object), [Scrying](https://www.dndbeyond.com/spells/2619007-scrying), or [Unseen Servant](https://www.dndbeyond.com/spells/2619209-unseen-servant). The hag must finish a ***Long Rest*** before using this trait to cast that spell again.
+
+      ***Amphibious.*** The hag can breathe air and water.
+
+      ***Vile Appearance.*** *Wisdom Saving Throw:* DC 11, any Beast or Humanoid that starts its turn within 30 feet of the hag and can see the hag's true form. *Failure:* The target has the ***Frightened*** condition until the start of its next turn. *Success:* The target is immune to this hag's Vile Appearance for 24 hours.
+
+      ## Actions
+
+      ***Claw.*** *Melee Attack Roll* rollable(dice=1d20+5,label=+5,dicelabel=To Hit [Claw]), reach 5 ft. *Hit:* rollable(dice=2d6+3,dicelabel=Damage [Claw]) Slashing damage.
+
+      ***Death Glare (rollable(dice=1d6,label=Recharge 5-6,dicelabel=Recharge [Death Glare])).*** *Wisdom Saving Throw:* DC 11, one ***Frightened*** creature the hag can see within 30 feet. *Failure:* If the target has 20 ***Hit Points*** or fewer, it drops to 0 ***Hit Points***. Otherwise, the target takes rollable(dice=3d8,dicelabel=Damage [Death Glare]) Psychic damage.
+
+      ***Illusory Appearance.*** The hag casts [Disguise Self](https://www.dndbeyond.com/spells/2619102-disguise-self), using Constitution as the spellcasting ability (spell save DC 13). The spell's duration is 24 hours.
+
+      At will: [Disguise Self](https://www.dndbeyond.com/spells/2619102-disguise-self)  
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Fey, Chaotic Evil*  
+    **Challenge** 2
+  subtype: npc
+  id: srd2024seahag
+  status: 1
+

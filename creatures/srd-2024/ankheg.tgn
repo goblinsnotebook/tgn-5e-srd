@@ -1,0 +1,44 @@
+creatures:
+- name: Ankheg
+  statblock:
+    custom_statblock: |
+      **Armor Class** 14  
+      **Hit Points** 45 (rollable(dice=6d10 + 12,dicelabel=Hit Points))  
+      **Speed** Walk 30 ft., Burrow 10 ft.  
+      **Initiative:** rollable(dice=1d20+0,label=+0,dicelabel=Initiative) (10)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=17)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+3,label=+3,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=1)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20-5,label=-5,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=11)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+0,label=+0,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=13)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+1,label=+1,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=14)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+2,label=+2,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=6)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20-2,label=-2,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Senses** darkvision 60 ft., tremorsense 60 ft., Passive Perception 11  
+      **Languages** -  
+      **Challenge** 2 (450 XP)  
+      **Proficiency Bonus** +2  
+
+      ## Traits
+
+      ***Tunneler.*** The ankheg can burrow through solid rock at half its ***Burrow Speed*** and leaves a 10-foot-diameter tunnel in its wake.
+
+      ## Actions
+
+      ***Bite.*** *Melee Attack Roll* rollable(dice=1d20+5,label=+5,dicelabel=To Hit [Bite]) (with ***Advantage*** if the target is ***Grappled*** by the ankheg), reach 5 ft. *Hit:* rollable(dice=2d6+3,dicelabel=Damage [Bite]) Slashing damage plus rollable(dice=1d6,dicelabel=Damage [Bite]) Acid damage. If the target is a Large or smaller creature, it has the ***Grappled*** condition (escape DC 13).
+
+      ***Acid Spray (rollable(dice=1d6,label=Recharge 6,dicelabel=Recharge [Acid Spray])).*** *Dexterity Saving Throw:* DC 12, each creature in a 30-foot-long, 5-foot-wide ***Line***. *Failure:* rollable(dice=4d6,dicelabel=Damage [Acid Spray]) Acid damage. *Success:* Half damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Monstrosity, Unaligned*  
+    **Challenge** 2
+  subtype: npc
+  id: srd2024ankheg
+  status: 1
+

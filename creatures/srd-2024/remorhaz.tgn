@@ -1,0 +1,49 @@
+creatures:
+- name: Remorhaz
+  statblock:
+    custom_statblock: |
+      **Armor Class** 17  
+      **Hit Points** 195 (rollable(dice=17d12 + 85,dicelabel=Hit Points))  
+      **Speed** Walk 40 ft., Burrow 30 ft.  
+      **Initiative:** rollable(dice=1d20+5,label=+5,dicelabel=Initiative) (15)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=24)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+7,label=+7,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=4)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20-3,label=-3,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=13)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+1,label=+1,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=10)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+0,label=+0,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=21)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+5,label=+5,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=5)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20-3,label=-3,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Damage Immunities** cold, fire  
+      **Senses** darkvision 60 ft., tremorsense 60 ft., Passive Perception 10  
+      **Languages** -  
+      **Challenge** 11 (7,200 XP)  
+      **Proficiency Bonus** +4  
+
+      ## Traits
+
+      ***Heat Aura.*** At the end of each of the remorhaz's turns, each creature in a 5-foot ***Emanation*** originating from the remorhaz takes rollable(dice=3d10,dicelabel=Damage [Heat Aura]) Fire damage.
+
+      ## Actions
+
+      ***Bite.*** *Melee Attack Roll* rollable(dice=1d20+11,label=+11,dicelabel=To Hit [Bite]), reach 10 ft. *Hit:* rollable(dice=2d10+7,dicelabel=Damage [Bite]) Piercing damage plus rollable(dice=4d6,dicelabel=Damage [Bite]) Fire damage. If the target is a Large or smaller creature, it has the ***Grappled*** condition (escape DC 17), and it has the ***Restrained*** condition until the grapple ends.
+
+      ## Bonus Actions
+
+      ***Swallow.*** *Strength Saving Throw:* DC 19, one Large or smaller creature ***Grappled*** by the remorhaz (it can have up to two creatures swallowed at a time). *Failure:* The target is swallowed by the remorhaz, and the ***Grappled*** condition ends. A swallowed creature has the ***Blinded*** and ***Restrained*** conditions, it has ***Total Cover*** against attacks and other effects outside the remorhaz, and it takes rollable(dice=3d6,dicelabel=Damage [Swallow]) Acid damage plus rollable(dice=3d6,dicelabel=Damage [Swallow]) Fire damage at the start of each of the remorhaz's turns.
+
+      If the remorhaz takes 30 damage or more on a single turn from a creature inside it, the remorhaz must succeed on a DC 15 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, each of which falls in a space within 5 feet of the remorhaz and has the ***Prone*** condition. If the remorhaz dies, any swallowed creature no longer has the ***Restrained*** condition and can escape from the corpse by using 15 feet of movement, exiting ***Prone***.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Huge Monstrosity, Unaligned*  
+    **Challenge** 11
+  subtype: npc
+  id: srd2024remorhaz
+  status: 1
+

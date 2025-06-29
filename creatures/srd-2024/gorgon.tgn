@@ -1,0 +1,46 @@
+creatures:
+- name: Gorgon
+  statblock:
+    custom_statblock: |
+      **Armor Class** 19  
+      **Hit Points** 114 (rollable(dice=12d10 + 48,dicelabel=Hit Points))  
+      **Speed** 40 ft.  
+      **Initiative:** rollable(dice=1d20+0,label=+0,dicelabel=Initiative) (10)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=20)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+5,label=+5,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=2)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20-4,label=-4,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=11)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+0,label=+0,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=12)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+1,label=+1,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=18)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+4,label=+4,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=7)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20-2,label=-2,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Skills** Perception rollable(dice=1d20+7,label=+7,dicelabel=Perception Check)  
+      **Condition Immunities** exhaustion, petrified  
+      **Senses** darkvision 60 ft., Passive Perception 17  
+      **Languages** -  
+      **Challenge** 5 (1,800 XP)  
+      **Proficiency Bonus** +3  
+
+      ## Actions
+
+      ***Gore.*** *Melee Attack Roll* rollable(dice=1d20+8,label=+8,dicelabel=To Hit [Gore]), reach 5 ft. *Hit:* rollable(dice=2d12+5,dicelabel=Damage [Gore]) Piercing damage. If the target is a Large or smaller creature and the gorgon moved 20+ feet straight toward it immediately before the hit, the target has the ***Prone*** condition.
+
+      ***Petrifying Breath (rollable(dice=1d6,label=Recharge 5-6,dicelabel=Recharge [Petrifying Breath])).*** *Constitution Saving Throw:* DC 15, each creature in a 30-foot ***Cone***. *First Failure:* The target has the ***Restrained*** condition and repeats the save at the end of its next turn if it is still ***Restrained***, ending the effect on itself on a success. *Second Failure:* The target has the ***Petrified*** condition instead of the ***Restrained*** condition.
+
+      ## Bonus Actions
+
+      ***Trample.*** *Dexterity Saving Throw:* DC 16, one creature within 5 feet that has the ***Prone*** condition. *Failure:* rollable(dice=2d10+5,dicelabel=Damage [Trample]) Bludgeoning damage. *Success:* Half damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Construct, Unaligned*  
+    **Challenge** 5
+  subtype: npc
+  id: srd2024gorgon
+  status: 1
+

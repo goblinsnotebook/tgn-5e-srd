@@ -1,0 +1,46 @@
+creatures:
+- name: Goblin Warrior
+  statblock:
+    custom_statblock: |
+      **Armor Class** 15  
+      **Hit Points** 10 (rollable(dice=3d6,dicelabel=Hit Points))  
+      **Speed** 30 ft.  
+      **Initiative:** rollable(dice=1d20+2,label=+2,dicelabel=Initiative) (12)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=8)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20-1,label=-1,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=10)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20+0,label=+0,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=15)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+2,label=+2,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=8)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20-1,label=-1,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=10)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+0,label=+0,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=8)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20-1,label=-1,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Skills** Stealth rollable(dice=1d20+6,label=+6,dicelabel=Stealth Check)  
+      **Gear** leather armor, scimitar, shield, shortbow  
+      **Senses** darkvision 60 ft., Passive Perception 9  
+      **Languages** Common, Goblin  
+      **Challenge** 1/4 (50 XP)  
+      **Proficiency Bonus** +2  
+
+      ## Actions
+
+      ***Scimitar.*** *Melee Attack Roll* rollable(dice=1d20+4,label=+4,dicelabel=To Hit [Scimitar]), reach 5 ft. *Hit:* rollable(dice=1d6+2,dicelabel=Damage [Scimitar]) Slashing damage, plus rollable(dice=1d4,dicelabel=Damage [Scimitar]) Slashing damage if the attack roll had ***Advantage***.
+
+      ***Shortbow.*** *Ranged Attack Roll* rollable(dice=1d20+4,label=+4,dicelabel=To Hit [Shortbow]), range 80/320 ft. *Hit:* rollable(dice=1d6+2,dicelabel=Damage [Shortbow]) Piercing damage, plus rollable(dice=1d4,dicelabel=Damage [Shortbow]) Piercing damage if the attack roll had ***Advantage***.
+
+      ## Bonus Actions
+
+      ***Nimble Escape.*** The goblin takes the Disengage or Hide action.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Small Fey (Goblinoid), Chaotic Neutral*  
+    **Challenge** 1/4
+  subtype: npc
+  id: srd2024goblinwarrior
+  status: 1
+

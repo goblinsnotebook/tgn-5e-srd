@@ -1,0 +1,52 @@
+creatures:
+- name: Half-Dragon
+  statblock:
+    custom_statblock: |
+      **Armor Class** 18  
+      **Hit Points** 105 (rollable(dice=14d8 + 42,dicelabel=Hit Points))  
+      **Speed** 40 ft.  
+      **Initiative:** rollable(dice=1d20+5,label=+5,dicelabel=Initiative) (15)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=19)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+4,label=+4,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=10)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20+0,label=+0,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=14)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+5,label=+5,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=15)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+5,label=+5,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=16)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+3,label=+3,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=14)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20+2,label=+2,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Skills** Athletics rollable(dice=1d20+7,label=+7,dicelabel=Athletics Check), Perception rollable(dice=1d20+5,label=+5,dicelabel=Perception Check), Stealth rollable(dice=1d20+5,label=+5,dicelabel=Stealth Check)  
+      **Damage Resistances** Damage type chosen for the Draconic Origin trait below  
+      **Senses** blindsight 10 ft., darkvision 60 ft., Passive Perception 15  
+      **Languages** Common, Draconic  
+      **Challenge** 5 (1,800 XP)  
+      **Proficiency Bonus** +3  
+
+      ## Traits
+
+      ***Draconic Origin.*** The half-dragon is related to a type of dragon associated with one of the following damage types (DM's choice): Acid, Cold, Fire, Lightning, or Poison. This choice affects other aspects of the stat block.
+
+      ## Actions
+
+      ***Multiattack.*** The half-dragon makes two Claw attacks.
+
+      ***Claw.*** *Melee Attack Roll* rollable(dice=1d20+7,label=+7,dicelabel=To Hit [Claw]), reach 10 ft. *Hit:* rollable(dice=1d4+4,dicelabel=Damage [Claw]) Slashing damage plus rollable(dice=2d6,dicelabel=Damage [Claw]) damage of the type chosen for the Draconic Origin trait.
+
+      ***Dragon's Breath (rollable(dice=1d6,label=Recharge 5-6,dicelabel=Recharge [Dragon's Breath])).*** *Dexterity Saving Throw:* DC 14, each creature in a 30-foot ***Cone***. *Failure:* rollable(dice=8d6,dicelabel=Damage [Dragon's Breath]) damage of the type chosen for the Draconic Origin trait. *Success:* Half damage.
+
+      ## Bonus Actions
+
+      ***Leap.*** The half-dragon jumps up to 30 feet by spending 10 feet of movement.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Dragon, Neutral*  
+    **Challenge** 5
+  subtype: npc
+  id: srd2024half-dragon
+  status: 1
+

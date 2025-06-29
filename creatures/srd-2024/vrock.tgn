@@ -1,0 +1,53 @@
+creatures:
+- name: Vrock
+  statblock:
+    custom_statblock: |
+      **Armor Class** 15  
+      **Hit Points** 152 (rollable(dice=16d10 + 64,dicelabel=Hit Points))  
+      **Speed** Walk 40 ft., Fly 60 ft.  
+      **Initiative:** rollable(dice=1d20+2,label=+2,dicelabel=Initiative) (12)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=17)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+3,label=+3,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=8)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20-1,label=-1,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=15)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+5,label=+5,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=13)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+4,label=+4,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=18)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+4,label=+4,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=8)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20+2,label=+2,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Damage Resistances** cold, fire, lightning  
+      **Damage Immunities** poison  
+      **Condition Immunities** poisoned  
+      **Senses** darkvision 120 ft., Passive Perception 11  
+      **Languages** Abyssal; telepathy 120 ft.  
+      **Challenge** 6 (2,300 XP)  
+      **Proficiency Bonus** +3  
+
+      ## Traits
+
+      ***Demonic Restoration.*** If the vrock dies outside the Abyss, its body dissolves into ichor, and it gains a new body instantly, reviving with all its ***Hit Points*** somewhere in the Abyss.
+
+      ***Magic Resistance.*** The vrock has ***Advantage*** on saving throws against spells and other magical effects.
+
+      ## Actions
+
+      ***Multiattack.*** The vrock makes two Shred attacks.
+
+      ***Shred.*** *Melee Attack Roll* rollable(dice=1d20+6,label=+6,dicelabel=To Hit [Shred]), reach 5 ft. *Hit:* rollable(dice=2d6+3,dicelabel=Damage [Shred]) Piercing damage plus rollable(dice=3d6,dicelabel=Damage [Shred]) Poison damage.
+
+      ***Spores (rollable(dice=1d6,label=Recharge 6,dicelabel=Recharge [Spores])).*** *Constitution Saving Throw:* DC 15, each creature in a 20-foot ***Emanation*** originating from the vrock. *Failure:* The target has the ***Poisoned*** condition and repeats the save at the end of each of its turns, ending the effect on itself on a success. While ***Poisoned***, the target takes rollable(dice=1d10,dicelabel=Damage [Spores]) Poison damage at the start of each of its turns. Emptying a flask of Holy Water on the target ends the effect early.
+
+      ***Stunning Screech (1/Day).*** *Constitution Saving Throw:* DC 15, each creature in a 20-foot ***Emanation*** originating from the vrock (demons succeed automatically). *Failure:* rollable(dice=3d6,dicelabel=Damage [Stunning Screech]) Thunder damage, and the target has the ***Stunned*** condition until the end of the vrock's next turn.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Fiend (Demon), Chaotic Evil*  
+    **Challenge** 6
+  subtype: npc
+  id: srd2024vrock
+  status: 1
+

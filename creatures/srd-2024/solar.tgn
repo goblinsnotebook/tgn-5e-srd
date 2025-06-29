@@ -1,0 +1,72 @@
+creatures:
+- name: Solar
+  statblock:
+    custom_statblock: |
+      **Armor Class** 21  
+      **Hit Points** 297 (rollable(dice=22d10 + 176,dicelabel=Hit Points))  
+      **Speed** Walk 50 ft., Fly 150 ft. (hover)  
+      **Initiative:** rollable(dice=1d20+20,label=+20,dicelabel=Initiative) (30)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=26)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+8,label=+8,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=25)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20+7,label=+7,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=22)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+6,label=+6,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=25)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+7,label=+7,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=26)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+8,label=+8,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=30)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20+10,label=+10,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Skills** Perception rollable(dice=1d20+14,label=+14,dicelabel=Perception Check)  
+      **Damage Immunities** poison, radiant  
+      **Condition Immunities** charmed, exhaustion, frightened, poisoned  
+      **Senses** truesight 120 ft., Passive Perception 24  
+      **Languages** all; telepathy 120 ft.  
+      **Challenge** 21 (33,000 XP)  
+      **Proficiency Bonus** +7  
+
+      ## Traits
+
+      ***Divine Awareness.*** The solar knows if it hears a lie.
+
+      ***Exalted Restoration.*** If the solar dies outside Mount Celestia, its body disappears, and it gains a new body instantly, reviving with all its ***Hit Points*** somewhere in Mount Celestia.
+
+      ***Legendary Resistance (4/Day).*** If the solar fails a saving throw, it can choose to succeed instead.
+
+      ***Magic Resistance.*** The solar has ***Advantage*** on saving throws against spells and other magical effects.
+
+      ## Actions
+
+      ***Multiattack.*** The solar makes two Flying Sword attacks. It can replace one attack with a use of Slaying Bow.
+
+      ***Flying Sword.*** *Melee or Ranged Attack Roll* rollable(dice=1d20+15,label=+15,dicelabel=To Hit [Flying Sword]), reach 10 ft. or range 120 ft. *Hit:* rollable(dice=4d6+8,dicelabel=Damage [Flying Sword]) Slashing damage plus rollable(dice=8d8,dicelabel=Damage [Flying Sword]) Radiant damage. *Hit or Miss:* The sword magically returns to the solar's hand or hovers within 5 feet of the solar immediately after a ranged attack.
+
+      ***Slaying Bow.*** *Dexterity Saving Throw:* DC 21, one creature the solar can see within 600 feet. *Failure:* If the creature has 100 ***Hit Points*** or fewer, it dies. It otherwise takes rollable(dice=4d8+6,dicelabel=Damage [Slaying Bow]) Piercing damage plus rollable(dice=8d8,dicelabel=Damage [Slaying Bow]) Radiant damage.
+
+      ***Spellcasting.*** The solar casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 25):
+
+      At will: [Detect Evil and Good](https://www.dndbeyond.com/spells/2619090-detect-evil-and-good)  
+      1/day each: [Commune](https://www.dndbeyond.com/spells/2618987-commune), [Control Weather](https://www.dndbeyond.com/spells/2619054-control-weather), [Dispel Evil and Good](https://www.dndbeyond.com/spells/2619096-dispel-evil-and-good), [Resurrection](https://www.dndbeyond.com/spells/2618953-resurrection)  
+
+      ***Divine Aid (3/Day).*** The solar casts [Cure Wounds](https://www.dndbeyond.com/spells/2619079-cure-wounds) (level 2 version), [Lesser Restoration](https://www.dndbeyond.com/spells/2619016-lesser-restoration), or [Remove Curse](https://www.dndbeyond.com/spells/2618943-remove-curse), using the same spellcasting ability as Spellcasting.
+
+      3/day: [Cure Wounds](https://www.dndbeyond.com/spells/2619079-cure-wounds) (level 2 version), [Lesser Restoration](https://www.dndbeyond.com/spells/2619016-lesser-restoration), [Remove Curse](https://www.dndbeyond.com/spells/2618943-remove-curse)  
+
+      ## Legendary Actions
+
+      *Legendary Action Uses: 3. Immediately after another creature's turn, The Solar can expend a use to take one of the following actions. The Solar regains all expended uses at the start of each of its turns.*
+
+      ***Blinding Gaze.*** *Constitution Saving Throw:* DC 25, one creature the solar can see within 120 feet. *Failure:* The target has the ***Blinded*** condition for 1 minute. *Failure or Success:* The solar can't take this action again until the start of its next turn.
+
+      ***Radiant Teleport.*** The solar teleports up to 60 feet to an unoccupied space it can see. *Dexterity Saving Throw:* DC 25, each creature in a 10-foot ***Emanation*** originating from the solar at its destination space. *Failure:* rollable(dice=2d10,dicelabel=Damage [Radiant Teleport]) Radiant damage. *Success:* Half damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Celestial (Angel), Lawful Good*  
+    **Challenge** 21
+  subtype: npc
+  id: srd2024solar
+  status: 1
+

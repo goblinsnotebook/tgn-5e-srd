@@ -1,0 +1,53 @@
+creatures:
+- name: Drider
+  statblock:
+    custom_statblock: |
+      **Armor Class** 19  
+      **Hit Points** 123 (rollable(dice=13d10 + 52,dicelabel=Hit Points))  
+      **Speed** Walk 30 ft., Climb 30 ft.  
+      **Initiative:** rollable(dice=1d20+4,label=+4,dicelabel=Initiative) (14)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=16)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+3,label=+3,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=13)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20+1,label=+1,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=19)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+4,label=+4,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=16)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+3,label=+3,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=18)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+4,label=+4,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=12)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20+1,label=+1,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Skills** Perception rollable(dice=1d20+6,label=+6,dicelabel=Perception Check), Stealth rollable(dice=1d20+10,label=+10,dicelabel=Stealth Check)  
+      **Senses** darkvision 120 ft., Passive Perception 16  
+      **Languages** Elvish, Undercommon  
+      **Challenge** 6 (2,300 XP)  
+      **Proficiency Bonus** +3  
+
+      ## Traits
+
+      ***Spider Climb.*** The drider can climb difficult surfaces, including along ceilings, without needing to make an ability check.
+
+      ***Sunlight Sensitivity.*** While in sunlight, the drider has ***Disadvantage*** on ability checks and attack rolls.
+
+      ***Web Walker.*** The drider ignores movement restrictions caused by webs, and the drider knows the location of any other creature in contact with the same web.
+
+      ## Actions
+
+      ***Multiattack.*** The drider makes three attacks, using Foreleg or Poison Burst in any combination.
+
+      ***Foreleg.*** *Melee Attack Roll* rollable(dice=1d20+7,label=+7,dicelabel=To Hit [Foreleg]), reach 10 ft. *Hit:* rollable(dice=2d8+4,dicelabel=Damage [Foreleg]) Piercing damage.
+
+      ***Poison Burst.*** *Ranged Attack Roll* rollable(dice=1d20+6,label=+6,dicelabel=To Hit [Poison Burst]), range 120 ft. *Hit:* rollable(dice=3d6+3,dicelabel=Damage [Poison Burst]) Poison damage.
+
+      ***Magic of the Spider Queen (rollable(dice=1d6,label=Recharge 5-6,dicelabel=Recharge [Magic of the Spider Queen])).*** The drider casts [Darkness](https://www.dndbeyond.com/spells/2619080-darkness), [Faerie Fire](https://www.dndbeyond.com/spells/2618858-faerie-fire), or [Web](https://www.dndbeyond.com/spells/2619208-web), requiring no Material components and using Wisdom as the spellcasting ability (spell save DC 14).
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Monstrosity, Chaotic Evil*  
+    **Challenge** 6
+  subtype: npc
+  id: srd2024drider
+  status: 1
+

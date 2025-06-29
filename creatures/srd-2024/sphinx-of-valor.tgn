@@ -1,0 +1,71 @@
+creatures:
+- name: Sphinx of Valor
+  statblock:
+    custom_statblock: |
+      **Armor Class** 17  
+      **Hit Points** 199 (rollable(dice=19d10 + 95,dicelabel=Hit Points))  
+      **Speed** Walk 40 ft., Fly 60 ft.  
+      **Initiative:** rollable(dice=1d20+12,label=+12,dicelabel=Initiative) (22)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=22)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+6,label=+6,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=16)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20+9,label=+9,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=10)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+6,label=+6,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=23)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+12,label=+12,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=20)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+11,label=+11,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=18)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20+4,label=+4,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Skills** Arcana rollable(dice=1d20+9,label=+9,dicelabel=Arcana Check), Perception rollable(dice=1d20+12,label=+12,dicelabel=Perception Check), Religion rollable(dice=1d20+15,label=+15,dicelabel=Religion Check)  
+      **Damage Resistances** necrotic, radiant  
+      **Damage Immunities** psychic  
+      **Condition Immunities** charmed, frightened  
+      **Senses** truesight 120 ft., Passive Perception 22  
+      **Languages** Celestial, Common  
+      **Challenge** 17 (18,000 XP)  
+      **Proficiency Bonus** +6  
+
+      ## Traits
+
+      ***Inscrutable.*** No magic can observe the sphinx remotely or detect its thoughts without its permission. Wisdom (***Insight***) checks made to ascertain its intentions or sincerity are made with ***Disadvantage***.
+
+      ***Legendary Resistance (3/Day, or 4/Day in Lair).*** If the sphinx fails a saving throw, it can choose to succeed instead.
+
+      ## Actions
+
+      ***Multiattack.*** The sphinx makes two Claw attacks and uses Roar.
+
+      ***Claw.*** *Melee Attack Roll* rollable(dice=1d20+12,label=+12,dicelabel=To Hit [Claw]), reach 5 ft. *Hit:* rollable(dice=4d6+6,dicelabel=Damage [Claw]) Slashing damage.
+
+      ***Roar (3/Day).*** The sphinx emits a magical roar. Whenever it roars, the roar has a different effect, as detailed below (the sequence resets when it takes a ***Long Rest***):
+
+      > ***First Roar.*** *Wisdom Saving Throw:* DC 20, each enemy in a 500-foot ***Emanation*** originating from the sphinx. *Failure:* The target has the ***Frightened*** condition for 1 minute.
+      >
+      > ***Second Roar.*** *Wisdom Saving Throw:* DC 20, each enemy in a 500-foot ***Emanation*** originating from the sphinx. *Failure:* The target has the ***Paralyzed*** condition, and it repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically.
+      >
+      > ***Third Roar.*** *Constitution Saving Throw:* DC 20, each enemy in a 500-foot ***Emanation*** originating from the sphinx. *Failure:* rollable(dice=8d10,dicelabel=Damage [Third Roar]) Thunder damage, and the target has the ***Prone*** condition. *Success:* Half damage only.
+
+      ***Spellcasting.*** The sphinx casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save DC 20):
+
+      At will: [Detect Evil and Good](https://www.dndbeyond.com/spells/2619090-detect-evil-and-good), [Thaumaturgy](https://www.dndbeyond.com/spells/2619174-thaumaturgy)  
+      1/day each: [Detect Magic](https://www.dndbeyond.com/spells/2619097-detect-magic), [Dispel Magic](https://www.dndbeyond.com/spells/2619103-dispel-magic), [Greater Restoration](https://www.dndbeyond.com/spells/2618961-greater-restoration), [Heroes' Feast](https://www.dndbeyond.com/spells/2618983-heroes-feast), [Zone of Truth](https://www.dndbeyond.com/spells/2619221-zone-of-truth)  
+
+      ## Legendary Actions
+
+      *Legendary Action Uses: 3 (4 in Lair). Immediately after another creature's turn, The Sphinx of Valor can expend a use to take one of the following actions. The Sphinx of Valor regains all expended uses at the start of each of its turns.*
+
+      ***Arcane Prowl.*** The sphinx can teleport up to 30 feet to an unoccupied space it can see, and it makes one Claw attack.
+
+      ***Weight of Years.*** *Constitution Saving Throw:* DC 16, one creature the sphinx can see within 120 feet. *Failure:* The target gains 1 ***Exhaustion*** level. While the target has any ***Exhaustion*** levels, it appears rollable(dice=3d10,dicelabel=Weight of Years) years older. *Failure or Success:* The sphinx can't take this action again until the start of its next turn.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Celestial, Lawful Neutral*  
+    **Challenge** 17
+  subtype: npc
+  id: srd2024sphinxofvalor
+  status: 1
+

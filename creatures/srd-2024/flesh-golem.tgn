@@ -1,0 +1,56 @@
+creatures:
+- name: Flesh Golem
+  statblock:
+    custom_statblock: |
+      **Armor Class** 9  
+      **Hit Points** 127 (rollable(dice=15d8 + 60,dicelabel=Hit Points))  
+      **Speed** 30 ft.  
+      **Initiative:** rollable(dice=1d20-1,label=-1,dicelabel=Initiative) (9)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=19)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+4,label=+4,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=6)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20-2,label=-2,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=9)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20-1,label=-1,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=10)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+0,label=+0,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=18)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+4,label=+4,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=5)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20-3,label=-3,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Damage Immunities** lightning, poison  
+      **Condition Immunities** charmed, exhaustion, frightened, paralyzed, petrified, poisoned  
+      **Senses** darkvision 60 ft., Passive Perception 10  
+      **Languages** understands Common plus one other language but can't speak  
+      **Challenge** 5 (1,800 XP)  
+      **Proficiency Bonus** +3  
+
+      ## Traits
+
+      ***Aversion to Fire.*** If the golem takes Fire damage, it has ***Disadvantage*** on attack rolls and ability checks until the end of its next turn.
+
+      ***Berserk.*** Whenever the golem starts its turn ***Bloodied***, roll rollable(dice=1d6,dicelabel=Berserk). On a 6, the golem goes berserk. On each of its turns while berserk, the golem attacks the nearest creature it can see. If no creature is near enough to move to and attack, the golem attacks an object. Once the golem goes berserk, it remains so until it is destroyed or it is no longer ***Bloodied***.
+
+      The golem's creator, if within 60 feet of the berserk golem, can try to calm it by taking an action to make a DC 15 Charisma (***Persuasion***) check; the golem must be able to hear its creator. If this check succeeds, the golem ceases being berserk until the start of its next turn, at which point it resumes rolling for the Berserk trait again if it is still ***Bloodied***.
+
+      ***Immutable Form.*** The golem can't shape-shift.
+
+      ***Lightning Absorption.*** Whenever the golem is subjected to Lightning damage, it regains a number of ***Hit Points*** equal to the Lightning damage dealt.
+
+      ***Magic Resistance.*** The golem has ***Advantage*** on saving throws against spells and other magical effects.
+
+      ## Actions
+
+      ***Multiattack.*** The golem makes two Slam attacks.
+
+      ***Slam.*** *Melee Attack Roll* rollable(dice=1d20+7,label=+7,dicelabel=To Hit [Slam]), reach 5 ft. *Hit:* rollable(dice=2d8+4,dicelabel=Damage [Slam]) Bludgeoning damage plus rollable(dice=1d8,dicelabel=Damage [Slam]) Lightning damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Construct, Neutral*  
+    **Challenge** 5
+  subtype: npc
+  id: srd2024fleshgolem
+  status: 1
+

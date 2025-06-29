@@ -1,0 +1,50 @@
+creatures:
+- name: Young Gold Dragon
+  statblock:
+    custom_statblock: |
+      **Armor Class** 18  
+      **Hit Points** 178 (rollable(dice=17d10 + 85,dicelabel=Hit Points))  
+      **Speed** Walk 40 ft., Fly 80 ft., Swim 40 ft.  
+      **Initiative:** rollable(dice=1d20+6,label=+6,dicelabel=Initiative) (16)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=23)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+6,label=+6,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=16)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20+3,label=+3,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=14)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+6,label=+6,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=13)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+5,label=+5,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=21)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+5,label=+5,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=20)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20+5,label=+5,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Skills** Insight rollable(dice=1d20+5,label=+5,dicelabel=Insight Check), Perception rollable(dice=1d20+9,label=+9,dicelabel=Perception Check), Persuasion rollable(dice=1d20+9,label=+9,dicelabel=Persuasion Check), Stealth rollable(dice=1d20+6,label=+6,dicelabel=Stealth Check)  
+      **Damage Immunities** fire  
+      **Senses** blindsight 30 ft., darkvision 120 ft., Passive Perception 19  
+      **Languages** Common, Draconic  
+      **Challenge** 10 (5,900 XP)  
+      **Proficiency Bonus** +4  
+
+      ## Traits
+
+      ***Amphibious.*** The dragon can breathe air and water.
+
+      ## Actions
+
+      ***Multiattack.*** The dragon makes three Rend attacks. It can replace one attack with a use of Weakening Breath.
+
+      ***Rend.*** *Melee Attack Roll* rollable(dice=1d20+10,label=+10,dicelabel=To Hit [Rend]), reach 10 ft. *Hit:* rollable(dice=2d10+6,dicelabel=Damage [Rend]) Slashing damage.
+
+      ***Fire Breath (rollable(dice=1d6,label=Recharge 5-6,dicelabel=Recharge [Fire Breath])).*** *Dexterity Saving Throw:* DC 17, each creature in a 30-foot ***Cone***. *Failure:* rollable(dice=10d10,dicelabel=Damage [Fire Breath]) Fire damage. *Success:* Half damage.
+
+      ***Weakening Breath.*** *Strength Saving Throw:* DC 17, each creature that isn't currently affected by this breath in a 30-foot ***Cone***. *Failure:* The target has ***Disadvantage*** on Strength-based ***D20 Tests*** and subtracts 3 (rollable(dice=1d6,dicelabel=Weakening Breath)) from its damage rolls. It repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Dragon (Metallic), Lawful Good*  
+    **Challenge** 10
+  subtype: npc
+  id: srd2024younggolddragon
+  status: 1
+

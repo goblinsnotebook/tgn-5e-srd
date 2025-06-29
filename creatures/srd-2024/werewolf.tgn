@@ -1,0 +1,54 @@
+creatures:
+- name: Werewolf
+  statblock:
+    custom_statblock: |
+      **Armor Class** 15  
+      **Hit Points** 71 (rollable(dice=11d8 + 22,dicelabel=Hit Points))  
+      **Speed** Walk 30 ft., Walk 40 ft. (wolf form only)  
+      **Initiative:** rollable(dice=1d20+4,label=+4,dicelabel=Initiative) (14)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=16)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+3,label=+3,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=10)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20+0,label=+0,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=14)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+2,label=+2,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=11)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+0,label=+0,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=14)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+2,label=+2,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=10)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20+0,label=+0,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Skills** Perception rollable(dice=1d20+4,label=+4,dicelabel=Perception Check), Stealth rollable(dice=1d20+4,label=+4,dicelabel=Stealth Check)  
+      **Gear** longbow  
+      **Senses** darkvision 60 ft., Passive Perception 14  
+      **Languages** Common (can't speak in wolf form)  
+      **Challenge** 3 (700 XP)  
+      **Proficiency Bonus** +2  
+
+      ## Traits
+
+      ***Pack Tactics.*** The werewolf has ***Advantage*** on an attack roll against a creature if at least one of the werewolf's allies is within 5 feet of the creature and the ally doesn't have the ***Incapacitated*** condition.
+
+      ## Actions
+
+      ***Multiattack.*** The werewolf makes two attacks, using Scratch or Longbow in any combination. It can replace one attack with a Bite attack.
+
+      ***Bite (Wolf or Hybrid Form Only).*** *Melee Attack Roll* rollable(dice=1d20+5,label=+5,dicelabel=To Hit [Bite]), reach 5 ft. *Hit:* rollable(dice=2d8+3,dicelabel=Damage [Bite]) Piercing damage. If the target is a Humanoid, it is subjected to the following effect. *Constitution Saving Throw:* DC 12. *Failure:* The target is cursed. If the cursed target drops to 0 ***Hit Points***, it instead becomes a Werewolf under the DM's control and has 10 ***Hit Points***. *Success:* The target is immune to this werewolf's curse for 24 hours.
+
+      ***Scratch.*** *Melee Attack Roll* rollable(dice=1d20+5,label=+5,dicelabel=To Hit [Scratch]), reach 5 ft. *Hit:* rollable(dice=2d6+3,dicelabel=Damage [Scratch]) Slashing damage.
+
+      ***Longbow (Humanoid or Hybrid Form Only).*** *Ranged Attack Roll* rollable(dice=1d20+4,label=+4,dicelabel=To Hit [Longbow]), range 150/600 ft. *Hit:* rollable(dice=2d8+2,dicelabel=Damage [Longbow]) Piercing damage.
+
+      ## Bonus Actions
+
+      ***Shape-Shift.*** The werewolf shape-shifts into a Large wolf-humanoid hybrid or a Medium wolf, or it returns to its true humanoid form. Its game statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Small Medium Monstrosity (Lycanthrope), Chaotic Evil*  
+    **Challenge** 3
+  subtype: npc
+  id: srd2024werewolf
+  status: 1
+

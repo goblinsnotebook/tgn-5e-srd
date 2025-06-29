@@ -1,0 +1,40 @@
+creatures:
+- name: Animated Flying Sword
+  statblock:
+    custom_statblock: |
+      **Armor Class** 17  
+      **Hit Points** 14 (rollable(dice=4d6,dicelabel=Hit Points))  
+      **Speed** Walk 5 ft., Fly 50 ft. (hover)  
+      **Initiative:** rollable(dice=1d20+4,label=+4,dicelabel=Initiative) (14)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=12)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+1,label=+1,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=1)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20-5,label=-5,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=15)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+4,label=+4,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=5)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20-3,label=-3,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=11)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+0,label=+0,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=1)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20-5,label=-5,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Damage Immunities** poison, psychic  
+      **Condition Immunities** charmed, deafened, exhaustion, frightened, paralyzed, petrified, poisoned  
+      **Senses** blindsight 60 ft., Passive Perception 7  
+      **Languages** -  
+      **Challenge** 1/4 (50 XP)  
+      **Proficiency Bonus** +2  
+
+      ## Actions
+
+      ***Slash.*** *Melee Attack Roll* rollable(dice=1d20+4,label=+4,dicelabel=To Hit [Slash]), reach 5 ft. *Hit:* rollable(dice=1d8+2,dicelabel=Damage [Slash]) Slashing damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Small Construct, Unaligned*  
+    **Challenge** 1/4
+  subtype: npc
+  id: srd2024animatedflyingsword
+  status: 1
+

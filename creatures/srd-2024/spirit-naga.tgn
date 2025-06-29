@@ -1,0 +1,53 @@
+creatures:
+- name: Spirit Naga
+  statblock:
+    custom_statblock: |
+      **Armor Class** 17  
+      **Hit Points** 135 (rollable(dice=18d10 + 36,dicelabel=Hit Points))  
+      **Speed** 40 ft.  
+      **Initiative:** rollable(dice=1d20+3,label=+3,dicelabel=Initiative) (13)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=18)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+4,label=+4,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=16)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20+3,label=+3,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=17)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+6,label=+6,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=15)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+5,label=+5,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=14)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+5,label=+5,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=16)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20+6,label=+6,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Damage Immunities** poison  
+      **Condition Immunities** charmed, poisoned  
+      **Senses** darkvision 60 ft., Passive Perception 12  
+      **Languages** Abyssal, Common  
+      **Challenge** 8 (3,900 XP)  
+      **Proficiency Bonus** +3  
+
+      ## Traits
+
+      ***Fiendish Restoration.*** If it dies, the naga returns to life in rollable(dice=1d6,dicelabel=Fiendish Restoration) days and regains all its ***Hit Points***. Only a [Wish](https://www.dndbeyond.com/spells/2619213-wish) spell can prevent this trait from functioning.
+
+      ## Actions
+
+      ***Multiattack.*** The naga makes three attacks, using Bite or Necrotic Ray in any combination.
+
+      ***Bite.*** *Melee Attack Roll* rollable(dice=1d20+7,label=+7,dicelabel=To Hit [Bite]), reach 10 ft. *Hit:* rollable(dice=1d6+4,dicelabel=Damage [Bite]) Piercing damage plus rollable(dice=4d6,dicelabel=Damage [Bite]) Poison damage.
+
+      ***Necrotic Ray.*** *Ranged Attack Roll* rollable(dice=1d20+6,label=+6,dicelabel=To Hit [Necrotic Ray]), range 60 ft. *Hit:* rollable(dice=6d6,dicelabel=Damage [Necrotic Ray]) Necrotic damage.
+
+      ***Spellcasting.*** The naga casts one of the following spells, requiring no Somatic or Material components and using Intelligence as the spellcasting ability (spell save DC 14):
+
+      At will: [Detect Magic](https://www.dndbeyond.com/spells/2619097-detect-magic), [Mage Hand](https://www.dndbeyond.com/spells/2619008-mage-hand), [Minor Illusion](https://www.dndbeyond.com/spells/2619039-minor-illusion), [Water Breathing](https://www.dndbeyond.com/spells/2619205-water-breathing)  
+      2/day each: [Detect Thoughts](https://www.dndbeyond.com/spells/2619099-detect-thoughts), [Dimension Door](https://www.dndbeyond.com/spells/2619100-dimension-door), [Hold Person](https://www.dndbeyond.com/spells/2619153-hold-person) (level 3 version), [Lightning Bolt](https://www.dndbeyond.com/spells/2618999-lightning-bolt) (level 4 version)  
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Fiend, Chaotic Evil*  
+    **Challenge** 8
+  subtype: npc
+  id: srd2024spiritnaga
+  status: 1
+

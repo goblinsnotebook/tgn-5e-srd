@@ -1,0 +1,46 @@
+creatures:
+- name: Bugbear Warrior
+  statblock:
+    custom_statblock: |
+      **Armor Class** 14  
+      **Hit Points** 33 (rollable(dice=6d8 + 6,dicelabel=Hit Points))  
+      **Speed** 30 ft.  
+      **Initiative:** rollable(dice=1d20+2,label=+2,dicelabel=Initiative) (12)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=15)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+2,label=+2,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=8)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20-1,label=-1,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=14)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+2,label=+2,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=11)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+0,label=+0,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=13)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+1,label=+1,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=9)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20-1,label=-1,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Skills** Stealth rollable(dice=1d20+6,label=+6,dicelabel=Stealth Check), Survival rollable(dice=1d20+2,label=+2,dicelabel=Survival Check)  
+      **Gear** hide armor, 3x light hammer  
+      **Senses** darkvision 60 ft., Passive Perception 10  
+      **Languages** Common, Goblin  
+      **Challenge** 1 (200 XP)  
+      **Proficiency Bonus** +2  
+
+      ## Traits
+
+      ***Abduct.*** The bugbear needn't spend extra movement to move a creature it is grappling.
+
+      ## Actions
+
+      ***Grab.*** *Melee Attack Roll* rollable(dice=1d20+4,label=+4,dicelabel=To Hit [Grab]), reach 10 ft. *Hit:* rollable(dice=2d6+2,dicelabel=Damage [Grab]) Bludgeoning damage. If the target is a Medium or smaller creature, it has the ***Grappled*** condition (escape DC 12).
+
+      ***Light Hammer.*** *Melee or Ranged Attack Roll* rollable(dice=1d20+4,label=+4,dicelabel=To Hit [Light Hammer]) (with ***Advantage*** if the target is ***Grappled*** by the bugbear), reach 10 ft. or range 20/60 ft. *Hit:* rollable(dice=3d4+2,dicelabel=Damage [Light Hammer]) Bludgeoning damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Fey (Goblinoid), Chaotic Evil*  
+    **Challenge** 1
+  subtype: npc
+  id: srd2024bugbearwarrior
+  status: 1
+

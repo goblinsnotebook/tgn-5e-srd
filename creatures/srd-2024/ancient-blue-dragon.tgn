@@ -1,0 +1,63 @@
+creatures:
+- name: Ancient Blue Dragon
+  statblock:
+    custom_statblock: |
+      **Armor Class** 22  
+      **Hit Points** 481 (rollable(dice=26d20 + 208,dicelabel=Hit Points))  
+      **Speed** Walk 40 ft., Burrow 40 ft., Fly 80 ft.  
+      **Initiative:** rollable(dice=1d20+14,label=+14,dicelabel=Initiative) (24)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=29)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+9,label=+9,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=18)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20+4,label=+4,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=10)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+7,label=+7,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=17)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+10,label=+10,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=27)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+8,label=+8,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=25)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20+7,label=+7,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Skills** Perception rollable(dice=1d20+17,label=+17,dicelabel=Perception Check), Stealth rollable(dice=1d20+7,label=+7,dicelabel=Stealth Check)  
+      **Damage Immunities** lightning  
+      **Senses** blindsight 60 ft., darkvision 120 ft., Passive Perception 27  
+      **Languages** Common, Draconic  
+      **Challenge** 23 (50,000 XP)  
+      **Proficiency Bonus** +7  
+
+      ## Traits
+
+      ***Legendary Resistance (4/Day, or 5/Day in Lair).*** If the dragon fails a saving throw, it can choose to succeed instead.
+
+      ## Actions
+
+      ***Multiattack.*** The dragon makes three Rend attacks. It can replace one attack with a use of Spellcasting to cast [Shatter](https://www.dndbeyond.com/spells/2619017-shatter) (level 3 version).
+
+      ***Rend.*** *Melee Attack Roll* rollable(dice=1d20+16,label=+16,dicelabel=To Hit [Rend]), reach 15 ft. *Hit:* rollable(dice=2d8+9,dicelabel=Damage [Rend]) Slashing damage plus rollable(dice=2d10,dicelabel=Damage [Rend]) Lightning damage.
+
+      ***Lightning Breath (rollable(dice=1d6,label=Recharge 5-6,dicelabel=Recharge [Lightning Breath])).*** *Dexterity Saving Throw:* DC 23, each creature in a 120-foot-long, 10-foot-wide ***Line***. *Failure:* rollable(dice=16d10,dicelabel=Damage [Lightning Breath]) Lightning damage. *Success:* Half damage.
+
+      ***Spellcasting.*** The dragon casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 22):
+
+      At will: [Detect Magic](https://www.dndbeyond.com/spells/2619097-detect-magic), [Invisibility](https://www.dndbeyond.com/spells/2619116-invisibility), [Mage Hand](https://www.dndbeyond.com/spells/2619008-mage-hand), [Shatter](https://www.dndbeyond.com/spells/2619017-shatter) (level 3 version)  
+      1/day each: [Scrying](https://www.dndbeyond.com/spells/2619007-scrying), [Sending](https://www.dndbeyond.com/spells/2619015-sending)  
+
+      ## Legendary Actions
+
+      *Legendary Action Uses: 3 (4 in Lair). Immediately after another creature's turn, The Ancient Blue Dragon can expend a use to take one of the following actions. The Ancient Blue Dragon regains all expended uses at the start of each of its turns.*
+
+      ***Cloaked Flight.*** The dragon uses Spellcasting to cast [Invisibility](https://www.dndbeyond.com/spells/2619116-invisibility) on itself, and it can fly up to half its ***Fly Speed***. The dragon can't take this action again until the start of its next turn.
+
+      ***Sonic Boom.*** The dragon uses Spellcasting to cast [Shatter](https://www.dndbeyond.com/spells/2619017-shatter) (level 3 version). The dragon can't take this action again until the start of its next turn.
+
+      ***Tail Swipe.*** The dragon makes one Rend attack.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Gargantuan Dragon (Chromatic), Lawful Evil*  
+    **Challenge** 23
+  subtype: npc
+  id: srd2024ancientbluedragon
+  status: 1
+

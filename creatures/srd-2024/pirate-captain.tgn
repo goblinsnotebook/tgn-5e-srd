@@ -1,0 +1,52 @@
+creatures:
+- name: Pirate Captain
+  statblock:
+    custom_statblock: |
+      **Armor Class** 17  
+      **Hit Points** 84 (rollable(dice=13d8 + 26,dicelabel=Hit Points))  
+      **Speed** 30 ft.  
+      **Initiative:** rollable(dice=1d20+7,label=+7,dicelabel=Initiative) (17)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=10)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+3,label=+3,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=10)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20+0,label=+0,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=18)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+7,label=+7,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=14)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+5,label=+5,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=14)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+2,label=+2,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=17)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20+6,label=+6,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Skills** Acrobatics rollable(dice=1d20+7,label=+7,dicelabel=Acrobatics Check), Perception rollable(dice=1d20+5,label=+5,dicelabel=Perception Check)  
+      **Gear** pistol, rapier  
+      **Senses** Passive Perception 15  
+      **Languages** Common plus one other language  
+      **Challenge** 6 (2,300 XP)  
+      **Proficiency Bonus** +3  
+
+      ## Actions
+
+      ***Multiattack.*** The pirate makes three attacks, using Rapier or Pistol in any combination.
+
+      ***Rapier.*** *Melee Attack Roll* rollable(dice=1d20+7,label=+7,dicelabel=To Hit [Rapier]), reach 5 ft. *Hit:* rollable(dice=2d8+4,dicelabel=Damage [Rapier]) Piercing damage, and the pirate has ***Advantage*** on the next attack roll it makes before the end of this turn.
+
+      ***Pistol.*** *Ranged Attack Roll* rollable(dice=1d20+7,label=+7,dicelabel=To Hit [Pistol]), range 30/90 ft. *Hit:* rollable(dice=2d10+4,dicelabel=Damage [Pistol]) Piercing damage.
+
+      ## Bonus Actions
+
+      ***Captain's Charm.*** *Wisdom Saving Throw:* DC 14, one creature the pirate can see within 30 feet. *Failure:* The target has the ***Charmed*** condition until the start of the pirate's next turn.
+
+      ## Reactions
+
+      ***Riposte.*** *Trigger:* The pirate is hit by a melee attack roll while holding a weapon. *Response:* The pirate adds 3 to its AC against that attack, possibly causing it to miss. On a miss, the pirate makes one Rapier attack against the triggering creature if within range.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Small Medium Humanoid, Neutral*  
+    **Challenge** 6
+  subtype: npc
+  id: srd2024piratecaptain
+  status: 1
+

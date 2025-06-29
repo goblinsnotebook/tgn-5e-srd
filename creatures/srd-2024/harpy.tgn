@@ -1,0 +1,40 @@
+creatures:
+- name: Harpy
+  statblock:
+    custom_statblock: |
+      **Armor Class** 11  
+      **Hit Points** 38 (rollable(dice=7d8 + 7,dicelabel=Hit Points))  
+      **Speed** Walk 20 ft., Fly 40 ft.  
+      **Initiative:** rollable(dice=1d20+1,label=+1,dicelabel=Initiative) (11)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=12)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+1,label=+1,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=7)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20-2,label=-2,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=13)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+1,label=+1,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=10)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+0,label=+0,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=12)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+1,label=+1,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=13)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20+1,label=+1,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Senses** Passive Perception 10  
+      **Languages** Common  
+      **Challenge** 1 (200 XP)  
+      **Proficiency Bonus** +2  
+
+      ## Actions
+
+      ***Claw.*** *Melee Attack Roll* rollable(dice=1d20+3,label=+3,dicelabel=To Hit [Claw]), reach 5 ft. *Hit:* rollable(dice=2d4+1,dicelabel=Damage [Claw]) Slashing damage.
+
+      ***Luring Song.*** The harpy sings a magical melody, which lasts until the harpy's concentration ends on it. *Wisdom Saving Throw:* DC 11, each Humanoid and Giant in a 300-foot ***Emanation*** originating from the harpy when the song starts. *Failure:* The target has the ***Charmed*** condition until the song ends and repeats the save at the end of each of its turns. While ***Charmed***, the target has the ***Incapacitated*** condition and ignores the Luring Song of other harpies. If the target is more than 5 feet from the harpy, the target moves on its turn toward the harpy by the most direct route, trying to get within 5 feet of the harpy. It doesn't avoid ***Opportunity Attacks***; however, before moving into damaging terrain (such as lava or a pit) and whenever it takes damage from a source other than the harpy, the target repeats the save. *Success:* The target is immune to this harpy's Luring Song for 24 hours.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Monstrosity, Chaotic Evil*  
+    **Challenge** 1
+  subtype: npc
+  id: srd2024harpy
+  status: 1
+

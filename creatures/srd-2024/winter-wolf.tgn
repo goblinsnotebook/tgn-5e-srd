@@ -1,0 +1,46 @@
+creatures:
+- name: Winter Wolf
+  statblock:
+    custom_statblock: |
+      **Armor Class** 13  
+      **Hit Points** 75 (rollable(dice=10d10 + 20,dicelabel=Hit Points))  
+      **Speed** 50 ft.  
+      **Initiative:** rollable(dice=1d20+1,label=+1,dicelabel=Initiative) (11)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=18)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+4,label=+4,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=7)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20-2,label=-2,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=13)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+1,label=+1,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=12)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+1,label=+1,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=14)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+2,label=+2,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=8)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20-1,label=-1,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Skills** Perception rollable(dice=1d20+5,label=+5,dicelabel=Perception Check), Stealth rollable(dice=1d20+5,label=+5,dicelabel=Stealth Check)  
+      **Damage Immunities** cold  
+      **Senses** Passive Perception 15  
+      **Languages** Common, Giant  
+      **Challenge** 3 (700 XP)  
+      **Proficiency Bonus** +2  
+
+      ## Traits
+
+      ***Pack Tactics.*** The wolf has ***Advantage*** on an attack roll against a creature if at least one of the wolf's allies is within 5 feet of the creature and the ally doesn't have the ***Incapacitated*** condition.
+
+      ## Actions
+
+      ***Bite.*** *Melee Attack Roll* rollable(dice=1d20+6,label=+6,dicelabel=To Hit [Bite]), reach 5 ft. *Hit:* rollable(dice=2d6+4,dicelabel=Damage [Bite]) Piercing damage. If the target is a Large or smaller creature, it has the ***Prone*** condition.
+
+      ***Cold Breath (rollable(dice=1d6,label=Recharge 5-6,dicelabel=Recharge [Cold Breath])).*** *Constitution Saving Throw:* DC 12, each creature in a 15-foot ***Cone***. *Failure:* rollable(dice=4d8,dicelabel=Damage [Cold Breath]) Cold damage. *Success:* Half damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Monstrosity, Neutral Evil*  
+    **Challenge** 3
+  subtype: npc
+  id: srd2024winterwolf
+  status: 1
+

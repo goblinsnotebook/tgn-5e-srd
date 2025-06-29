@@ -1,0 +1,47 @@
+creatures:
+- name: Stone Giant
+  statblock:
+    custom_statblock: |
+      **Armor Class** 17  
+      **Hit Points** 126 (rollable(dice=11d12 + 55,dicelabel=Hit Points))  
+      **Speed** 40 ft.  
+      **Initiative:** rollable(dice=1d20+5,label=+5,dicelabel=Initiative) (15)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=23)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+6,label=+6,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=10)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20+0,label=+0,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=15)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+5,label=+5,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=12)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+4,label=+4,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=20)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+8,label=+8,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=9)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20-1,label=-1,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Skills** Athletics rollable(dice=1d20+12,label=+12,dicelabel=Athletics Check), Perception rollable(dice=1d20+4,label=+4,dicelabel=Perception Check), Stealth rollable(dice=1d20+5,label=+5,dicelabel=Stealth Check)  
+      **Senses** darkvision 60 ft., Passive Perception 14  
+      **Languages** Giant  
+      **Challenge** 7 (2,900 XP)  
+      **Proficiency Bonus** +3  
+
+      ## Actions
+
+      ***Multiattack.*** The giant makes two attacks, using Stone Club or Boulder in any combination.
+
+      ***Stone Club.*** *Melee Attack Roll* rollable(dice=1d20+9,label=+9,dicelabel=To Hit [Stone Club]), reach 15 ft. *Hit:* rollable(dice=3d10+6,dicelabel=Damage [Stone Club]) Bludgeoning damage.
+
+      ***Boulder.*** *Ranged Attack Roll* rollable(dice=1d20+9,label=+9,dicelabel=To Hit [Boulder]), range 60/240 ft. *Hit:* rollable(dice=2d8+6,dicelabel=Damage [Boulder]) Bludgeoning damage. If the target is a Large or smaller creature, it has the ***Prone*** condition.
+
+      ## Reactions
+
+      ***Deflect Missile (rollable(dice=1d6,label=Recharge 5-6,dicelabel=Recharge [Deflect Missile])).*** *Trigger:* The giant is hit by a ranged attack roll and takes Bludgeoning, Piercing, or Slashing damage from it. *Response:* The giant reduces the damage it takes from the attack by 11 (rollable(dice=1d10 + 6,dicelabel=Deflect Missile)), and if that damage is reduced to 0, the giant can redirect some of the attack's force. *Dexterity Saving Throw:* DC 17, one creature the giant can see within 60 feet. *Failure:* rollable(dice=1d10+6,dicelabel=Damage [Deflect Missile]) Force damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Huge Giant, Neutral*  
+    **Challenge** 7
+  subtype: npc
+  id: srd2024stonegiant
+  status: 1
+

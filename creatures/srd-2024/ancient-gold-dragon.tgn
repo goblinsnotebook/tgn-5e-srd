@@ -1,0 +1,67 @@
+creatures:
+- name: Ancient Gold Dragon
+  statblock:
+    custom_statblock: |
+      **Armor Class** 22  
+      **Hit Points** 546 (rollable(dice=28d20 + 252,dicelabel=Hit Points))  
+      **Speed** Walk 40 ft., Fly 80 ft., Swim 40 ft.  
+      **Initiative:** rollable(dice=1d20+16,label=+16,dicelabel=Initiative) (26)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=30)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+10,label=+10,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=18)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20+4,label=+4,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=14)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+9,label=+9,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=17)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+10,label=+10,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=29)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+9,label=+9,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=28)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20+9,label=+9,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Skills** Insight rollable(dice=1d20+10,label=+10,dicelabel=Insight Check), Perception rollable(dice=1d20+17,label=+17,dicelabel=Perception Check), Persuasion rollable(dice=1d20+16,label=+16,dicelabel=Persuasion Check), Stealth rollable(dice=1d20+9,label=+9,dicelabel=Stealth Check)  
+      **Damage Immunities** fire  
+      **Senses** blindsight 60 ft., darkvision 120 ft., Passive Perception 27  
+      **Languages** Common, Draconic  
+      **Challenge** 24 (62,000 XP)  
+      **Proficiency Bonus** +7  
+
+      ## Traits
+
+      ***Amphibious.*** The dragon can breathe air and water.
+
+      ***Legendary Resistance (4/Day, or 5/Day in Lair).*** If the dragon fails a saving throw, it can choose to succeed instead.
+
+      ## Actions
+
+      ***Multiattack.*** The dragon makes three Rend attacks. It can replace one attack with a use of (A) Spellcasting to cast [Guiding Bolt](https://www.dndbeyond.com/spells/2619136-guiding-bolt) (level 4 version) or (B) Weakening Breath.
+
+      ***Rend.*** *Melee Attack Roll* rollable(dice=1d20+17,label=+17,dicelabel=To Hit [Rend]) to hit, reach 15 ft. *Hit:* rollable(dice=2d8+10,dicelabel=Damage [Rend]) Slashing damage plus rollable(dice=2d8,dicelabel=Damage [Rend]) Fire damage.
+
+      ***Fire Breath (rollable(dice=1d6,label=Recharge 5-6,dicelabel=Recharge [Fire Breath])).*** *Dexterity Saving Throw:* DC 24, each creature in a 90-foot ***Cone***. *Failure:* rollable(dice=13d10,dicelabel=Damage [Fire Breath]) Fire damage. *Success:* Half damage.
+
+      ***Weakening Breath.*** *Strength Saving Throw:* DC 24, each creature that isn't currently affected by this breath in a 90-foot ***Cone***. *Failure:* The target has ***Disadvantage*** on Strength-based ***D20 Tests*** and subtracts 5 (rollable(dice=1d10,dicelabel=Weakening Breath)) from its damage rolls. It repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically.
+
+      ***Spellcasting.*** The dragon casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 24, rollable(dice=1d20+16,label=+16,dicelabel=To Hit [Spell Attack]) to hit with spell attacks):
+
+      At will: [Detect Magic](https://www.dndbeyond.com/spells/2619097-detect-magic), [Guiding Bolt](https://www.dndbeyond.com/spells/2619136-guiding-bolt) (level 4 version), [Shapechange](https://www.dndbeyond.com/spells/2618982-shapechange) (Beast or Humanoid form only, no ***Temporary Hit Points*** gained from the spell, and no Concentration or ***Temporary Hit Points*** required to maintain the spell)  
+      1/day each: [Flame Strike](https://www.dndbeyond.com/spells/2618920-flame-strike) (level 6 version), [Word of Recall](https://www.dndbeyond.com/spells/2619218-word-of-recall), [Zone of Truth](https://www.dndbeyond.com/spells/2619221-zone-of-truth)  
+
+      ## Legendary Actions
+
+      *Legendary Action Uses: 3 (4 in Lair). Immediately after another creature's turn, The Ancient Gold Dragon can expend a use to take one of the following actions. The Ancient Gold Dragon regains all expended uses at the start of each of its turns.*
+
+      ***Banish.*** *Charisma Saving Throw:* DC 24, one creature the dragon can see within 120 feet. *Failure:* rollable(dice=7d6,dicelabel=Damage [Banish]) Force damage, and the target has the ***Incapacitated*** condition and is transported to a harmless demiplane until the start of the dragon's next turn, at which point it reappears in an unoccupied space of the dragon's choice within 120 feet of the dragon. *Failure or Success:* The dragon can't take this action again until the start of its next turn.
+
+      ***Guiding Light.*** The dragon uses Spellcasting to cast [Guiding Bolt](https://www.dndbeyond.com/spells/2619136-guiding-bolt) (level 4 version).
+
+      ***Pounce.*** The dragon moves up to half its ***Speed***, and it makes one Rend attack.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Gargantuan Dragon (Metallic), Lawful Good*  
+    **Challenge** 24
+  subtype: npc
+  id: srd2024ancientgolddragon
+  status: 1
+

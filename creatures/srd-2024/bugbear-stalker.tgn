@@ -1,0 +1,52 @@
+creatures:
+- name: Bugbear Stalker
+  statblock:
+    custom_statblock: |
+      **Armor Class** 15  
+      **Hit Points** 65 (rollable(dice=10d8 + 20,dicelabel=Hit Points))  
+      **Speed** 30 ft.  
+      **Initiative:** rollable(dice=1d20+2,label=+2,dicelabel=Initiative) (12)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=17)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+3,label=+3,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=11)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20+0,label=+0,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=14)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+2,label=+2,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=12)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+3,label=+3,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=14)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+4,label=+4,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=11)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20+0,label=+0,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Skills** Stealth rollable(dice=1d20+6,label=+6,dicelabel=Stealth Check), Survival rollable(dice=1d20+3,label=+3,dicelabel=Survival Check)  
+      **Gear** chain shirt, 6x javelin, morningstar  
+      **Senses** darkvision 60 ft., Passive Perception 11  
+      **Languages** Common, Goblin  
+      **Challenge** 3 (700 XP)  
+      **Proficiency Bonus** +2  
+
+      ## Traits
+
+      ***Abduct.*** The bugbear needn't spend extra movement to move a creature it is grappling.
+
+      ## Actions
+
+      ***Multiattack.*** The bugbear makes two Javelin or Morningstar attacks.
+
+      ***Javelin.*** *Melee or Ranged Attack Roll* rollable(dice=1d20+5,label=+5,dicelabel=To Hit [Javelin]), reach 10 ft. or range 30/120 ft. *Hit:* rollable(dice=3d6+3,dicelabel=Damage [Javelin]) Piercing damage.
+
+      ***Morningstar.*** *Melee Attack Roll* rollable(dice=1d20+5,label=+5,dicelabel=To Hit [Morningstar]) (with ***Advantage*** if the target is ***Grappled*** by the bugbear), reach 10 ft. *Hit:* rollable(dice=2d8+3,dicelabel=Damage [Morningstar]) Piercing damage.
+
+      ## Bonus Actions
+
+      ***Quick Grapple.*** *Dexterity Saving Throw:* DC 13, one Medium or smaller creature the bugbear can see within 10 feet. *Failure:* The target has the ***Grappled*** condition (escape DC 13).
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Fey (Goblinoid), Chaotic Evil*  
+    **Challenge** 3
+  subtype: npc
+  id: srd2024bugbearstalker
+  status: 1
+

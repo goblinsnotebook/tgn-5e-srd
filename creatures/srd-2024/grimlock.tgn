@@ -1,0 +1,39 @@
+creatures:
+- name: Grimlock
+  statblock:
+    custom_statblock: |
+      **Armor Class** 11  
+      **Hit Points** 11 (rollable(dice=2d8 + 2,dicelabel=Hit Points))  
+      **Speed** Walk 30 ft., Climb 30 ft.  
+      **Initiative:** rollable(dice=1d20+1,label=+1,dicelabel=Initiative) (11)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=16)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+3,label=+3,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=9)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20-1,label=-1,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=12)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+1,label=+1,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=8)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20-1,label=-1,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=12)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+1,label=+1,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=6)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20-2,label=-2,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Skills** Athletics rollable(dice=1d20+5,label=+5,dicelabel=Athletics Check), Perception rollable(dice=1d20+3,label=+3,dicelabel=Perception Check), Stealth rollable(dice=1d20+5,label=+5,dicelabel=Stealth Check)  
+      **Senses** blindsight 30 ft., Passive Perception 13  
+      **Languages** -  
+      **Challenge** 1/4 (50 XP)  
+      **Proficiency Bonus** +2  
+
+      ## Actions
+
+      ***Bone Cudgel.*** *Melee Attack Roll* rollable(dice=1d20+5,label=+5,dicelabel=To Hit [Bone Cudgel]), reach 5 ft. *Hit:* rollable(dice=1d6+3,dicelabel=Damage [Bone Cudgel]) Bludgeoning damage plus rollable(dice=1d4,dicelabel=Damage [Bone Cudgel]) Psychic damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Aberration, Neutral Evil*  
+    **Challenge** 1/4
+  subtype: npc
+  id: srd2024grimlock
+  status: 1
+

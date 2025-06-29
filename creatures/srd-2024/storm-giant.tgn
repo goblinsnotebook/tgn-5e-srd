@@ -1,0 +1,56 @@
+creatures:
+- name: Storm Giant
+  statblock:
+    custom_statblock: |
+      **Armor Class** 16  
+      **Hit Points** 230 (rollable(dice=20d12 + 100,dicelabel=Hit Points))  
+      **Speed** Walk 50 ft., Fly 25 ft. (hover), Swim 50 ft.  
+      **Initiative:** rollable(dice=1d20+7,label=+7,dicelabel=Initiative) (17)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=29)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+14,label=+14,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=16)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20+3,label=+3,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=14)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+2,label=+2,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=20)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+10,label=+10,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=20)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+10,label=+10,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=18)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20+9,label=+9,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Skills** Arcana rollable(dice=1d20+8,label=+8,dicelabel=Arcana Check), Athletics rollable(dice=1d20+14,label=+14,dicelabel=Athletics Check), History rollable(dice=1d20+8,label=+8,dicelabel=History Check), Perception rollable(dice=1d20+10,label=+10,dicelabel=Perception Check)  
+      **Damage Resistances** cold  
+      **Damage Immunities** lightning, thunder  
+      **Senses** darkvision 120 ft., truesight 30 ft., Passive Perception 20  
+      **Languages** Common, Giant  
+      **Challenge** 13 (10,000 XP)  
+      **Proficiency Bonus** +5  
+
+      ## Traits
+
+      ***Amphibious.*** The giant can breathe air and water.
+
+      ## Actions
+
+      ***Multiattack.*** The giant makes two attacks, using Storm Sword or Thunderbolt in any combination.
+
+      ***Storm Sword.*** *Melee Attack Roll* rollable(dice=1d20+14,label=+14,dicelabel=To Hit [Storm Sword]), reach 10 ft. *Hit:* rollable(dice=4d6+9,dicelabel=Damage [Storm Sword]) Slashing damage plus rollable(dice=3d8,dicelabel=Damage [Storm Sword]) Lightning damage.
+
+      ***Thunderbolt.*** *Ranged Attack Roll* rollable(dice=1d20+14,label=+14,dicelabel=To Hit [Thunderbolt]), range 500 ft. *Hit:* rollable(dice=2d12+9,dicelabel=Damage [Thunderbolt]) Lightning damage, and the target has the ***Blinded*** and ***Deafened*** conditions until the start of the giant's next turn.
+
+      ***Lightning Storm (rollable(dice=1d6,label=Recharge 5-6,dicelabel=Recharge [Lightning Storm])).*** *Dexterity Saving Throw:* DC 18, each creature in a 10-foot-radius, 40-foot-high ***Cylinder*** originating from a point the giant can see within 500 feet. *Failure:* rollable(dice=10d10,dicelabel=Damage [Lightning Storm]) Lightning damage. *Success:* Half damage.
+
+      ***Spellcasting.*** The giant casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save DC 18):
+
+      At will: [Detect Magic](https://www.dndbeyond.com/spells/2619097-detect-magic), [Light](https://www.dndbeyond.com/spells/2618996-light)  
+      1/day: [Control Weather](https://www.dndbeyond.com/spells/2619054-control-weather)  
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Huge Giant, Chaotic Good*  
+    **Challenge** 13
+  subtype: npc
+  id: srd2024stormgiant
+  status: 1
+

@@ -1,0 +1,49 @@
+creatures:
+- name: Green Dragon Wyrmling
+  statblock:
+    custom_statblock: |
+      **Armor Class** 17  
+      **Hit Points** 38 (rollable(dice=7d8 + 7,dicelabel=Hit Points))  
+      **Speed** Walk 30 ft., Fly 60 ft., Swim 30 ft.  
+      **Initiative:** rollable(dice=1d20+3,label=+3,dicelabel=Initiative) (13)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=15)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+2,label=+2,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=14)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20+2,label=+2,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=12)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+3,label=+3,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=11)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+2,label=+2,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=13)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+1,label=+1,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=13)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20+1,label=+1,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Skills** Perception rollable(dice=1d20+4,label=+4,dicelabel=Perception Check), Stealth rollable(dice=1d20+3,label=+3,dicelabel=Stealth Check)  
+      **Damage Immunities** poison  
+      **Condition Immunities** poisoned  
+      **Senses** blindsight 10 ft., darkvision 60 ft., Passive Perception 14  
+      **Languages** Draconic  
+      **Challenge** 2 (450 XP)  
+      **Proficiency Bonus** +2  
+
+      ## Traits
+
+      ***Amphibious.*** The dragon can breathe air and water.
+
+      ## Actions
+
+      ***Multiattack.*** The dragon makes two Rend attacks.
+
+      ***Rend.*** *Melee Attack Roll* rollable(dice=1d20+4,label=+4,dicelabel=To Hit [Rend]), reach 5 ft. *Hit:* rollable(dice=1d10+2,dicelabel=Damage [Rend]) Slashing damage plus rollable(dice=1d6,dicelabel=Damage [Rend]) Poison damage.
+
+      ***Poison Breath (rollable(dice=1d6,label=Recharge 5-6,dicelabel=Recharge [Poison Breath])).*** *Constitution Saving Throw:* DC 11, each creature in a 15-foot ***Cone***. *Failure:* rollable(dice=6d6,dicelabel=Damage [Poison Breath]) Poison damage. *Success:* Half damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Dragon (Chromatic), Lawful Evil*  
+    **Challenge** 2
+  subtype: npc
+  id: srd2024greendragonwyrmling
+  status: 1
+

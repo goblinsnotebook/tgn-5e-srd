@@ -1,0 +1,58 @@
+creatures:
+- name: Deva
+  statblock:
+    custom_statblock: |
+      **Armor Class** 17  
+      **Hit Points** 229 (rollable(dice=27d8 + 108,dicelabel=Hit Points))  
+      **Speed** Walk 30 ft., Fly 90 ft. (hover)  
+      **Initiative:** rollable(dice=1d20+4,label=+4,dicelabel=Initiative) (14)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=18)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+4,label=+4,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=17)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20+3,label=+3,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=18)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+4,label=+4,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=20)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+9,label=+9,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=18)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+4,label=+4,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=20)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20+9,label=+9,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Skills** Insight rollable(dice=1d20+9,label=+9,dicelabel=Insight Check), Perception rollable(dice=1d20+9,label=+9,dicelabel=Perception Check)  
+      **Damage Resistances** radiant  
+      **Condition Immunities** charmed, exhaustion, frightened  
+      **Senses** darkvision 120 ft., Passive Perception 19  
+      **Languages** all; telepathy 120 ft.  
+      **Challenge** 10 (5,900 XP)  
+      **Proficiency Bonus** +4  
+
+      ## Traits
+
+      ***Exalted Restoration.*** If the deva dies outside Mount Celestia, its body disappears, and it gains a new body instantly, reviving with all its ***Hit Points*** somewhere in Mount Celestia.
+
+      ***Magic Resistance.*** The deva has ***Advantage*** on saving throws against spells and other magical effects.
+
+      ## Actions
+
+      ***Multiattack.*** The deva makes two Holy Mace attacks.
+
+      ***Holy Mace.*** *Melee Attack Roll* rollable(dice=1d20+8,label=+8,dicelabel=To Hit [Holy Mace]), reach 5 ft. *Hit:* rollable(dice=1d6+4,dicelabel=Damage [Holy Mace]) Bludgeoning damage plus rollable(dice=4d8,dicelabel=Damage [Holy Mace]) Radiant damage.
+
+      ***Spellcasting.*** The deva casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 17):
+
+      At will: [Detect Evil and Good](https://www.dndbeyond.com/spells/2619090-detect-evil-and-good), [Shapechange](https://www.dndbeyond.com/spells/2618982-shapechange) (Beast or Humanoid form only, no ***Temporary Hit Points*** gained from the spell, and no Concentration or ***Temporary Hit Points*** required to maintain the spell)  
+      1/day each: [Commune](https://www.dndbeyond.com/spells/2618987-commune), [Raise Dead](https://www.dndbeyond.com/spells/2618922-raise-dead)  
+
+      ***Divine Aid (2/Day).*** The deva casts [Cure Wounds](https://www.dndbeyond.com/spells/2619079-cure-wounds), [Lesser Restoration](https://www.dndbeyond.com/spells/2619016-lesser-restoration), or [Remove Curse](https://www.dndbeyond.com/spells/2618943-remove-curse), using the same spellcasting ability as Spellcasting.
+
+      2/day: [Cure Wounds](https://www.dndbeyond.com/spells/2619079-cure-wounds), [Lesser Restoration](https://www.dndbeyond.com/spells/2619016-lesser-restoration), [Remove Curse](https://www.dndbeyond.com/spells/2618943-remove-curse)  
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Celestial (Angel), Lawful Good*  
+    **Challenge** 10
+  subtype: npc
+  id: srd2024deva
+  status: 1
+

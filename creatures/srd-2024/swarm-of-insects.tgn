@@ -1,0 +1,46 @@
+creatures:
+- name: Swarm of Insects
+  statblock:
+    custom_statblock: |
+      **Armor Class** 11  
+      **Hit Points** 19 (rollable(dice=3d8 + 6,dicelabel=Hit Points))  
+      **Speed** Walk 20 ft., Climb or Fly 20 ft. (DM's choice)  
+      **Initiative:** rollable(dice=1d20+1,label=+1,dicelabel=Initiative) (11)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=3)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20-4,label=-4,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=1)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20-5,label=-5,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=13)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+1,label=+1,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=7)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20-2,label=-2,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=14)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+2,label=+2,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=1)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20-5,label=-5,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Damage Resistances** bludgeoning, piercing, slashing  
+      **Condition Immunities** charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned  
+      **Senses** blindsight 30 ft., Passive Perception 8  
+      **Languages** -  
+      **Challenge** 1/2 (100 XP)  
+      **Proficiency Bonus** +2  
+
+      ## Traits
+
+      ***Spider Climb.*** If the swarm has a ***Climb Speed***, the swarm can climb difficult surfaces, including along ceilings, without needing to make an ability check.
+
+      ***Swarm.*** The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny insect. The swarm can't regain ***Hit Points*** or gain ***Temporary Hit Points***.
+
+      ## Actions
+
+      ***Bites.*** *Melee Attack Roll* rollable(dice=1d20+3,label=+3,dicelabel=To Hit [Bites]), reach 5 ft. *Hit:* rollable(dice=2d4+1,dicelabel=Damage [Bites]) Poison damage, or rollable(dice=1d4+1,dicelabel=Damage [Bites]) Poison damage if the swarm is ***Bloodied***.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Beast, Unaligned*  
+    **Challenge** 1/2
+  subtype: npc
+  id: srd2024swarmofinsects
+  status: 1
+
