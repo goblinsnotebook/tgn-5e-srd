@@ -1,0 +1,52 @@
+creatures:
+- name: Stone Golem
+  statblock:
+    custom_statblock: |
+      **Armor Class** 18  
+      **Hit Points** 220 (rollable(dice=21d10 + 105,dicelabel=Hit Points))  
+      **Speed** 30 ft.  
+      **Initiative:** rollable(dice=1d20+3,label=+3,dicelabel=Initiative) (13)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=22)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+6,label=+6,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=3)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20-4,label=-4,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=9)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20-1,label=-1,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=11)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+0,label=+0,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=20)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+5,label=+5,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=1)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20-5,label=-5,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Damage Immunities** poison, psychic  
+      **Condition Immunities** charmed, exhaustion, frightened, paralyzed, petrified, poisoned  
+      **Senses** darkvision 120 ft., Passive Perception 10  
+      **Languages** understands Common plus two other languages but can't speak  
+      **Challenge** 10 (5,900 XP)  
+      **Proficiency Bonus** +4  
+
+      ## Traits
+
+      ***Immutable Form.*** The golem can't shape-shift.
+
+      ***Magic Resistance.*** The golem has ***Advantage*** on saving throws against spells and other magical effects.
+
+      ## Actions
+
+      ***Multiattack.*** The golem makes two attacks, using Slam or Force Bolt in any combination.
+
+      ***Slam.*** *Melee Attack Roll* rollable(dice=1d20+10,label=+10,dicelabel=To Hit [Slam]), reach 5 ft. *Hit:* rollable(dice=2d8+6,dicelabel=Damage [Slam]) Bludgeoning damage plus rollable(dice=2d8,dicelabel=Damage [Slam]) Force damage.
+
+      ***Force Bolt.*** *Ranged Attack Roll* rollable(dice=1d20+9,label=+9,dicelabel=To Hit [Force Bolt]), range 120 ft. *Hit:* rollable(dice=4d10,dicelabel=Damage [Force Bolt]) Force damage.
+
+      ***Slow (rollable(dice=1d6,label=Recharge 5-6,dicelabel=Recharge [Slow])).*** The golem casts the [Slow](https://www.dndbeyond.com/spells/2619066-slow) spell, requiring no spell components and using Constitution as the spellcasting ability (spell save DC 17).
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Construct, Unaligned*  
+    **Challenge** 10
+  subtype: npc
+  id: srd2024stonegolem
+  status: 1
+

@@ -1,0 +1,44 @@
+creatures:
+- name: Guard Captain
+  statblock:
+    custom_statblock: |
+      **Armor Class** 18  
+      **Hit Points** 75 (rollable(dice=10d8 + 30,dicelabel=Hit Points))  
+      **Speed** 30 ft.  
+      **Initiative:** rollable(dice=1d20+4,label=+4,dicelabel=Initiative) (14)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=18)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+4,label=+4,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=12)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20+1,label=+1,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=14)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+2,label=+2,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=14)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+2,label=+2,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=16)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+3,label=+3,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=13)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20+1,label=+1,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Skills** Athletics rollable(dice=1d20+6,label=+6,dicelabel=Athletics Check), Perception rollable(dice=1d20+4,label=+4,dicelabel=Perception Check)  
+      **Gear** breastplate, 6x javelin, longsword, shield  
+      **Senses** Passive Perception 14  
+      **Languages** Common  
+      **Challenge** 4 (1,100 XP)  
+      **Proficiency Bonus** +2  
+
+      ## Actions
+
+      ***Multiattack.*** The guard makes two attacks, using Javelin or Longsword in any combination.
+
+      ***Javelin.*** *Melee or Ranged Attack Roll* rollable(dice=1d20+6,label=+6,dicelabel=To Hit [Javelin]), reach 5 ft. or range 30/120 ft. *Hit:* rollable(dice=3d6+4,dicelabel=Damage [Javelin]) Piercing damage.
+
+      ***Longsword.*** *Melee Attack Roll* rollable(dice=1d20+6,label=+6,dicelabel=To Hit [Longsword]), reach 5 ft. *Hit:* rollable(dice=2d10+4,dicelabel=Damage [Longsword]) Slashing damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Small Medium Humanoid, Neutral*  
+    **Challenge** 4
+  subtype: npc
+  id: srd2024guardcaptain
+  status: 1
+

@@ -1,0 +1,65 @@
+creatures:
+- name: Ancient Black Dragon
+  statblock:
+    custom_statblock: |
+      **Armor Class** 22  
+      **Hit Points** 367 (rollable(dice=21d20 + 147,dicelabel=Hit Points))  
+      **Speed** Walk 40 ft., Fly 80 ft., Swim 40 ft.  
+      **Initiative:** rollable(dice=1d20+16,label=+16,dicelabel=Initiative) (26)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=27)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+8,label=+8,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=16)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20+3,label=+3,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=14)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+9,label=+9,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=15)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+9,label=+9,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=25)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+7,label=+7,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=22)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20+6,label=+6,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Skills** Perception rollable(dice=1d20+16,label=+16,dicelabel=Perception Check), Stealth rollable(dice=1d20+9,label=+9,dicelabel=Stealth Check)  
+      **Damage Immunities** acid  
+      **Senses** blindsight 60 ft., darkvision 120 ft., Passive Perception 26  
+      **Languages** Common, Draconic  
+      **Challenge** 21 (33,000 XP)  
+      **Proficiency Bonus** +7  
+
+      ## Traits
+
+      ***Amphibious.*** The dragon can breathe air and water.
+
+      ***Legendary Resistance (4/Day, or 5/Day in Lair).*** If the dragon fails a saving throw, it can choose to succeed instead.
+
+      ## Actions
+
+      ***Multiattack.*** The dragon makes three Rend attacks. It can replace one attack with a use of Spellcasting to cast [Melf's Acid Arrow]() (level 4 version).
+
+      ***Rend.*** *Melee Attack Roll* rollable(dice=1d20+15,label=+15,dicelabel=To Hit [Rend]), reach 15 ft. *Hit:* rollable(dice=2d8+8,dicelabel=Damage [Rend]) Slashing damage plus rollable(dice=2d8,dicelabel=Damage [Rend]) Acid damage.
+
+      ***Acid Breath (rollable(dice=1d6,label=Recharge 5-6,dicelabel=Recharge [Acid Breath])).*** *Dexterity Saving Throw:* DC 22, each creature in a 90-foot-long, 10-foot-wide ***Line***. *Failure:* rollable(dice=15d8,dicelabel=Damage [Acid Breath]) Acid damage. *Success:* Half damage.
+
+      ***Spellcasting.*** The dragon casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 21, rollable(dice=1d20+13,label=+13,dicelabel=To Hit [Spell Attack]) to hit with spell attacks):
+
+      At will: [Detect Magic](https://www.dndbeyond.com/spells/2619097-detect-magic), [Fear](https://www.dndbeyond.com/spells/2618872-fear), [Melf's Acid Arrow]() (level 4 version)  
+      1/day each: [Create Undead](https://www.dndbeyond.com/spells/2619076-create-undead), [Speak with Dead](https://www.dndbeyond.com/spells/2619068-speak-with-dead), [Vitriolic Sphere](https://www.dndbeyond.com/spells/2619219-vitriolic-sphere) (level 5 version)  
+
+      ## Legendary Actions
+
+      *Legendary Action Uses: 3 (4 in Lair). Immediately after another creature's turn, The Ancient Black Dragon can expend a use to take one of the following actions. The Ancient Black Dragon regains all expended uses at the start of each of its turns.*
+
+      ***Cloud of Insects.*** *Dexterity Saving Throw:* DC 21, one creature the dragon can see within 120 feet. *Failure:* rollable(dice=6d10,dicelabel=Damage [Cloud of Insects]) Poison damage, and the target has ***Disadvantage*** on saving throws to maintain concentration until the end of its next turn. *Failure or Success:* The dragon can't take this action again until the start of its next turn.
+
+      ***Frightful Presence.*** The dragon uses Spellcasting to cast [Fear](https://www.dndbeyond.com/spells/2618872-fear). The dragon can't take this action again until the start of its next turn.
+
+      ***Pounce.*** The dragon moves up to half its ***Speed***, and it makes one Rend attack.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Gargantuan Dragon (Chromatic), Chaotic Evil*  
+    **Challenge** 21
+  subtype: npc
+  id: srd2024ancientblackdragon
+  status: 1
+

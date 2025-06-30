@@ -1,0 +1,39 @@
+creatures:
+- name: Giant Goat
+  statblock:
+    custom_statblock: |
+      **Armor Class** 11  
+      **Hit Points** 19 (rollable(dice=3d10 + 3,dicelabel=Hit Points))  
+      **Speed** Walk 40 ft., Climb 30 ft.  
+      **Initiative:** rollable(dice=1d20+1,label=+1,dicelabel=Initiative) (11)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=17)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+5,label=+5,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=3)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20-4,label=-4,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=13)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+1,label=+1,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=12)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+1,label=+1,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=12)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+1,label=+1,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=6)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20-2,label=-2,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Skills** Perception rollable(dice=1d20+3,label=+3,dicelabel=Perception Check)  
+      **Senses** darkvision 60 ft., Passive Perception 13  
+      **Languages** -  
+      **Challenge** 1/2 (100 XP)  
+      **Proficiency Bonus** +2  
+
+      ## Actions
+
+      ***Ram.*** *Melee Attack Roll* rollable(dice=1d20+5,label=+5,dicelabel=To Hit [Ram]), reach 5 ft. *Hit:* rollable(dice=1d6+3,dicelabel=Damage [Ram]) Bludgeoning damage. If the target is a Large or smaller creature and the goat moved 20+ feet straight toward it immediately before the hit, the target takes an extra rollable(dice=2d4,dicelabel=Damage [Ram]) Bludgeoning damage and has the ***Prone*** condition.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Beast, Unaligned*  
+    **Challenge** 1/2
+  subtype: npc
+  id: srd2024giantgoat
+  status: 1
+

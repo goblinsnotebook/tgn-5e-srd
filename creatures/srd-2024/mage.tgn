@@ -1,0 +1,60 @@
+creatures:
+- name: Mage
+  statblock:
+    custom_statblock: |
+      **Armor Class** 15  
+      **Hit Points** 81 (rollable(dice=18d8,dicelabel=Hit Points))  
+      **Speed** 30 ft.  
+      **Initiative:** rollable(dice=1d20+2,label=+2,dicelabel=Initiative) (12)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=9)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20-1,label=-1,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=17)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20+6,label=+6,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=14)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+2,label=+2,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=12)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+4,label=+4,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=11)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+0,label=+0,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=11)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20+0,label=+0,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Skills** Arcana rollable(dice=1d20+6,label=+6,dicelabel=Arcana Check), History rollable(dice=1d20+6,label=+6,dicelabel=History Check), Perception rollable(dice=1d20+4,label=+4,dicelabel=Perception Check)  
+      **Gear** wand  
+      **Senses** Passive Perception 14  
+      **Languages** Common and any three languages  
+      **Challenge** 6 (2,300 XP)  
+      **Proficiency Bonus** +3  
+
+      ## Actions
+
+      ***Multiattack.*** The mage makes three Arcane Burst attacks.
+
+      ***Arcane Burst.*** *Melee or Ranged Attack Roll* rollable(dice=1d20+6,label=+6,dicelabel=To Hit [Arcane Burst]), reach 5 ft. or range 120 ft. *Hit:* rollable(dice=3d8+3,dicelabel=Damage [Arcane Burst]) Force damage.
+
+      ***Spellcasting.*** The mage casts one of the following spells, using Intelligence as the spellcasting ability (spell save DC 14):
+
+      At will: [Detect Magic](https://www.dndbeyond.com/spells/2619097-detect-magic), [Light](https://www.dndbeyond.com/spells/2618996-light), [Mage Armor](https://www.dndbeyond.com/spells/2619006-mage-armor) (included in AC), [Mage Hand](https://www.dndbeyond.com/spells/2619008-mage-hand), [Prestidigitation](https://www.dndbeyond.com/spells/2618893-prestidigitation)  
+      2/day each: [Fireball](https://www.dndbeyond.com/spells/2618887-fireball) (level 4 version), [Invisibility](https://www.dndbeyond.com/spells/2619116-invisibility)  
+      1/day each: [Cone of Cold](https://www.dndbeyond.com/spells/2619042-cone-of-cold), [Fly](https://www.dndbeyond.com/spells/2618909-fly)  
+
+      ***Misty Step (3/Day).*** The mage casts [Misty Step](https://www.dndbeyond.com/spells/2619133-misty-step), using the same spellcasting ability as Spellcasting.
+
+      3/day: [Misty Step](https://www.dndbeyond.com/spells/2619133-misty-step)  
+
+      ## Reactions
+
+      
+
+      ***Protective Magic (3/Day).*** The mage casts [Counterspell](https://www.dndbeyond.com/spells/2619072-counterspell) or [Shield](https://www.dndbeyond.com/spells/2619019-shield) in response to the spell's trigger, using the same spellcasting ability as Spellcasting.
+
+      3/day: [Counterspell](https://www.dndbeyond.com/spells/2619072-counterspell), [Shield](https://www.dndbeyond.com/spells/2619019-shield)  
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Small Medium Humanoid (Wizard), Neutral*  
+    **Challenge** 6
+  subtype: npc
+  id: srd2024mage
+  status: 1
+

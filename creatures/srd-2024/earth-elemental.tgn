@@ -1,0 +1,51 @@
+creatures:
+- name: Earth Elemental
+  statblock:
+    custom_statblock: |
+      **Armor Class** 17  
+      **Hit Points** 147 (rollable(dice=14d10 + 70,dicelabel=Hit Points))  
+      **Speed** Walk 30 ft., Burrow 30 ft.  
+      **Initiative:** rollable(dice=1d20-1,label=-1,dicelabel=Initiative) (9)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=20)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+5,label=+5,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=5)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20-3,label=-3,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=8)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20-1,label=-1,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=10)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+0,label=+0,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=20)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+5,label=+5,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=5)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20-3,label=-3,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Damage Vulnerabilities** thunder  
+      **Damage Immunities** poison  
+      **Condition Immunities** exhaustion, paralyzed, petrified, poisoned, unconscious  
+      **Senses** darkvision 60 ft., tremorsense 60 ft., Passive Perception 10  
+      **Languages** Primordial (Terran)  
+      **Challenge** 5 (1,800 XP)  
+      **Proficiency Bonus** +3  
+
+      ## Traits
+
+      ***Earth Glide.*** The elemental can burrow through nonmagical, unworked earth and stone. While doing so, the elemental doesn't disturb the material it moves through.
+
+      ***Siege Monster.*** The elemental deals double damage to objects and structures.
+
+      ## Actions
+
+      ***Multiattack.*** The elemental makes two attacks, using Slam or Rock Launch in any combination.
+
+      ***Slam.*** *Melee Attack Roll* rollable(dice=1d20+8,label=+8,dicelabel=To Hit [Slam]), reach 10 ft. *Hit:* rollable(dice=2d8+5,dicelabel=Damage [Slam]) Bludgeoning damage.
+
+      ***Rock Launch.*** *Ranged Attack Roll* rollable(dice=1d20+8,label=+8,dicelabel=To Hit [Rock Launch]), range 60 ft. *Hit:* rollable(dice=1d6+5,dicelabel=Damage [Rock Launch]) Bludgeoning damage. If the target is a Large or smaller creature, it has the ***Prone*** condition.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Elemental, Neutral*  
+    **Challenge** 5
+  subtype: npc
+  id: srd2024earthelemental
+  status: 1
+

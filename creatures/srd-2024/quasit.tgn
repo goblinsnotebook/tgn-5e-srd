@@ -1,0 +1,54 @@
+creatures:
+- name: Quasit
+  statblock:
+    custom_statblock: |
+      **Armor Class** 13  
+      **Hit Points** 25 (rollable(dice=10d4,dicelabel=Hit Points))  
+      **Speed** 40 ft.  
+      **Initiative:** rollable(dice=1d20+3,label=+3,dicelabel=Initiative) (13)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=5)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20-3,label=-3,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=7)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20-2,label=-2,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=17)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+3,label=+3,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=10)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+0,label=+0,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=10)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+0,label=+0,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=10)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20+0,label=+0,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Skills** Stealth rollable(dice=1d20+5,label=+5,dicelabel=Stealth Check)  
+      **Damage Resistances** cold, fire, lightning  
+      **Damage Immunities** poison  
+      **Condition Immunities** poisoned  
+      **Senses** darkvision 120 ft., Passive Perception 10  
+      **Languages** Abyssal, Common  
+      **Challenge** 1 (200 XP)  
+      **Proficiency Bonus** +2  
+
+      ## Traits
+
+      ***Magic Resistance.*** The quasit has ***Advantage*** on saving throws against spells and other magical effects.
+
+      ## Actions
+
+      ***Rend.*** *Melee Attack Roll* rollable(dice=1d20+5,label=+5,dicelabel=To Hit [Rend]), reach 5 ft. *Hit:* rollable(dice=1d4+3,dicelabel=Damage [Rend]) Slashing damage, and the target has the ***Poisoned*** condition until the start of the quasit's next turn.
+
+      ***Scare (1/Day).*** *Wisdom Saving Throw:* DC 10, one creature within 20 feet. *Failure:* The target has the ***Frightened*** condition. At the end of each of its turns, the target repeats the save, ending the effect on itself on a success. After 1 minute, it succeeds automatically.
+
+      ***Shape-Shift.*** The quasit shape-shifts to resemble a bat (***Speed*** 10 ft., Fly 40 ft.), a centipede (40 ft., Climb 40 ft.), or a toad (40 ft., Swim 40 ft.), or it returns to its true form. Its game statistics are the same in each form, except for its ***Speed***. Any equipment it is wearing or carrying isn't transformed.
+
+      ***Invisibility.*** The quasit casts [Invisibility](https://www.dndbeyond.com/spells/2619116-invisibility) on itself, requiring no spell components and using Charisma as the spellcasting ability.
+
+      At will: [Invisibility](https://www.dndbeyond.com/spells/2619116-invisibility)  
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Tiny Fiend (Demon), Chaotic Evil*  
+    **Challenge** 1
+  subtype: npc
+  id: srd2024quasit
+  status: 1
+

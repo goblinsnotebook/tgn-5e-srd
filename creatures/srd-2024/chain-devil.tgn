@@ -1,0 +1,55 @@
+creatures:
+- name: Chain Devil
+  statblock:
+    custom_statblock: |
+      **Armor Class** 15  
+      **Hit Points** 85 (rollable(dice=10d8 + 40,dicelabel=Hit Points))  
+      **Speed** 30 ft.  
+      **Initiative:** rollable(dice=1d20+5,label=+5,dicelabel=Initiative) (15)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=18)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+4,label=+4,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=11)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20+0,label=+0,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=15)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+2,label=+2,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=12)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+4,label=+4,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=18)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+7,label=+7,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=14)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20+2,label=+2,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Damage Resistances** bludgeoning, cold, piercing, slashing  
+      **Damage Immunities** fire, poison  
+      **Condition Immunities** poisoned  
+      **Senses** darkvision 120 ft. (unimpeded by magical ***Darkness***), Passive Perception 11  
+      **Languages** Infernal; telepathy 120 ft.  
+      **Challenge** 8 (3,900 XP)  
+      **Proficiency Bonus** +3  
+
+      ## Traits
+
+      ***Diabolical Restoration.*** If the devil dies outside the Nine Hells, its body disappears in sulfurous smoke, and it gains a new body instantly, reviving with all its ***Hit Points*** somewhere in the Nine Hells.
+
+      ***Magic Resistance.*** The devil has ***Advantage*** on saving throws against spells and other magical effects.
+
+      ## Actions
+
+      ***Multiattack.*** The devil makes two Chain attacks and uses Conjure Infernal Chain.
+
+      ***Chain.*** *Melee Attack Roll* rollable(dice=1d20+7,label=+7,dicelabel=To Hit [Chain]), reach 10 ft. *Hit:* rollable(dice=2d6+4,dicelabel=Damage [Chain]) Slashing damage. If the target is a Large or smaller creature, it has the ***Grappled*** condition (escape DC 14) from one of two chains, and it has the ***Restrained*** condition until the grapple ends.
+
+      ***Conjure Infernal Chain.*** The devil conjures a fiery chain to bind a creature. *Dexterity Saving Throw:* DC 15, one creature the devil can see within 60 feet. *Failure:* rollable(dice=2d4+4,dicelabel=Damage [Conjure Infernal Chain]) Fire damage, and the target has the ***Restrained*** condition until the end of the devil's next turn, at which point the chain disappears. If the target is Large or smaller, the devil moves the target up to 30 feet straight toward itself. *Success:* The chain disappears.
+
+      ## Reactions
+
+      ***Unnerving Gaze.*** *Trigger:* A creature the devil can see starts its turn within 30 feet of the devil and can see the devil. *Response—**Wisdom Saving Throw:* DC 15, the triggering creature. *Failure:* The target has the ***Frightened*** condition until the end of its turn. *Success:* The target is immune to this devil's Unnerving Gaze for 24 hours.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Fiend (Devil), Lawful Evil*  
+    **Challenge** 8
+  subtype: npc
+  id: srd2024chaindevil
+  status: 1
+

@@ -1,0 +1,65 @@
+creatures:
+- name: Ancient Silver Dragon
+  statblock:
+    custom_statblock: |
+      **Armor Class** 22  
+      **Hit Points** 468 (rollable(dice=24d20 + 216,dicelabel=Hit Points))  
+      **Speed** Walk 40 ft., Fly 80 ft.  
+      **Initiative:** rollable(dice=1d20+14,label=+14,dicelabel=Initiative) (24)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=30)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+10,label=+10,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=18)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20+4,label=+4,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=10)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+7,label=+7,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=15)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+9,label=+9,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=29)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+9,label=+9,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=26)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20+8,label=+8,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Skills** History rollable(dice=1d20+11,label=+11,dicelabel=History Check), Perception rollable(dice=1d20+16,label=+16,dicelabel=Perception Check), Stealth rollable(dice=1d20+7,label=+7,dicelabel=Stealth Check)  
+      **Damage Immunities** cold  
+      **Senses** blindsight 60 ft., darkvision 120 ft., Passive Perception 26  
+      **Languages** Common, Draconic  
+      **Challenge** 23 (50,000 XP)  
+      **Proficiency Bonus** +7  
+
+      ## Traits
+
+      ***Legendary Resistance (4/Day, or 5/Day in Lair).*** If the dragon fails a saving throw, it can choose to succeed instead.
+
+      ## Actions
+
+      ***Multiattack.*** The dragon makes three Rend attacks. It can replace one attack with a use of (A) Paralyzing Breath or (B) Spellcasting to cast [Ice Knife](https://www.dndbeyond.com/spells/2619171-ice-knife) (level 2 version).
+
+      ***Rend.*** *Melee Attack Roll* rollable(dice=1d20+17,label=+17,dicelabel=To Hit [Rend]), reach 15 ft. *Hit:* rollable(dice=2d8+10,dicelabel=Damage [Rend]) Slashing damage plus rollable(dice=2d8,dicelabel=Damage [Rend]) Cold damage.
+
+      ***Cold Breath (rollable(dice=1d6,label=Recharge 5-6,dicelabel=Recharge [Cold Breath])).*** *Constitution Saving Throw:* DC 24, each creature in a 90-foot ***Cone***. *Failure:* rollable(dice=15d8,dicelabel=Damage [Cold Breath]) Cold damage. *Success:* Half damage.
+
+      ***Paralyzing Breath.*** *Constitution Saving Throw:* DC 24, each creature in a 90-foot ***Cone***. *First Failure:* The target has the ***Incapacitated*** condition until the end of its next turn, when it repeats the save. *Second Failure:* The target has the ***Paralyzed*** condition, and it repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically.
+
+      ***Spellcasting.*** The dragon casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 23, rollable(dice=1d20+15,label=+15,dicelabel=To Hit [Spell Attack]) to hit with spell attacks):
+
+      At will: [Detect Magic](https://www.dndbeyond.com/spells/2619097-detect-magic), [Hold Monster](https://www.dndbeyond.com/spells/2619152-hold-monster), [Ice Knife](https://www.dndbeyond.com/spells/2619171-ice-knife) (level 2 version), [Shapechange](https://www.dndbeyond.com/spells/2618982-shapechange) (Beast or Humanoid form only, no ***Temporary Hit Points*** gained from the spell, and no Concentration or ***Temporary Hit Points*** required to maintain the spell)  
+      1/day each: [Control Weather](https://www.dndbeyond.com/spells/2619054-control-weather), [Ice Storm](https://www.dndbeyond.com/spells/2619178-ice-storm) (level 7 version), [Teleport](https://www.dndbeyond.com/spells/2619163-teleport), [Zone of Truth](https://www.dndbeyond.com/spells/2619221-zone-of-truth)  
+
+      ## Legendary Actions
+
+      *Legendary Action Uses: 3 (4 in Lair). Immediately after another creature's turn, The Ancient Silver Dragon can expend a use to take one of the following actions. The Ancient Silver Dragon regains all expended uses at the start of each of its turns.*
+
+      ***Chill.*** The dragon uses Spellcasting to cast [Hold Monster](https://www.dndbeyond.com/spells/2619152-hold-monster). The dragon can't take this action again until the start of its next turn.
+
+      ***Cold Gale.*** *Dexterity Saving Throw:* DC 23, each creature in a 60-foot-long, 10-foot-wide ***Line***. *Failure:* rollable(dice=4d6,dicelabel=Damage [Cold Gale]) Cold damage, and the target is pushed up to 30 feet straight away from the dragon. *Success:* Half damage only. *Failure or Success:* The dragon can't take this action again until the start of its next turn.
+
+      ***Pounce.*** The dragon moves up to half its ***Speed***, and it makes one Rend attack.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Gargantuan Dragon (Metallic), Lawful Good*  
+    **Challenge** 23
+  subtype: npc
+  id: srd2024ancientsilverdragon
+  status: 1
+

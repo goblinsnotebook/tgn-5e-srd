@@ -1,0 +1,46 @@
+creatures:
+- name: Young Brass Dragon
+  statblock:
+    custom_statblock: |
+      **Armor Class** 17  
+      **Hit Points** 110 (rollable(dice=13d10 + 39,dicelabel=Hit Points))  
+      **Speed** Walk 40 ft., Burrow 20 ft., Fly 80 ft.  
+      **Initiative:** rollable(dice=1d20+3,label=+3,dicelabel=Initiative) (13)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=19)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+4,label=+4,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=12)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20+1,label=+1,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=10)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+3,label=+3,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=11)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+3,label=+3,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=17)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+3,label=+3,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=15)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20+2,label=+2,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Skills** Perception rollable(dice=1d20+6,label=+6,dicelabel=Perception Check), Persuasion rollable(dice=1d20+5,label=+5,dicelabel=Persuasion Check), Stealth rollable(dice=1d20+3,label=+3,dicelabel=Stealth Check)  
+      **Damage Immunities** fire  
+      **Senses** blindsight 30 ft., darkvision 120 ft., Passive Perception 16  
+      **Languages** Common, Draconic  
+      **Challenge** 6 (2,300 XP)  
+      **Proficiency Bonus** +3  
+
+      ## Actions
+
+      ***Multiattack.*** The dragon makes three Rend attacks. It can replace two attacks with a use of Sleep Breath.
+
+      ***Rend.*** *Melee Attack Roll* rollable(dice=1d20+7,label=+7,dicelabel=To Hit [Rend]), reach 10 ft. *Hit:* rollable(dice=2d10+4,dicelabel=Damage [Rend]) Slashing damage.
+
+      ***Fire Breath (rollable(dice=1d6,label=Recharge 5-6,dicelabel=Recharge [Fire Breath])).*** *Dexterity Saving Throw:* DC 14, each creature in a 40-foot-long, 5-foot-wide ***Line***. *Failure:* rollable(dice=11d6,dicelabel=Damage [Fire Breath]) Fire damage. *Success:* Half damage.
+
+      ***Sleep Breath.*** *Constitution Saving Throw:* DC 14, each creature in a 30-foot ***Cone***. *Failure:* The target has the ***Incapacitated*** condition until the end of its next turn, at which point it repeats the save. *Second Failure:* The target has the ***Unconscious*** condition for 1 minute. This effect ends for the target if it takes damage or a creature within 5 feet of it takes an action to wake it.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Dragon (Metallic), Chaotic Good*  
+    **Challenge** 6
+  subtype: npc
+  id: srd2024youngbrassdragon
+  status: 1
+

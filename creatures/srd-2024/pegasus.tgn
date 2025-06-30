@@ -1,0 +1,39 @@
+creatures:
+- name: Pegasus
+  statblock:
+    custom_statblock: |
+      **Armor Class** 12  
+      **Hit Points** 59 (rollable(dice=7d10 + 21,dicelabel=Hit Points))  
+      **Speed** Walk 60 ft., Fly 90 ft.  
+      **Initiative:** rollable(dice=1d20+2,label=+2,dicelabel=Initiative) (12)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=18)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+4,label=+4,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=10)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20+0,label=+0,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=15)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+4,label=+4,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=15)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+4,label=+4,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=16)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+5,label=+5,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=13)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20+3,label=+3,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Skills** Perception rollable(dice=1d20+6,label=+6,dicelabel=Perception Check)  
+      **Senses** Passive Perception 16  
+      **Languages** understands Celestial, Common, Elvish, and Sylvan but can't speak  
+      **Challenge** 2 (450 XP)  
+      **Proficiency Bonus** +2  
+
+      ## Actions
+
+      ***Hooves.*** *Melee Attack Roll* rollable(dice=1d20+6,label=+6,dicelabel=To Hit [Hooves]), reach 5 ft. *Hit:* rollable(dice=1d6+4,dicelabel=Damage [Hooves]) Bludgeoning damage plus rollable(dice=2d4,dicelabel=Damage [Hooves]) Radiant damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Celestial, Chaotic Good*  
+    **Challenge** 2
+  subtype: npc
+  id: srd2024pegasus
+  status: 1
+

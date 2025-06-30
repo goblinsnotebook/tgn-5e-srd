@@ -1,0 +1,51 @@
+creatures:
+- name: Chuul
+  statblock:
+    custom_statblock: |
+      **Armor Class** 16  
+      **Hit Points** 76 (rollable(dice=9d10 + 27,dicelabel=Hit Points))  
+      **Speed** Walk 30 ft., Swim 30 ft.  
+      **Initiative:** rollable(dice=1d20+0,label=+0,dicelabel=Initiative) (10)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=19)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+4,label=+4,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=5)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20-3,label=-3,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=10)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+0,label=+0,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=11)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+0,label=+0,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=16)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+3,label=+3,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=5)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20-3,label=-3,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Skills** Perception rollable(dice=1d20+4,label=+4,dicelabel=Perception Check)  
+      **Damage Immunities** poison  
+      **Condition Immunities** poisoned  
+      **Senses** darkvision 60 ft., Passive Perception 14  
+      **Languages** understands Deep Speech but can't speak  
+      **Challenge** 4 (1,100 XP)  
+      **Proficiency Bonus** +2  
+
+      ## Traits
+
+      ***Amphibious.*** The chuul can breathe air and water.
+
+      ***Sense Magic.*** The chuul senses magic within 120 feet of itself. This trait otherwise works like the [Detect Magic](https://www.dndbeyond.com/spells/2619097-detect-magic) spell but isn't itself magical.
+
+      ## Actions
+
+      ***Multiattack.*** The chuul makes two Pincer attacks and uses Paralyzing Tentacles.
+
+      ***Pincer.*** *Melee Attack Roll* rollable(dice=1d20+6,label=+6,dicelabel=To Hit [Pincer]), reach 10 ft. *Hit:* rollable(dice=1d10+4,dicelabel=Damage [Pincer]) Bludgeoning damage. If the target is a Large or smaller creature, it has the ***Grappled*** condition (escape DC 14) from one of two pincers.
+
+      ***Paralyzing Tentacles.*** *Constitution Saving Throw:* DC 13, one creature ***Grappled*** by the chuul. *Failure:* The target has the ***Poisoned*** condition and repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically. While ***Poisoned***, the target has the ***Paralyzed*** condition.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Aberration, Chaotic Evil*  
+    **Challenge** 4
+  subtype: npc
+  id: srd2024chuul
+  status: 1
+

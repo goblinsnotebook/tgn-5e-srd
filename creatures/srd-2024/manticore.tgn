@@ -1,0 +1,42 @@
+creatures:
+- name: Manticore
+  statblock:
+    custom_statblock: |
+      **Armor Class** 14  
+      **Hit Points** 68 (rollable(dice=8d10 + 24,dicelabel=Hit Points))  
+      **Speed** Walk 30 ft., Fly 50 ft.  
+      **Initiative:** rollable(dice=1d20+3,label=+3,dicelabel=Initiative) (13)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=17)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+3,label=+3,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=7)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20-2,label=-2,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=16)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+3,label=+3,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=12)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+1,label=+1,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=17)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+3,label=+3,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=8)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20-1,label=-1,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Senses** darkvision 60 ft., Passive Perception 11  
+      **Languages** Common  
+      **Challenge** 3 (700 XP)  
+      **Proficiency Bonus** +2  
+
+      ## Actions
+
+      ***Multiattack.*** The manticore makes three attacks, using Rend or Tail Spike in any combination.
+
+      ***Rend.*** *Melee Attack Roll* rollable(dice=1d20+5,label=+5,dicelabel=To Hit [Rend]), reach 5 ft. *Hit:* rollable(dice=1d8+3,dicelabel=Damage [Rend]) Slashing damage.
+
+      ***Tail Spike.*** *Ranged Attack Roll* rollable(dice=1d20+5,label=+5,dicelabel=To Hit [Tail Spike]), range 100/200 ft. *Hit:* rollable(dice=1d8+3,dicelabel=Damage [Tail Spike]) Piercing damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Monstrosity, Lawful Evil*  
+    **Challenge** 3
+  subtype: npc
+  id: srd2024manticore
+  status: 1
+

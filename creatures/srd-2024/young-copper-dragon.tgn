@@ -1,0 +1,46 @@
+creatures:
+- name: Young Copper Dragon
+  statblock:
+    custom_statblock: |
+      **Armor Class** 17  
+      **Hit Points** 119 (rollable(dice=14d10 + 42,dicelabel=Hit Points))  
+      **Speed** Walk 40 ft., Climb 40 ft., Fly 80 ft.  
+      **Initiative:** rollable(dice=1d20+4,label=+4,dicelabel=Initiative) (14)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=19)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+4,label=+4,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=16)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20+3,label=+3,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=12)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+4,label=+4,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=13)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+4,label=+4,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=17)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+3,label=+3,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=15)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20+2,label=+2,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Skills** Deception rollable(dice=1d20+5,label=+5,dicelabel=Deception Check), Perception rollable(dice=1d20+7,label=+7,dicelabel=Perception Check), Stealth rollable(dice=1d20+4,label=+4,dicelabel=Stealth Check)  
+      **Damage Immunities** acid  
+      **Senses** blindsight 30 ft., darkvision 120 ft., Passive Perception 17  
+      **Languages** Common, Draconic  
+      **Challenge** 7 (2,900 XP)  
+      **Proficiency Bonus** +3  
+
+      ## Actions
+
+      ***Multiattack.*** The dragon makes three Rend attacks. It can replace one attack with a use of Slowing Breath.
+
+      ***Rend.*** *Melee Attack Roll* rollable(dice=1d20+7,label=+7,dicelabel=To Hit [Rend]), reach 10 ft. *Hit:* rollable(dice=2d10+4,dicelabel=Damage [Rend]) Slashing damage.
+
+      ***Acid Breath (rollable(dice=1d6,label=Recharge 5-6,dicelabel=Recharge [Acid Breath])).*** *Dexterity Saving Throw:* DC 14, each creature in a 40-foot-long, 5-foot-wide ***Line***. *Failure:* rollable(dice=9d8,dicelabel=Damage [Acid Breath]) Acid damage. *Success:* Half damage.
+
+      ***Slowing Breath.*** *Constitution Saving Throw:* DC 14, each creature in a 30-foot ***Cone***. *Failure:* The target can't take Reactions; its ***Speed*** is halved; and it can take either an action or a ***Bonus Action*** on its turn, not both. This effect lasts until the end of its next turn.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Dragon (Metallic), Chaotic Good*  
+    **Challenge** 7
+  subtype: npc
+  id: srd2024youngcopperdragon
+  status: 1
+

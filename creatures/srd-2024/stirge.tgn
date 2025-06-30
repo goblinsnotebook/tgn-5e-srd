@@ -1,0 +1,40 @@
+creatures:
+- name: Stirge
+  statblock:
+    custom_statblock: |
+      **Armor Class** 13  
+      **Hit Points** 5 (rollable(dice=2d4,dicelabel=Hit Points))  
+      **Speed** Walk 10 ft., Fly 40 ft.  
+      **Initiative:** rollable(dice=1d20+3,label=+3,dicelabel=Initiative) (13)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=4)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20-3,label=-3,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=2)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20-4,label=-4,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=16)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+3,label=+3,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=8)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20-1,label=-1,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=11)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+0,label=+0,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=6)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20-2,label=-2,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Senses** darkvision 60 ft., Passive Perception 9  
+      **Languages** -  
+      **Challenge** 1/8 (25 XP)  
+      **Proficiency Bonus** +2  
+
+      ## Actions
+
+      ***Proboscis.*** *Melee Attack Roll* rollable(dice=1d20+5,label=+5,dicelabel=To Hit [Proboscis]), reach 5 ft. *Hit:* rollable(dice=1d6+3,dicelabel=Damage [Proboscis]) Piercing damage, and the stirge attaches to the target. While attached, the stirge can't make Proboscis attacks, and the target takes rollable(dice=2d4,dicelabel=Damage [Proboscis]) Necrotic damage at the start of each of the stirge's turns.
+
+      The stirge can detach itself by spending 5 feet of its movement. The target or a creature within 5 feet of it can detach the stirge as an action.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Tiny Monstrosity, Unaligned*  
+    **Challenge** 1/8
+  subtype: npc
+  id: srd2024stirge
+  status: 1
+

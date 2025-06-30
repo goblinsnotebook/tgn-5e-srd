@@ -1,0 +1,52 @@
+creatures:
+- name: Imp
+  statblock:
+    custom_statblock: |
+      **Armor Class** 13  
+      **Hit Points** 21 (rollable(dice=6d4 + 6,dicelabel=Hit Points))  
+      **Speed** Walk 20 ft., Fly 40 ft.  
+      **Initiative:** rollable(dice=1d20+3,label=+3,dicelabel=Initiative) (13)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=6)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20-2,label=-2,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=11)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20+0,label=+0,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=17)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+3,label=+3,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=12)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+1,label=+1,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=13)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+1,label=+1,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=14)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20+2,label=+2,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Skills** Deception rollable(dice=1d20+4,label=+4,dicelabel=Deception Check), Insight rollable(dice=1d20+3,label=+3,dicelabel=Insight Check), Stealth rollable(dice=1d20+5,label=+5,dicelabel=Stealth Check)  
+      **Damage Resistances** cold  
+      **Damage Immunities** fire, poison  
+      **Condition Immunities** poisoned  
+      **Senses** darkvision 120 ft. (unimpeded by magical ***Darkness***), Passive Perception 11  
+      **Languages** Common, Infernal  
+      **Challenge** 1 (200 XP)  
+      **Proficiency Bonus** +2  
+
+      ## Traits
+
+      ***Magic Resistance.*** The imp has ***Advantage*** on saving throws against spells and other magical effects.
+
+      ## Actions
+
+      ***Sting.*** *Melee Attack Roll* rollable(dice=1d20+5,label=+5,dicelabel=To Hit [Sting]), reach 5 ft. *Hit:* rollable(dice=1d6+3,dicelabel=Damage [Sting]) Piercing damage plus rollable(dice=2d6,dicelabel=Damage [Sting]) Poison damage.
+
+      ***Shape-Shift.*** The imp shape-shifts to resemble a rat (***Speed*** 20 ft.), a raven (20 ft., Fly 60 ft.), or a spider (20 ft., Climb 20 ft.), or it returns to its true form. Its statistics are the same in each form, except for its ***Speed***. Any equipment it is wearing or carrying isn't transformed.
+
+      ***Invisibility.*** The imp casts [Invisibility](https://www.dndbeyond.com/spells/2619116-invisibility) on itself, requiring no spell components and using Charisma as the spellcasting ability.
+
+      At will: [Invisibility](https://www.dndbeyond.com/spells/2619116-invisibility)  
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Tiny Fiend (Devil), Lawful Evil*  
+    **Challenge** 1
+  subtype: npc
+  id: srd2024imp
+  status: 1
+

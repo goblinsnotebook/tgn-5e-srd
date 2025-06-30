@@ -1,0 +1,42 @@
+creatures:
+- name: Animated Rug of Smothering
+  statblock:
+    custom_statblock: |
+      **Armor Class** 12  
+      **Hit Points** 27 (rollable(dice=5d10,dicelabel=Hit Points))  
+      **Speed** 10 ft.  
+      **Initiative:** rollable(dice=1d20+4,label=+4,dicelabel=Initiative) (14)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=17)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+3,label=+3,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=1)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20-5,label=-5,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=14)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+2,label=+2,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=3)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20-4,label=-4,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=10)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+0,label=+0,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=1)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20-5,label=-5,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Damage Immunities** poison, psychic  
+      **Condition Immunities** charmed, deafened, exhaustion, frightened, paralyzed, petrified, poisoned  
+      **Senses** blindsight 60 ft., Passive Perception 6  
+      **Languages** -  
+      **Challenge** 2 (450 XP)  
+      **Proficiency Bonus** +2  
+
+      ## Actions
+
+      ***Smother.*** *Melee Attack Roll* rollable(dice=1d20+5,label=+5,dicelabel=To Hit [Smother]), reach 5 ft. *Hit:* rollable(dice=2d6+3,dicelabel=Damage [Smother]) Bludgeoning damage. If the target is a Medium or smaller creature, the rug can give it the ***Grappled*** condition (escape DC 13) instead of dealing damage. Until the grapple ends, the target has the ***Blinded*** and ***Restrained*** conditions, is suffocating, and takes rollable(dice=2d6+3,dicelabel=Damage [Smother]) Bludgeoning damage at the start of each of its turns. The rug can smother only one creature at a time.
+
+      While grappling the target, the rug can't take this action, the rug halves the damage it takes (round down), and the target takes the same amount of damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Construct, Unaligned*  
+    **Challenge** 2
+  subtype: npc
+  id: srd2024animatedrugofsmothering
+  status: 1
+

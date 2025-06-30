@@ -1,0 +1,56 @@
+creatures:
+- name: Rakshasa
+  statblock:
+    custom_statblock: |
+      **Armor Class** 17  
+      **Hit Points** 221 (rollable(dice=26d8 + 104,dicelabel=Hit Points))  
+      **Speed** 40 ft.  
+      **Initiative:** rollable(dice=1d20+8,label=+8,dicelabel=Initiative) (18)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=14)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+2,label=+2,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=13)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20+1,label=+1,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=17)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+3,label=+3,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=16)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+3,label=+3,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=18)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+4,label=+4,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=20)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20+5,label=+5,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Skills** Deception rollable(dice=1d20+10,label=+10,dicelabel=Deception Check), Insight rollable(dice=1d20+8,label=+8,dicelabel=Insight Check), Perception rollable(dice=1d20+8,label=+8,dicelabel=Perception Check)  
+      **Damage Vulnerabilities** piercing damage from weapons wielded by creatures under the effect of a Bless spell  
+      **Condition Immunities** charmed, frightened  
+      **Senses** truesight 60 ft., Passive Perception 18  
+      **Languages** Common, Infernal  
+      **Challenge** 13 (10,000 XP)  
+      **Proficiency Bonus** +5  
+
+      ## Traits
+
+      ***Greater Magic Resistance.*** The rakshasa automatically succeeds on saving throws against spells and other magical effects, and the attack rolls of spells automatically miss it. Without the rakshasa's permission, no spell can observe the rakshasa remotely or detect its thoughts, creature type, or alignment.
+
+      ***Fiendish Restoration.*** If the rakshasa dies outside the Nine Hells, its body turns to ichor, and it gains a new body instantly, reviving with all its ***Hit Points*** somewhere in the Nine Hells.
+
+      ## Actions
+
+      ***Multiattack.*** The rakshasa makes three Cursed Touch attacks.
+
+      ***Cursed Touch.*** *Melee Attack Roll* rollable(dice=1d20+10,label=+10,dicelabel=To Hit [Cursed Touch]), reach 5 ft. *Hit:* rollable(dice=2d6+5,dicelabel=Damage [Cursed Touch]) Slashing damage plus rollable(dice=3d12,dicelabel=Damage [Cursed Touch]) Necrotic damage. If the target is a creature, it is cursed. While cursed, the target gains no benefit from finishing a ***Short*** or ***Long Rest***.
+
+      ***Baleful Command (rollable(dice=1d6,label=Recharge 5-6,dicelabel=Recharge [Baleful Command])).*** *Wisdom Saving Throw:* DC 18, each enemy in a 30-foot ***Emanation*** originating from the rakshasa. *Failure:* rollable(dice=8d6,dicelabel=Damage [Baleful Command]) Psychic damage, and the target has the ***Frightened*** and ***Incapacitated*** conditions until the start of the rakshasa's next turn.
+
+      ***Spellcasting.*** The rakshasa casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 18):
+
+      At will: [Detect Magic](https://www.dndbeyond.com/spells/2619097-detect-magic), [Detect Thoughts](https://www.dndbeyond.com/spells/2619099-detect-thoughts), [Disguise Self](https://www.dndbeyond.com/spells/2619102-disguise-self), [Mage Hand](https://www.dndbeyond.com/spells/2619008-mage-hand), [Minor Illusion](https://www.dndbeyond.com/spells/2619039-minor-illusion)  
+      1/day each: [Fly](https://www.dndbeyond.com/spells/2618909-fly), [Invisibility](https://www.dndbeyond.com/spells/2619116-invisibility), [Major Image](https://www.dndbeyond.com/spells/2619025-major-image), [Plane Shift](https://www.dndbeyond.com/spells/2618867-plane-shift)  
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Fiend, Lawful Evil*  
+    **Challenge** 13
+  subtype: npc
+  id: srd2024rakshasa
+  status: 1
+

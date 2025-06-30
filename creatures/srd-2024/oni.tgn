@@ -1,0 +1,58 @@
+creatures:
+- name: Oni
+  statblock:
+    custom_statblock: |
+      **Armor Class** 17  
+      **Hit Points** 119 (rollable(dice=14d10 + 42,dicelabel=Hit Points))  
+      **Speed** Walk 30 ft., Fly 30 ft. (hover)  
+      **Initiative:** rollable(dice=1d20+0,label=+0,dicelabel=Initiative) (10)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=19)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+4,label=+4,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=14)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20+2,label=+2,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=11)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+3,label=+3,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=12)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+4,label=+4,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=16)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+6,label=+6,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=15)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20+5,label=+5,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Skills** Arcana rollable(dice=1d20+5,label=+5,dicelabel=Arcana Check), Deception rollable(dice=1d20+8,label=+8,dicelabel=Deception Check), Perception rollable(dice=1d20+4,label=+4,dicelabel=Perception Check)  
+      **Damage Resistances** cold  
+      **Senses** darkvision 60 ft., Passive Perception 14  
+      **Languages** Common, Giant  
+      **Challenge** 7 (2,900 XP)  
+      **Proficiency Bonus** +3  
+
+      ## Traits
+
+      ***Regeneration.*** The oni regains 10 ***Hit Points*** at the start of each of its turns if it has at least 1 ***Hit Point***.
+
+      ## Actions
+
+      ***Multiattack.*** The oni makes two Claw or Nightmare Ray attacks. It can replace one attack with a use of Spellcasting.
+
+      ***Claw.*** *Melee Attack Roll* rollable(dice=1d20+7,label=+7,dicelabel=To Hit [Claw]), reach 10 ft. *Hit:* rollable(dice=1d12+4,dicelabel=Damage [Claw]) Slashing damage plus rollable(dice=2d8,dicelabel=Damage [Claw]) Necrotic damage.
+
+      ***Nightmare Ray.*** *Ranged Attack Roll* rollable(dice=1d20+5,label=+5,dicelabel=To Hit [Nightmare Ray]), range 60 ft. *Hit:* rollable(dice=2d6+2,dicelabel=Damage [Nightmare Ray]) Psychic damage, and the target has the ***Frightened*** condition until the start of the oni's next turn.
+
+      ***Shape-Shift.*** The oni shape-shifts into a Small or Medium Humanoid or a Large Giant, or it returns to its true form. Other than its size, its game statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed.
+
+      ***Spellcasting.*** The oni casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 13):
+
+      1/day each: [Charm Person](https://www.dndbeyond.com/spells/2618964-charm-person) (level 2 version), [Darkness](https://www.dndbeyond.com/spells/2619080-darkness), [Gaseous Form](https://www.dndbeyond.com/spells/2618927-gaseous-form), [Sleep](https://www.dndbeyond.com/spells/2619064-sleep)  
+
+      ***Invisibility.*** The oni casts [Invisibility](https://www.dndbeyond.com/spells/2619116-invisibility) on itself, requiring no spell components and using the same spellcasting ability as Spellcasting.
+
+      At will: [Invisibility](https://www.dndbeyond.com/spells/2619116-invisibility)  
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Fiend, Lawful Evil*  
+    **Challenge** 7
+  subtype: npc
+  id: srd2024oni
+  status: 1
+

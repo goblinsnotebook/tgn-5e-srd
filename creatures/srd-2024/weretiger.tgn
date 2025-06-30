@@ -1,0 +1,52 @@
+creatures:
+- name: Weretiger
+  statblock:
+    custom_statblock: |
+      **Armor Class** 12  
+      **Hit Points** 120 (rollable(dice=16d8 + 48,dicelabel=Hit Points))  
+      **Speed** Walk 30 ft., Walk 40 ft. (tiger form only)  
+      **Initiative:** rollable(dice=1d20+2,label=+2,dicelabel=Initiative) (12)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=17)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+3,label=+3,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=10)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20+0,label=+0,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=15)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+2,label=+2,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=13)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+1,label=+1,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=16)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+3,label=+3,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=11)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20+0,label=+0,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Skills** Perception rollable(dice=1d20+5,label=+5,dicelabel=Perception Check), Stealth rollable(dice=1d20+4,label=+4,dicelabel=Stealth Check)  
+      **Gear** longbow  
+      **Senses** darkvision 60 ft., Passive Perception 15  
+      **Languages** Common (can't speak in tiger form)  
+      **Challenge** 4 (1,100 XP)  
+      **Proficiency Bonus** +2  
+
+      ## Actions
+
+      ***Multiattack.*** The weretiger makes two attacks, using Scratch or Longbow in any combination. It can replace one attack with a Bite attack.
+
+      ***Bite (Tiger or Hybrid Form Only).*** *Melee Attack Roll* rollable(dice=1d20+5,label=+5,dicelabel=To Hit [Bite]), reach 5 ft. *Hit:* rollable(dice=2d8+3,dicelabel=Damage [Bite]) Piercing damage. If the target is a Humanoid, it is subjected to the following effect. *Constitution Saving Throw:* DC 13. *Failure:* The target is cursed. If the cursed target drops to 0 ***Hit Points***, it instead becomes a Weretiger under the DM's control and has 10 ***Hit Points***. *Success:* The target is immune to this weretiger's curse for 24 hours.
+
+      ***Scratch.*** *Melee Attack Roll* rollable(dice=1d20+5,label=+5,dicelabel=To Hit [Scratch]), reach 5 ft. *Hit:* rollable(dice=2d6+3,dicelabel=Damage [Scratch]) Slashing damage.
+
+      ***Longbow (Humanoid or Hybrid Form Only).*** *Ranged Attack Roll* rollable(dice=1d20+4,label=+4,dicelabel=To Hit [Longbow]), range 150/600 ft. *Hit:* rollable(dice=2d8+2,dicelabel=Damage [Longbow]) Piercing damage.
+
+      ## Bonus Actions
+
+      ***Prowl (Tiger or Hybrid Form Only).*** The weretiger moves up to its ***Speed*** without provoking ***Opportunity Attacks***. At the end of this movement, the weretiger can take the Hide action.
+
+      ***Shape-Shift.*** The weretiger shape-shifts into a Large tiger-humanoid hybrid or a Large tiger, or it returns to its true humanoid form. Its game statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Small Medium Monstrosity (Lycanthrope), Neutral*  
+    **Challenge** 4
+  subtype: npc
+  id: srd2024weretiger
+  status: 1
+

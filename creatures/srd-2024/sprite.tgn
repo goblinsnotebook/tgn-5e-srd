@@ -1,0 +1,47 @@
+creatures:
+- name: Sprite
+  statblock:
+    custom_statblock: |
+      **Armor Class** 15  
+      **Hit Points** 10 (rollable(dice=4d4,dicelabel=Hit Points))  
+      **Speed** Walk 10 ft., Fly 40 ft.  
+      **Initiative:** rollable(dice=1d20+4,label=+4,dicelabel=Initiative) (14)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=3)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20-4,label=-4,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=14)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20+2,label=+2,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=18)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+4,label=+4,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=13)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+1,label=+1,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=10)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+0,label=+0,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=11)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20+0,label=+0,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Skills** Perception rollable(dice=1d20+3,label=+3,dicelabel=Perception Check), Stealth rollable(dice=1d20+8,label=+8,dicelabel=Stealth Check)  
+      **Senses** Passive Perception 13  
+      **Languages** Common, Elvish, Sylvan  
+      **Challenge** 1/4 (50 XP)  
+      **Proficiency Bonus** +2  
+
+      ## Actions
+
+      ***Needle Sword.*** *Melee Attack Roll* rollable(dice=1d20+6,label=+6,dicelabel=To Hit [Needle Sword]), reach 5 ft. *Hit:* rollable(dice=1d4+4,dicelabel=Damage [Needle Sword]) Piercing damage.
+
+      ***Enchanting Bow.*** *Ranged Attack Roll* rollable(dice=1d20+6,label=+6,dicelabel=To Hit [Enchanting Bow]), range 40/160 ft. *Hit:* 1 Piercing damage, and the target has the ***Charmed*** condition until the start of the sprite's next turn.
+
+      ***Heart Sight.*** *Charisma Saving Throw:* DC 10, one creature within 5 feet the sprite can see (Celestials, Fiends, and Undead automatically fail the save). *Failure:* The sprite knows the target's emotions and alignment.
+
+      ***Invisibility.*** The sprite casts [Invisibility](https://www.dndbeyond.com/spells/2619116-invisibility) on itself, requiring no spell components and using Charisma as the spellcasting ability.
+
+      At will: [Invisibility](https://www.dndbeyond.com/spells/2619116-invisibility)  
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Tiny Fey, Neutral Good*  
+    **Challenge** 1/4
+  subtype: npc
+  id: srd2024sprite
+  status: 1
+

@@ -1,0 +1,43 @@
+creatures:
+- name: Hill Giant
+  statblock:
+    custom_statblock: |
+      **Armor Class** 13  
+      **Hit Points** 105 (rollable(dice=10d12 + 40,dicelabel=Hit Points))  
+      **Speed** 40 ft.  
+      **Initiative:** rollable(dice=1d20+2,label=+2,dicelabel=Initiative) (12)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=21)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+5,label=+5,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=5)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20-3,label=-3,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=8)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20-1,label=-1,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=9)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20-1,label=-1,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=19)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+4,label=+4,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=6)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20-2,label=-2,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Skills** Perception rollable(dice=1d20+2,label=+2,dicelabel=Perception Check)  
+      **Senses** Passive Perception 12  
+      **Languages** Giant  
+      **Challenge** 5 (1,800 XP)  
+      **Proficiency Bonus** +3  
+
+      ## Actions
+
+      ***Multiattack.*** The giant makes two attacks, using Tree Club or Trash Lob in any combination.
+
+      ***Tree Club.*** *Melee Attack Roll* rollable(dice=1d20+8,label=+8,dicelabel=To Hit [Tree Club]), reach 10 ft. *Hit:* rollable(dice=3d8+5,dicelabel=Damage [Tree Club]) Bludgeoning damage. If the target is a Large or smaller creature, it has the ***Prone*** condition.
+
+      ***Trash Lob.*** *Ranged Attack Roll* rollable(dice=1d20+8,label=+8,dicelabel=To Hit [Trash Lob]), range 60/240 ft. *Hit:* rollable(dice=2d10+5,dicelabel=Damage [Trash Lob]) Bludgeoning damage, and the target has the ***Poisoned*** condition until the end of its next turn.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Huge Giant, Chaotic Evil*  
+    **Challenge** 5
+  subtype: npc
+  id: srd2024hillgiant
+  status: 1
+

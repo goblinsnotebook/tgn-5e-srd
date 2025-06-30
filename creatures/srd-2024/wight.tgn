@@ -1,0 +1,55 @@
+creatures:
+- name: Wight
+  statblock:
+    custom_statblock: |
+      **Armor Class** 14  
+      **Hit Points** 82 (rollable(dice=11d8 + 33,dicelabel=Hit Points))  
+      **Speed** 30 ft.  
+      **Initiative:** rollable(dice=1d20+4,label=+4,dicelabel=Initiative) (14)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=15)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+2,label=+2,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=10)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20+0,label=+0,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=14)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+2,label=+2,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=13)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+1,label=+1,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=16)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+3,label=+3,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=15)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20+2,label=+2,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Skills** Perception rollable(dice=1d20+3,label=+3,dicelabel=Perception Check), Stealth rollable(dice=1d20+4,label=+4,dicelabel=Stealth Check)  
+      **Damage Resistances** necrotic  
+      **Damage Immunities** poison  
+      **Condition Immunities** exhaustion, poisoned  
+      **Gear** studded leather armor  
+      **Senses** darkvision 60 ft., Passive Perception 13  
+      **Languages** Common plus one other language  
+      **Challenge** 3 (700 XP)  
+      **Proficiency Bonus** +2  
+
+      ## Traits
+
+      ***Sunlight Sensitivity.*** While in sunlight, the wight has ***Disadvantage*** on ability checks and attack rolls.
+
+      ## Actions
+
+      ***Multiattack.*** The wight makes two attacks, using Necrotic Sword or Necrotic Bow in any combination. It can replace one attack with a use of Life Drain.
+
+      ***Necrotic Sword.*** *Melee Attack Roll* rollable(dice=1d20+4,label=+4,dicelabel=To Hit [Necrotic Sword]), reach 5 ft. *Hit:* rollable(dice=1d8+2,dicelabel=Damage [Necrotic Sword]) Slashing damage plus rollable(dice=1d8,dicelabel=Damage [Necrotic Sword]) Necrotic damage.
+
+      ***Necrotic Bow.*** *Ranged Attack Roll* rollable(dice=1d20+4,label=+4,dicelabel=To Hit [Necrotic Bow]), range 150/600 ft. *Hit:* rollable(dice=1d8+2,dicelabel=Damage [Necrotic Bow]) Piercing damage plus rollable(dice=1d8,dicelabel=Damage [Necrotic Bow]) Necrotic damage.
+
+      ***Life Drain.*** *Constitution Saving Throw:* DC 13, one creature within 5 feet. *Failure:* rollable(dice=1d8+2,dicelabel=Damage [Life Drain]) Necrotic damage, and the target's ***Hit Point*** maximum decreases by an amount equal to the damage taken.
+
+      A Humanoid slain by this attack rises 24 hours later as a *Zombie* under the wight's control, unless the Humanoid is restored to life or its body is destroyed. The wight can have no more than twelve zombies under its control at a time.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Undead, Neutral Evil*  
+    **Challenge** 3
+  subtype: npc
+  id: srd2024wight
+  status: 1
+

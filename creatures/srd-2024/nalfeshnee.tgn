@@ -1,0 +1,59 @@
+creatures:
+- name: Nalfeshnee
+  statblock:
+    custom_statblock: |
+      **Armor Class** 18  
+      **Hit Points** 184 (rollable(dice=16d10 + 96,dicelabel=Hit Points))  
+      **Speed** Walk 20 ft., Fly 30 ft.  
+      **Initiative:** rollable(dice=1d20+5,label=+5,dicelabel=Initiative) (15)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=21)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+5,label=+5,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=19)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20+9,label=+9,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=10)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+0,label=+0,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=12)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+6,label=+6,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=22)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+11,label=+11,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=15)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20+7,label=+7,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Damage Resistances** cold, fire, lightning  
+      **Damage Immunities** poison  
+      **Condition Immunities** frightened, poisoned  
+      **Senses** truesight 120 ft., Passive Perception 11  
+      **Languages** Abyssal; telepathy 120 ft.  
+      **Challenge** 13 (10,000 XP)  
+      **Proficiency Bonus** +5  
+
+      ## Traits
+
+      ***Demonic Restoration.*** If the nalfeshnee dies outside the Abyss, its body dissolves into ichor, and it gains a new body instantly, reviving with all its ***Hit Points*** somewhere in the Abyss.
+
+      ***Magic Resistance.*** The nalfeshnee has ***Advantage*** on saving throws against spells and other magical effects.
+
+      ## Actions
+
+      ***Multiattack.*** The nalfeshnee makes three Rend attacks.
+
+      ***Rend.*** *Melee Attack Roll* rollable(dice=1d20+10,label=+10,dicelabel=To Hit [Rend]), reach 10 ft. *Hit:* rollable(dice=2d10+5,dicelabel=Damage [Rend]) Slashing damage plus rollable(dice=2d10,dicelabel=Damage [Rend]) Force damage.
+
+      ***Teleport.*** The nalfeshnee teleports up to 120 feet to an unoccupied space it can see.
+
+      ## Bonus Actions
+
+      ***Horror Nimbus (rollable(dice=1d6,label=Recharge 5-6,dicelabel=Recharge [Horror Nimbus])).*** *Wisdom Saving Throw:* DC 15, each creature in a 15-foot ***Emanation*** originating from the nalfeshnee. *Failure:* rollable(dice=8d6,dicelabel=Damage [Horror Nimbus]) Psychic damage, and the target has the ***Frightened*** condition for 1 minute, until it takes damage, or until it ends its turn with the nalfeshnee out of line of sight. *Success:* The target is immune to this nalfeshnee's Horror Nimbus for 24 hours.
+
+      ## Reactions
+
+      ***Pursuit.*** *Trigger:* Another creature the nalfeshnee can see ends its move within 120 feet of the nalfeshnee. *Response:* The nalfeshnee uses Teleport, but its destination space must be within 10 feet of the triggering creature.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Fiend (Demon), Chaotic Evil*  
+    **Challenge** 13
+  subtype: npc
+  id: srd2024nalfeshnee
+  status: 1
+

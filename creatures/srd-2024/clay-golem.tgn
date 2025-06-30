@@ -1,0 +1,57 @@
+creatures:
+- name: Clay Golem
+  statblock:
+    custom_statblock: |
+      **Armor Class** 14  
+      **Hit Points** 123 (rollable(dice=13d10 + 52,dicelabel=Hit Points))  
+      **Speed** 20 ft.  
+      **Initiative:** rollable(dice=1d20+3,label=+3,dicelabel=Initiative) (13)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=20)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+5,label=+5,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=3)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20-4,label=-4,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=9)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20-1,label=-1,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=8)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20-1,label=-1,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=18)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+4,label=+4,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=1)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20-5,label=-5,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Damage Resistances** bludgeoning, piercing, slashing  
+      **Damage Immunities** acid, poison, psychic  
+      **Condition Immunities** charmed, exhaustion, frightened, paralyzed, petrified, poisoned  
+      **Senses** darkvision 60 ft., Passive Perception 9  
+      **Languages** Common plus one other language  
+      **Challenge** 9 (5,000 XP)  
+      **Proficiency Bonus** +4  
+
+      ## Traits
+
+      ***Acid Absorption.*** Whenever the golem is subjected to Acid damage, it takes no damage and instead regains a number of ***Hit Points*** equal to the Acid damage dealt.
+
+      ***Berserk.*** Whenever the golem starts its turn ***Bloodied***, roll rollable(dice=1d6,dicelabel=Berserk). On a 6, the golem goes berserk. On each of its turns while berserk, the golem attacks the nearest creature it can see. If no creature is near enough to move to and attack, the golem attacks an object. Once the golem goes berserk, it continues to be berserk until it is destroyed or it is no longer ***Bloodied***.
+
+      ***Immutable Form.*** The golem can't shape-shift.
+
+      ***Magic Resistance.*** The golem has ***Advantage*** on saving throws against spells and other magical effects.
+
+      ## Actions
+
+      ***Multiattack.*** The golem makes two Slam attacks, or it makes three Slam attacks if it used Hasten this turn.
+
+      ***Slam.*** *Melee Attack Roll* rollable(dice=1d20+9,label=+9,dicelabel=To Hit [Slam]), reach 5 ft. *Hit:* rollable(dice=1d10+5,dicelabel=Damage [Slam]) Bludgeoning damage plus rollable(dice=1d12,dicelabel=Damage [Slam]) Acid damage, and the target's ***Hit Point*** maximum decreases by an amount equal to the Acid damage taken.
+
+      ## Bonus Actions
+
+      ***Hasten (rollable(dice=1d6,label=Recharge 5-6,dicelabel=Recharge [Hasten])).*** The golem takes the Dash and Disengage actions.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Construct, Unaligned*  
+    **Challenge** 9
+  subtype: npc
+  id: srd2024claygolem
+  status: 1
+

@@ -1,0 +1,47 @@
+creatures:
+- name: Giant Spider
+  statblock:
+    custom_statblock: |
+      **Armor Class** 14  
+      **Hit Points** 26 (rollable(dice=4d10 + 4,dicelabel=Hit Points))  
+      **Speed** Walk 30 ft., Climb 30 ft.  
+      **Initiative:** rollable(dice=1d20+3,label=+3,dicelabel=Initiative) (13)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=14)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+2,label=+2,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=2)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20-4,label=-4,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=16)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+3,label=+3,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=11)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+0,label=+0,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=12)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+1,label=+1,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=4)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20-3,label=-3,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Skills** Perception rollable(dice=1d20+4,label=+4,dicelabel=Perception Check), Stealth rollable(dice=1d20+7,label=+7,dicelabel=Stealth Check)  
+      **Senses** darkvision 60 ft., Passive Perception 14  
+      **Languages** -  
+      **Challenge** 1 (200 XP)  
+      **Proficiency Bonus** +2  
+
+      ## Traits
+
+      ***Spider Climb.*** The spider can climb difficult surfaces, including along ceilings, without needing to make an ability check.
+
+      ***Web Walker.*** The spider ignores movement restrictions caused by webs, and it knows the location of any other creature in contact with the same web.
+
+      ## Actions
+
+      ***Bite.*** *Melee Attack Roll* rollable(dice=1d20+5,label=+5,dicelabel=To Hit [Bite]), reach 5 ft. *Hit:* rollable(dice=1d8+3,dicelabel=Damage [Bite]) Piercing damage plus rollable(dice=2d6,dicelabel=Damage [Bite]) Poison damage.
+
+      ***Web (rollable(dice=1d6,label=Recharge 5-6,dicelabel=Recharge [Web])).*** *Dexterity Saving Throw:* DC 13, one creature the spider can see within 60 feet. *Failure:* The target has the ***Restrained*** condition until the web is destroyed (AC 10; HP 5; ***Vulnerability*** to Fire damage; ***Immunity*** to Poison and Psychic damage).
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Beast, Unaligned*  
+    **Challenge** 1
+  subtype: npc
+  id: srd2024giantspider
+  status: 1
+

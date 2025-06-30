@@ -1,0 +1,54 @@
+creatures:
+- name: Iron Golem
+  statblock:
+    custom_statblock: |
+      **Armor Class** 20  
+      **Hit Points** 252 (rollable(dice=24d10 + 120,dicelabel=Hit Points))  
+      **Speed** 30 ft.  
+      **Initiative:** rollable(dice=1d20+9,label=+9,dicelabel=Initiative) (19)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=24)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+7,label=+7,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=3)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20-4,label=-4,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=9)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20-1,label=-1,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=11)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+0,label=+0,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=20)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+5,label=+5,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=1)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20-5,label=-5,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Damage Immunities** fire, poison, psychic  
+      **Condition Immunities** charmed, exhaustion, frightened, paralyzed, petrified, poisoned  
+      **Senses** darkvision 120 ft., Passive Perception 10  
+      **Languages** understands Common plus two other languages but can't speak  
+      **Challenge** 16 (15,000 XP)  
+      **Proficiency Bonus** +5  
+
+      ## Traits
+
+      ***Fire Absorption.*** Whenever the golem is subjected to Fire damage, it regains a number of ***Hit Points*** equal to the Fire damage dealt.
+
+      ***Immutable Form.*** The golem can't shape-shift.
+
+      ***Magic Resistance.*** The golem has ***Advantage*** on saving throws against spells and other magical effects.
+
+      ## Actions
+
+      ***Multiattack.*** The golem makes two attacks, using Bladed Arm or Fiery Bolt in any combination.
+
+      ***Bladed Arm.*** *Melee Attack Roll* rollable(dice=1d20+12,label=+12,dicelabel=To Hit [Bladed Arm]), reach 10 ft. *Hit:* rollable(dice=3d8+7,dicelabel=Damage [Bladed Arm]) Slashing damage plus rollable(dice=3d6,dicelabel=Damage [Bladed Arm]) Fire damage.
+
+      ***Fiery Bolt.*** *Ranged Attack Roll* rollable(dice=1d20+10,label=+10,dicelabel=To Hit [Fiery Bolt]), range 120 ft. *Hit:* rollable(dice=8d8,dicelabel=Damage [Fiery Bolt]) Fire damage.
+
+      ***Poison Breath (rollable(dice=1d6,label=Recharge 6,dicelabel=Recharge [Poison Breath])).*** *Constitution Saving Throw:* DC 18, each creature in a 60-foot ***Cone***. *Failure:* rollable(dice=10d10,dicelabel=Damage [Poison Breath]) Poison damage. *Success:* Half damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Construct, Unaligned*  
+    **Challenge** 16
+  subtype: npc
+  id: srd2024irongolem
+  status: 1
+

@@ -1,0 +1,53 @@
+creatures:
+- name: Gibbering Mouther
+  statblock:
+    custom_statblock: |
+      **Armor Class** 9  
+      **Hit Points** 52 (rollable(dice=7d8 + 21,dicelabel=Hit Points))  
+      **Speed** Walk 20 ft., Swim 20 ft.  
+      **Initiative:** rollable(dice=1d20-1,label=-1,dicelabel=Initiative) (9)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=10)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+0,label=+0,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=3)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20-4,label=-4,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=8)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20-1,label=-1,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=10)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+0,label=+0,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=16)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+3,label=+3,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=6)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20-2,label=-2,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Condition Immunities** prone  
+      **Senses** darkvision 60 ft., Passive Perception 10  
+      **Languages** -  
+      **Challenge** 2 (450 XP)  
+      **Proficiency Bonus** +2  
+
+      ## Traits
+
+      ***Aberrant Ground.*** The ground in a 10-foot ***Emanation*** originating from the mouther is ***Difficult Terrain***.
+
+      ***Gibbering.*** The mouther babbles incoherently while it doesn't have the ***Incapacitated*** condition. *Wisdom Saving Throw:* DC 10, any creature that starts its turn within 20 feet of the mouther while it is babbling. *Failure:* The target rolls rollable(dice=1d8,dicelabel=Gibbering) to determine what it does during the current turn:
+
+      > ***1-4.*** The target does nothing.
+      >
+      > ***5-6.*** The target takes no action or ***Bonus Action*** and uses all its movement to move in a random direction.
+      >
+      > ***7-8.*** The target makes a melee attack against a randomly determined creature within its reach or does nothing if it can't make such an attack.
+
+      ## Actions
+
+      ***Bite.*** *Melee Attack Roll* rollable(dice=1d20+2,label=+2,dicelabel=To Hit [Bite]), reach 5 ft. *Hit:* rollable(dice=2d6,dicelabel=Damage [Bite]) Piercing damage. If the target is a Medium or smaller creature, it has the ***Prone*** condition. The target dies if it is reduced to 0 ***Hit Points*** by this attack. Its body is then absorbed into the mouther, leaving only equipment behind.
+
+      ***Blinding Spittle (rollable(dice=1d6,label=Recharge 5-6,dicelabel=Recharge [Blinding Spittle])).*** *Dexterity Saving Throw:* DC 10, each creature in a 10-foot-radius ***Sphere*** centered on a point within 30 feet. *Failure:* rollable(dice=2d6,dicelabel=Damage [Blinding Spittle]) Radiant damage, and the target has the ***Blinded*** condition until the end of the mouther's next turn.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Aberration, Chaotic Neutral*  
+    **Challenge** 2
+  subtype: npc
+  id: srd2024gibberingmouther
+  status: 1
+

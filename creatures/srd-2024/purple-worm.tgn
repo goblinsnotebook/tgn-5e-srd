@@ -1,0 +1,52 @@
+creatures:
+- name: Purple Worm
+  statblock:
+    custom_statblock: |
+      **Armor Class** 18  
+      **Hit Points** 247 (rollable(dice=15d20 + 90,dicelabel=Hit Points))  
+      **Speed** Walk 50 ft., Burrow 50 ft.  
+      **Initiative:** rollable(dice=1d20+3,label=+3,dicelabel=Initiative) (13)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=28)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+9,label=+9,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=1)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20-5,label=-5,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=7)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20-2,label=-2,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=8)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+4,label=+4,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=22)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+11,label=+11,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=4)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20-3,label=-3,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Senses** blindsight 30 ft., tremorsense 60 ft., Passive Perception 9  
+      **Languages** -  
+      **Challenge** 15 (13,000 XP)  
+      **Proficiency Bonus** +5  
+
+      ## Traits
+
+      ***Tunneler.*** The worm can burrow through solid rock at half its ***Burrow Speed*** and leaves a 10-foot-diameter tunnel in its wake.
+
+      ## Actions
+
+      ***Multiattack.*** The worm makes one Bite attack and one Tail Stinger attack.
+
+      ***Bite.*** *Melee Attack Roll* rollable(dice=1d20+14,label=+14,dicelabel=To Hit [Bite]), reach 10 ft. *Hit:* rollable(dice=3d8+9,dicelabel=Damage [Bite]) Piercing damage. If the target is a Large or smaller creature, it has the ***Grappled*** condition (escape DC 19), and it has the ***Restrained*** condition until the grapple ends.
+
+      ***Tail Stinger.*** *Melee Attack Roll* rollable(dice=1d20+14,label=+14,dicelabel=To Hit [Tail Stinger]), reach 10 ft. *Hit:* rollable(dice=2d6+9,dicelabel=Damage [Tail Stinger]) Piercing damage plus rollable(dice=10d6,dicelabel=Damage [Tail Stinger]) Poison damage.
+
+      ## Bonus Actions
+
+      ***Swallow.*** *Strength Saving Throw:* DC 19, one Large or smaller creature ***Grappled*** by the worm (it can have up to three creatures swallowed at a time). *Failure:* The target is swallowed by the worm, and the ***Grappled*** condition ends. A swallowed creature has the ***Blinded*** and ***Restrained*** conditions, has ***Total Cover*** against attacks and other effects outside the worm, and takes rollable(dice=5d6,dicelabel=Damage [Swallow]) Acid damage at the start of each of the worm's turns.
+
+      If the worm takes 30 damage or more on a single turn from a creature inside it, the worm must succeed on a DC 21 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, each of which falls in a space within 5 feet of the worm and has the ***Prone*** condition. If the worm dies, any swallowed creature no longer has the ***Restrained*** condition and can escape from the corpse using 20 feet of movement, exiting ***Prone***.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Gargantuan Monstrosity, Unaligned*  
+    **Challenge** 15
+  subtype: npc
+  id: srd2024purpleworm
+  status: 1
+

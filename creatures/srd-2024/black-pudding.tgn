@@ -1,0 +1,54 @@
+creatures:
+- name: Black Pudding
+  statblock:
+    custom_statblock: |
+      **Armor Class** 7  
+      **Hit Points** 68 (rollable(dice=8d10 + 24,dicelabel=Hit Points))  
+      **Speed** Walk 20 ft., Climb 20 ft.  
+      **Initiative:** rollable(dice=1d20-3,label=-3,dicelabel=Initiative) (7)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=16)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+3,label=+3,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=1)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20-5,label=-5,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=5)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20-3,label=-3,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=6)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20-2,label=-2,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=16)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+3,label=+3,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=1)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20-5,label=-5,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Damage Immunities** acid, cold, lightning, slashing  
+      **Condition Immunities** charmed, deafened, exhaustion, frightened, grappled, prone, restrained  
+      **Senses** blindsight 60 ft., Passive Perception 8  
+      **Languages** -  
+      **Challenge** 4 (1,100 XP)  
+      **Proficiency Bonus** +2  
+
+      ## Traits
+
+      ***Amorphous.*** The pudding can move through a space as narrow as 1 inch without expending extra movement to do so.
+
+      ***Corrosive Form.*** A creature that hits the pudding with a melee attack roll takes rollable(dice=1d8,dicelabel=Damage [Corrosive Form]) Acid damage. Nonmagical ammunition is destroyed immediately after hitting the pudding and dealing any damage. Any nonmagical weapon takes a cumulative -1 penalty to attack rolls immediately after dealing damage to the pudding and coming into contact with it. The weapon is destroyed if the penalty reaches -5. The penalty can be removed by casting the [Mending](https://www.dndbeyond.com/spells/2619033-mending) spell on the weapon.
+
+      In 1 minute, the pudding can eat through 2 feet of nonmagical wood or metal.
+
+      ***Spider Climb.*** The pudding can climb difficult surfaces, including along ceilings, without needing to make an ability check.
+
+      ## Actions
+
+      ***Dissolving Pseudopod.*** *Melee Attack Roll* rollable(dice=1d20+5,label=+5,dicelabel=To Hit [Dissolving Pseudopod]), reach 10 ft. *Hit:* rollable(dice=4d6+3,dicelabel=Damage [Dissolving Pseudopod]) Acid damage. Nonmagical armor worn by the target takes a -1 penalty to the AC it offers. The armor is destroyed if the penalty reduces its AC to 10. The penalty can be removed by casting the [Mending](https://www.dndbeyond.com/spells/2619033-mending) spell on the armor.
+
+      ## Reactions
+
+      ***Split.*** *Trigger:* While the pudding is Large or Medium and has 10+ ***Hit Points***, it becomes ***Bloodied*** or is subjected to Lightning or Slashing damage. *Response:* The pudding splits into two new Black Puddings. Each new pudding is one size smaller than the original pudding and acts on its ***Initiative***. The original pudding's ***Hit Points*** are divided evenly between the new puddings (round down).
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Ooze, Unaligned*  
+    **Challenge** 4
+  subtype: npc
+  id: srd2024blackpudding
+  status: 1
+

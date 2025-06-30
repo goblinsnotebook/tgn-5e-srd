@@ -1,0 +1,51 @@
+creatures:
+- name: Mimic
+  statblock:
+    custom_statblock: |
+      **Armor Class** 12  
+      **Hit Points** 58 (rollable(dice=9d8 + 18,dicelabel=Hit Points))  
+      **Speed** 20 ft.  
+      **Initiative:** rollable(dice=1d20+3,label=+3,dicelabel=Initiative) (13)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=17)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+3,label=+3,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=5)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20-3,label=-3,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=12)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+1,label=+1,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=13)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+1,label=+1,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=15)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+2,label=+2,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=8)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20-1,label=-1,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Skills** Stealth rollable(dice=1d20+5,label=+5,dicelabel=Stealth Check)  
+      **Damage Immunities** acid  
+      **Condition Immunities** prone  
+      **Senses** darkvision 60 ft., Passive Perception 11  
+      **Languages** -  
+      **Challenge** 2 (450 XP)  
+      **Proficiency Bonus** +2  
+
+      ## Traits
+
+      ***Adhesive (Object Form Only).*** The mimic adheres to anything that touches it. A Huge or smaller creature adhered to the mimic has the ***Grappled*** condition (escape DC 13). Ability checks made to escape this grapple have ***Disadvantage***.
+
+      ## Actions
+
+      ***Bite.*** *Melee Attack Roll* rollable(dice=1d20+5,label=+5,dicelabel=To Hit [Bite]) (with ***Advantage*** if the target is ***Grappled*** by the mimic), reach 5 ft. *Hit:* rollable(dice=1d8+3,dicelabel=Damage [Bite]) Piercing damage—or rollable(dice=2d8+3,dicelabel=Damage [Bite]) Piercing damage if the target is ***Grappled*** by the mimic—plus rollable(dice=1d8,dicelabel=Damage [Bite]) Acid damage.
+
+      ***Pseudopod.*** *Melee Attack Roll* rollable(dice=1d20+5,label=+5,dicelabel=To Hit [Pseudopod]), reach 5 ft. *Hit:* rollable(dice=1d8+3,dicelabel=Damage [Pseudopod]) Bludgeoning damage plus rollable(dice=1d8,dicelabel=Damage [Pseudopod]) Acid damage. If the target is a Large or smaller creature, it has the ***Grappled*** condition (escape DC 13). Ability checks made to escape this grapple have ***Disadvantage***.
+
+      ## Bonus Actions
+
+      ***Shape-Shift.*** The mimic shape-shifts to resemble a Medium or Small object while retaining its game statistics, or it returns to its true blob form. Any equipment it is wearing or carrying isn't transformed.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Monstrosity, Neutral*  
+    **Challenge** 2
+  subtype: npc
+  id: srd2024mimic
+  status: 1
+

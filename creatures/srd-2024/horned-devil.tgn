@@ -1,0 +1,52 @@
+creatures:
+- name: Horned Devil
+  statblock:
+    custom_statblock: |
+      **Armor Class** 18  
+      **Hit Points** 199 (rollable(dice=19d10 + 95,dicelabel=Hit Points))  
+      **Speed** Walk 30 ft., Fly 60 ft.  
+      **Initiative:** rollable(dice=1d20+7,label=+7,dicelabel=Initiative) (17)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=22)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+10,label=+10,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=12)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20+1,label=+1,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=17)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+7,label=+7,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=16)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+7,label=+7,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=21)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+5,label=+5,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=18)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20+8,label=+8,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Damage Immunities** fire, poison  
+      **Condition Immunities** poisoned  
+      **Senses** darkvision 150 ft. (unimpeded by magical ***Darkness***), Passive Perception 13  
+      **Languages** Infernal; telepathy 120 ft.  
+      **Challenge** 11 (7,200 XP)  
+      **Proficiency Bonus** +4  
+
+      ## Traits
+
+      ***Diabolical Restoration.*** If the devil dies outside the Nine Hells, its body disappears in sulfurous smoke, and it gains a new body instantly, reviving with all its ***Hit Points*** somewhere in the Nine Hells.
+
+      ***Magic Resistance.*** The devil has ***Advantage*** on saving throws against spells and other magical effects.
+
+      ## Actions
+
+      ***Multiattack.*** The devil makes three attacks, using Searing Fork or Hurl Flame in any combination. It can replace one attack with a use of Infernal Tail.
+
+      ***Searing Fork.*** *Melee Attack Roll* rollable(dice=1d20+10,label=+10,dicelabel=To Hit [Searing Fork]), reach 10 ft. *Hit:* rollable(dice=2d8+6,dicelabel=Damage [Searing Fork]) Piercing damage plus rollable(dice=2d8,dicelabel=Damage [Searing Fork]) Fire damage.
+
+      ***Hurl Flame.*** *Ranged Attack Roll* rollable(dice=1d20+8,label=+8,dicelabel=To Hit [Hurl Flame]), range 150 ft. *Hit:* rollable(dice=5d8+4,dicelabel=Damage [Hurl Flame]) Fire damage. If the target is a flammable object that isn't being worn or carried, it starts ***burning***.
+
+      ***Infernal Tail.*** *Dexterity Saving Throw:* DC 17, one creature the devil can see within 10 feet. *Failure:* rollable(dice=1d8+6,dicelabel=Damage [Infernal Tail]) Necrotic damage, and the target receives an infernal wound if it doesn't have one. While wounded, the target loses 10 (rollable(dice=3d6,dicelabel=Infernal Tail)) ***Hit Points*** at the start of each of its turns. The wound closes after 1 minute, after a spell restores ***Hit Points*** to the target, or after the target or a creature within 5 feet of it takes an action to stanch the wound, doing so by succeeding on a DC 17 Wisdom (***Medicine***) check.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Fiend (Devil), Lawful Evil*  
+    **Challenge** 11
+  subtype: npc
+  id: srd2024horneddevil
+  status: 1
+

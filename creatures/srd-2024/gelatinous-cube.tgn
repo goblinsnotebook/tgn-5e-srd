@@ -1,0 +1,52 @@
+creatures:
+- name: Gelatinous Cube
+  statblock:
+    custom_statblock: |
+      **Armor Class** 6  
+      **Hit Points** 63 (rollable(dice=6d10 + 30,dicelabel=Hit Points))  
+      **Speed** 15 ft.  
+      **Initiative:** rollable(dice=1d20-4,label=-4,dicelabel=Initiative) (6)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=14)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+2,label=+2,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=1)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20-5,label=-5,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=3)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20-4,label=-4,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=6)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20-2,label=-2,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=20)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+5,label=+5,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=1)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20-5,label=-5,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Damage Immunities** acid  
+      **Condition Immunities** blinded, charmed, deafened, exhaustion, frightened, prone  
+      **Senses** blindsight 60 ft., Passive Perception 8  
+      **Languages** -  
+      **Challenge** 2 (450 XP)  
+      **Proficiency Bonus** +2  
+
+      ## Traits
+
+      ***Ooze Cube.*** The cube fills its entire space and is transparent. Other creatures can enter that space, but a creature that does so is subjected to the cube's Engulf and has ***Disadvantage*** on the saving throw.
+
+      Creatures inside the cube have ***Total Cover***, and the cube can hold one Large creature or up to four Medium or Small creatures inside itself at a time.
+
+      As an action, a creature within 5 feet of the cube can pull a creature or an object out of the cube by succeeding on a DC 12 Strength (***Athletics***) check, and the puller takes rollable(dice=3d6,dicelabel=Damage [Ooze Cube]) Acid damage.
+
+      ***Transparent.*** Even when the cube is in plain sight, a creature must succeed on a DC 15 Wisdom (***Perception***) check to notice the cube if the creature hasn't witnessed the cube move or otherwise act.
+
+      ## Actions
+
+      ***Pseudopod.*** *Melee Attack Roll* rollable(dice=1d20+4,label=+4,dicelabel=To Hit [Pseudopod]), reach 5 ft. *Hit:* rollable(dice=3d6+2,dicelabel=Damage [Pseudopod]) Acid damage.
+
+      ***Engulf.*** The cube moves up to its ***Speed*** without provoking ***Opportunity Attacks***. The cube can move through the spaces of Large or smaller creatures if it has room inside itself to contain them (see the Ooze ***Cube*** trait). *Dexterity Saving Throw:* DC 12, each creature whose space the cube enters for the first time during this move. *Failure:* rollable(dice=3d6,dicelabel=Damage [Engulf]) Acid damage, and the target is engulfed. An engulfed target is suffocating, can't cast spells with a Verbal component, has the ***Restrained*** condition, and takes rollable(dice=3d6,dicelabel=Damage [Engulf]) Acid damage at the start of each of the cube's turns. When the cube moves, the engulfed target moves with it. An engulfed target can try to escape by taking an action to make a DC 12 Strength (***Athletics***) check. On a successful check, the target escapes and enters the nearest unoccupied space. *Success:* Half damage, and the target moves to an unoccupied space within 5 feet of the cube. If there is no unoccupied space, the target fails the save instead.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Ooze, Unaligned*  
+    **Challenge** 2
+  subtype: npc
+  id: srd2024gelatinouscube
+  status: 1
+

@@ -1,0 +1,43 @@
+creatures:
+- name: Berserker
+  statblock:
+    custom_statblock: |
+      **Armor Class** 13  
+      **Hit Points** 67 (rollable(dice=9d8 + 27,dicelabel=Hit Points))  
+      **Speed** 30 ft.  
+      **Initiative:** rollable(dice=1d20+1,label=+1,dicelabel=Initiative) (11)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=16)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+3,label=+3,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=9)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20-1,label=-1,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=12)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+1,label=+1,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=11)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+0,label=+0,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=17)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+3,label=+3,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=9)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20-1,label=-1,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Gear** greataxe, hide armor  
+      **Senses** Passive Perception 10  
+      **Languages** Common  
+      **Challenge** 2 (450 XP)  
+      **Proficiency Bonus** +2  
+
+      ## Traits
+
+      ***Bloodied Frenzy.*** While ***Bloodied***, the berserker has ***Advantage*** on attack rolls and saving throws.
+
+      ## Actions
+
+      ***Greataxe.*** *Melee Attack Roll* rollable(dice=1d20+5,label=+5,dicelabel=To Hit [Greataxe]), reach 5 ft. *Hit:* rollable(dice=1d12+3,dicelabel=Damage [Greataxe]) Slashing damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Small Medium Humanoid, Neutral*  
+    **Challenge** 2
+  subtype: npc
+  id: srd2024berserker
+  status: 1
+

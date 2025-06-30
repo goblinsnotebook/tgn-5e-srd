@@ -1,0 +1,66 @@
+creatures:
+- name: Ancient Green Dragon
+  statblock:
+    custom_statblock: |
+      **Armor Class** 21  
+      **Hit Points** 402 (rollable(dice=23d20 + 161,dicelabel=Hit Points))  
+      **Speed** Walk 40 ft., Fly 80 ft., Swim 40 ft.  
+      **Initiative:** rollable(dice=1d20+15,label=+15,dicelabel=Initiative) (25)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=27)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+8,label=+8,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=20)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20+5,label=+5,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=12)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+8,label=+8,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=17)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+10,label=+10,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=25)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+7,label=+7,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=22)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20+6,label=+6,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Skills** Deception rollable(dice=1d20+13,label=+13,dicelabel=Deception Check), Perception rollable(dice=1d20+17,label=+17,dicelabel=Perception Check), Persuasion rollable(dice=1d20+13,label=+13,dicelabel=Persuasion Check), Stealth rollable(dice=1d20+8,label=+8,dicelabel=Stealth Check)  
+      **Damage Immunities** poison  
+      **Condition Immunities** poisoned  
+      **Senses** blindsight 60 ft., darkvision 120 ft., Passive Perception 27  
+      **Languages** Common, Draconic  
+      **Challenge** 22 (41,000 XP)  
+      **Proficiency Bonus** +7  
+
+      ## Traits
+
+      ***Amphibious.*** The dragon can breathe air and water.
+
+      ***Legendary Resistance (4/Day, or 5/Day in Lair).*** If the dragon fails a saving throw, it can choose to succeed instead.
+
+      ## Actions
+
+      ***Multiattack.*** The dragon makes three Rend attacks. It can replace one attack with a use of Spellcasting to cast [Mind Spike](https://www.dndbeyond.com/spells/2619038-mind-spike) (level 5 version).
+
+      ***Rend.*** *Melee Attack Roll* rollable(dice=1d20+15,label=+15,dicelabel=To Hit [Rend]), reach 15 ft. *Hit:* rollable(dice=2d8+8,dicelabel=Damage [Rend]) Slashing damage plus rollable(dice=3d6,dicelabel=Damage [Rend]) Poison damage.
+
+      ***Poison Breath (rollable(dice=1d6,label=Recharge 5-6,dicelabel=Recharge [Poison Breath])).*** *Constitution Saving Throw:* DC 22, each creature in a 90-foot ***Cone***. *Failure:* rollable(dice=22d6,dicelabel=Damage [Poison Breath]) Poison damage. *Success:* Half damage.
+
+      ***Spellcasting.*** The dragon casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 21):
+
+      At will: [Detect Magic](https://www.dndbeyond.com/spells/2619097-detect-magic), [Mind Spike](https://www.dndbeyond.com/spells/2619038-mind-spike) (level 5 version)  
+      1/day each: [Geas](https://www.dndbeyond.com/spells/2618940-geas), [Modify Memory](https://www.dndbeyond.com/spells/2619109-modify-memory)  
+
+      ## Legendary Actions
+
+      *Legendary Action Uses: 3 (4 in Lair). Immediately after another creature's turn, The Ancient Green Dragon can expend a use to take one of the following actions. The Ancient Green Dragon regains all expended uses at the start of each of its turns.*
+
+      ***Mind Invasion.*** The dragon uses Spellcasting to cast [Mind Spike](https://www.dndbeyond.com/spells/2619038-mind-spike) (level 5 version).
+
+      ***Noxious Miasma.*** *Constitution Saving Throw:* DC 21, each creature in a 30-foot-radius ***Sphere*** centered on a point the dragon can see within 90 feet. *Failure:* rollable(dice=5d6,dicelabel=Damage [Noxious Miasma]) Poison damage, and the target takes a -2 penalty to AC until the end of its next turn. *Failure or Success:* The dragon can't take this action again until the start of its next turn.
+
+      ***Pounce.*** The dragon moves up to half its ***Speed***, and it makes one Rend attack.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Gargantuan Dragon (Chromatic), Lawful Evil*  
+    **Challenge** 22
+  subtype: npc
+  id: srd2024ancientgreendragon
+  status: 1
+

@@ -1,0 +1,54 @@
+creatures:
+- name: Sahuagin Warrior
+  statblock:
+    custom_statblock: |
+      **Armor Class** 12  
+      **Hit Points** 22 (rollable(dice=4d8 + 4,dicelabel=Hit Points))  
+      **Speed** Walk 30 ft., Swim 40 ft.  
+      **Initiative:** rollable(dice=1d20+0,label=+0,dicelabel=Initiative) (10)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=13)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+1,label=+1,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=12)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20+1,label=+1,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=11)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+0,label=+0,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=13)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+1,label=+1,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=12)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+1,label=+1,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=9)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20-1,label=-1,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Skills** Perception rollable(dice=1d20+5,label=+5,dicelabel=Perception Check)  
+      **Damage Resistances** acid, cold  
+      **Senses** darkvision 120 ft., Passive Perception 15  
+      **Languages** Sahuagin  
+      **Challenge** 1/2 (100 XP)  
+      **Proficiency Bonus** +2  
+
+      ## Traits
+
+      ***Blood Frenzy.*** The sahuagin has ***Advantage*** on attack rolls against any creature that doesn't have all its ***Hit Points***.
+
+      ***Limited Amphibiousness.*** The sahuagin can breathe air and water, but it must be submerged at least once every 4 hours to avoid suffocating outside water.
+
+      ***Shark Telepathy.*** The sahuagin can magically control sharks within 120 feet of itself, using a special telepathy.
+
+      ## Actions
+
+      ***Multiattack.*** The sahuagin makes two Claw attacks.
+
+      ***Claw.*** *Melee Attack Roll* rollable(dice=1d20+3,label=+3,dicelabel=To Hit [Claw]), reach 5 ft. *Hit:* rollable(dice=1d6+1,dicelabel=Damage [Claw]) Slashing damage.
+
+      ## Bonus Actions
+
+      ***Aquatic Charge.*** The sahuagin swims up to its ***Swim Speed*** straight toward an enemy it can see.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Fiend, Lawful Evil*  
+    **Challenge** 1/2
+  subtype: npc
+  id: srd2024sahuaginwarrior
+  status: 1
+

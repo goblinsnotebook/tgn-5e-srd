@@ -1,0 +1,47 @@
+creatures:
+- name: Swarm of Ravens
+  statblock:
+    custom_statblock: |
+      **Armor Class** 12  
+      **Hit Points** 11 (rollable(dice=2d8 + 2,dicelabel=Hit Points))  
+      **Speed** Walk 10 ft., Fly 50 ft.  
+      **Initiative:** rollable(dice=1d20+2,label=+2,dicelabel=Initiative) (12)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=6)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20-2,label=-2,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=5)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20-3,label=-3,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=14)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+2,label=+2,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=12)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+1,label=+1,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=12)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+1,label=+1,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=6)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20-2,label=-2,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Skills** Perception rollable(dice=1d20+5,label=+5,dicelabel=Perception Check)  
+      **Damage Resistances** bludgeoning, piercing, slashing  
+      **Condition Immunities** charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned  
+      **Senses** Passive Perception 15  
+      **Languages** -  
+      **Challenge** 1/4 (50 XP)  
+      **Proficiency Bonus** +2  
+
+      ## Traits
+
+      ***Swarm.*** The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny raven. The swarm can't regain ***Hit Points*** or gain ***Temporary Hit Points***.
+
+      ## Actions
+
+      ***Beaks.*** *Melee Attack Roll* rollable(dice=1d20+4,label=+4,dicelabel=To Hit [Beaks]), reach 5 ft. *Hit:* rollable(dice=1d6+2,dicelabel=Damage [Beaks]) Piercing damage, or rollable(dice=1d4,dicelabel=Damage [Beaks]) Piercing damage if the swarm is ***Bloodied***.
+
+      ***Cacophony (rollable(dice=1d6,label=Recharge 6,dicelabel=Recharge [Cacophony])).*** *Wisdom Saving Throw:* DC 10, one creature in the swarm's space. *Failure:* The target has the ***Deafened*** condition until the start of the swarm's next turn. While ***Deafened***, the target also has ***Disadvantage*** on ability checks and attack rolls.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Beast, Unaligned*  
+    **Challenge** 1/4
+  subtype: npc
+  id: srd2024swarmofravens
+  status: 1
+

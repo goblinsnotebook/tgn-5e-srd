@@ -1,0 +1,56 @@
+creatures:
+- name: Barbed Devil
+  statblock:
+    custom_statblock: |
+      **Armor Class** 15  
+      **Hit Points** 110 (rollable(dice=13d8 + 52,dicelabel=Hit Points))  
+      **Speed** Walk 30 ft., Climb 30 ft.  
+      **Initiative:** rollable(dice=1d20+3,label=+3,dicelabel=Initiative) (13)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=16)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+6,label=+6,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=12)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20+1,label=+1,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=17)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+3,label=+3,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=14)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+5,label=+5,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=18)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+7,label=+7,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=14)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20+5,label=+5,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Skills** Deception rollable(dice=1d20+5,label=+5,dicelabel=Deception Check), Insight rollable(dice=1d20+5,label=+5,dicelabel=Insight Check), Perception rollable(dice=1d20+8,label=+8,dicelabel=Perception Check)  
+      **Damage Resistances** cold  
+      **Damage Immunities** fire, poison  
+      **Condition Immunities** poisoned  
+      **Senses** darkvision 120 ft. (unimpeded by magical ***Darkness***), Passive Perception 18  
+      **Languages** Infernal; telepathy 120 ft.  
+      **Challenge** 5 (1,800 XP)  
+      **Proficiency Bonus** +3  
+
+      ## Traits
+
+      ***Barbed Hide.*** At the start of each of its turns, the devil deals rollable(dice=1d10,dicelabel=Damage [Barbed Hide]) Piercing damage to any creature it is grappling or any creature grappling it.
+
+      ***Diabolical Restoration.*** If the devil dies outside the Nine Hells, its body disappears in sulfurous smoke, and it gains a new body instantly, reviving with all its ***Hit Points*** somewhere in the Nine Hells.
+
+      ***Magic Resistance.*** The devil has ***Advantage*** on saving throws against spells and other magical effects.
+
+      ## Actions
+
+      ***Multiattack.*** The devil makes one Claws attack and one Tail attack, or it makes two Hurl Flame attacks.
+
+      ***Claws.*** *Melee Attack Roll* rollable(dice=1d20+6,label=+6,dicelabel=To Hit [Claws]), reach 5 ft. *Hit:* rollable(dice=2d6+3,dicelabel=Damage [Claws]) Piercing damage. If the target is a Large or smaller creature, it has the ***Grappled*** condition (escape DC 13) from both claws.
+
+      ***Tail.*** *Melee Attack Roll* rollable(dice=1d20+6,label=+6,dicelabel=To Hit [Tail]), reach 10 ft. *Hit:* rollable(dice=2d10+3,dicelabel=Damage [Tail]) Slashing damage.
+
+      ***Hurl Flame.*** *Ranged Attack Roll* rollable(dice=1d20+5,label=+5,dicelabel=To Hit [Hurl Flame]), range 150 ft. *Hit:* rollable(dice=5d6,dicelabel=Damage [Hurl Flame]) Fire damage. If the target is a flammable object that isn't being worn or carried, it starts ***burning***.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Fiend (Devil), Lawful Evil*  
+    **Challenge** 5
+  subtype: npc
+  id: srd2024barbeddevil
+  status: 1
+

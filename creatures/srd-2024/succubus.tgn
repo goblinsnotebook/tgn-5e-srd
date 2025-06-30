@@ -1,0 +1,54 @@
+creatures:
+- name: Succubus
+  statblock:
+    custom_statblock: |
+      **Armor Class** 15  
+      **Hit Points** 71 (rollable(dice=13d8 + 13,dicelabel=Hit Points))  
+      **Speed** Walk 30 ft., Fly 60 ft.  
+      **Initiative:** rollable(dice=1d20+3,label=+3,dicelabel=Initiative) (13)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=8)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20-1,label=-1,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=15)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20+2,label=+2,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=17)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+3,label=+3,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=12)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+1,label=+1,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=13)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+1,label=+1,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=20)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20+5,label=+5,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Skills** Deception rollable(dice=1d20+9,label=+9,dicelabel=Deception Check), Insight rollable(dice=1d20+5,label=+5,dicelabel=Insight Check), Perception rollable(dice=1d20+5,label=+5,dicelabel=Perception Check), Persuasion rollable(dice=1d20+9,label=+9,dicelabel=Persuasion Check), Stealth rollable(dice=1d20+7,label=+7,dicelabel=Stealth Check)  
+      **Damage Resistances** cold, fire, poison, psychic  
+      **Senses** darkvision 60 ft., Passive Perception 15  
+      **Languages** Abyssal, Common, Infernal; telepathy 60 ft.  
+      **Challenge** 4 (1,100 XP)  
+      **Proficiency Bonus** +2  
+
+      ## Traits
+
+      ***Incubus Form.*** When the succubus finishes a ***Long Rest***, it can shape-shift into an *Incubus*, using that stat block instead of this one.
+
+      ## Actions
+
+      ***Multiattack.*** The succubus makes one Fiendish Touch attack and uses Charm or Draining Kiss.
+
+      ***Fiendish Touch.*** *Melee Attack Roll* rollable(dice=1d20+7,label=+7,dicelabel=To Hit [Fiendish Touch]), reach 5 ft. *Hit:* rollable(dice=2d10+5,dicelabel=Damage [Fiendish Touch]) Psychic damage.
+
+      ***Charm.*** The succubus casts [Dominate Person](https://www.dndbeyond.com/spells/2619148-dominate-person) (level 8 version), requiring no spell components and using Charisma as the spellcasting ability (spell save DC 15).
+
+      ***Draining Kiss.*** *Constitution Saving Throw:* DC 15, one creature ***Charmed*** by the succubus within 5 feet. *Failure:* rollable(dice=3d8,dicelabel=Damage [Draining Kiss]) Psychic damage. *Success:* Half damage. *Failure or Success:* The target's ***Hit Point*** maximum decreases by an amount equal to the damage taken.
+
+      ## Bonus Actions
+
+      ***Shape-Shift.*** The succubus shape-shifts to resemble a Medium or Small Humanoid or back into its true form. Its game statistics are the same in each form, except its ***Fly Speed*** is available only in its true form. Any equipment it's wearing or carrying isn't transformed.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Fiend, Neutral Evil*  
+    **Challenge** 4
+  subtype: npc
+  id: srd2024succubus
+  status: 1
+

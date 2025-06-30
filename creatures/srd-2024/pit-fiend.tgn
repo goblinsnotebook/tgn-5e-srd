@@ -1,0 +1,60 @@
+creatures:
+- name: Pit Fiend
+  statblock:
+    custom_statblock: |
+      **Armor Class** 21  
+      **Hit Points** 337 (rollable(dice=27d10 + 189,dicelabel=Hit Points))  
+      **Speed** Walk 30 ft., Fly 60 ft.  
+      **Initiative:** rollable(dice=1d20+14,label=+14,dicelabel=Initiative) (24)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=26)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+8,label=+8,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=22)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20+6,label=+6,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=14)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+8,label=+8,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=18)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+10,label=+10,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=24)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+7,label=+7,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=24)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20+7,label=+7,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Skills** Perception rollable(dice=1d20+10,label=+10,dicelabel=Perception Check), Persuasion rollable(dice=1d20+19,label=+19,dicelabel=Persuasion Check)  
+      **Damage Resistances** cold  
+      **Damage Immunities** fire, poison  
+      **Condition Immunities** poisoned  
+      **Senses** truesight 120 ft., Passive Perception 20  
+      **Languages** Infernal; telepathy 120 ft.  
+      **Challenge** 20 (25,000 XP)  
+      **Proficiency Bonus** +6  
+
+      ## Traits
+
+      ***Diabolical Restoration.*** If the pit fiend dies outside the Nine Hells, its body disappears in sulfurous smoke, and it gains a new body instantly, reviving with all its ***Hit Points*** somewhere in the Nine Hells.
+
+      ***Fear Aura.*** The pit fiend emanates an aura in a 20-foot ***Emanation*** while it doesn't have the ***Incapacitated*** condition. *Wisdom Saving Throw:* DC 21, any enemy that starts its turn in the aura. *Failure:* The target has the ***Frightened*** condition until the start of its next turn. *Success:* The target is immune to this pit fiend's aura for 24 hours.
+
+      ***Legendary Resistance (4/Day).*** If the pit fiend fails a saving throw, it can choose to succeed instead.
+
+      ***Magic Resistance.*** The pit fiend has ***Advantage*** on saving throws against spells and other magical effects.
+
+      ## Actions
+
+      ***Multiattack.*** The pit fiend makes one Bite attack, two Devilish Claw attacks, and one Fiery Mace attack.
+
+      ***Bite.*** *Melee Attack Roll* rollable(dice=1d20+14,label=+14,dicelabel=To Hit [Bite]), reach 10 ft. *Hit:* rollable(dice=3d6+8,dicelabel=Damage [Bite]) Piercing damage. If the target is a creature, it must make the following saving throw. *Constitution Saving Throw:* DC 21. *Failure:* The target has the ***Poisoned*** condition. While ***Poisoned***, the target can't regain ***Hit Points*** and takes rollable(dice=6d6,dicelabel=Damage [Bite]) Poison damage at the start of each of its turns, and it repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically.
+
+      ***Devilish Claw.*** *Melee Attack Roll* rollable(dice=1d20+14,label=+14,dicelabel=To Hit [Devilish Claw]), reach 10 ft. *Hit:* rollable(dice=4d8+8,dicelabel=Damage [Devilish Claw]) Necrotic damage.
+
+      ***Fiery Mace.*** *Melee Attack Roll* rollable(dice=1d20+14,label=+14,dicelabel=To Hit [Fiery Mace]), reach 10 ft. *Hit:* rollable(dice=4d6+8,dicelabel=Damage [Fiery Mace]) Force damage plus rollable(dice=6d6,dicelabel=Damage [Fiery Mace]) Fire damage.
+
+      ***Hellfire Spellcasting (rollable(dice=1d6,label=Recharge 4-6,dicelabel=Recharge [Hellfire Spellcasting])).*** The pit fiend casts [Fireball](https://www.dndbeyond.com/spells/2618887-fireball) (level 5 version) twice, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 21). It can replace one [Fireball](https://www.dndbeyond.com/spells/2618887-fireball) with [Hold Monster](https://www.dndbeyond.com/spells/2619152-hold-monster) (level 7 version) or [Wall of Fire](https://www.dndbeyond.com/spells/2619107-wall-of-fire).
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Fiend (Devil), Lawful Evil*  
+    **Challenge** 20
+  subtype: npc
+  id: srd2024pitfiend
+  status: 1
+

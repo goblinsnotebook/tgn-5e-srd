@@ -1,0 +1,45 @@
+creatures:
+- name: Satyr
+  statblock:
+    custom_statblock: |
+      **Armor Class** 13  
+      **Hit Points** 31 (rollable(dice=7d8,dicelabel=Hit Points))  
+      **Speed** 40 ft.  
+      **Initiative:** rollable(dice=1d20+3,label=+3,dicelabel=Initiative) (13)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=12)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+1,label=+1,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=12)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20+1,label=+1,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=16)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+3,label=+3,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=10)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+0,label=+0,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=11)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+0,label=+0,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=14)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20+2,label=+2,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Skills** Perception rollable(dice=1d20+2,label=+2,dicelabel=Perception Check), Performance rollable(dice=1d20+6,label=+6,dicelabel=Performance Check), Stealth rollable(dice=1d20+5,label=+5,dicelabel=Stealth Check)  
+      **Senses** Passive Perception 12  
+      **Languages** Common, Elvish, Sylvan  
+      **Challenge** 1/2 (100 XP)  
+      **Proficiency Bonus** +2  
+
+      ## Traits
+
+      ***Magic Resistance.*** The satyr has ***Advantage*** on saving throws against spells and other magical effects.
+
+      ## Actions
+
+      ***Hooves.*** *Melee Attack Roll* rollable(dice=1d20+5,label=+5,dicelabel=To Hit [Hooves]), reach 5 ft. *Hit:* rollable(dice=1d4+3,dicelabel=Damage [Hooves]) Bludgeoning damage. If the target is a Medium or smaller creature, the satyr pushes the target up to 10 feet straight away from itself.
+
+      ***Mockery.*** *Wisdom Saving Throw:* DC 12, one creature the satyr can see within 90 feet. *Failure:* rollable(dice=1d6+2,dicelabel=Damage [Mockery]) Psychic damage.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Medium Fey, Chaotic Neutral*  
+    **Challenge** 1/2
+  subtype: npc
+  id: srd2024satyr
+  status: 1
+

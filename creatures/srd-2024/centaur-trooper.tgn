@@ -1,0 +1,48 @@
+creatures:
+- name: Centaur Trooper
+  statblock:
+    custom_statblock: |
+      **Armor Class** 16  
+      **Hit Points** 45 (rollable(dice=6d10 + 12,dicelabel=Hit Points))  
+      **Speed** 50 ft.  
+      **Initiative:** rollable(dice=1d20+2,label=+2,dicelabel=Initiative) (12)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=18)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+4,label=+4,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=9)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20-1,label=-1,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=14)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+2,label=+2,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=13)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+1,label=+1,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=14)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+2,label=+2,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=11)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20+0,label=+0,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Skills** Athletics rollable(dice=1d20+6,label=+6,dicelabel=Athletics Check), Perception rollable(dice=1d20+3,label=+3,dicelabel=Perception Check)  
+      **Gear** breastplate, longbow, pike  
+      **Senses** Passive Perception 13  
+      **Languages** Elvish, Sylvan  
+      **Challenge** 2 (450 XP)  
+      **Proficiency Bonus** +2  
+
+      ## Actions
+
+      ***Multiattack.*** The centaur makes two attacks, using Pike or Longbow in any combination.
+
+      ***Pike.*** *Melee Attack Roll* rollable(dice=1d20+6,label=+6,dicelabel=To Hit [Pike]), reach 10 ft. *Hit:* rollable(dice=1d10+4,dicelabel=Damage [Pike]) Piercing damage.
+
+      ***Longbow.*** *Ranged Attack Roll* rollable(dice=1d20+4,label=+4,dicelabel=To Hit [Longbow]), range 150/600 ft. *Hit:* rollable(dice=1d8+2,dicelabel=Damage [Longbow]) Piercing damage.
+
+      ## Bonus Actions
+
+      ***Trampling Charge (rollable(dice=1d6,label=Recharge 5-6,dicelabel=Recharge [Trampling Charge])).*** The centaur moves up to its ***Speed*** without provoking ***Opportunity Attacks*** and can move through the spaces of Medium or smaller creatures. Each creature whose space the centaur enters is targeted once by the following effect. *Strength Saving Throw:* DC 14. *Failure:* rollable(dice=1d6+4,dicelabel=Damage [Trampling Charge]) Bludgeoning damage, and the target has the ***Prone*** condition.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Fey, Neutral Good*  
+    **Challenge** 2
+  subtype: npc
+  id: srd2024centaurtrooper
+  status: 1
+

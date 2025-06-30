@@ -1,0 +1,75 @@
+creatures:
+- name: Mummy Lord
+  statblock:
+    custom_statblock: |
+      **Armor Class** 17  
+      **Hit Points** 187 (rollable(dice=25d8 + 75,dicelabel=Hit Points))  
+      **Speed** 30 ft.  
+      **Initiative:** rollable(dice=1d20+10,label=+10,dicelabel=Initiative) (20)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=18)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+4,label=+4,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=11)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20+5,label=+5,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=10)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+0,label=+0,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=19)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+9,label=+9,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=17)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+3,label=+3,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=16)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20+3,label=+3,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Skills** History rollable(dice=1d20+5,label=+5,dicelabel=History Check), Perception rollable(dice=1d20+9,label=+9,dicelabel=Perception Check), Religion rollable(dice=1d20+5,label=+5,dicelabel=Religion Check)  
+      **Damage Vulnerabilities** fire  
+      **Damage Immunities** necrotic, poison  
+      **Condition Immunities** charmed, exhaustion, frightened, paralyzed, poisoned  
+      **Senses** truesight 60 ft., Passive Perception 19  
+      **Languages** Common plus three other languages  
+      **Challenge** 15 (13,000 XP)  
+      **Proficiency Bonus** +5  
+
+      ## Traits
+
+      ***Legendary Resistance (3/Day, or 4/Day in Lair).*** If the mummy fails a saving throw, it can choose to succeed instead.
+
+      ***Magic Resistance.*** The mummy has ***Advantage*** on saving throws against spells and other magical effects.
+
+      ***Undead Restoration.*** If destroyed, the mummy gains a new body in 24 hours if its heart is intact, reviving with all its ***Hit Points***. The new body appears in an unoccupied space within the mummy's lair. The heart is a Tiny object that has AC 17, HP 10, and ***Immunity*** to all damage except Fire.
+
+      ## Actions
+
+      ***Multiattack.*** The mummy makes one Rotting Fist or Channel Negative Energy attack, and it uses Dreadful Glare.
+
+      ***Rotting Fist.*** *Melee Attack Roll* rollable(dice=1d20+9,label=+9,dicelabel=To Hit [Rotting Fist]), reach 5 ft. *Hit:* rollable(dice=2d10+4,dicelabel=Damage [Rotting Fist]) Bludgeoning damage plus rollable(dice=3d6,dicelabel=Damage [Rotting Fist]) Necrotic damage. If the target is a creature, it is cursed. While cursed, the target can't regain ***Hit Points***, it gains no benefit from finishing a ***Long Rest***, and its ***Hit Point*** maximum decreases by 10 (rollable(dice=3d6,dicelabel=Rotting Fist)) every 24 hours that elapse. A creature dies and turns to dust if reduced to 0 ***Hit Points*** by this attack.
+
+      ***Channel Negative Energy.*** *Ranged Attack Roll* rollable(dice=1d20+9,label=+9,dicelabel=To Hit [Channel Negative Energy]), range 60 ft. *Hit:* rollable(dice=6d6+4,dicelabel=Damage [Channel Negative Energy]) Necrotic damage.
+
+      ***Dreadful Glare.*** *Wisdom Saving Throw:* DC 17, one creature the mummy can see within 60 feet. *Failure:* rollable(dice=6d6+4,dicelabel=Damage [Dreadful Glare]) Psychic damage, and the target has the ***Paralyzed*** condition until the end of the mummy's next turn.
+
+      ***Spellcasting.*** The mummy casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save DC 17, rollable(dice=1d20+9,label=+9,dicelabel=To Hit [Spell Attack]) to hit with spell attacks):
+
+      At will: [Dispel Magic](https://www.dndbeyond.com/spells/2619103-dispel-magic), [Thaumaturgy](https://www.dndbeyond.com/spells/2619174-thaumaturgy)  
+      1/day each: [Animate Dead](https://www.dndbeyond.com/spells/2618853-animate-dead), [Harm](https://www.dndbeyond.com/spells/2618977-harm), [Insect Plague](https://www.dndbeyond.com/spells/2619183-insect-plague) (level 7 version)  
+
+      ## Reactions
+
+      ***Whirlwind of Sand.*** *Trigger:* The mummy is hit by an attack roll. *Response:* The mummy adds 2 to its AC against the attack, possibly causing the attack to miss, and the mummy teleports up to 60 feet to an unoccupied space it can see. Each creature of its choice that it can see within 5 feet of its destination space has the ***Blinded*** condition until the end of the mummy's next turn.
+
+      ## Legendary Actions
+
+      *Legendary Action Uses: 3 (4 in Lair). Immediately after another creature's turn, The Mummy Lord can expend a use to take one of the following actions. The Mummy Lord regains all expended uses at the start of each of its turns.*
+
+      ***Glare.*** The mummy uses Dreadful Glare. The mummy can't take this action again until the start of its next turn.
+
+      ***Necrotic Strike.*** The mummy makes one Rotting Fist or Channel Negative Energy attack.
+
+      ***Dread Command.*** The mummy casts [Command](https://www.dndbeyond.com/spells/2618985-command) (level 2 version), using the same spellcasting ability as Spellcasting. The mummy can't take this action again until the start of its next turn.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Small Medium Undead (Cleric), Lawful Evil*  
+    **Challenge** 15
+  subtype: npc
+  id: srd2024mummylord
+  status: 1
+

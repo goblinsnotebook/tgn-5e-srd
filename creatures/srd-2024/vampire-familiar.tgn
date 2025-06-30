@@ -1,0 +1,52 @@
+creatures:
+- name: Vampire Familiar
+  statblock:
+    custom_statblock: |
+      **Armor Class** 15  
+      **Hit Points** 65 (rollable(dice=10d8 + 20,dicelabel=Hit Points))  
+      **Speed** Walk 30 ft., Climb 30 ft.  
+      **Initiative:** rollable(dice=1d20+5,label=+5,dicelabel=Initiative) (15)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=17)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+3,label=+3,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=10)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20+0,label=+0,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=16)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+5,label=+5,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=10)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+2,label=+2,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=15)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+2,label=+2,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=14)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20+2,label=+2,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Skills** Perception rollable(dice=1d20+4,label=+4,dicelabel=Perception Check), Persuasion rollable(dice=1d20+4,label=+4,dicelabel=Persuasion Check), Stealth rollable(dice=1d20+7,label=+7,dicelabel=Stealth Check)  
+      **Damage Resistances** necrotic  
+      **Condition Immunities** charmed (except from its vampire master)  
+      **Gear** 10x dagger  
+      **Senses** darkvision 60 ft., Passive Perception 14  
+      **Languages** Common plus one other language  
+      **Challenge** 3 (700 XP)  
+      **Proficiency Bonus** +2  
+
+      ## Traits
+
+      ***Vampiric Connection.*** While the familiar and its vampire master are on the same plane of existence, the vampire can communicate with the familiar telepathically, and the vampire can perceive through the familiar's senses.
+
+      ## Actions
+
+      ***Multiattack.*** The familiar makes two Umbral Dagger attacks.
+
+      ***Umbral Dagger.*** *Melee or Ranged Attack Roll* rollable(dice=1d20+5,label=+5,dicelabel=To Hit [Umbral Dagger]), reach 5 ft. or range 20/60 ft. *Hit:* rollable(dice=1d4+3,dicelabel=Damage [Umbral Dagger]) Piercing damage plus rollable(dice=3d4,dicelabel=Damage [Umbral Dagger]) Necrotic damage. If the target is reduced to 0 ***Hit Points*** by this attack, the target becomes ***Stable*** but has the ***Poisoned*** condition for 1 hour. While it has the ***Poisoned*** condition, the target has the ***Paralyzed*** condition.
+
+      ## Bonus Actions
+
+      ***Deathless Agility.*** The familiar takes the Dash or Disengage action.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Small Medium Humanoid, Neutral Evil*  
+    **Challenge** 3
+  subtype: npc
+  id: srd2024vampirefamiliar
+  status: 1
+

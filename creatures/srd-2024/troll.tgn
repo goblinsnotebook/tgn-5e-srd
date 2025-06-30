@@ -1,0 +1,51 @@
+creatures:
+- name: Troll
+  statblock:
+    custom_statblock: |
+      **Armor Class** 15  
+      **Hit Points** 94 (rollable(dice=9d10 + 45,dicelabel=Hit Points))  
+      **Speed** 30 ft.  
+      **Initiative:** rollable(dice=1d20+1,label=+1,dicelabel=Initiative) (11)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=18)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+4,label=+4,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=7)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20-2,label=-2,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=13)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+1,label=+1,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=9)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20-1,label=-1,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=20)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+5,label=+5,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=7)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20-2,label=-2,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Skills** Perception rollable(dice=1d20+5,label=+5,dicelabel=Perception Check)  
+      **Senses** darkvision 60 ft., Passive Perception 15  
+      **Languages** Giant  
+      **Challenge** 5 (1,800 XP)  
+      **Proficiency Bonus** +3  
+
+      ## Traits
+
+      ***Loathsome Limbs (4/Day).*** If the troll ends any turn ***Bloodied*** and took 15+ Slashing damage during that turn, one of the troll's limbs is severed, falls into the troll's space, and becomes a *Troll Limb*. The limb acts immediately after the troll's turn. The troll has 1 ***Exhaustion*** level for each missing limb, and it grows replacement limbs the next time it regains ***Hit Points***.
+
+      ***Regeneration.*** The troll regains 15 ***Hit Points*** at the start of each of its turns. If the troll takes Acid or Fire damage, this trait doesn't function on the troll's next turn. The troll dies only if it starts its turn with 0 ***Hit Points*** and doesn't regenerate.
+
+      ## Actions
+
+      ***Multiattack.*** The troll makes three Rend attacks.
+
+      ***Rend.*** *Melee Attack Roll* rollable(dice=1d20+7,label=+7,dicelabel=To Hit [Rend]), reach 10 ft. *Hit:* rollable(dice=2d6+4,dicelabel=Damage [Rend]) Slashing damage.
+
+      ## Bonus Actions
+
+      ***Charge.*** The troll moves up to half its ***Speed*** straight toward an enemy it can see.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Large Giant, Chaotic Evil*  
+    **Challenge** 5
+  subtype: npc
+  id: srd2024troll
+  status: 1
+

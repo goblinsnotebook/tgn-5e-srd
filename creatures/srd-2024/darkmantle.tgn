@@ -1,0 +1,45 @@
+creatures:
+- name: Darkmantle
+  statblock:
+    custom_statblock: |
+      **Armor Class** 11  
+      **Hit Points** 22 (rollable(dice=5d6 + 5,dicelabel=Hit Points))  
+      **Speed** Walk 10 ft., Fly 30 ft.  
+      **Initiative:** rollable(dice=1d20+3,label=+3,dicelabel=Initiative) (13)
+
+      ---
+
+      |||Mod|Save|||Mod|Save|
+      |---:|:---:|:---:|:---:|---:|:---:|:---:|:---:|
+      |Str:|number(name=str,label=Strength,value=16)|mod5e(show_symbol,value=str,dice=1d20+n,dicelabel=Strength Check)|rollable(dice=1d20+3,label=+3,dicelabel=Strength Saving Throw)|Int:|number(name=int,label=Intelligence,value=2)|mod5e(show_symbol,value=int,dice=1d20+n,dicelabel=Intelligence Check)|rollable(dice=1d20-4,label=-4,dicelabel=Intelligence Saving Throw)|
+      |Dex:|number(name=dex,label=Dexterity,value=12)|mod5e(show_symbol,value=dex,dice=1d20+n,dicelabel=Dexterity Check)|rollable(dice=1d20+1,label=+1,dicelabel=Dexterity Saving Throw)|Wis:|number(name=wis,label=Wisdom,value=10)|mod5e(show_symbol,value=wis,dice=1d20+n,dicelabel=Wisdom Check)|rollable(dice=1d20+0,label=+0,dicelabel=Wisdom Saving Throw)|
+      |Con:|number(name=con,label=Constitution,value=13)|mod5e(show_symbol,value=con,dice=1d20+n,dicelabel=Constitution Check)|rollable(dice=1d20+1,label=+1,dicelabel=Constitution Saving Throw)|Cha:|number(name=cha,label=Charisma,value=5)|mod5e(show_symbol,value=cha,dice=1d20+n,dicelabel=Charisma Check)|rollable(dice=1d20-3,label=-3,dicelabel=Charisma Saving Throw)|
+
+      ---
+
+      **Skills** Stealth rollable(dice=1d20+3,label=+3,dicelabel=Stealth Check)  
+      **Senses** blindsight 60 ft., Passive Perception 10  
+      **Languages** -  
+      **Challenge** 1/2 (100 XP)  
+      **Proficiency Bonus** +2  
+
+      ## Actions
+
+      ***Crush.*** *Melee Attack Roll* rollable(dice=1d20+5,label=+5,dicelabel=To Hit [Crush]), reach 5 ft. *Hit:* rollable(dice=1d6+3,dicelabel=Damage [Crush]) Bludgeoning damage, and the darkmantle attaches to the target. If the target is a Medium or smaller creature and the darkmantle had ***Advantage*** on the attack roll, it covers the target, which has the ***Blinded*** condition and is suffocating while the darkmantle is attached in this way.
+
+      While attached to a target, the darkmantle can attack only the target but has ***Advantage*** on its attack rolls. Its ***Speed*** becomes 0, it can't benefit from any bonus to its ***Speed***, and it moves with the target.
+
+      A creature can take an action to try to detach the darkmantle from itself, doing so with a successful DC 13 Strength (***Athletics***) check. On its turn, the darkmantle can detach itself by using 5 feet of movement.
+
+      ***Darkness Aura (1/Day).*** Magical ***Darkness*** fills a 15-foot ***Emanation*** originating from the darkmantle. This effect lasts while the darkmantle maintains concentration on it, up to 10 minutes. Darkvision can't penetrate this area, and no light can illuminate it.
+
+    type: custom
+  blurb: |
+    # $[objectname]
+
+    *Small Aberration, Unaligned*  
+    **Challenge** 1/2
+  subtype: npc
+  id: srd2024darkmantle
+  status: 1
+
