@@ -68,7 +68,7 @@ creatures:
       subtype: npc
       id: srd2024aboleth
       status: 1
-    
+      order: 101
     - name: Chuul
       statblock:
         custom_statblock: |
@@ -118,7 +118,7 @@ creatures:
       subtype: npc
       id: srd2024chuul
       status: 1
-    
+      order: 167
     - name: Cloaker
       statblock:
         custom_statblock: |
@@ -175,7 +175,7 @@ creatures:
       subtype: npc
       id: srd2024cloaker
       status: 1
-    
+      order: 169
     - name: Darkmantle
       statblock:
         custom_statblock: |
@@ -219,7 +219,7 @@ creatures:
       subtype: npc
       id: srd2024darkmantle
       status: 1
-    
+      order: 180
     - name: Gibbering Mouther
       statblock:
         custom_statblock: |
@@ -271,7 +271,7 @@ creatures:
       subtype: npc
       id: srd2024gibberingmouther
       status: 1
-    
+      order: 241
     - name: Grick
       statblock:
         custom_statblock: |
@@ -313,7 +313,7 @@ creatures:
       subtype: npc
       id: srd2024grick
       status: 1
-    
+      order: 254
     - name: Grimlock
       statblock:
         custom_statblock: |
@@ -351,7 +351,7 @@ creatures:
       subtype: npc
       id: srd2024grimlock
       status: 1
-    
+      order: 256
     - name: Otyugh
       statblock:
         custom_statblock: |
@@ -394,7 +394,7 @@ creatures:
       subtype: npc
       id: srd2024otyugh
       status: 1
-    
+      order: 316
     - name: Roper
       statblock:
         custom_statblock: |
@@ -444,7 +444,7 @@ creatures:
       subtype: npc
       id: srd2024roper
       status: 1
-    
+      order: 346
     subtype: information
     id: srdabberation
     name: Aberration
@@ -495,7 +495,7 @@ creatures:
         subtype: npc
         id: srd2024allosaurus
         status: 1
-      
+        order: 113
       - name: Ankylosaurus
         statblock:
           custom_statblock: |
@@ -534,7 +534,7 @@ creatures:
         subtype: npc
         id: srd2024ankylosaurus
         status: 1
-      
+        order: 128
       - name: Archelon
         statblock:
           custom_statblock: |
@@ -578,7 +578,7 @@ creatures:
         subtype: npc
         id: srd2024archelon
         status: 1
-      
+        order: 130
       - name: Plesiosaurus
         statblock:
           custom_statblock: |
@@ -620,7 +620,7 @@ creatures:
         subtype: npc
         id: srd2024plesiosaurus
         status: 1
-      
+        order: 327
       - name: Pteranodon
         statblock:
           custom_statblock: |
@@ -662,7 +662,7 @@ creatures:
         subtype: npc
         id: srd2024pteranodon
         status: 1
-      
+        order: 334
       - name: Triceratops
         statblock:
           custom_statblock: |
@@ -701,7 +701,7 @@ creatures:
         subtype: npc
         id: srd2024triceratops
         status: 1
-      
+        order: 389
       - name: Tyrannosaurus Rex
         statblock:
           custom_statblock: |
@@ -743,7 +743,7 @@ creatures:
         subtype: npc
         id: srd2024tyrannosaurusrex
         status: 1
-      
+        order: 392
       subtype: information
       id: srddinosaur
       name: Dinosaur
@@ -792,7 +792,7 @@ creatures:
       subtype: npc
       id: srd2024ape
       status: 1
-    
+      order: 129
     - name: Baboon
       statblock:
         custom_statblock: |
@@ -833,7 +833,7 @@ creatures:
       subtype: npc
       id: srd2024baboon
       status: 1
-    
+      order: 137
     - name: Badger
       statblock:
         custom_statblock: |
@@ -872,7 +872,7 @@ creatures:
       subtype: npc
       id: srd2024badger
       status: 1
-    
+      order: 138
     - name: Bat
       statblock:
         custom_statblock: |
@@ -909,7 +909,7 @@ creatures:
       subtype: npc
       id: srd2024bat
       status: 1
-    
+      order: 144
     - name: Black Bear
       statblock:
         custom_statblock: |
@@ -949,7 +949,7 @@ creatures:
       subtype: npc
       id: srd2024blackbear
       status: 1
-    
+      order: 148
     - name: Blood Hawk
       statblock:
         custom_statblock: |
@@ -991,7 +991,7 @@ creatures:
       subtype: npc
       id: srd2024bloodhawk
       status: 1
-    
+      order: 152
     - name: Boar
       statblock:
         custom_statblock: |
@@ -1032,7 +1032,7 @@ creatures:
       subtype: npc
       id: srd2024boar
       status: 1
-    
+      order: 154
     - name: Brown Bear
       statblock:
         custom_statblock: |
@@ -1074,7 +1074,7 @@ creatures:
       subtype: npc
       id: srd2024brownbear
       status: 1
-    
+      order: 158
     - name: Camel
       statblock:
         custom_statblock: |
@@ -1111,7 +1111,7 @@ creatures:
       subtype: npc
       id: srd2024camel
       status: 1
-    
+      order: 162
     - name: Cat
       statblock:
         custom_statblock: |
@@ -1153,7 +1153,7 @@ creatures:
       subtype: npc
       id: srd2024cat
       status: 1
-    
+      order: 163
     - name: Constrictor Snake
       statblock:
         custom_statblock: |
@@ -1193,7 +1193,7 @@ creatures:
       subtype: npc
       id: srd2024constrictorsnake
       status: 1
-    
+      order: 173
     - name: Crab
       statblock:
         custom_statblock: |
@@ -1235,7 +1235,7 @@ creatures:
       subtype: npc
       id: srd2024crab
       status: 1
-    
+      order: 176
     - name: Crocodile
       statblock:
         custom_statblock: |
@@ -1277,7 +1277,7 @@ creatures:
       subtype: npc
       id: srd2024crocodile
       status: 1
-    
+      order: 177
     - name: Deer
       statblock:
         custom_statblock: |
@@ -1319,7 +1319,7 @@ creatures:
       subtype: npc
       id: srd2024deer
       status: 1
-    
+      order: 182
     - name: Dire Wolf
       statblock:
         custom_statblock: |
@@ -1361,7 +1361,7 @@ creatures:
       subtype: npc
       id: srd2024direwolf
       status: 1
-    
+      order: 184
     - name: Draft Horse
       statblock:
         custom_statblock: |
@@ -1398,7 +1398,7 @@ creatures:
       subtype: npc
       id: srd2024drafthorse
       status: 1
-    
+      order: 187
     - name: Eagle
       statblock:
         custom_statblock: |
@@ -1436,7 +1436,7 @@ creatures:
       subtype: npc
       id: srd2024eagle
       status: 1
-    
+      order: 194
     - name: Elephant
       statblock:
         custom_statblock: |
@@ -1479,7 +1479,7 @@ creatures:
       subtype: npc
       id: srd2024elephant
       status: 1
-    
+      order: 197
     - name: Elk
       statblock:
         custom_statblock: |
@@ -1517,7 +1517,7 @@ creatures:
       subtype: npc
       id: srd2024elk
       status: 1
-    
+      order: 198
     - name: Frog
       statblock:
         custom_statblock: |
@@ -1561,7 +1561,7 @@ creatures:
       subtype: npc
       id: srd2024frog
       status: 1
-    
+      order: 206
     - name: Giant Ape
       statblock:
         custom_statblock: |
@@ -1607,7 +1607,7 @@ creatures:
       subtype: npc
       id: srd2024giantape
       status: 1
-    
+      order: 213
     - name: Giant Badger
       statblock:
         custom_statblock: |
@@ -1646,7 +1646,7 @@ creatures:
       subtype: npc
       id: srd2024giantbadger
       status: 1
-    
+      order: 214
     - name: Giant Bat
       statblock:
         custom_statblock: |
@@ -1683,7 +1683,7 @@ creatures:
       subtype: npc
       id: srd2024giantbat
       status: 1
-    
+      order: 215
     - name: Giant Boar
       statblock:
         custom_statblock: |
@@ -1724,7 +1724,7 @@ creatures:
       subtype: npc
       id: srd2024giantboar
       status: 1
-    
+      order: 216
     - name: Giant Centipede
       statblock:
         custom_statblock: |
@@ -1761,7 +1761,7 @@ creatures:
       subtype: npc
       id: srd2024giantcentipede
       status: 1
-    
+      order: 217
     - name: Giant Constrictor Snake
       statblock:
         custom_statblock: |
@@ -1803,7 +1803,7 @@ creatures:
       subtype: npc
       id: srd2024giantconstrictorsnake
       status: 1
-    
+      order: 218
     - name: Giant Crab
       statblock:
         custom_statblock: |
@@ -1845,7 +1845,7 @@ creatures:
       subtype: npc
       id: srd2024giantcrab
       status: 1
-    
+      order: 219
     - name: Giant Crocodile
       statblock:
         custom_statblock: |
@@ -1891,7 +1891,7 @@ creatures:
       subtype: npc
       id: srd2024giantcrocodile
       status: 1
-    
+      order: 220
     - name: Giant Fire Beetle
       statblock:
         custom_statblock: |
@@ -1933,7 +1933,7 @@ creatures:
       subtype: npc
       id: srd2024giantfirebeetle
       status: 1
-    
+      order: 223
     - name: Giant Frog
       statblock:
         custom_statblock: |
@@ -1981,7 +1981,7 @@ creatures:
       subtype: npc
       id: srd2024giantfrog
       status: 1
-    
+      order: 224
     - name: Giant Goat
       statblock:
         custom_statblock: |
@@ -2019,7 +2019,7 @@ creatures:
       subtype: npc
       id: srd2024giantgoat
       status: 1
-    
+      order: 225
     - name: Giant Hyena
       statblock:
         custom_statblock: |
@@ -2061,7 +2061,7 @@ creatures:
       subtype: npc
       id: srd2024gianthyena
       status: 1
-    
+      order: 226
     - name: Giant Lizard
       statblock:
         custom_statblock: |
@@ -2102,7 +2102,7 @@ creatures:
       subtype: npc
       id: srd2024giantlizard
       status: 1
-    
+      order: 227
     - name: Giant Octopus
       statblock:
         custom_statblock: |
@@ -2148,7 +2148,7 @@ creatures:
       subtype: npc
       id: srd2024giantoctopus
       status: 1
-    
+      order: 228
     - name: Giant Rat
       statblock:
         custom_statblock: |
@@ -2190,7 +2190,7 @@ creatures:
       subtype: npc
       id: srd2024giantrat
       status: 1
-    
+      order: 230
     - name: Giant Scorpion
       statblock:
         custom_statblock: |
@@ -2231,7 +2231,7 @@ creatures:
       subtype: npc
       id: srd2024giantscorpion
       status: 1
-    
+      order: 231
     - name: Giant Seahorse
       statblock:
         custom_statblock: |
@@ -2276,7 +2276,7 @@ creatures:
       subtype: npc
       id: srd2024giantseahorse
       status: 1
-    
+      order: 232
     - name: Giant Shark
       statblock:
         custom_statblock: |
@@ -2320,7 +2320,7 @@ creatures:
       subtype: npc
       id: srd2024giantshark
       status: 1
-    
+      order: 233
     - name: Giant Spider
       statblock:
         custom_statblock: |
@@ -2366,7 +2366,7 @@ creatures:
       subtype: npc
       id: srd2024giantspider
       status: 1
-    
+      order: 234
     - name: Giant Toad
       statblock:
         custom_statblock: |
@@ -2411,7 +2411,7 @@ creatures:
       subtype: npc
       id: srd2024gianttoad
       status: 1
-    
+      order: 235
     - name: Giant Venomous Snake
       statblock:
         custom_statblock: |
@@ -2449,7 +2449,7 @@ creatures:
       subtype: npc
       id: srd2024giantvenomoussnake
       status: 1
-    
+      order: 236
     - name: Giant Wasp
       statblock:
         custom_statblock: |
@@ -2490,7 +2490,7 @@ creatures:
       subtype: npc
       id: srd2024giantwasp
       status: 1
-    
+      order: 238
     - name: Giant Weasel
       statblock:
         custom_statblock: |
@@ -2528,7 +2528,7 @@ creatures:
       subtype: npc
       id: srd2024giantweasel
       status: 1
-    
+      order: 239
     - name: Giant Wolf Spider
       statblock:
         custom_statblock: |
@@ -2570,7 +2570,7 @@ creatures:
       subtype: npc
       id: srd2024giantwolfspider
       status: 1
-    
+      order: 240
     - name: Goat
       statblock:
         custom_statblock: |
@@ -2608,7 +2608,7 @@ creatures:
       subtype: npc
       id: srd2024goat
       status: 1
-    
+      order: 245
     - name: Hawk
       statblock:
         custom_statblock: |
@@ -2646,7 +2646,7 @@ creatures:
       subtype: npc
       id: srd2024hawk
       status: 1
-    
+      order: 262
     - name: Hippopotamus
       statblock:
         custom_statblock: |
@@ -2690,7 +2690,7 @@ creatures:
       subtype: npc
       id: srd2024hippopotamus
       status: 1
-    
+      order: 267
     - name: Hunter Shark
       statblock:
         custom_statblock: |
@@ -2732,7 +2732,7 @@ creatures:
       subtype: npc
       id: srd2024huntershark
       status: 1
-    
+      order: 272
     - name: Hyena
       statblock:
         custom_statblock: |
@@ -2774,7 +2774,7 @@ creatures:
       subtype: npc
       id: srd2024hyena
       status: 1
-    
+      order: 274
     - name: Jackal
       statblock:
         custom_statblock: |
@@ -2812,7 +2812,7 @@ creatures:
       subtype: npc
       id: srd2024jackal
       status: 1
-    
+      order: 281
     - name: Killer Whale
       statblock:
         custom_statblock: |
@@ -2854,7 +2854,7 @@ creatures:
       subtype: npc
       id: srd2024killerwhale
       status: 1
-    
+      order: 282
     - name: Lion
       statblock:
         custom_statblock: |
@@ -2902,7 +2902,7 @@ creatures:
       subtype: npc
       id: srd2024lion
       status: 1
-    
+      order: 289
     - name: Lizard
       statblock:
         custom_statblock: |
@@ -2943,7 +2943,7 @@ creatures:
       subtype: npc
       id: srd2024lizard
       status: 1
-    
+      order: 290
     - name: Mammoth
       statblock:
         custom_statblock: |
@@ -2986,7 +2986,7 @@ creatures:
       subtype: npc
       id: srd2024mammoth
       status: 1
-    
+      order: 294
     - name: Mastiff
       statblock:
         custom_statblock: |
@@ -3024,7 +3024,7 @@ creatures:
       subtype: npc
       id: srd2024mastiff
       status: 1
-    
+      order: 297
     - name: Mule
       statblock:
         custom_statblock: |
@@ -3065,7 +3065,7 @@ creatures:
       subtype: npc
       id: srd2024mule
       status: 1
-    
+      order: 304
     - name: Octopus
       statblock:
         custom_statblock: |
@@ -3113,7 +3113,7 @@ creatures:
       subtype: npc
       id: srd2024octopus
       status: 1
-    
+      order: 312
     - name: Owl
       statblock:
         custom_statblock: |
@@ -3155,7 +3155,7 @@ creatures:
       subtype: npc
       id: srd2024owl
       status: 1
-    
+      order: 317
     - name: Panther
       statblock:
         custom_statblock: |
@@ -3197,7 +3197,7 @@ creatures:
       subtype: npc
       id: srd2024panther
       status: 1
-    
+      order: 319
     - name: Piranha
       statblock:
         custom_statblock: |
@@ -3238,7 +3238,7 @@ creatures:
       subtype: npc
       id: srd2024piranha
       status: 1
-    
+      order: 322
     - name: Polar Bear
       statblock:
         custom_statblock: |
@@ -3279,7 +3279,7 @@ creatures:
       subtype: npc
       id: srd2024polarbear
       status: 1
-    
+      order: 328
     - name: Pony
       statblock:
         custom_statblock: |
@@ -3316,7 +3316,7 @@ creatures:
       subtype: npc
       id: srd2024pony
       status: 1
-    
+      order: 329
     - name: Rat
       statblock:
         custom_statblock: |
@@ -3358,7 +3358,7 @@ creatures:
       subtype: npc
       id: srd2024rat
       status: 1
-    
+      order: 338
     - name: Raven
       statblock:
         custom_statblock: |
@@ -3400,7 +3400,7 @@ creatures:
       subtype: npc
       id: srd2024raven
       status: 1
-    
+      order: 339
     - name: Reef Shark
       statblock:
         custom_statblock: |
@@ -3444,7 +3444,7 @@ creatures:
       subtype: npc
       id: srd2024reefshark
       status: 1
-    
+      order: 341
     - name: Rhinoceros
       statblock:
         custom_statblock: |
@@ -3481,7 +3481,7 @@ creatures:
       subtype: npc
       id: srd2024rhinoceros
       status: 1
-    
+      order: 343
     - name: Riding Horse
       statblock:
         custom_statblock: |
@@ -3518,7 +3518,7 @@ creatures:
       subtype: npc
       id: srd2024ridinghorse
       status: 1
-    
+      order: 344
     - name: Saber-Toothed Tiger
       statblock:
         custom_statblock: |
@@ -3566,7 +3566,7 @@ creatures:
       subtype: npc
       id: srd2024saber-toothedtiger
       status: 1
-    
+      order: 348
     - name: Scorpion
       statblock:
         custom_statblock: |
@@ -3603,7 +3603,7 @@ creatures:
       subtype: npc
       id: srd2024scorpion
       status: 1
-    
+      order: 352
     - name: Seahorse
       statblock:
         custom_statblock: |
@@ -3645,7 +3645,7 @@ creatures:
       subtype: npc
       id: srd2024seahorse
       status: 1
-    
+      order: 355
     - name: Spider
       statblock:
         custom_statblock: |
@@ -3689,7 +3689,7 @@ creatures:
       subtype: npc
       id: srd2024spider
       status: 1
-    
+      order: 367
     - name: Swarm of Bats
       statblock:
         custom_statblock: |
@@ -3732,7 +3732,7 @@ creatures:
       subtype: npc
       id: srd2024swarmofbats
       status: 1
-    
+      order: 377
     - name: Swarm of Insects
       statblock:
         custom_statblock: |
@@ -3777,7 +3777,7 @@ creatures:
       subtype: npc
       id: srd2024swarmofinsects
       status: 1
-    
+      order: 379
     - name: Swarm of Piranhas
       statblock:
         custom_statblock: |
@@ -3822,7 +3822,7 @@ creatures:
       subtype: npc
       id: srd2024swarmofpiranhas
       status: 1
-    
+      order: 380
     - name: Swarm of Rats
       statblock:
         custom_statblock: |
@@ -3865,7 +3865,7 @@ creatures:
       subtype: npc
       id: srd2024swarmofrats
       status: 1
-    
+      order: 381
     - name: Swarm of Ravens
       statblock:
         custom_statblock: |
@@ -3911,7 +3911,7 @@ creatures:
       subtype: npc
       id: srd2024swarmofravens
       status: 1
-    
+      order: 382
     - name: Swarm of Venomous Snakes
       statblock:
         custom_statblock: |
@@ -3954,7 +3954,7 @@ creatures:
       subtype: npc
       id: srd2024swarmofvenomoussnakes
       status: 1
-    
+      order: 383
     - name: Tiger
       statblock:
         custom_statblock: |
@@ -3996,7 +3996,7 @@ creatures:
       subtype: npc
       id: srd2024tiger
       status: 1
-    
+      order: 385
     - name: Venomous Snake
       statblock:
         custom_statblock: |
@@ -4033,7 +4033,7 @@ creatures:
       subtype: npc
       id: srd2024venomoussnake
       status: 1
-    
+      order: 397
     - name: Vulture
       statblock:
         custom_statblock: |
@@ -4075,7 +4075,7 @@ creatures:
       subtype: npc
       id: srd2024vulture
       status: 1
-    
+      order: 400
     - name: Warhorse
       statblock:
         custom_statblock: |
@@ -4112,7 +4112,7 @@ creatures:
       subtype: npc
       id: srd2024warhorse
       status: 1
-    
+      order: 401
     - name: Weasel
       statblock:
         custom_statblock: |
@@ -4150,7 +4150,7 @@ creatures:
       subtype: npc
       id: srd2024weasel
       status: 1
-    
+      order: 406
     - name: Wolf
       statblock:
         custom_statblock: |
@@ -4192,7 +4192,7 @@ creatures:
       subtype: npc
       id: srd2024wolf
       status: 1
-    
+      order: 416
     subtype: information
     id: srdbeast
     name: Beast
@@ -4260,7 +4260,7 @@ creatures:
         subtype: npc
         id: srd2024deva
         status: 1
-      
+        order: 183
       - name: Planetar
         statblock:
           custom_statblock: |
@@ -4321,7 +4321,7 @@ creatures:
         subtype: npc
         id: srd2024planetar
         status: 1
-      
+        order: 326
       - name: Solar
         statblock:
           custom_statblock: |
@@ -4392,7 +4392,7 @@ creatures:
         subtype: npc
         id: srd2024solar
         status: 1
-      
+        order: 362
       subtype: information
       id: srdangel
       name: Angel
@@ -4453,7 +4453,7 @@ creatures:
       subtype: npc
       id: srd2024couatl
       status: 1
-    
+      order: 175
     - name: Giant Eagle
       statblock:
         custom_statblock: |
@@ -4494,7 +4494,7 @@ creatures:
       subtype: npc
       id: srd2024gianteagle
       status: 1
-    
+      order: 221
     - name: Giant Elk
       statblock:
         custom_statblock: |
@@ -4533,7 +4533,7 @@ creatures:
       subtype: npc
       id: srd2024giantelk
       status: 1
-    
+      order: 222
     - name: Giant Owl
       statblock:
         custom_statblock: |
@@ -4581,7 +4581,7 @@ creatures:
       subtype: npc
       id: srd2024giantowl
       status: 1
-    
+      order: 229
     - name: Guardian Naga
       statblock:
         custom_statblock: |
@@ -4634,7 +4634,7 @@ creatures:
       subtype: npc
       id: srd2024guardiannaga
       status: 1
-    
+      order: 259
     - name: Pegasus
       statblock:
         custom_statblock: |
@@ -4672,7 +4672,7 @@ creatures:
       subtype: npc
       id: srd2024pegasus
       status: 1
-    
+      order: 320
     - name: Sphinx of Lore
       statblock:
         custom_statblock: |
@@ -4736,7 +4736,7 @@ creatures:
       subtype: npc
       id: srd2024sphinxoflore
       status: 1
-    
+      order: 364
     - name: Sphinx of Valor
       statblock:
         custom_statblock: |
@@ -4806,7 +4806,7 @@ creatures:
       subtype: npc
       id: srd2024sphinxofvalor
       status: 1
-    
+      order: 365
     - name: Sphinx of Wonder
       statblock:
         custom_statblock: |
@@ -4853,7 +4853,7 @@ creatures:
       subtype: npc
       id: srd2024sphinxofwonder
       status: 1
-    
+      order: 366
     - name: Unicorn
       statblock:
         custom_statblock: |
@@ -4919,7 +4919,7 @@ creatures:
       subtype: npc
       id: srd2024unicorn
       status: 1
-    
+      order: 393
     subtype: information
     id: srdcelestial
     name: Celestial
@@ -4970,7 +4970,7 @@ creatures:
       subtype: npc
       id: srd2024animatedarmor
       status: 1
-    
+      order: 124
     - name: Animated Flying Sword
       statblock:
         custom_statblock: |
@@ -5009,7 +5009,7 @@ creatures:
       subtype: npc
       id: srd2024animatedflyingsword
       status: 1
-    
+      order: 125
     - name: Animated Rug of Smothering
       statblock:
         custom_statblock: |
@@ -5050,7 +5050,7 @@ creatures:
       subtype: npc
       id: srd2024animatedrugofsmothering
       status: 1
-    
+      order: 126
     - name: Clay Golem
       statblock:
         custom_statblock: |
@@ -5106,7 +5106,7 @@ creatures:
       subtype: npc
       id: srd2024claygolem
       status: 1
-    
+      order: 168
     - name: Flesh Golem
       statblock:
         custom_statblock: |
@@ -5161,7 +5161,7 @@ creatures:
       subtype: npc
       id: srd2024fleshgolem
       status: 1
-    
+      order: 204
     - name: Gorgon
       statblock:
         custom_statblock: |
@@ -5206,7 +5206,7 @@ creatures:
       subtype: npc
       id: srd2024gorgon
       status: 1
-    
+      order: 250
     - name: Homunculus
       statblock:
         custom_statblock: |
@@ -5249,7 +5249,7 @@ creatures:
       subtype: npc
       id: srd2024homunculus
       status: 1
-    
+      order: 270
     - name: Iron Golem
       statblock:
         custom_statblock: |
@@ -5302,7 +5302,7 @@ creatures:
       subtype: npc
       id: srd2024irongolem
       status: 1
-    
+      order: 280
     - name: Shield Guardian
       statblock:
         custom_statblock: |
@@ -5355,7 +5355,7 @@ creatures:
       subtype: npc
       id: srd2024shieldguardian
       status: 1
-    
+      order: 358
     - name: Stone Golem
       statblock:
         custom_statblock: |
@@ -5406,7 +5406,7 @@ creatures:
       subtype: npc
       id: srd2024stonegolem
       status: 1
-    
+      order: 374
     subtype: information
     id: srdconstruct
     name: Construct
@@ -5481,7 +5481,7 @@ creatures:
         subtype: npc
         id: srd2024adultblackdragon
         status: 1
-      
+        order: 102
       - name: Adult Blue Dragon
         statblock:
           custom_statblock: |
@@ -5543,7 +5543,7 @@ creatures:
         subtype: npc
         id: srd2024adultbluedragon
         status: 1
-      
+        order: 103
       - name: Adult Green Dragon
         statblock:
           custom_statblock: |
@@ -5608,7 +5608,7 @@ creatures:
         subtype: npc
         id: srd2024adultgreendragon
         status: 1
-      
+        order: 108
       - name: Adult Red Dragon
         statblock:
           custom_statblock: |
@@ -5670,7 +5670,7 @@ creatures:
         subtype: npc
         id: srd2024adultreddragon
         status: 1
-      
+        order: 109
       - name: Adult White Dragon
         statblock:
           custom_statblock: |
@@ -5729,7 +5729,7 @@ creatures:
         subtype: npc
         id: srd2024adultwhitedragon
         status: 1
-      
+        order: 111
       - name: Ancient Black Dragon
         statblock:
           custom_statblock: |
@@ -5793,7 +5793,7 @@ creatures:
         subtype: npc
         id: srd2024ancientblackdragon
         status: 1
-      
+        order: 114
       - name: Ancient Blue Dragon
         statblock:
           custom_statblock: |
@@ -5855,7 +5855,7 @@ creatures:
         subtype: npc
         id: srd2024ancientbluedragon
         status: 1
-      
+        order: 115
       - name: Ancient Green Dragon
         statblock:
           custom_statblock: |
@@ -5920,7 +5920,7 @@ creatures:
         subtype: npc
         id: srd2024ancientgreendragon
         status: 1
-      
+        order: 120
       - name: Ancient Red Dragon
         statblock:
           custom_statblock: |
@@ -5982,7 +5982,7 @@ creatures:
         subtype: npc
         id: srd2024ancientreddragon
         status: 1
-      
+        order: 121
       - name: Ancient White Dragon
         statblock:
           custom_statblock: |
@@ -6041,7 +6041,7 @@ creatures:
         subtype: npc
         id: srd2024ancientwhitedragon
         status: 1
-      
+        order: 123
       - name: Black Dragon Wyrmling
         statblock:
           custom_statblock: |
@@ -6088,7 +6088,7 @@ creatures:
         subtype: npc
         id: srd2024blackdragonwyrmling
         status: 1
-      
+        order: 149
       - name: Blue Dragon Wyrmling
         statblock:
           custom_statblock: |
@@ -6131,7 +6131,7 @@ creatures:
         subtype: npc
         id: srd2024bluedragonwyrmling
         status: 1
-      
+        order: 153
       - name: Green Dragon Wyrmling
         statblock:
           custom_statblock: |
@@ -6179,7 +6179,7 @@ creatures:
         subtype: npc
         id: srd2024greendragonwyrmling
         status: 1
-      
+        order: 252
       - name: Red Dragon Wyrmling
         statblock:
           custom_statblock: |
@@ -6222,7 +6222,7 @@ creatures:
         subtype: npc
         id: srd2024reddragonwyrmling
         status: 1
-      
+        order: 340
       - name: White Dragon Wyrmling
         statblock:
           custom_statblock: |
@@ -6269,7 +6269,7 @@ creatures:
         subtype: npc
         id: srd2024whitedragonwyrmling
         status: 1
-      
+        order: 412
       - name: Young Black Dragon
         statblock:
           custom_statblock: |
@@ -6316,7 +6316,7 @@ creatures:
         subtype: npc
         id: srd2024youngblackdragon
         status: 1
-      
+        order: 421
       - name: Young Blue Dragon
         statblock:
           custom_statblock: |
@@ -6359,7 +6359,7 @@ creatures:
         subtype: npc
         id: srd2024youngbluedragon
         status: 1
-      
+        order: 422
       - name: Young Green Dragon
         statblock:
           custom_statblock: |
@@ -6407,7 +6407,7 @@ creatures:
         subtype: npc
         id: srd2024younggreendragon
         status: 1
-      
+        order: 427
       - name: Young Red Dragon
         statblock:
           custom_statblock: |
@@ -6450,7 +6450,7 @@ creatures:
         subtype: npc
         id: srd2024youngreddragon
         status: 1
-      
+        order: 428
       - name: Young White Dragon
         statblock:
           custom_statblock: |
@@ -6497,7 +6497,7 @@ creatures:
         subtype: npc
         id: srd2024youngwhitedragon
         status: 1
-      
+        order: 430
       subtype: information
       id: srdchromatic
       name: Chromatic
@@ -6569,7 +6569,7 @@ creatures:
         subtype: npc
         id: srd2024adultbrassdragon
         status: 1
-      
+        order: 104
       - name: Adult Bronze Dragon
         statblock:
           custom_statblock: |
@@ -6635,7 +6635,7 @@ creatures:
         subtype: npc
         id: srd2024adultbronzedragon
         status: 1
-      
+        order: 105
       - name: Adult Copper Dragon
         statblock:
           custom_statblock: |
@@ -6699,7 +6699,7 @@ creatures:
         subtype: npc
         id: srd2024adultcopperdragon
         status: 1
-      
+        order: 106
       - name: Adult Gold Dragon
         statblock:
           custom_statblock: |
@@ -6765,7 +6765,7 @@ creatures:
         subtype: npc
         id: srd2024adultgolddragon
         status: 1
-      
+        order: 107
       - name: Adult Silver Dragon
         statblock:
           custom_statblock: |
@@ -6829,7 +6829,7 @@ creatures:
         subtype: npc
         id: srd2024adultsilverdragon
         status: 1
-      
+        order: 110
       - name: Ancient Brass Dragon
         statblock:
           custom_statblock: |
@@ -6893,7 +6893,7 @@ creatures:
         subtype: npc
         id: srd2024ancientbrassdragon
         status: 1
-      
+        order: 116
       - name: Ancient Bronze Dragon
         statblock:
           custom_statblock: |
@@ -6959,7 +6959,7 @@ creatures:
         subtype: npc
         id: srd2024ancientbronzedragon
         status: 1
-      
+        order: 117
       - name: Ancient Copper Dragon
         statblock:
           custom_statblock: |
@@ -7023,7 +7023,7 @@ creatures:
         subtype: npc
         id: srd2024ancientcopperdragon
         status: 1
-      
+        order: 118
       - name: Ancient Gold Dragon
         statblock:
           custom_statblock: |
@@ -7089,7 +7089,7 @@ creatures:
         subtype: npc
         id: srd2024ancientgolddragon
         status: 1
-      
+        order: 119
       - name: Ancient Silver Dragon
         statblock:
           custom_statblock: |
@@ -7153,7 +7153,7 @@ creatures:
         subtype: npc
         id: srd2024ancientsilverdragon
         status: 1
-      
+        order: 122
       - name: Brass Dragon Wyrmling
         statblock:
           custom_statblock: |
@@ -7196,7 +7196,7 @@ creatures:
         subtype: npc
         id: srd2024brassdragonwyrmling
         status: 1
-      
+        order: 156
       - name: Bronze Dragon Wyrmling
         statblock:
           custom_statblock: |
@@ -7245,7 +7245,7 @@ creatures:
         subtype: npc
         id: srd2024bronzedragonwyrmling
         status: 1
-      
+        order: 157
       - name: Copper Dragon Wyrmling
         statblock:
           custom_statblock: |
@@ -7288,7 +7288,7 @@ creatures:
         subtype: npc
         id: srd2024copperdragonwyrmling
         status: 1
-      
+        order: 174
       - name: Gold Dragon Wyrmling
         statblock:
           custom_statblock: |
@@ -7337,7 +7337,7 @@ creatures:
         subtype: npc
         id: srd2024golddragonwyrmling
         status: 1
-      
+        order: 249
       - name: Silver Dragon Wyrmling
         statblock:
           custom_statblock: |
@@ -7382,7 +7382,7 @@ creatures:
         subtype: npc
         id: srd2024silverdragonwyrmling
         status: 1
-      
+        order: 360
       - name: Young Brass Dragon
         statblock:
           custom_statblock: |
@@ -7427,7 +7427,7 @@ creatures:
         subtype: npc
         id: srd2024youngbrassdragon
         status: 1
-      
+        order: 423
       - name: Young Bronze Dragon
         statblock:
           custom_statblock: |
@@ -7476,7 +7476,7 @@ creatures:
         subtype: npc
         id: srd2024youngbronzedragon
         status: 1
-      
+        order: 424
       - name: Young Copper Dragon
         statblock:
           custom_statblock: |
@@ -7521,7 +7521,7 @@ creatures:
         subtype: npc
         id: srd2024youngcopperdragon
         status: 1
-      
+        order: 425
       - name: Young Gold Dragon
         statblock:
           custom_statblock: |
@@ -7570,7 +7570,7 @@ creatures:
         subtype: npc
         id: srd2024younggolddragon
         status: 1
-      
+        order: 426
       - name: Young Silver Dragon
         statblock:
           custom_statblock: |
@@ -7615,7 +7615,7 @@ creatures:
         subtype: npc
         id: srd2024youngsilverdragon
         status: 1
-      
+        order: 429
       subtype: information
       id: srdmetallic
       name: Metallic
@@ -7670,7 +7670,7 @@ creatures:
       subtype: npc
       id: srd2024dragonturtle
       status: 1
-    
+      order: 188
     - name: Half-Dragon
       statblock:
         custom_statblock: |
@@ -7721,7 +7721,7 @@ creatures:
       subtype: npc
       id: srd2024half-dragon
       status: 1
-    
+      order: 260
     - name: Kobold Warrior
       statblock:
         custom_statblock: |
@@ -7765,7 +7765,7 @@ creatures:
       subtype: npc
       id: srd2024koboldwarrior
       status: 1
-    
+      order: 284
     - name: Pseudodragon
       statblock:
         custom_statblock: |
@@ -7811,7 +7811,7 @@ creatures:
       subtype: npc
       id: srd2024pseudodragon
       status: 1
-    
+      order: 332
     - name: Wyvern
       statblock:
         custom_statblock: |
@@ -7853,7 +7853,7 @@ creatures:
       subtype: npc
       id: srd2024wyvern
       status: 1
-    
+      order: 419
     subtype: information
     id: srddragon
     name: Dragon
@@ -7924,7 +7924,7 @@ creatures:
         subtype: npc
         id: srd2024djinni
         status: 1
-      
+        order: 185
       - name: Efreeti
         statblock:
           custom_statblock: |
@@ -7979,7 +7979,7 @@ creatures:
         subtype: npc
         id: srd2024efreeti
         status: 1
-      
+        order: 196
       subtype: information
       id: srdgenie
       name: Genie
@@ -8034,7 +8034,7 @@ creatures:
       subtype: npc
       id: srd2024airelemental
       status: 1
-    
+      order: 112
     - name: Azer Sentinel
       statblock:
         custom_statblock: |
@@ -8079,7 +8079,7 @@ creatures:
       subtype: npc
       id: srd2024azersentinel
       status: 1
-    
+      order: 136
     - name: Dust Mephit
       statblock:
         custom_statblock: |
@@ -8130,7 +8130,7 @@ creatures:
       subtype: npc
       id: srd2024dustmephit
       status: 1
-    
+      order: 193
     - name: Earth Elemental
       statblock:
         custom_statblock: |
@@ -8180,7 +8180,7 @@ creatures:
       subtype: npc
       id: srd2024earthelemental
       status: 1
-    
+      order: 195
     - name: Fire Elemental
       statblock:
         custom_statblock: |
@@ -8232,7 +8232,7 @@ creatures:
       subtype: npc
       id: srd2024fireelemental
       status: 1
-    
+      order: 202
     - name: Gargoyle
       statblock:
         custom_statblock: |
@@ -8278,7 +8278,7 @@ creatures:
       subtype: npc
       id: srd2024gargoyle
       status: 1
-    
+      order: 208
     - name: Ice Mephit
       statblock:
         custom_statblock: |
@@ -8329,7 +8329,7 @@ creatures:
       subtype: npc
       id: srd2024icemephit
       status: 1
-    
+      order: 276
     - name: Invisible Stalker
       statblock:
         custom_statblock: |
@@ -8380,7 +8380,7 @@ creatures:
       subtype: npc
       id: srd2024invisiblestalker
       status: 1
-    
+      order: 279
     - name: Magma Mephit
       statblock:
         custom_statblock: |
@@ -8427,7 +8427,7 @@ creatures:
       subtype: npc
       id: srd2024magmamephit
       status: 1
-    
+      order: 292
     - name: Magmin
       statblock:
         custom_statblock: |
@@ -8473,7 +8473,7 @@ creatures:
       subtype: npc
       id: srd2024magmin
       status: 1
-    
+      order: 293
     - name: Merfolk Skirmisher
       statblock:
         custom_statblock: |
@@ -8514,7 +8514,7 @@ creatures:
       subtype: npc
       id: srd2024merfolkskirmisher
       status: 1
-    
+      order: 299
     - name: Salamander
       statblock:
         custom_statblock: |
@@ -8561,7 +8561,7 @@ creatures:
       subtype: npc
       id: srd2024salamander
       status: 1
-    
+      order: 350
     - name: Steam Mephit
       statblock:
         custom_statblock: |
@@ -8609,7 +8609,7 @@ creatures:
       subtype: npc
       id: srd2024steammephit
       status: 1
-    
+      order: 371
     - name: Water Elemental
       statblock:
         custom_statblock: |
@@ -8659,7 +8659,7 @@ creatures:
       subtype: npc
       id: srd2024waterelemental
       status: 1
-    
+      order: 405
     - name: Xorn
       statblock:
         custom_statblock: |
@@ -8713,7 +8713,7 @@ creatures:
       subtype: npc
       id: srd2024xorn
       status: 1
-    
+      order: 420
     subtype: information
     id: srdelemental
     name: Elemental
@@ -8775,7 +8775,7 @@ creatures:
         subtype: npc
         id: srd2024bugbearstalker
         status: 1
-      
+        order: 159
       - name: Bugbear Warrior
         statblock:
           custom_statblock: |
@@ -8820,7 +8820,7 @@ creatures:
         subtype: npc
         id: srd2024bugbearwarrior
         status: 1
-      
+        order: 160
       - name: Goblin Boss
         statblock:
           custom_statblock: |
@@ -8871,7 +8871,7 @@ creatures:
         subtype: npc
         id: srd2024goblinboss
         status: 1
-      
+        order: 246
       - name: Goblin Minion
         statblock:
           custom_statblock: |
@@ -8914,7 +8914,7 @@ creatures:
         subtype: npc
         id: srd2024goblinminion
         status: 1
-      
+        order: 247
       - name: Goblin Warrior
         statblock:
           custom_statblock: |
@@ -8959,7 +8959,7 @@ creatures:
         subtype: npc
         id: srd2024goblinwarrior
         status: 1
-      
+        order: 248
       - name: Hobgoblin Captain
         statblock:
           custom_statblock: |
@@ -9005,7 +9005,7 @@ creatures:
         subtype: npc
         id: srd2024hobgoblincaptain
         status: 1
-      
+        order: 268
       - name: Hobgoblin Warrior
         statblock:
           custom_statblock: |
@@ -9049,7 +9049,7 @@ creatures:
         subtype: npc
         id: srd2024hobgoblinwarrior
         status: 1
-      
+        order: 269
       subtype: information
       id: srdgoblinoid
       name: Goblinoid
@@ -9098,7 +9098,7 @@ creatures:
       subtype: npc
       id: srd2024blinkdog
       status: 1
-    
+      order: 151
     - name: Centaur Trooper
       statblock:
         custom_statblock: |
@@ -9145,7 +9145,7 @@ creatures:
       subtype: npc
       id: srd2024centaurtrooper
       status: 1
-    
+      order: 164
     - name: Dryad
       statblock:
         custom_statblock: |
@@ -9202,7 +9202,7 @@ creatures:
       subtype: npc
       id: srd2024dryad
       status: 1
-    
+      order: 192
     - name: Green Hag
       statblock:
         custom_statblock: |
@@ -9256,7 +9256,7 @@ creatures:
       subtype: npc
       id: srd2024greenhag
       status: 1
-    
+      order: 253
     - name: Satyr
       statblock:
         custom_statblock: |
@@ -9300,7 +9300,7 @@ creatures:
       subtype: npc
       id: srd2024satyr
       status: 1
-    
+      order: 351
     - name: Sea Hag
       statblock:
         custom_statblock: |
@@ -9353,7 +9353,7 @@ creatures:
       subtype: npc
       id: srd2024seahag
       status: 1
-    
+      order: 354
     - name: Sprite
       statblock:
         custom_statblock: |
@@ -9399,7 +9399,7 @@ creatures:
       subtype: npc
       id: srd2024sprite
       status: 1
-    
+      order: 369
     - name: Worg
       statblock:
         custom_statblock: |
@@ -9437,7 +9437,7 @@ creatures:
       subtype: npc
       id: srd2024worg
       status: 1
-    
+      order: 417
     subtype: information
     id: srdfey
     name: Fey
@@ -9507,7 +9507,7 @@ creatures:
         subtype: npc
         id: srd2024balor
         status: 1
-      
+        order: 139
       - name: Dretch
         statblock:
           custom_statblock: |
@@ -9549,7 +9549,7 @@ creatures:
         subtype: npc
         id: srd2024dretch
         status: 1
-      
+        order: 189
       - name: Glabrezu
         statblock:
           custom_statblock: |
@@ -9605,7 +9605,7 @@ creatures:
         subtype: npc
         id: srd2024glabrezu
         status: 1
-      
+        order: 242
       - name: Hezrou
         statblock:
           custom_statblock: |
@@ -9659,7 +9659,7 @@ creatures:
         subtype: npc
         id: srd2024hezrou
         status: 1
-      
+        order: 264
       - name: Marilith
         statblock:
           custom_statblock: |
@@ -9720,7 +9720,7 @@ creatures:
         subtype: npc
         id: srd2024marilith
         status: 1
-      
+        order: 296
       - name: Nalfeshnee
         statblock:
           custom_statblock: |
@@ -9778,7 +9778,7 @@ creatures:
         subtype: npc
         id: srd2024nalfeshnee
         status: 1
-      
+        order: 307
       - name: Quasit
         statblock:
           custom_statblock: |
@@ -9831,7 +9831,7 @@ creatures:
         subtype: npc
         id: srd2024quasit
         status: 1
-      
+        order: 336
       - name: Vrock
         statblock:
           custom_statblock: |
@@ -9883,7 +9883,7 @@ creatures:
         subtype: npc
         id: srd2024vrock
         status: 1
-      
+        order: 399
       subtype: information
       id: srddemon
       name: Demon
@@ -9946,7 +9946,7 @@ creatures:
         subtype: npc
         id: srd2024barbeddevil
         status: 1
-      
+        order: 142
       - name: Bearded Devil
         statblock:
           custom_statblock: |
@@ -9994,7 +9994,7 @@ creatures:
         subtype: npc
         id: srd2024beardeddevil
         status: 1
-      
+        order: 145
       - name: Bone Devil
         statblock:
           custom_statblock: |
@@ -10045,7 +10045,7 @@ creatures:
         subtype: npc
         id: srd2024bonedevil
         status: 1
-      
+        order: 155
       - name: Chain Devil
         statblock:
           custom_statblock: |
@@ -10099,7 +10099,7 @@ creatures:
         subtype: npc
         id: srd2024chaindevil
         status: 1
-      
+        order: 165
       - name: Erinyes
         statblock:
           custom_statblock: |
@@ -10156,7 +10156,7 @@ creatures:
         subtype: npc
         id: srd2024erinyes
         status: 1
-      
+        order: 199
       - name: Horned Devil
         statblock:
           custom_statblock: |
@@ -10207,7 +10207,7 @@ creatures:
         subtype: npc
         id: srd2024horneddevil
         status: 1
-      
+        order: 271
       - name: Ice Devil
         statblock:
           custom_statblock: |
@@ -10259,7 +10259,7 @@ creatures:
         subtype: npc
         id: srd2024icedevil
         status: 1
-      
+        order: 275
       - name: Imp
         statblock:
           custom_statblock: |
@@ -10310,7 +10310,7 @@ creatures:
         subtype: npc
         id: srd2024imp
         status: 1
-      
+        order: 277
       - name: Lemure
         statblock:
           custom_statblock: |
@@ -10354,7 +10354,7 @@ creatures:
         subtype: npc
         id: srd2024lemure
         status: 1
-      
+        order: 287
       - name: Pit Fiend
         statblock:
           custom_statblock: |
@@ -10413,7 +10413,7 @@ creatures:
         subtype: npc
         id: srd2024pitfiend
         status: 1
-      
+        order: 325
       subtype: information
       id: srddevil
       name: Devil
@@ -10463,7 +10463,7 @@ creatures:
       subtype: npc
       id: srd2024gnollwarrior
       status: 1
-    
+      order: 244
     - name: Hell Hound
       statblock:
         custom_statblock: |
@@ -10510,7 +10510,7 @@ creatures:
       subtype: npc
       id: srd2024hellhound
       status: 1
-    
+      order: 263
     - name: Incubus
       statblock:
         custom_statblock: |
@@ -10564,7 +10564,7 @@ creatures:
       subtype: npc
       id: srd2024incubus
       status: 1
-    
+      order: 278
     - name: Lamia
       statblock:
         custom_statblock: |
@@ -10615,7 +10615,7 @@ creatures:
       subtype: npc
       id: srd2024lamia
       status: 1
-    
+      order: 286
     - name: Night Hag
       statblock:
         custom_statblock: |
@@ -10679,7 +10679,7 @@ creatures:
       subtype: npc
       id: srd2024nighthag
       status: 1
-    
+      order: 308
     - name: Nightmare
       statblock:
         custom_statblock: |
@@ -10725,7 +10725,7 @@ creatures:
       subtype: npc
       id: srd2024nightmare
       status: 1
-    
+      order: 309
     - name: Oni
       statblock:
         custom_statblock: |
@@ -10782,7 +10782,7 @@ creatures:
       subtype: npc
       id: srd2024oni
       status: 1
-    
+      order: 315
     - name: Rakshasa
       statblock:
         custom_statblock: |
@@ -10837,7 +10837,7 @@ creatures:
       subtype: npc
       id: srd2024rakshasa
       status: 1
-    
+      order: 337
     - name: Sahuagin Warrior
       statblock:
         custom_statblock: |
@@ -10890,7 +10890,7 @@ creatures:
       subtype: npc
       id: srd2024sahuaginwarrior
       status: 1
-    
+      order: 349
     - name: Spirit Naga
       statblock:
         custom_statblock: |
@@ -10942,7 +10942,7 @@ creatures:
       subtype: npc
       id: srd2024spiritnaga
       status: 1
-    
+      order: 368
     - name: Succubus
       statblock:
         custom_statblock: |
@@ -10995,7 +10995,7 @@ creatures:
       subtype: npc
       id: srd2024succubus
       status: 1
-    
+      order: 376
     subtype: information
     id: srdfiend
     name: Fiend
@@ -11056,7 +11056,7 @@ creatures:
       subtype: npc
       id: srd2024cloudgiant
       status: 1
-    
+      order: 170
     - name: Ettin
       statblock:
         custom_statblock: |
@@ -11100,7 +11100,7 @@ creatures:
       subtype: npc
       id: srd2024ettin
       status: 1
-    
+      order: 201
     - name: Fire Giant
       statblock:
         custom_statblock: |
@@ -11143,7 +11143,7 @@ creatures:
       subtype: npc
       id: srd2024firegiant
       status: 1
-    
+      order: 203
     - name: Frost Giant
       statblock:
         custom_statblock: |
@@ -11190,7 +11190,7 @@ creatures:
       subtype: npc
       id: srd2024frostgiant
       status: 1
-    
+      order: 207
     - name: Hill Giant
       statblock:
         custom_statblock: |
@@ -11232,7 +11232,7 @@ creatures:
       subtype: npc
       id: srd2024hillgiant
       status: 1
-    
+      order: 265
     - name: Ogre
       statblock:
         custom_statblock: |
@@ -11272,7 +11272,7 @@ creatures:
       subtype: npc
       id: srd2024ogre
       status: 1
-    
+      order: 313
     - name: Stone Giant
       statblock:
         custom_statblock: |
@@ -11318,7 +11318,7 @@ creatures:
       subtype: npc
       id: srd2024stonegiant
       status: 1
-    
+      order: 373
     - name: Storm Giant
       statblock:
         custom_statblock: |
@@ -11373,7 +11373,7 @@ creatures:
       subtype: npc
       id: srd2024stormgiant
       status: 1
-    
+      order: 375
     - name: Troll
       statblock:
         custom_statblock: |
@@ -11423,7 +11423,7 @@ creatures:
       subtype: npc
       id: srd2024troll
       status: 1
-    
+      order: 390
     - name: Troll Limb
       statblock:
         custom_statblock: |
@@ -11466,7 +11466,7 @@ creatures:
       subtype: npc
       id: srd2024trolllimb
       status: 1
-    
+      order: 391
     subtype: information
     id: srdgiant
     name: Giant
@@ -11541,7 +11541,7 @@ creatures:
       subtype: npc
       id: srd2024archmage
       status: 1
-    
+      order: 131
     - name: Assassin
       statblock:
         custom_statblock: |
@@ -11593,7 +11593,7 @@ creatures:
       subtype: npc
       id: srd2024assassin
       status: 1
-    
+      order: 132
     - name: Bandit
       statblock:
         custom_statblock: |
@@ -11633,7 +11633,7 @@ creatures:
       subtype: npc
       id: srd2024bandit
       status: 1
-    
+      order: 140
     - name: Bandit Captain
       statblock:
         custom_statblock: |
@@ -11680,7 +11680,7 @@ creatures:
       subtype: npc
       id: srd2024banditcaptain
       status: 1
-    
+      order: 141
     - name: Berserker
       statblock:
         custom_statblock: |
@@ -11722,7 +11722,7 @@ creatures:
       subtype: npc
       id: srd2024berserker
       status: 1
-    
+      order: 147
     - name: Commoner
       statblock:
         custom_statblock: |
@@ -11764,7 +11764,7 @@ creatures:
       subtype: npc
       id: srd2024commoner
       status: 1
-    
+      order: 172
     - name: Cultist
       statblock:
         custom_statblock: |
@@ -11803,7 +11803,7 @@ creatures:
       subtype: npc
       id: srd2024cultist
       status: 1
-    
+      order: 178
     - name: Cultist Fanatic
       statblock:
         custom_statblock: |
@@ -11852,7 +11852,7 @@ creatures:
       subtype: npc
       id: srd2024cultistfanatic
       status: 1
-    
+      order: 179
     - name: Druid
       statblock:
         custom_statblock: |
@@ -11901,7 +11901,7 @@ creatures:
       subtype: npc
       id: srd2024druid
       status: 1
-    
+      order: 191
     - name: Gladiator
       statblock:
         custom_statblock: |
@@ -11948,7 +11948,7 @@ creatures:
       subtype: npc
       id: srd2024gladiator
       status: 1
-    
+      order: 243
     - name: Guard
       statblock:
         custom_statblock: |
@@ -11987,7 +11987,7 @@ creatures:
       subtype: npc
       id: srd2024guard
       status: 1
-    
+      order: 257
     - name: Guard Captain
       statblock:
         custom_statblock: |
@@ -12030,7 +12030,7 @@ creatures:
       subtype: npc
       id: srd2024guardcaptain
       status: 1
-    
+      order: 258
     - name: Knight
       statblock:
         custom_statblock: |
@@ -12077,7 +12077,7 @@ creatures:
       subtype: npc
       id: srd2024knight
       status: 1
-    
+      order: 283
     - name: Mage
       statblock:
         custom_statblock: |
@@ -12136,7 +12136,7 @@ creatures:
       subtype: npc
       id: srd2024mage
       status: 1
-    
+      order: 291
     - name: Noble
       statblock:
         custom_statblock: |
@@ -12179,7 +12179,7 @@ creatures:
       subtype: npc
       id: srd2024noble
       status: 1
-    
+      order: 310
     - name: Pirate
       statblock:
         custom_statblock: |
@@ -12221,7 +12221,7 @@ creatures:
       subtype: npc
       id: srd2024pirate
       status: 1
-    
+      order: 323
     - name: Pirate Captain
       statblock:
         custom_statblock: |
@@ -12272,7 +12272,7 @@ creatures:
       subtype: npc
       id: srd2024piratecaptain
       status: 1
-    
+      order: 324
     - name: Priest
       statblock:
         custom_statblock: |
@@ -12324,7 +12324,7 @@ creatures:
       subtype: npc
       id: srd2024priest
       status: 1
-    
+      order: 330
     - name: Priest Acolyte
       statblock:
         custom_statblock: |
@@ -12373,7 +12373,7 @@ creatures:
       subtype: npc
       id: srd2024priestacolyte
       status: 1
-    
+      order: 331
     - name: Scout
       statblock:
         custom_statblock: |
@@ -12416,7 +12416,7 @@ creatures:
       subtype: npc
       id: srd2024scout
       status: 1
-    
+      order: 353
     - name: Spy
       statblock:
         custom_statblock: |
@@ -12461,7 +12461,7 @@ creatures:
       subtype: npc
       id: srd2024spy
       status: 1
-    
+      order: 370
     - name: Tough
       statblock:
         custom_statblock: |
@@ -12505,7 +12505,7 @@ creatures:
       subtype: npc
       id: srd2024tough
       status: 1
-    
+      order: 386
     - name: Tough Boss
       statblock:
         custom_statblock: |
@@ -12551,7 +12551,7 @@ creatures:
       subtype: npc
       id: srd2024toughboss
       status: 1
-    
+      order: 387
     - name: Vampire Familiar
       statblock:
         custom_statblock: |
@@ -12602,7 +12602,7 @@ creatures:
       subtype: npc
       id: srd2024vampirefamiliar
       status: 1
-    
+      order: 395
     - name: Warrior Infantry
       statblock:
         custom_statblock: |
@@ -12644,7 +12644,7 @@ creatures:
       subtype: npc
       id: srd2024warriorinfantry
       status: 1
-    
+      order: 403
     - name: Warrior Veteran
       statblock:
         custom_statblock: |
@@ -12691,7 +12691,7 @@ creatures:
       subtype: npc
       id: srd2024warriorveteran
       status: 1
-    
+      order: 404
     subtype: information
     id: srdhumanoid
     name: Humanoid
@@ -12768,7 +12768,7 @@ creatures:
         subtype: npc
         id: srd2024kraken
         status: 1
-      
+        order: 285
       - name: Tarrasque
         statblock:
           custom_statblock: |
@@ -12841,7 +12841,7 @@ creatures:
         subtype: npc
         id: srd2024tarrasque
         status: 1
-      
+        order: 384
       subtype: information
       id: srdtitan
       name: Titan
@@ -12891,7 +12891,7 @@ creatures:
       subtype: npc
       id: srd2024ankheg
       status: 1
-    
+      order: 127
     - name: Axe Beak
       statblock:
         custom_statblock: |
@@ -12928,7 +12928,7 @@ creatures:
       subtype: npc
       id: srd2024axebeak
       status: 1
-    
+      order: 135
     - name: Basilisk
       statblock:
         custom_statblock: |
@@ -12969,7 +12969,7 @@ creatures:
       subtype: npc
       id: srd2024basilisk
       status: 1
-    
+      order: 143
     - name: Behir
       statblock:
         custom_statblock: |
@@ -13020,7 +13020,7 @@ creatures:
       subtype: npc
       id: srd2024behir
       status: 1
-    
+      order: 146
     - name: Bulette
       statblock:
         custom_statblock: |
@@ -13066,7 +13066,7 @@ creatures:
       subtype: npc
       id: srd2024bulette
       status: 1
-    
+      order: 161
     - name: Chimera
       statblock:
         custom_statblock: |
@@ -13112,7 +13112,7 @@ creatures:
       subtype: npc
       id: srd2024chimera
       status: 1
-    
+      order: 166
     - name: Cockatrice
       statblock:
         custom_statblock: |
@@ -13150,7 +13150,7 @@ creatures:
       subtype: npc
       id: srd2024cockatrice
       status: 1
-    
+      order: 171
     - name: Death Dog
       statblock:
         custom_statblock: |
@@ -13191,7 +13191,7 @@ creatures:
       subtype: npc
       id: srd2024deathdog
       status: 1
-    
+      order: 181
     - name: Doppelganger
       statblock:
         custom_statblock: |
@@ -13242,7 +13242,7 @@ creatures:
       subtype: npc
       id: srd2024doppelganger
       status: 1
-    
+      order: 186
     - name: Drider
       statblock:
         custom_statblock: |
@@ -13294,7 +13294,7 @@ creatures:
       subtype: npc
       id: srd2024drider
       status: 1
-    
+      order: 190
     - name: Ettercap
       statblock:
         custom_statblock: |
@@ -13348,7 +13348,7 @@ creatures:
       subtype: npc
       id: srd2024ettercap
       status: 1
-    
+      order: 200
     - name: Flying Snake
       statblock:
         custom_statblock: |
@@ -13389,7 +13389,7 @@ creatures:
       subtype: npc
       id: srd2024flyingsnake
       status: 1
-    
+      order: 205
     - name: Giant Vulture
       statblock:
         custom_statblock: |
@@ -13432,7 +13432,7 @@ creatures:
       subtype: npc
       id: srd2024giantvulture
       status: 1
-    
+      order: 237
     - name: Griffon
       statblock:
         custom_statblock: |
@@ -13472,7 +13472,7 @@ creatures:
       subtype: npc
       id: srd2024griffon
       status: 1
-    
+      order: 255
     - name: Harpy
       statblock:
         custom_statblock: |
@@ -13511,7 +13511,7 @@ creatures:
       subtype: npc
       id: srd2024harpy
       status: 1
-    
+      order: 261
     - name: Hippogriff
       statblock:
         custom_statblock: |
@@ -13555,7 +13555,7 @@ creatures:
       subtype: npc
       id: srd2024hippogriff
       status: 1
-    
+      order: 266
     - name: Hydra
       statblock:
         custom_statblock: |
@@ -13604,7 +13604,7 @@ creatures:
       subtype: npc
       id: srd2024hydra
       status: 1
-    
+      order: 273
     - name: Manticore
       statblock:
         custom_statblock: |
@@ -13645,7 +13645,7 @@ creatures:
       subtype: npc
       id: srd2024manticore
       status: 1
-    
+      order: 295
     - name: Medusa
       statblock:
         custom_statblock: |
@@ -13693,7 +13693,7 @@ creatures:
       subtype: npc
       id: srd2024medusa
       status: 1
-    
+      order: 298
     - name: Merrow
       statblock:
         custom_statblock: |
@@ -13740,7 +13740,7 @@ creatures:
       subtype: npc
       id: srd2024merrow
       status: 1
-    
+      order: 300
     - name: Mimic
       statblock:
         custom_statblock: |
@@ -13790,7 +13790,7 @@ creatures:
       subtype: npc
       id: srd2024mimic
       status: 1
-    
+      order: 301
     - name: Minotaur of Baphomet
       statblock:
         custom_statblock: |
@@ -13830,7 +13830,7 @@ creatures:
       subtype: npc
       id: srd2024minotaurofbaphomet
       status: 1
-    
+      order: 302
     - name: Owlbear
       statblock:
         custom_statblock: |
@@ -13870,7 +13870,7 @@ creatures:
       subtype: npc
       id: srd2024owlbear
       status: 1
-    
+      order: 318
     - name: Phase Spider
       statblock:
         custom_statblock: |
@@ -13922,7 +13922,7 @@ creatures:
       subtype: npc
       id: srd2024phasespider
       status: 1
-    
+      order: 321
     - name: Purple Worm
       statblock:
         custom_statblock: |
@@ -13973,7 +13973,7 @@ creatures:
       subtype: npc
       id: srd2024purpleworm
       status: 1
-    
+      order: 335
     - name: Remorhaz
       statblock:
         custom_statblock: |
@@ -14021,7 +14021,7 @@ creatures:
       subtype: npc
       id: srd2024remorhaz
       status: 1
-    
+      order: 342
     - name: Roc
       statblock:
         custom_statblock: |
@@ -14067,7 +14067,7 @@ creatures:
       subtype: npc
       id: srd2024roc
       status: 1
-    
+      order: 345
     - name: Rust Monster
       statblock:
         custom_statblock: |
@@ -14118,7 +14118,7 @@ creatures:
       subtype: npc
       id: srd2024rustmonster
       status: 1
-    
+      order: 347
     - name: Stirge
       statblock:
         custom_statblock: |
@@ -14157,7 +14157,7 @@ creatures:
       subtype: npc
       id: srd2024stirge
       status: 1
-    
+      order: 372
     - name: Werebear
       statblock:
         custom_statblock: |
@@ -14206,7 +14206,7 @@ creatures:
       subtype: npc
       id: srd2024werebear
       status: 1
-    
+      order: 407
     - name: Wereboar
       statblock:
         custom_statblock: |
@@ -14255,7 +14255,7 @@ creatures:
       subtype: npc
       id: srd2024wereboar
       status: 1
-    
+      order: 408
     - name: Wererat
       statblock:
         custom_statblock: |
@@ -14304,7 +14304,7 @@ creatures:
       subtype: npc
       id: srd2024wererat
       status: 1
-    
+      order: 409
     - name: Weretiger
       statblock:
         custom_statblock: |
@@ -14355,7 +14355,7 @@ creatures:
       subtype: npc
       id: srd2024weretiger
       status: 1
-    
+      order: 410
     - name: Werewolf
       statblock:
         custom_statblock: |
@@ -14408,7 +14408,7 @@ creatures:
       subtype: npc
       id: srd2024werewolf
       status: 1
-    
+      order: 411
     - name: Winter Wolf
       statblock:
         custom_statblock: |
@@ -14453,7 +14453,7 @@ creatures:
       subtype: npc
       id: srd2024winterwolf
       status: 1
-    
+      order: 415
     subtype: information
     id: srdmonstrosity
     name: Monstrosity
@@ -14516,7 +14516,7 @@ creatures:
       subtype: npc
       id: srd2024blackpudding
       status: 1
-    
+      order: 150
     - name: Gelatinous Cube
       statblock:
         custom_statblock: |
@@ -14567,7 +14567,7 @@ creatures:
       subtype: npc
       id: srd2024gelatinouscube
       status: 1
-    
+      order: 209
     - name: Gray Ooze
       statblock:
         custom_statblock: |
@@ -14615,7 +14615,7 @@ creatures:
       subtype: npc
       id: srd2024grayooze
       status: 1
-    
+      order: 251
     - name: Ochre Jelly
       statblock:
         custom_statblock: |
@@ -14665,7 +14665,7 @@ creatures:
       subtype: npc
       id: srd2024ochrejelly
       status: 1
-    
+      order: 311
     - name: Psychic Gray Ooze
       statblock:
         custom_statblock: |
@@ -14715,7 +14715,7 @@ creatures:
       subtype: npc
       id: srd2024psychicgrayooze
       status: 1
-    
+      order: 333
     subtype: information
     id: srdooze
     name: Ooze
@@ -14764,7 +14764,7 @@ creatures:
       subtype: npc
       id: srd2024awakenedshrub
       status: 1
-    
+      order: 133
     - name: Awakened Tree
       statblock:
         custom_statblock: |
@@ -14803,7 +14803,7 @@ creatures:
       subtype: npc
       id: srd2024awakenedtree
       status: 1
-    
+      order: 134
     - name: Shambling Mound
       statblock:
         custom_statblock: |
@@ -14852,7 +14852,7 @@ creatures:
       subtype: npc
       id: srd2024shamblingmound
       status: 1
-    
+      order: 357
     - name: Shrieker Fungus
       statblock:
         custom_statblock: |
@@ -14890,7 +14890,7 @@ creatures:
       subtype: npc
       id: srd2024shriekerfungus
       status: 1
-    
+      order: 359
     - name: Treant
       statblock:
         custom_statblock: |
@@ -14939,7 +14939,7 @@ creatures:
       subtype: npc
       id: srd2024treant
       status: 1
-    
+      order: 388
     - name: Violet Fungus
       statblock:
         custom_statblock: |
@@ -14979,7 +14979,7 @@ creatures:
       subtype: npc
       id: srd2024violetfungus
       status: 1
-    
+      order: 398
     subtype: information
     id: srdplant
     name: Plant
@@ -15066,7 +15066,7 @@ creatures:
         subtype: npc
         id: srd2024lich
         status: 1
-      
+        order: 288
       subtype: information
       id: srdwizard
       name: Wizard
@@ -15119,7 +15119,7 @@ creatures:
       subtype: npc
       id: srd2024ghast
       status: 1
-    
+      order: 210
     - name: Ghost
       statblock:
         custom_statblock: |
@@ -15177,7 +15177,7 @@ creatures:
       subtype: npc
       id: srd2024ghost
       status: 1
-    
+      order: 211
     - name: Ghoul
       statblock:
         custom_statblock: |
@@ -15220,7 +15220,7 @@ creatures:
       subtype: npc
       id: srd2024ghoul
       status: 1
-    
+      order: 212
     - name: Minotaur Skeleton
       statblock:
         custom_statblock: |
@@ -15262,7 +15262,7 @@ creatures:
       subtype: npc
       id: srd2024minotaurskeleton
       status: 1
-    
+      order: 303
     - name: Mummy
       statblock:
         custom_statblock: |
@@ -15306,7 +15306,7 @@ creatures:
       subtype: npc
       id: srd2024mummy
       status: 1
-    
+      order: 305
     - name: Mummy Lord
       statblock:
         custom_statblock: |
@@ -15380,7 +15380,7 @@ creatures:
       subtype: npc
       id: srd2024mummylord
       status: 1
-    
+      order: 306
     - name: Ogre Zombie
       statblock:
         custom_statblock: |
@@ -15423,7 +15423,7 @@ creatures:
       subtype: npc
       id: srd2024ogrezombie
       status: 1
-    
+      order: 314
     - name: Shadow
       statblock:
         custom_statblock: |
@@ -15475,7 +15475,7 @@ creatures:
       subtype: npc
       id: srd2024shadow
       status: 1
-    
+      order: 356
     - name: Skeleton
       statblock:
         custom_statblock: |
@@ -15518,7 +15518,7 @@ creatures:
       subtype: npc
       id: srd2024skeleton
       status: 1
-    
+      order: 361
     - name: Specter
       statblock:
         custom_statblock: |
@@ -15564,7 +15564,7 @@ creatures:
       subtype: npc
       id: srd2024specter
       status: 1
-    
+      order: 363
     - name: Swarm of Crawling Claws
       statblock:
         custom_statblock: |
@@ -15608,7 +15608,7 @@ creatures:
       subtype: npc
       id: srd2024swarmofcrawlingclaws
       status: 1
-    
+      order: 378
     - name: Vampire
       statblock:
         custom_statblock: |
@@ -15689,7 +15689,7 @@ creatures:
       subtype: npc
       id: srd2024vampire
       status: 1
-    
+      order: 394
     - name: Vampire Spawn
       statblock:
         custom_statblock: |
@@ -15750,7 +15750,7 @@ creatures:
       subtype: npc
       id: srd2024vampirespawn
       status: 1
-    
+      order: 396
     - name: Warhorse Skeleton
       statblock:
         custom_statblock: |
@@ -15790,7 +15790,7 @@ creatures:
       subtype: npc
       id: srd2024warhorseskeleton
       status: 1
-    
+      order: 402
     - name: Wight
       statblock:
         custom_statblock: |
@@ -15844,7 +15844,7 @@ creatures:
       subtype: npc
       id: srd2024wight
       status: 1
-    
+      order: 413
     - name: Will-o'-Wisp
       statblock:
         custom_statblock: |
@@ -15898,7 +15898,7 @@ creatures:
       subtype: npc
       id: srd2024will-o-wisp
       status: 1
-    
+      order: 414
     - name: Wraith
       statblock:
         custom_statblock: |
@@ -15946,7 +15946,7 @@ creatures:
       subtype: npc
       id: srd2024wraith
       status: 1
-    
+      order: 418
     - name: Zombie
       statblock:
         custom_statblock: |
@@ -15989,7 +15989,7 @@ creatures:
       subtype: npc
       id: srd2024zombie
       status: 1
-    
+      order: 431
     subtype: information
     id: srdundead
     name: Undead
