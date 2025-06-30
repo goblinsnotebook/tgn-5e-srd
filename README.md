@@ -17,7 +17,7 @@ Download any of the files and import them imto you campaign from the campaign pr
 Download the entire collection of creatures
 
 - 2014: [creatures-srd-category.tgn](creatures-srd-category.tgn)
-- 2024: [creatures-srd-2024-category.tgn](creatures-srd-category.tgn)
+- 2024: [creatures-srd-2024-category.tgn](creatures-srd-2024-category.tgn)
 
 ### Individual Creatures
 
